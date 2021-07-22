@@ -6,7 +6,7 @@
   <link href="https://merlynr.github.io/atom.xml" rel="self"/>
   
   <link href="https://merlynr.github.io/"/>
-  <updated>2021-07-18T16:00:00.000Z</updated>
+  <updated>2021-07-20T16:00:00.000Z</updated>
   <id>https://merlynr.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>little paper</title>
+    <link href="https://merlynr.github.io/2021/07/21/little%20paper/"/>
+    <id>https://merlynr.github.io/2021/07/21/little%20paper/</id>
+    <published>2021-07-20T16:00:00.000Z</published>
+    <updated>2021-07-20T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="INTRODUCTION"><a href="#INTRODUCTION" class="headerlink" title="INTRODUCTION"></a>INTRODUCTION</h1><p>流程挖掘作为企业</p><p>业务流程预测的基本思路：</p><ul><li>流程发现—从日中中推断流程模型</li><li>流程增强—学习流程日志加以改进</li><li>流程比较/预测—预测结果与流程日志进行比较，检查其一致性的程度。</li></ul><p>在预测业务流程中的下一个事件研究方法中，目前主要的模型和方法有RNN（循环神经网络）、MMs（马尔可夫模型）、语法归纳技术、LSTM（长短期记忆模型）等等，其中精度最高的是信任决策树。    </p>]]></content>
+    
+    
+    <summary type="html">小论文</summary>
+    
+    
+    
+    <category term="paper" scheme="https://merlynr.github.io/categories/paper/"/>
+    
+    
+    <category term="paper" scheme="https://merlynr.github.io/tags/paper/"/>
+    
+  </entry>
   
   <entry>
     <title>Long Short Term Memory Networks</title>
@@ -113,7 +134,7 @@
     <published>2021-07-15T16:00:00.000Z</published>
     <updated>2021-07-15T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/105335191">注意力机制到底是什么——基于常识的基本结构介绍 - 知乎</a><br><a href="https://www.zhihu.com/question/304499365">(96 封私信 / 80 条消息) 「注意力机制」是什么意思？ - 知乎</a><br><a href="https://my.oschina.net/u/876354/blog/3061863">大话注意力机制（Attention Mechanism） - 雪饼的个人空间 - OSCHINA - 中文开源技术交流社区</a><br><a href="https://zhuanlan.zhihu.com/p/148737297">attention机制中的query,key,value的概念解释 - 知乎</a></p><h2 id="注意力机制"><a href="#注意力机制" class="headerlink" title="注意力机制"></a>注意力机制</h2><p>注意力机制(Attention Mechanism)是人们在机器学习模型中嵌入的一种特殊结构，用来自动学习和计算输入数据对输出数据的<font color="#1E90FF"><strong>贡献</strong></font>大小。</p><blockquote><p>目前，注意力机制已经成为深度学习领域，尤其是自然语言处理领域，应用最广泛的“组件”之一。这两年曝光度极高的BERT、GPT、Transformer等等模型或结构，都采用了注意力机制。</p></blockquote><h2 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h2><p>来自于认知工程领域提出的，类似人对于信息采集的机制—特征工程。</p><h3 id="人身上的注意力机制"><a href="#人身上的注意力机制" class="headerlink" title="人身上的注意力机制"></a>人身上的注意力机制</h3><p>去超市购物，和朋友去购物，作为提东西的工具人，不仅要体力跟的上，那么我们还需要的是跟的上朋友的步伐，人山人海中要跟上步伐确实比较困难，当我们用眼睛去一个一个寻找，把路人的信息特征衣服，脸，发色，发型~都传入到脑海中一个一个比对寻找朋友的时候，这时候不仅效率极其低而且大脑表示也遭不住，那么我们只需要记到部分明显特征发型身高等，然后扩大视野，这样效率会明显提高。<br>像这种情形，**<font color="#9932CC">有选择的处理信号</font>**，包括人类很多生物在处理外界信号时的策略，这种处理机制就是注意力机制。</p><h3 id="特征工程——模型外部的注意力机制"><a href="#特征工程——模型外部的注意力机制" class="headerlink" title="特征工程——模型外部的注意力机制"></a>特征工程——模型外部的注意力机制</h3><p>严格来说，「注意力机制」更像是一种方法论。没有严格的数学定义，而是根据具体任务目标，对关注的方向和加权模型进行调整。<br>简单的理解就是，在神经网络的隐藏层，增加「注意力机制」的加权。<br>使不符合注意力模型的内容弱化或者遗忘。</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021717/1626502007361.png" alt="特征工程"></p><h3 id="“key-query-value”理论"><a href="#“key-query-value”理论" class="headerlink" title="“key-query-value”理论"></a>“key-query-value”理论</h3><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021717/1626502458858.png" alt="Attention机制"></p><p>将Source中的构成元素想象成是由一系列的&lt;Key,Value&gt;数据对构成，此时给定Target中的某个元素Query，通过计算Query和各个Key的相似性或者相关性，得到每个Key对应Value的权重系数，然后对Value进行加权求和，即得到了最终的Attention数值。所以本质上Attention机制是对Source中元素的Value值进行加权求和，而Query和Key用来计算对应Value的权重系数。即可以将其本质思想改写为如下公式：<br>$Attention( Q u e r y , Source ) = \sum _ { i = 1 } ^ { L _ { x } }Similarity(Query,Key_{i})*Value_{i}$</p><blockquote><p><strong><font color="#7FFF00">个人理解</font></strong><br>可以把attention机制看作一种软寻址：Source可以看作存储器内存储的内容，元素由地址Key和值Value组成，当前有个Key=Query的查询，目的是取出存储器中对应的Value值，即Attention数值。通过Query和存储器内元素Key的地址进行相似性比较来寻址，之所以说是软寻址，指的不像一般寻址只从存储内容里面找出一条内容，而是可能从每个Key地址都会取出内容，**<font color="#7FFF00">取出内容的重要性根据Query和Key的相似性来决定</font>**，之后对Value进行加权求和，这样就可以取出最终的Value值，也即Attention值。</p></blockquote><p><strong><font color="#008B8B">Attention机制的具体计算过程：</font></strong></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021717/1626508762885.png" alt="计算过程"></p><ol><li>根据Query和Key计算两者的相似性或者相关性【学习】</li><li>对第一阶段的原始分值进行归一化处理【获取权重系数】</li><li>根据权重系数对Value进行加权求和</li></ol><blockquote><p><strong><font color="#00008B">知识补充</font></strong><br>点乘又叫向量的内积、数量积，是一个向量和它在另一个向量上的投影的长度的乘积；是标量。 <strong>点乘反映着两个向量的“相似度”</strong>，两个向量越“相似”，它们的点乘越大。<br>向量叉乘求的是<strong>垂直</strong>于这两个向量<br>Cosine相似性，求余弦<br>多层感知器（Multilayer Perceptron,缩写MLP）一种通用的函数近似方法，可以被用来拟合复杂的函数，或解决分类问题</p></blockquote><p>第一阶段中根据Query和Key求相似度目前常见的方法包括：求两者的向量点积、求两者的向量 Cosine相似性或者通过再引入额外的<br>神经网络来求值如下：<br>点积：<br>$Similarity(Query,Key_{i})=Query<em>Key_{i}$<br>Cosine相似性：<br>$Similarity(Query,Key_{i})=\frac { Query</em>Key_{i} } { ||Query||<em>||Key_{i}||}$<br>MLP网络：<br>$Similarity(Query,Key_{i})=MLP（Query</em>Key_{i}）$</p><p>第二阶段引入类似SoftMax的计算方式对第一阶段的相似度得分进行数值转换，一方面可以进行归一化，将原始计算分值整理成所有元素权重之和为1的概率分布；另一方面也可以通过SoftMax的内在机制更加突出重要元素的权重。<br>$a_{i}=Softmax(Sim_{i})= \frac{e^{Sim_{i}}}{ \textstyle \sum_{j=1}^{L_{x}}e^{Sim_{j}} }$</p><p>最后一阶段是加权求和求Attention数值：<br>$Attention(Query,Source)={\textstyle \sum_{i=1}^{L_{x}}a_{i}\cdot Value_{i}}$</p><h2 id="深度学习领域的注意力机制"><a href="#深度学习领域的注意力机制" class="headerlink" title="深度学习领域的注意力机制"></a>深度学习领域的注意力机制</h2><h3 id="注意力机制的思想和基本框架"><a href="#注意力机制的思想和基本框架" class="headerlink" title="注意力机制的思想和基本框架"></a>注意力机制的思想和基本框架</h3><blockquote><p>一些学者尝试让<font color="#9400D3">模型自己学习如何分配自己的注意力</font>，即为输入信号加权。<em>他们用注意力机制的直接目的，就是为输入的各个维度打分，然后按照得分对特征加权，以突出重要特征对下游模型或模块的影响。这也是注意力机制的基本思想。</em></p></blockquote><p><strong>一般会采用”key-query-value”理论来描述注意力机制的机理。</strong></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/105335191">注意力机制到底是什么——基于常识的基本结构介绍 - 知乎</a><br><a href="https://www.zhihu.com/question/304499365">(96 封私信 / 80 条消息) 「注意力机制」是什么意思？ - 知乎</a><br><a href="https://my.oschina.net/u/876354/blog/3061863">大话注意力机制（Attention Mechanism） - 雪饼的个人空间 - OSCHINA - 中文开源技术交流社区</a><br><a href="https://zhuanlan.zhihu.com/p/148737297">attention机制中的query,key,value的概念解释 - 知乎</a></p><h2 id="注意力机制"><a href="#注意力机制" class="headerlink" title="注意力机制"></a>注意力机制</h2><p>注意力机制(Attention Mechanism)是人们在机器学习模型中嵌入的一种特殊结构，用来自动学习和计算输入数据对输出数据的<font color="#1E90FF"><strong>贡献</strong></font>大小。</p><blockquote><p>目前，注意力机制已经成为深度学习领域，尤其是自然语言处理领域，应用最广泛的“组件”之一。这两年曝光度极高的BERT、GPT、Transformer等等模型或结构，都采用了注意力机制。</p></blockquote><h2 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h2><p>来自于认知工程领域提出的，类似人对于信息采集的机制—特征工程。</p><h3 id="人身上的注意力机制"><a href="#人身上的注意力机制" class="headerlink" title="人身上的注意力机制"></a>人身上的注意力机制</h3><p>去超市购物，和朋友去购物，作为提东西的工具人，不仅要体力跟的上，那么我们还需要的是跟的上朋友的步伐，人山人海中要跟上步伐确实比较困难，当我们用眼睛去一个一个寻找，把路人的信息特征衣服，脸，发色，发型~都传入到脑海中一个一个比对寻找朋友的时候，这时候不仅效率极其低而且大脑表示也遭不住，那么我们只需要记到部分明显特征发型身高等，然后扩大视野，这样效率会明显提高。<br>像这种情形，**<font color="#9932CC">有选择的处理信号</font>**，包括人类很多生物在处理外界信号时的策略，这种处理机制就是注意力机制。</p><h3 id="特征工程——模型外部的注意力机制"><a href="#特征工程——模型外部的注意力机制" class="headerlink" title="特征工程——模型外部的注意力机制"></a>特征工程——模型外部的注意力机制</h3><p>严格来说，「注意力机制」更像是一种方法论。没有严格的数学定义，而是根据具体任务目标，对关注的方向和加权模型进行调整。<br>简单的理解就是，在神经网络的隐藏层，增加「注意力机制」的加权。<br>使不符合注意力模型的内容弱化或者遗忘。</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021717/1626502007361.png" alt="特征工程"></p><h3 id="“key-query-value”理论"><a href="#“key-query-value”理论" class="headerlink" title="“key-query-value”理论"></a>“key-query-value”理论</h3><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021717/1626502458858.png" alt="Attention机制"></p><p>将Source中的构成元素想象成是由一系列的&lt;Key,Value&gt;数据对构成，此时给定Target中的某个元素Query，通过计算Query和各个Key的相似性或者相关性，得到每个Key对应Value的权重系数，然后对Value进行加权求和，即得到了最终的Attention数值。所以本质上Attention机制是对Source中元素的Value值进行加权求和，而Query和Key用来计算对应Value的权重系数。即可以将其本质思想改写为如下公式：<br>$Attention( Q u e r y , Source ) = \sum _ { i = 1 } ^ { L _ { x } }Similarity(Query,Key_{i})*Value_{i}$</p><blockquote><p><strong><font color="#7FFF00">个人理解</font></strong><br>可以把attention机制看作一种软寻址：Source可以看作存储器内存储的内容，元素由地址Key和值Value组成，当前有个Key=Query的查询，目的是取出存储器中对应的Value值，即Attention数值。通过Query和存储器内元素Key的地址进行相似性比较来寻址，之所以说是软寻址，指的不像一般寻址只从存储内容里面找出一条内容，而是可能从每个Key地址都会取出内容，**<font color="#7FFF00">取出内容的重要性根据Query和Key的相似性来决定</font>**，之后对Value进行加权求和，这样就可以取出最终的Value值，也即Attention值。</p></blockquote><p><strong><font color="#008B8B">Attention机制的具体计算过程：</font></strong></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021717/1626508762885.png" alt="计算过程"></p><ol><li>根据Query和Key计算两者的相似性或者相关性【学习】</li><li>对第一阶段的原始分值进行归一化处理【获取权重系数】</li><li>根据权重系数对Value进行加权求和</li></ol><blockquote><p><strong><font color="#00008B">知识补充</font></strong><br>点乘又叫向量的内积、数量积，是一个向量和它在另一个向量上的投影的长度的乘积；是标量。 <strong>点乘反映着两个向量的“相似度”</strong>，两个向量越“相似”，它们的点乘越大。<br>向量叉乘求的是<strong>垂直</strong>于这两个向量<br>Cosine相似性，求余弦<br>多层感知器（Multilayer Perceptron,缩写MLP）一种通用的函数近似方法，可以被用来拟合复杂的函数，或解决分类问题</p></blockquote><p>第一阶段中根据Query和Key求相似度目前常见的方法包括：求两者的向量点积、求两者的向量 Cosine相似性或者通过再引入额外的<br>神经网络来求值如下：<br>点积：<br>$Similarity(Query,Key_{i})=Query<em>Key_{i}$<br>Cosine相似性：<br>$Similarity(Query,Key_{i})=\frac { Query</em>Key_{i} } { ||Query||<em>||Key_{i}||}$<br>MLP网络：<br>$Similarity(Query,Key_{i})=MLP（Query</em>Key_{i}$</p><p>第二阶段引入类似SoftMax的计算方式对第一阶段的相似度得分进行数值转换，一方面可以进行归一化，将原始计算分值整理成所有元素权重之和为1的概率分布；另一方面也可以通过SoftMax的内在机制更加突出重要元素的权重。<br>$a_{i}=Softmax(Sim_{i})= \frac{e^{Sim_{i}}}{ \textstyle \sum_{j=1}^{L_{x}}e^{Sim_{j}} }$</p><p>最后一阶段是加权求和求Attention数值：<br>$Attention(Query,Source)={\textstyle \sum_{i=1}^{L_{x}}a_{i}\cdot Value_{i}}$</p><h2 id="深度学习领域的注意力机制"><a href="#深度学习领域的注意力机制" class="headerlink" title="深度学习领域的注意力机制"></a>深度学习领域的注意力机制</h2><h3 id="注意力机制的思想和基本框架"><a href="#注意力机制的思想和基本框架" class="headerlink" title="注意力机制的思想和基本框架"></a>注意力机制的思想和基本框架</h3><blockquote><p>一些学者尝试让<font color="#9400D3">模型自己学习如何分配自己的注意力</font>，即为输入信号加权。<em>他们用注意力机制的直接目的，就是为输入的各个维度打分，然后按照得分对特征加权，以突出重要特征对下游模型或模块的影响。这也是注意力机制的基本思想。</em></p></blockquote><p><strong>一般会采用”key-query-value”理论来描述注意力机制的机理。</strong></p>]]></content>
     
     
       
@@ -201,9 +222,9 @@
     
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="summarize" scheme="https://merlynr.github.io/tags/summarize/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -556,38 +577,6 @@
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
     <category term="exam" scheme="https://merlynr.github.io/tags/exam/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>孤立森林（Isolation Forest）</title>
-    <link href="https://merlynr.github.io/2021/05/31/%E5%AD%A4%E7%AB%8B%E6%A3%AE%E6%9E%97%EF%BC%88Isolation%20Forest%EF%BC%89/"/>
-    <id>https://merlynr.github.io/2021/05/31/%E5%AD%A4%E7%AB%8B%E6%A3%AE%E6%9E%97%EF%BC%88Isolation%20Forest%EF%BC%89/</id>
-    <published>2021-05-30T16:00:00.000Z</published>
-    <updated>2021-05-30T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h2><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021531/1622426214147.png" alt="数据蛋糕"></p><p>假设我们用一个随机超平面来切割（split）数据空间（data space）, 切一次可以生成两个子空间（想象拿刀切蛋糕一分为二）。</p><p>之后我们再继续用一个随机超平面来切割每个子空间，循环下去，直到每子空间里面只有一个数据点为止。</p><blockquote><p><font color="#8B008B">满足的条件</font></p><ul><li>数据本身不可再分割</li><li>二叉树达到限定的最大深度</li></ul></blockquote><p>直观上来讲，我们可以发现那些密度很高的簇是可以被切很多次才会停止切割，但是那些密度很低的点很容易很早的就停到一个子空间里了。</p><p><font color="#6495ED">异常检测原理的理解：</font>由于异常值的数量较少且与大部分样本的疏离性，因此，异常值会被更早的孤立出来，也即异常值会距离iTree的根节点更近，而正常值则会距离根节点有更远的距离。</p><h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><p>孤立森林算法主要针对的是<strong>连续型结构化</strong>数据中的异常点。</p><p><font color="#FF1493">理论前提</font></p><ul><li>异常数据占总样本量的比例很小</li><li>异常点的特征值与正常点的差异很大</li></ul><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021531/1622426925434.png" alt="数据"></p><p>上图中，中心的白色空心点为正常点，即处于高密度群体中。四周的黑色实心点为异常点，散落在高密度区域以外的空间。</p><h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><p>孤立森林算法是基于 <strong>Ensemble</strong> 的异常检测方法，因此具有<font color="#7FFF00">线性的时间复杂度</font>。且精准度较高，在处理大数据时速度快，所以目前在工业界的应用范围比较广。常见的场景包括：网络安全中的攻击检测、金融交易欺诈检测、疾病侦测、噪声数据过滤（数据清洗）等。</p><blockquote><p><font color="#006400">知识补充</font>集成学习算法 (Ensemble Learning)<br>统机器学习算法 (例如：决策树，人工神经网络，支持向量机，朴素贝叶斯等) 的目标都是寻找一个最优分类器尽可能的将训练数据分开。集成学习 (Ensemble Learning) 算法的基本思想就是将多个分类器<font color="#8FBC8F">组合</font>，从而实现一个预测效果更好的<font color="#8A2BE2">集成分类器</font>。</p></blockquote><blockquote><p><font color="#FF00FF">知识补充：</font><br><a href="https://blog.zuishuailcq.xyz/2021/05/31/%E7%AE%97%E6%B3%95%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87/">算法的性能指标 | 吾辈之人，自当自强不息！</a></p></blockquote><h2 id="孤立森林的创新点"><a href="#孤立森林的创新点" class="headerlink" title="孤立森林的创新点"></a>孤立森林的创新点</h2><ol><li><font color="#D2691E">Partial models</font>：在训练过程中，每棵孤立树都是随机选取部分样本</li><li><font color="#D2691E">No distance or density measures</font>：不同于 KMeans、DBSCAN 等算法，孤立森林不需要计算有关距离、密度的指标，可大幅度提升速度，减小系统开销</li><li><font color="#D2691E"> Linear time complexity</font>：因为基于 ensemble，所以有线性时间复杂度。通常树的数量越多，算法越稳定</li><li><font color="#D2691E">Handle extremely large data size</font>：由于每棵树都是独立生成的，因此可部署在大规模分布式系统上来加速运算</li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;理解&quot;&gt;&lt;a href=&quot;#理解&quot; class=&quot;headerlink&quot; title=&quot;理解&quot;&gt;&lt;/a&gt;理解&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://gitee.com/merlynr/img-store/raw/master/2021531/16224</summary>
-      
-    
-    
-    
-    <category term="algorithm" scheme="https://merlynr.github.io/categories/algorithm/"/>
-    
-    
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
-    <category term="machine learning" scheme="https://merlynr.github.io/tags/machine-learning/"/>
-    
-    <category term="data mining" scheme="https://merlynr.github.io/tags/data-mining/"/>
     
   </entry>
   
