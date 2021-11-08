@@ -22,9 +22,9 @@
             
             <tag> daily </tag>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -51,9 +51,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> weekly </tag>
             
@@ -82,9 +82,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -113,9 +113,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> weekly </tag>
             
@@ -144,9 +144,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> weekly </tag>
             
@@ -177,9 +177,9 @@
             
             <tag> daily </tag>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -206,9 +206,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> weekly </tag>
             
@@ -237,9 +237,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -268,9 +268,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> weekly </tag>
             
@@ -299,9 +299,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> weekly </tag>
             
@@ -330,9 +330,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> paper </tag>
             
@@ -390,9 +390,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -421,9 +421,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> paper </tag>
             
@@ -452,9 +452,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -483,9 +483,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -514,9 +514,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> paper </tag>
             
@@ -545,9 +545,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -589,9 +589,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -622,9 +622,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> summarize </tag>
             
@@ -724,9 +724,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> paper </tag>
             
@@ -759,9 +759,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> paper </tag>
             
@@ -794,9 +794,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> RPA </tag>
             
@@ -829,9 +829,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -860,9 +860,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> paper </tag>
             
@@ -914,37 +914,6 @@
     
     
     <entry>
-      <title>2021-6-24[daily]</title>
-      <link href="2021/06/21/2021-6-24%5Bdaily%5D/"/>
-      <url>2021/06/21/2021-6-24%5Bdaily%5D/</url>
-      
-        <content type="html"><![CDATA[<h2 id="NEED-TODO"><a href="#NEED-TODO" class="headerlink" title="NEED TODO"></a>NEED TODO</h2><ul><li><input disabled="" type="checkbox"> 阅读论文基于机器学习的业务流程系统的预测，总结其中技术点</li><li><input disabled="" type="checkbox"> 学习三个吴恩达机器学习视频</li><li><input disabled="" type="checkbox"> 学习一个中等，一个简单算法</li><li><input disabled="" type="checkbox"> 学习Java相关进阶</li></ul><h2 id="Plan"><a href="#Plan" class="headerlink" title="Plan"></a>Plan</h2><ul><li><input checked="" disabled="" type="checkbox"> <ol><li>10.20-11.20，阅读论文</li></ol></li><li><input disabled="" type="checkbox"> <ol start="2"><li>13.40-15.30，阅读论文</li></ol></li><li><input disabled="" type="checkbox"> <ol start="3"><li>15.40-16.20，看机器学习视频</li></ol></li><li><input disabled="" type="checkbox"> <ol start="4"><li>16.30-17.20，学习算法</li></ol></li><li><input disabled="" type="checkbox"> <ol start="5"><li>18.10-21.10，看论文</li></ol></li><li><input disabled="" type="checkbox"> <ol start="6"><li>21.20-22.40，看Java进阶</li></ol></li></ul><h2 id="Completion-Status"><a href="#Completion-Status" class="headerlink" title="Completion Status"></a>Completion Status</h2><h2 id="TODO-Tomorrow"><a href="#TODO-Tomorrow" class="headerlink" title="TODO Tomorrow"></a>TODO Tomorrow</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> plan </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> daily </tag>
-            
-            <tag> graduate student </tag>
-            
-            <tag> study </tag>
-            
-            <tag> plan </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>2021-6-22[daily]</title>
       <link href="2021/06/21/2021-6-22%5Bdaily%5D/"/>
       <url>2021/06/21/2021-6-22%5Bdaily%5D/</url>
@@ -963,9 +932,40 @@
             
             <tag> daily </tag>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
+            <tag> plan </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2021-6-24[daily]</title>
+      <link href="2021/06/21/2021-6-24%5Bdaily%5D/"/>
+      <url>2021/06/21/2021-6-24%5Bdaily%5D/</url>
+      
+        <content type="html"><![CDATA[<h2 id="NEED-TODO"><a href="#NEED-TODO" class="headerlink" title="NEED TODO"></a>NEED TODO</h2><ul><li><input disabled="" type="checkbox"> 阅读论文基于机器学习的业务流程系统的预测，总结其中技术点</li><li><input disabled="" type="checkbox"> 学习三个吴恩达机器学习视频</li><li><input disabled="" type="checkbox"> 学习一个中等，一个简单算法</li><li><input disabled="" type="checkbox"> 学习Java相关进阶</li></ul><h2 id="Plan"><a href="#Plan" class="headerlink" title="Plan"></a>Plan</h2><ul><li><input checked="" disabled="" type="checkbox"> <ol><li>10.20-11.20，阅读论文</li></ol></li><li><input disabled="" type="checkbox"> <ol start="2"><li>13.40-15.30，阅读论文</li></ol></li><li><input disabled="" type="checkbox"> <ol start="3"><li>15.40-16.20，看机器学习视频</li></ol></li><li><input disabled="" type="checkbox"> <ol start="4"><li>16.30-17.20，学习算法</li></ol></li><li><input disabled="" type="checkbox"> <ol start="5"><li>18.10-21.10，看论文</li></ol></li><li><input disabled="" type="checkbox"> <ol start="6"><li>21.20-22.40，看Java进阶</li></ol></li></ul><h2 id="Completion-Status"><a href="#Completion-Status" class="headerlink" title="Completion Status"></a>Completion Status</h2><h2 id="TODO-Tomorrow"><a href="#TODO-Tomorrow" class="headerlink" title="TODO Tomorrow"></a>TODO Tomorrow</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> plan </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> daily </tag>
+            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -1021,9 +1021,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -1054,9 +1054,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -1114,9 +1114,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -1182,9 +1182,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -1211,9 +1211,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> RPA </tag>
             
@@ -1277,11 +1277,11 @@
       
         <tags>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> report </tag>
-            
-            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1339,9 +1339,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> machine learning </tag>
             
@@ -1356,7 +1356,7 @@
       <link href="2021/05/06/Nicholas%20Burns/"/>
       <url>2021/05/06/Nicholas%20Burns/</url>
       
-        <content type="html"><![CDATA[<p><strong>身份：</strong><br>•    罗伊和芭芭拉·古德曼（Roy and Barbara Goodman）哈佛大学肯尼迪学校外交与国际关系实践家庭教授<br>•    Belfer Center董事会成员<br>•    外交项目的未来教席<br>•    欧洲与跨大西洋关系项目教席<br>•    中东倡议联盟会员<br>•    美国国务秘书项目主任</p><p><strong>个人履历见附件</strong></p><p><img src="./attachments/RNB_Bio_Full_1.pdf" alt="RNB_Bio_Full_1"></p><p><strong>联系方式：</strong></p><ul><li>twitter： @rnicholasburns</li><li>phone： 617-495-2495</li><li>邮箱：<a href="mailto:&#110;&#x69;&#x63;&#104;&#x6f;&#x6c;&#97;&#x73;&#x5f;&#98;&#x75;&#x72;&#110;&#115;&#x40;&#104;&#x6b;&#x73;&#46;&#x68;&#97;&#114;&#x76;&#97;&#x72;&#100;&#46;&#x65;&#x64;&#117;">&#110;&#x69;&#x63;&#104;&#x6f;&#x6c;&#97;&#x73;&#x5f;&#98;&#x75;&#x72;&#110;&#115;&#x40;&#104;&#x6b;&#x73;&#46;&#x68;&#97;&#114;&#x76;&#97;&#x72;&#100;&#46;&#x65;&#x64;&#117;</a></li></ul><p><strong>助理信息：</strong></p><ul><li>艾莉森·希格斯（Alison Hillegeist）</li><li>电邮：<a href="mailto:&#x61;&#108;&#105;&#115;&#111;&#110;&#95;&#104;&#105;&#108;&#x6c;&#x65;&#x67;&#x65;&#x69;&#115;&#116;&#64;&#x68;&#107;&#115;&#46;&#x68;&#97;&#114;&#x76;&#97;&#114;&#x64;&#46;&#101;&#x64;&#x75;">&#x61;&#108;&#105;&#115;&#111;&#110;&#95;&#104;&#105;&#108;&#x6c;&#x65;&#x67;&#x65;&#x69;&#115;&#116;&#64;&#x68;&#107;&#115;&#46;&#x68;&#97;&#114;&#x76;&#97;&#114;&#x64;&#46;&#101;&#x64;&#x75;</a></li><li>电话：617-495-2495</li><li>Mailing Address: John F. Kennedy School of Government、79 JFK St.、Cambridge, Massachusetts</li></ul><p><strong>家庭：</strong><br>妻子伊丽莎白·贝利（Elizabeth A. Baylies）育有三个女儿：莎拉（Sarah），伊丽莎白（Elizabeth）和卡罗琳（Caroline）</p><p><a href="https://www.youtube.com/watch?v=BloYsnYLxhM&t=42s">信息来源-1</a></p><ul><li>Nicholas Burns与妻子贝利在巴黎美国大学（American University of Paris）在1982年相识并相爱 </li><li>莎拉（Sarah）: 2017.05 毕业于巴黎美国大学（AUP）</li></ul><p><strong>官方个人网站：</strong> <a href="https://www.belfercenter.org/person/nicholas-burns">https://www.belfercenter.org/person/nicholas-burns</a></p><blockquote><p>亲属</p></blockquote><p>侄子：  Ben Hutchins【 command of Marine Air Group 13 in Yuma,2019.08】（侄子本·哈钦斯上校（Ben Hutchins上校）为亚利桑那州尤马市的第13航空集团负责，现在指挥F-35和“ rier”式战斗机）</p><p>堂兄： 鲍勃·肯尼迪【Bob Kennedy  led the historic Mechanics Hall in Worcester for 12 years,2006-2018】<br><img src="https://gitee.com/merlynr/img-store/raw/master/202156/Dn-k1W_XoAEdMqu.jfif" alt="Dn-k1W_XoAEdMqu"></p><blockquote><p>哈佛</p></blockquote><p>助教： Philip Balson【哈佛大学，2019毕业】<br>菲利普·巴尔森</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/202156/D1vTtnUWsAYtUFT.jfif" alt="菲利普·巴尔森"></p><p>Vince Lowney【研究助理文斯·洛尼2018.05毕业于哈佛，并于<strong>7月就任美国外交部</strong>】</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/202156/Dd_uNA6W4AAsCyp.jfif" alt="Dd_uNA6W4AAsCyp"></p><p>Aditi Kumar 和 Chris Mirasola 2018.05毕业于哈佛</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/202156/Dd-jdveXkAAu3TU.jfif" alt="Dd-jdveXkAAu3TU"></p><p>泰莎·亨利（Tessa Henry）和但丁·托波（Dante Toppo）2017.05毕业于哈佛</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/202156/DAsbrBBXUAQoJcb.jfif" alt="DAsbrBBXUAQoJcb"></p><blockquote><p>组织@RedSox  –棒球俱乐部，没找到与之有关的报道</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<p><strong>身份：</strong><br>•    罗伊和芭芭拉·古德曼（Roy and Barbara Goodman）哈佛大学肯尼迪学校外交与国际关系实践家庭教授<br>•    Belfer Center董事会成员<br>•    外交项目的未来教席<br>•    欧洲与跨大西洋关系项目教席<br>•    中东倡议联盟会员<br>•    美国国务秘书项目主任</p><p><strong>个人履历见附件</strong></p><p><img src="./attachments/RNB_Bio_Full_1.pdf" alt="RNB_Bio_Full_1"></p><p><strong>联系方式：</strong></p><ul><li>twitter： @rnicholasburns</li><li>phone： 617-495-2495</li><li>邮箱：<a href="mailto:&#x6e;&#x69;&#99;&#104;&#x6f;&#x6c;&#97;&#115;&#95;&#x62;&#x75;&#114;&#x6e;&#x73;&#x40;&#x68;&#x6b;&#115;&#x2e;&#x68;&#97;&#114;&#118;&#x61;&#x72;&#x64;&#x2e;&#x65;&#100;&#x75;">&#x6e;&#x69;&#99;&#104;&#x6f;&#x6c;&#97;&#115;&#95;&#x62;&#x75;&#114;&#x6e;&#x73;&#x40;&#x68;&#x6b;&#115;&#x2e;&#x68;&#97;&#114;&#118;&#x61;&#x72;&#x64;&#x2e;&#x65;&#100;&#x75;</a></li></ul><p><strong>助理信息：</strong></p><ul><li>艾莉森·希格斯（Alison Hillegeist）</li><li>电邮：<a href="mailto:&#97;&#x6c;&#x69;&#115;&#x6f;&#110;&#x5f;&#104;&#105;&#x6c;&#x6c;&#101;&#x67;&#101;&#x69;&#x73;&#x74;&#64;&#x68;&#107;&#115;&#x2e;&#104;&#x61;&#x72;&#x76;&#97;&#x72;&#100;&#x2e;&#x65;&#100;&#117;">&#97;&#x6c;&#x69;&#115;&#x6f;&#110;&#x5f;&#104;&#105;&#x6c;&#x6c;&#101;&#x67;&#101;&#x69;&#x73;&#x74;&#64;&#x68;&#107;&#115;&#x2e;&#104;&#x61;&#x72;&#x76;&#97;&#x72;&#100;&#x2e;&#x65;&#100;&#117;</a></li><li>电话：617-495-2495</li><li>Mailing Address: John F. Kennedy School of Government、79 JFK St.、Cambridge, Massachusetts</li></ul><p><strong>家庭：</strong><br>妻子伊丽莎白·贝利（Elizabeth A. Baylies）育有三个女儿：莎拉（Sarah），伊丽莎白（Elizabeth）和卡罗琳（Caroline）</p><p><a href="https://www.youtube.com/watch?v=BloYsnYLxhM&t=42s">信息来源-1</a></p><ul><li>Nicholas Burns与妻子贝利在巴黎美国大学（American University of Paris）在1982年相识并相爱 </li><li>莎拉（Sarah）: 2017.05 毕业于巴黎美国大学（AUP）</li></ul><p><strong>官方个人网站：</strong> <a href="https://www.belfercenter.org/person/nicholas-burns">https://www.belfercenter.org/person/nicholas-burns</a></p><blockquote><p>亲属</p></blockquote><p>侄子：  Ben Hutchins【 command of Marine Air Group 13 in Yuma,2019.08】（侄子本·哈钦斯上校（Ben Hutchins上校）为亚利桑那州尤马市的第13航空集团负责，现在指挥F-35和“ rier”式战斗机）</p><p>堂兄： 鲍勃·肯尼迪【Bob Kennedy  led the historic Mechanics Hall in Worcester for 12 years,2006-2018】<br><img src="https://gitee.com/merlynr/img-store/raw/master/202156/Dn-k1W_XoAEdMqu.jfif" alt="Dn-k1W_XoAEdMqu"></p><blockquote><p>哈佛</p></blockquote><p>助教： Philip Balson【哈佛大学，2019毕业】<br>菲利普·巴尔森</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/202156/D1vTtnUWsAYtUFT.jfif" alt="菲利普·巴尔森"></p><p>Vince Lowney【研究助理文斯·洛尼2018.05毕业于哈佛，并于<strong>7月就任美国外交部</strong>】</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/202156/Dd_uNA6W4AAsCyp.jfif" alt="Dd_uNA6W4AAsCyp"></p><p>Aditi Kumar 和 Chris Mirasola 2018.05毕业于哈佛</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/202156/Dd-jdveXkAAu3TU.jfif" alt="Dd-jdveXkAAu3TU"></p><p>泰莎·亨利（Tessa Henry）和但丁·托波（Dante Toppo）2017.05毕业于哈佛</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/202156/DAsbrBBXUAQoJcb.jfif" alt="DAsbrBBXUAQoJcb"></p><blockquote><p>组织@RedSox  –棒球俱乐部，没找到与之有关的报道</p></blockquote>]]></content>
       
       
       <categories>
@@ -1395,9 +1395,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> RPA </tag>
             
@@ -1426,11 +1426,11 @@
       
         <tags>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> report </tag>
-            
-            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1461,9 +1461,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> RPA </tag>
             
@@ -1490,11 +1490,11 @@
       
         <tags>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> report </tag>
-            
-            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1521,11 +1521,11 @@
       
         <tags>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> report </tag>
-            
-            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1554,9 +1554,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> RPA </tag>
             
@@ -1583,11 +1583,11 @@
       
         <tags>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> report </tag>
-            
-            <tag> study </tag>
             
         </tags>
       
@@ -1612,9 +1612,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -1645,9 +1645,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -1676,9 +1676,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -1827,11 +1827,11 @@
             
             <tag> daily </tag>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> report </tag>
-            
-            <tag> study </tag>
             
             <tag> summarize </tag>
             
@@ -1887,11 +1887,11 @@
             
             <tag> daily </tag>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> report </tag>
-            
-            <tag> study </tag>
             
         </tags>
       
@@ -1972,11 +1972,11 @@
             
             <tag> daily </tag>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> report </tag>
-            
-            <tag> study </tag>
             
             <tag> Java </tag>
             
@@ -2007,13 +2007,13 @@
             
             <tag> daily </tag>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> report </tag>
             
             <tag> security </tag>
-            
-            <tag> study </tag>
             
             <tag> Java </tag>
             
