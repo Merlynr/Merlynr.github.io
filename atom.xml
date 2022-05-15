@@ -6,7 +6,7 @@
   <link href="https://merlynr.github.io/atom.xml" rel="self"/>
   
   <link href="https://merlynr.github.io/"/>
-  <updated>2022-04-25T06:55:35.138Z</updated>
+  <updated>2022-05-09T16:00:00.000Z</updated>
   <id>https://merlynr.github.io/</id>
   
   <author>
@@ -17,31 +17,56 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2021-12-29未命名文件</title>
-    <link href="https://merlynr.github.io/2021/12/29/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/"/>
-    <id>https://merlynr.github.io/2021/12/29/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/</id>
-    <published>2021-12-29T13:50:06.478Z</published>
-    <updated>2022-04-25T06:55:35.138Z</updated>
+    <title>2022-5-10 Day_Two</title>
+    <link href="https://merlynr.github.io/2022/05/10/2022-5-10%20Day_Two/"/>
+    <id>https://merlynr.github.io/2022/05/10/2022-5-10%20Day_Two/</id>
+    <published>2022-05-09T16:00:00.000Z</published>
+    <updated>2022-05-09T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<p>学习计划</p><ol><li>高软视频</li><li><a href="https://github.com/phodal/growth-ebook">https://github.com/phodal/growth-ebook</a></li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:30~10:00 今日学习学习            <strong><font color="#D2691E">查看调试参数，构思探索方式</font></strong></li><li><input disabled="" type="checkbox"> 10:00~10:20 上午学习总结</li><li><input disabled="" type="checkbox"> 10:20~10:50 breaking news【一三五】</li><li><input disabled="" type="checkbox"> 10:20~10:50 coding【二四六】</li><li><input disabled="" type="checkbox"> 10:50~11:20 coding【一三五】</li><li><input disabled="" type="checkbox"> 10:50~11:20 刘畅【二四六】</li></ul><hr><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">JavaScript阅读30%</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">JavaScript10%</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">HTML30%</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~19:30 无字幕版美剧</li><li><input disabled="" type="checkbox"> 19:00~21:30 晚上学习安排            <strong><font color="#8B008B">小论文</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">小论文</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><h2 id="实验"><a href="#实验" class="headerlink" title="实验"></a>实验</h2><ul><li>对超参数进行了修改，学习别人的方式重新对奖罚值进行了设置</li></ul><h4 id="评价"><a href="#评价" class="headerlink" title="评价"></a>评价</h4><h2 id="★★★★C0：准确、清晰地描述全新的一天，第一个行动目的。"><a href="#★★★★C0：准确、清晰地描述全新的一天，第一个行动目的。" class="headerlink" title="★★★★C0：准确、清晰地描述全新的一天，第一个行动目的。    "></a>★★★★C0：准确、清晰地描述全新的一天，第一个行动目的。    </h2><p>行动目的：查看调试参数，构思探索方式<br>开始时间：2022/5/10 9:37:29<br>任务耗时：0时,26分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<br>                 <font color="#9932CC">修改了奖罚值，已经重新修改lr</font></p><p>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<br>                 <font color="#9932CC">无，时间短</font></p><p>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<br>                 <font color="#9932CC">修改参数，写小论文，做英语练习</font><br>任务评价：2022/5/10 10:02:05■■■■■■■■■■99</p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;学习计划&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;高软视频&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/phodal/growth-ebook&quot;&gt;https://github.com/phodal/growth-ebook&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</summary>
-      
+    <summary type="html">每天/周学习计划</summary>
     
     
     
-    <category term="/小书匠/日记/2021-12" scheme="https://merlynr.github.io/categories/%E5%B0%8F%E4%B9%A6%E5%8C%A0-%E6%97%A5%E8%AE%B0-2021-12/"/>
+    <category term="daily" scheme="https://merlynr.github.io/categories/daily/"/>
     
     
-    <category term="新建,模板,小书匠" scheme="https://merlynr.github.io/tags/%E6%96%B0%E5%BB%BA-%E6%A8%A1%E6%9D%BF-%E5%B0%8F%E4%B9%A6%E5%8C%A0/"/>
+    <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022-5-9 Day-One</title>
+    <link href="https://merlynr.github.io/2022/05/09/2022-5-9%20Day-One/"/>
+    <id>https://merlynr.github.io/2022/05/09/2022-5-9%20Day-One/</id>
+    <published>2022-05-08T16:00:00.000Z</published>
+    <updated>2022-05-08T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input checked="" disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">算法复习</font></strong></li><li><input checked="" disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input checked="" disabled="" type="checkbox"> 18:30~20:00 无字幕版美剧</li><li><input checked="" disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">前端基础</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">小论文的书写</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><h2 id="算法基础涉及"><a href="#算法基础涉及" class="headerlink" title="算法基础涉及"></a>算法基础涉及</h2><ol><li>前端的Hooks</li><li><a href="https://hyp.is/_V-ciM9vEeya5He_JLc9HQ/zhuanlan.zhihu.com/p/330300133">对头堵塞</a>   </li><li><a href="https://hyp.is/S35o_M93EeyS9vtQSSIAJQ/zhuanlan.zhihu.com/p/107947462">DSL</a> </li></ol><h1 id="JavaScript高级程序设计（4）"><a href="#JavaScript高级程序设计（4）" class="headerlink" title="JavaScript高级程序设计（4）"></a>JavaScript高级程序设计（4）</h1><ol><li>主要时间用于收集材料了，所以看的不多，只看了js的由三部分组成。</li></ol>]]></content>
+    
+    
+    <summary type="html">每天/周学习计划</summary>
+    
+    
+    
+    <category term="daily" scheme="https://merlynr.github.io/categories/daily/"/>
+    
+    
+    <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
   </entry>
   
@@ -52,7 +77,7 @@
     <published>2021-12-06T16:00:00.000Z</published>
     <updated>2021-12-06T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="任务一-刘美贤账号等信息"><a href="#任务一-刘美贤账号等信息" class="headerlink" title="任务一 刘美贤账号等信息"></a>任务一 刘美贤账号等信息</h1><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1638877621135.png" alt="刘美贤"></p><p>刘美贤 Facebook <a href="https://www.facebook.com/Alysa-Liu-608813242911744/">https://www.facebook.com/Alysa-Liu-608813242911744/</a><br>            Ins <a href="https://www.instagram.com/explore/tags/alysaliu/">https://www.instagram.com/explore/tags/alysaliu/</a><br>            Tumbler <a href="https://www.tumblr.com/tagged/alysa%20liu">https://www.tumblr.com/tagged/alysa%20liu</a></p><p>近况：搬到科罗拉多斯普林斯与Christy Krall、Drew Meekins 和Viktor Pfeifer一起训练</p><h1 id="任务二-刘美贤言论"><a href="#任务二-刘美贤言论" class="headerlink" title="任务二 刘美贤言论"></a>任务二 刘美贤言论</h1><ol><li>facebook只有比赛信息</li><li>ins只有比赛信息</li><li>tumbler 只有比赛信息</li></ol><p><strong>与她相关论坛</strong><br><a href="https://kantie.org/topics/huaren/2384809">https://kantie.org/topics/huaren/2384809</a><br><a href="https://www.westca.com/pda/forums/op=view_topic/t=939274/page=1/lang=schinese.html#0">https://www.westca.com/pda/forums/op=view_topic/t=939274/page=1/lang=schinese.html#0</a></p><h1 id="任务三四-刘俊国信息"><a href="#任务三四-刘俊国信息" class="headerlink" title="任务三四 刘俊国信息"></a>任务三四 刘俊国信息</h1><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1638885259077.png" alt="刘俊国"></p><p>刘俊国 Facebook <a href="https://www.facebook.com/arthur.liu.16503">https://www.facebook.com/arthur.liu.16503</a><br>            twitter @arthurist<br><strong>其中twitter个人简介种包含<font color="#FF00FF">国民党</font>旗帜和同性恋的彩虹旗</strong><br>联系电话：(510) 986-1198<br>详细地址：324 10th St., #223, Oakland, CA 94607<br><strong>二个办公室</strong><br>在屋仑市地址：1904 Franklin St.,Suite #203, Oakland, CA 94612，<br>电话：510-986-1198，<br>传真：510-986-0889，<br>在圣荷西市：79 Devine Street, Suite #201, San Jose, CA 95110，<br>电邮：<a href="mailto:&#x41;&#114;&#x74;&#104;&#117;&#x72;&#108;&#x69;&#117;&#x75;&#115;&#x61;&#64;&#121;&#97;&#x68;&#x6f;&#x6f;&#x2e;&#99;&#x6f;&#x6d;">&#x41;&#114;&#x74;&#104;&#117;&#x72;&#108;&#x69;&#117;&#x75;&#115;&#x61;&#64;&#121;&#97;&#x68;&#x6f;&#x6f;&#x2e;&#99;&#x6f;&#x6d;</a>。<br><strong>与他相关论坛</strong><br><a href="https://kantie.org/topics/huaren/2384809">https://kantie.org/topics/huaren/2384809</a><br><a href="https://news.boxun.com/news/gb/china/2003/06/200306021238.shtml">https://news.boxun.com/news/gb/china/2003/06/200306021238.shtml</a><br><strong>他朋友中的反华势力</strong></p><ol><li>赵昕 <a href="https://www.facebook.com/profile.php?id=100013087354687">https://www.facebook.com/profile.php?id=100013087354687</a>    【他没有近期对此评论】</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1639037947027.png" alt="赵昕"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1639037976243.png" alt="个人信息"></p><ol start="2"><li>Amy Niu <a href="https://www.facebook.com/amy.niu.714">https://www.facebook.com/amy.niu.714</a>    【他没有近期对此评论】</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1639038026849.png" alt="Amy Niu"></p><ol start="3"><li>Xiang Wei Guo    <a href="https://www.facebook.com/xiangwei.guo.7">https://www.facebook.com/xiangwei.guo.7</a>    【他没有近期对此评论】</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1639038064283.png" alt="Xiang Wei Guo"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1639038100364.png" alt="个人信息"></p><ol start="4"><li>云 郑 <a href="https://www.facebook.com/profile.php?id=100013097400724">https://www.facebook.com/profile.php?id=100013097400724</a> 【他没有近期对此评论】</li><li>Steven Gu  <a href="https://www.facebook.com/steven.gu.587">https://www.facebook.com/steven.gu.587</a>   【他没有近期对此评论】</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1639039094402.png" alt="Steven Gu"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1639039121085.png" alt="个人信息"></p><h1 id="任务五"><a href="#任务五" class="headerlink" title="任务五"></a>任务五</h1><ol><li>2021.11.22 <a href="https://twitter.com/graykimbrough/status/1462792458841079808?s=19">对于一个州的改革用“小香港”进行评论</a></li><li>2021.11.12 <a href="https://twitter.com/KyungLahCNN/status/1458869423348109312?s=19">对于美国的亚洲商品供应链进行点评</a></li><li>2019.1.27 <a href="https://twitter.com/wurenhua/status/1089381185120157701?s=19">他的朋友给他发送关于女儿夺冠的祝贺，其中谈及到了关于中国的政治问题</a></li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="任务一-刘美贤账号等信息"><a href="#任务一-刘美贤账号等信息" class="headerlink" title="任务一 刘美贤账号等信息"></a>任务一 刘美贤账号等信息</h1><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1638877621135.png" alt="刘美贤"></p><p>刘美贤 Facebook <a href="https://www.facebook.com/Alysa-Liu-608813242911744/">https://www.facebook.com/Alysa-Liu-608813242911744/</a><br>            Ins <a href="https://www.instagram.com/explore/tags/alysaliu/">https://www.instagram.com/explore/tags/alysaliu/</a><br>            Tumbler <a href="https://www.tumblr.com/tagged/alysa%20liu">https://www.tumblr.com/tagged/alysa%20liu</a></p><p>近况：搬到科罗拉多斯普林斯与Christy Krall、Drew Meekins 和Viktor Pfeifer一起训练</p><h1 id="任务二-刘美贤言论"><a href="#任务二-刘美贤言论" class="headerlink" title="任务二 刘美贤言论"></a>任务二 刘美贤言论</h1><ol><li>facebook只有比赛信息</li><li>ins只有比赛信息</li><li>tumbler 只有比赛信息</li></ol><p><strong>与她相关论坛</strong><br><a href="https://kantie.org/topics/huaren/2384809">https://kantie.org/topics/huaren/2384809</a><br><a href="https://www.westca.com/pda/forums/op=view_topic/t=939274/page=1/lang=schinese.html#0">https://www.westca.com/pda/forums/op=view_topic/t=939274/page=1/lang=schinese.html#0</a></p><h1 id="任务三四-刘俊国信息"><a href="#任务三四-刘俊国信息" class="headerlink" title="任务三四 刘俊国信息"></a>任务三四 刘俊国信息</h1><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1638885259077.png" alt="刘俊国"></p><p>刘俊国 Facebook <a href="https://www.facebook.com/arthur.liu.16503">https://www.facebook.com/arthur.liu.16503</a><br>            twitter @arthurist<br><strong>其中twitter个人简介种包含<font color="#FF00FF">国民党</font>旗帜和同性恋的彩虹旗</strong><br>联系电话：(510) 986-1198<br>详细地址：324 10th St., #223, Oakland, CA 94607<br><strong>二个办公室</strong><br>在屋仑市地址：1904 Franklin St.,Suite #203, Oakland, CA 94612，<br>电话：510-986-1198，<br>传真：510-986-0889，<br>在圣荷西市：79 Devine Street, Suite #201, San Jose, CA 95110，<br>电邮：<a href="mailto:&#x41;&#114;&#116;&#104;&#117;&#114;&#x6c;&#105;&#117;&#117;&#115;&#x61;&#x40;&#x79;&#97;&#104;&#111;&#x6f;&#46;&#x63;&#x6f;&#x6d;">&#x41;&#114;&#116;&#104;&#117;&#114;&#x6c;&#105;&#117;&#117;&#115;&#x61;&#x40;&#x79;&#97;&#104;&#111;&#x6f;&#46;&#x63;&#x6f;&#x6d;</a>。<br><strong>与他相关论坛</strong><br><a href="https://kantie.org/topics/huaren/2384809">https://kantie.org/topics/huaren/2384809</a><br><a href="https://news.boxun.com/news/gb/china/2003/06/200306021238.shtml">https://news.boxun.com/news/gb/china/2003/06/200306021238.shtml</a><br><strong>他朋友中的反华势力</strong></p><ol><li>赵昕 <a href="https://www.facebook.com/profile.php?id=100013087354687">https://www.facebook.com/profile.php?id=100013087354687</a>    【他没有近期对此评论】</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1639037947027.png" alt="赵昕"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1639037976243.png" alt="个人信息"></p><ol start="2"><li>Amy Niu <a href="https://www.facebook.com/amy.niu.714">https://www.facebook.com/amy.niu.714</a>    【他没有近期对此评论】</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1639038026849.png" alt="Amy Niu"></p><ol start="3"><li>Xiang Wei Guo    <a href="https://www.facebook.com/xiangwei.guo.7">https://www.facebook.com/xiangwei.guo.7</a>    【他没有近期对此评论】</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1639038064283.png" alt="Xiang Wei Guo"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1639038100364.png" alt="个人信息"></p><ol start="4"><li>云 郑 <a href="https://www.facebook.com/profile.php?id=100013097400724">https://www.facebook.com/profile.php?id=100013097400724</a> 【他没有近期对此评论】</li><li>Steven Gu  <a href="https://www.facebook.com/steven.gu.587">https://www.facebook.com/steven.gu.587</a>   【他没有近期对此评论】</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1639039094402.png" alt="Steven Gu"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/202112/1639039121085.png" alt="个人信息"></p><h1 id="任务五"><a href="#任务五" class="headerlink" title="任务五"></a>任务五</h1><ol><li>2021.11.22 <a href="https://twitter.com/graykimbrough/status/1462792458841079808?s=19">对于一个州的改革用“小香港”进行评论</a></li><li>2021.11.12 <a href="https://twitter.com/KyungLahCNN/status/1458869423348109312?s=19">对于美国的亚洲商品供应链进行点评</a></li><li>2019.1.27 <a href="https://twitter.com/wurenhua/status/1089381185120157701?s=19">他的朋友给他发送关于女儿夺冠的祝贺，其中谈及到了关于中国的政治问题</a></li></ol>]]></content>
     
     
     <summary type="html">社工</summary>
@@ -65,33 +90,6 @@
     <category term="security" scheme="https://merlynr.github.io/tags/security/"/>
     
     <category term="people" scheme="https://merlynr.github.io/tags/people/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2021-12-5【周总结】</title>
-    <link href="https://merlynr.github.io/2021/12/05/2021-12-5%E3%80%90%E5%91%A8%E6%80%BB%E7%BB%93%E3%80%91/"/>
-    <id>https://merlynr.github.io/2021/12/05/2021-12-5%E3%80%90%E5%91%A8%E6%80%BB%E7%BB%93%E3%80%91/</id>
-    <published>2021-12-04T16:00:00.000Z</published>
-    <updated>2021-12-04T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li><input checked="" disabled="" type="checkbox"> 准备开题答辩</li><li><input checked="" disabled="" type="checkbox"> 总结开题答辩过程</li><li><input checked="" disabled="" type="checkbox"> 用最基本得RNN实现了图像分类，文本分类<h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1></li></ul><ol><li>针对研究背景意义等听取老师的建议后进行了重新修改PPT的结构，重新修改为以前的讲解方式，结合RPA的发展重新构建新的新的研究背景和研究意义，以流程自动化为中心进行研究，在研究内容中将深度学习与强化学习的结合融汇到一块。</li><li>重新修改开题题目，将业务流程自动化最优制定策略提取出来作为专门的研究点展开研究，研究过程中，发现深度学习模型仅仅是可以学习到已有的、被大部分沿用的流程策略，只能帮助员工进行流程制作，而无法对已有的流程进行优化，所以进行了进一步研究，发现策略优化是强化学习的一个重要研究点。所以加深了对于强化学习的研究，在研究过程中发现，简单的强化学习无法对于样本利用率低，同时针对业务流程这样的生产环境发现，强化学习模型无法存储这么多&lt;状态-动作&gt;,所以又引入深度学习，主要是RNN模型来存储离散的序列，这样就可以有效提升业务流程过程中的优化。其中还有很多需要克服的问题，后期会一一提出，并寻找解决方法。</li><li>主要是为了学习使用tensorflow2的使用。</li></ol>]]></content>
-    
-    
-    <summary type="html">每周学习计划</summary>
-    
-    
-    
-    <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
-    
-    
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
-    <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
-    
-    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
   </entry>
   
@@ -319,33 +317,6 @@
   </entry>
   
   <entry>
-    <title>2021国庆前最后一周</title>
-    <link href="https://merlynr.github.io/2021/09/23/2021%E5%9B%BD%E5%BA%86%E5%89%8D%E6%9C%80%E5%90%8E%E4%B8%80%E5%91%A8/"/>
-    <id>https://merlynr.github.io/2021/09/23/2021%E5%9B%BD%E5%BA%86%E5%89%8D%E6%9C%80%E5%90%8E%E4%B8%80%E5%91%A8/</id>
-    <published>2021-09-22T16:00:00.000Z</published>
-    <updated>2021-09-22T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li><input disabled="" type="checkbox"> <ol><li>完成ppt中背景部分</li></ol></li><li><input disabled="" type="checkbox"> 2.3. 完成ppt中研究现状</li><li><input disabled="" type="checkbox"> <ol start="4"><li>定义长序列</li></ol></li><li><input disabled="" type="checkbox"> <ol start="5"><li>学习计算机编程技术</li></ol></li><li><input disabled="" type="checkbox"> <ol start="6"><li>总结</li></ol></li></ul>]]></content>
-    
-    
-    <summary type="html">周学习计划</summary>
-    
-    
-    
-    <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
-    
-    
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
-    <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
-    
-    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
-    
-  </entry>
-  
-  <entry>
     <title>2021-9-06【周总结】</title>
     <link href="https://merlynr.github.io/2021/09/06/2021-9-06%E3%80%90%E5%91%A8%E6%80%BB%E7%BB%93%E3%80%91/"/>
     <id>https://merlynr.github.io/2021/09/06/2021-9-06%E3%80%90%E5%91%A8%E6%80%BB%E7%BB%93%E3%80%91/</id>
@@ -379,7 +350,7 @@
     <published>2021-08-29T16:00:00.000Z</published>
     <updated>2021-08-29T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:00~10:00 今日学习学习            <strong><font color="#D2691E">todo-1</font></strong></li><li><input disabled="" type="checkbox"> 10:00~10:20 上午学习总结</li><li><input disabled="" type="checkbox"> 10:20~10:50 breaking news【一三五】</li><li><input disabled="" type="checkbox"> 10:20~10:50 coding【二四六】</li><li><input disabled="" type="checkbox"> 10:50~11:20 coding【一三五】</li><li><input disabled="" type="checkbox"> 10:50~11:20 刘畅【二四六】</li></ul><hr><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">todo-2</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">todo-3</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">todo-4</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~20:00 无字幕版美剧</li><li><input disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">todo-5</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">todo-6</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结</li></ul><p>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</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20223/1647505967653.png" alt="![enter description here](https://gitee.com/merlynr/img-store/raw/master/20223/1647505852138.png)"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:00~10:00 今日学习学习            <strong><font color="#D2691E">todo-1</font></strong></li><li><input disabled="" type="checkbox"> 10:00~10:20 上午学习总结</li><li><input disabled="" type="checkbox"> 10:20~10:50 breaking news【一三五】</li><li><input disabled="" type="checkbox"> 10:20~10:50 coding【二四六】</li><li><input disabled="" type="checkbox"> 10:50~11:20 coding【一三五】</li><li><input disabled="" type="checkbox"> 10:50~11:20 刘畅【二四六】</li></ul><hr><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">todo-2</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">todo-3</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">todo-4</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~20:00 无字幕版美剧</li><li><input disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">todo-5</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">todo-6</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结</li></ul><p>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 </p>]]></content>
     
     
     <summary type="html">每学习计划</summary>
@@ -535,6 +506,33 @@
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
     
     <category term="LSTM" scheme="https://merlynr.github.io/tags/LSTM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于LSTM神经网络的业务过程预测监控</title>
+    <link href="https://merlynr.github.io/2021/07/19/%E5%9F%BA%E4%BA%8ELSTM%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%B8%9A%E5%8A%A1%E8%BF%87%E7%A8%8B%E9%A2%84%E6%B5%8B%E7%9B%91%E6%8E%A7/"/>
+    <id>https://merlynr.github.io/2021/07/19/%E5%9F%BA%E4%BA%8ELSTM%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%B8%9A%E5%8A%A1%E8%BF%87%E7%A8%8B%E9%A2%84%E6%B5%8B%E7%9B%91%E6%8E%A7/</id>
+    <published>2021-07-18T16:00:00.000Z</published>
+    <updated>2021-07-27T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.youtube.com/watch?v=VAPwMDAm550&list=RDVAPwMDAm550&start_radio=1" title="我還年輕 我還年輕"><img src="https://res.cloudinary.com/marcomontalbano/image/upload/v1626681958/video_to_markdown/images/youtube--VAPwMDAm550-c05b58ac6eb4c4700831b2b3070cd403.jpg" alt="我還年輕 我還年輕"></a></p><h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>本文研究了长-短期记忆（LSTM）神经网络作为一种预测模型。并证明LSTMs在预测运行案例的下一个事件及其时间戳方面优于现有的技术。</p><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>作者提到他的目的是提出一个可以适用的框架。本文的研究点：</p><ol><li>LSTMs能否被用于广泛的流程预测，以及如何应用？</li><li>如何保障LSTM在不同数据中的准确度始终如一？</li></ol><p>在不同预测内容中，作者适用了4个日志数据集进行验证比较。</p><h1 id="相关技术"><a href="#相关技术" class="headerlink" title="相关技术"></a>相关技术</h1><p>主要讲的是目前对于三种预测的技术，包括了，时间相关预测、事件结果的预测、正在执行事件的预测</p><h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><h2 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h2><ul><li>数据集A</li><li>数据集A中所有序列 $A^{*}$</li><li>一个长度为n的序列 σ =&lt;  $a_{1}$ ,  $a_{2}$ ,  $a_{3}$ , …… ,  $a_{n}$  &gt;,空序列为&lt;&gt;</li><li>$σ_ { 1 } \cdot σ _ { 2 }$ 表示序列 $σ_{1}$ 与 $σ_{2}$ 的串联</li><li> $h d ^ { k } ( o ) = ( a _ { 1 } , a _ { 2 } , \cdots , a _ { k } )$ 为<strong>前缀长度</strong>为k（0&lt;k&lt;n） 的序列 σ的<strong>前缀</strong>。 $t l ^ { k } ( o ) = ( a _ { k + 1 } \cdots , a _ { n } )$ 是它的后缀。</li></ul><p>对于前缀后缀的一个<strong>栗子</strong>：<br>序列： $σ _ { 1 } = ( a , b , c , d , e )$<br>前缀长度为二的前缀： $h d ^ { 2 } ( σ _ { 1 } ) = ( a , b )$<br>后缀为： $t l ^ { 2 } ( σ _ { 1 } ) = ( c , d , e )$</p><ul><li> $\varepsilon$ 【伊普西隆】为所有事件集合，T为时域。</li><li> $\pi _{ \tau }\in \varepsilon  \rightarrow T$ 为事件分配事件戳</li><li> $\pi _{ A }\in \varepsilon  \rightarrow A$ 从事件集A种为一个流程分配活动<h2 id="RNN和LSTM"><a href="#RNN和LSTM" class="headerlink" title="RNN和LSTM"></a>RNN和LSTM</h2></li></ul><p><a href="https://blog.zuishuailcq.xyz/2021/07/19/Long%20Short%20Term%20Memory%20Networks/">Long Short Term Memory Networks | 吾辈之人，自当自强不息！</a></p><h1 id="下一个活动和时间戳预测"><a href="#下一个活动和时间戳预测" class="headerlink" title="下一个活动和时间戳预测"></a>下一个活动和时间戳预测</h1><p>介绍评估多种体系结构预测下一个事件和时间戳。</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021728/1627442124718.png" alt="事件预测算法"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021728/1627442195597.png" alt="事件预测算法"></p><p>输入一个事件的前缀，然后预测下一个事件。</p><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><blockquote><p><strong><font color="#D2691E">知识补充</font></strong><br>one hot编码是将类别变量转换为机器学习算法易于利用的一种形式的过程。<br>假设“花”的特征可能的取值为daffodil（水仙）、lily（百合）、rose（玫瑰）。one hot编码将其转换为三个特征：is_daffodil、is_lily、is_rose，这些特征都是二进制的。<br><a href="https://zhuanlan.zhihu.com/p/37471802">什么是one hot编码？为什么要使用one hot编码？ - 知乎</a></p></blockquote><ol><li>首先为LSTM构建特征向量矩阵，作为输入。</li></ol><p>事件e=σ（i）的时间特征指的是在trace中的上一个时间和当前时间之间的时间。转换函数：<br><img src="https://gitee.com/merlynr/img-store/raw/master/2021720/1626745464036.png" alt="enter description here"></p><p>三种时间特征：fvt1表示事件的当前时间特征【与上一个时间的时间间隔】，同时也添加了包函一天时间的特征fvt2和包含一周的时间特征fvt3.这样当事件在工作日或者工作周结束的时候预测下一个活动的事件中时间间隔则会更长。</p><ul><li>LSTM可以通过fvt1学到不同节点的事件宇时间差的依赖关系。</li><li>fvt2，fvt3的加入，是为处理有些有些事件超出了工作日的特殊情况，因为传统的日志处理中只记录工作日中的。</li></ul><ol start="2"><li>对时间步长k【第k个事件的时间】的输出 $o _ { a } ^ { k }$ 进行one-hot编码。</li></ol><p><font color="#6495ED">异常情况</font></p><ul><li>当在时间k为事件的结尾，既没有新的事件可以预测。 </li></ul><p><font color="#B22222"> <strong>解决</strong></font></p><ul><li>当在时间k结束时,给输出的one-hot编码向量增加额外标记值1 </li></ul><ol start="3"><li><p>设置第二个输出值 $o_{t}^{k}$ 为下一个时间间隔的 $fv_{t1}$ 值。当知道当前时间戳，就可以计算到下一个事件的时间戳。</p></li><li><p>使用Adam算法【梯度下降算法】进行神经网络权重优化</p></li></ol><p><strong><font color="#FF1493">如何优化：</font></strong></p><ul><li>最小化基础事件one-hot编码和被预测的下一个事件的one-hot编码的<font color="#0000FF">交叉熵</font>。</li><li>最小化事件和预测事件之间时间的<font color="#FF1493">平均误差</font>（MAE）</li></ul><h2 id="模型的构建"><a href="#模型的构建" class="headerlink" title="模型的构建"></a>模型的构建</h2><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021727/1627371341818.png" alt="单任务层神经网络结构"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021727/1627371437071.png" alt="共享多任务层神经网络结构"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021727/1627371484245.png" alt="n层共享，m层单任务混合神经网络结构"></p><ol><li>使用相同的数据特征，分别单独训练两个模型，一个是预测下一步事件，另一个是预测下一个时间戳，如图a</li><li>多任务学习可以在同一个神经网络结构学习到多个模型，例如图b，同一个LSTM神经网络结构学习输出两个模型。</li><li>混合模型</li></ol><h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><ul><li>使用的循环神经网络依赖库Keras构建项目</li><li>硬件是NVidia Tesla k80 GPU，每次epoch时间为15-90s。其中预测时间时间戳是以毫秒为单位的。</li></ul><h2 id="实验准备"><a href="#实验准备" class="headerlink" title="实验准备"></a>实验准备</h2><h3 id="评定标准"><a href="#评定标准" class="headerlink" title="评定标准"></a>评定标准</h3><p>本文使用的<font color="#FF8C00">MAE</font>（平均绝对误差）来作为实验结果比较的参考。在实验效果评价这块，作者通过修改 van der Aalst提出的论文中用于预测剩余时间的模型来作为baseline。</p><h3 id="实验准备-1"><a href="#实验准备-1" class="headerlink" title="实验准备"></a>实验准备</h3><p>使用两个数据集进行预测下一个活动和时间戳。其中2/3的数据用于训练模型，1/3的用于预测。</p><p><i class="fas fa-tags" ></i>这里数据中长度为2的序列进行 $2 \leq k \lt | o |$ 预测，长度小于2则不对其预测。</p><p><strong><font color="#00008B">数据集</font></strong></p><ol><li>帮助中心数据集</li></ol><p>来自于意大利软件公司的票务管理系统，主要包括9中事件，一种事务流程。其中流程总共有3804条，事件有13710个。<br>2. BPI12子数据集W</p><p>此事件日志源自Business Process Intelligence Challenge（BPI’12）2，包含来自大型金融机构金融产品应用程序的数据。此流程由三个子流程组成：一个子流程跟踪应用程序的状态，一个子流程跟踪与应用程序关联的工作项的状态，第三个子流程跟踪报价的状态。在预测未来事件及其时间戳的上下文中，我们对自动执行的事件不感兴趣。因此，我们将评估范围缩小到工作项子流程，<font color="#FF8C00">其中包含手动执行的事件</font>。此外，我们过滤日志以<strong>仅保留complete类型的事件</strong>。</p><h2 id="结果分析"><a href="#结果分析" class="headerlink" title="结果分析"></a>结果分析</h2><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021727/1627377231055.png" alt="result，前缀为all表示所有前缀的平均值"><br>N表示神经元。MAE为当前配置不同前缀长度的性能。</p><p>表1显示了help desk和BPI’12w子流程日志上各种LSTM体系结构在MAE预测时间和预测下一事件准确性方面的性能。由于BPI12中的流程长度较长，所以前缀较长。</p><p>TODO 前缀不是很懂<br><font color="#7FFF00">分析：</font></p><ol><li>ALL LSTM体系结构在所有前缀上都优于baseline，同时分别比较LSTM模型和baseline模型，可以发现 <strong><font color="#FF00FF">短前缀的增益要比长前缀要好。</font></strong></li><li>数据集helpdesk的预测准确度最好为71%；BPI’12 W数据集预测的最佳精度为76%，高于Breuker等人报告的71.9%的精度和Evermann等人报告的62.3%的精度。</li><li>预测精度最高的模型都为混合模型，尝试将每层的神经元数量减少到75个，对于只有一个共享层的架构，将其增加到150个，但发现这会导致两个任务的性能下降。可能有75个神经元导致模型欠拟合，而150个神经元导致模型过拟合。我们还在单层架构上对传统RNN进行了实验，发现它们在时间和活动预测方面都比LSTM差得多。</li></ol><h1 id="后缀预测"><a href="#后缀预测" class="headerlink" title="后缀预测"></a>后缀预测</h1><blockquote><p><strong><font color="#ff7500">本章理解</font></strong><br>区别于上一节，上一章是单个时间步长预测下一步，而本章是预测一个运行案例的整个延续。</p></blockquote><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021728/1627454393652.png" alt="事件预测"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021728/1627454420942.png" alt="时间预测"></p><h2 id="方法-1"><a href="#方法-1" class="headerlink" title="方法"></a>方法</h2><p>通过迭代地预测下一个事件和时间戳，然后再次进行预测直至这个案例结束。这里用 $\perp$ 表示案例结尾。</p><p><strong><font color="#006400">迭代预测：</font></strong></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021728/1627455885003.png" alt="事件预测算法"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021728/1627456583245.png" alt="时间预测算法"></p><p><font color="#FF1493">当当前事件为END，则不进行预测；否则将预测的结果输入到预测模块迭代预测。</font></p><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>对于预测准确度的评价这里采用的是通过计算预测结果与实际结果的编辑距离来衡量。</p><blockquote><p>知识补充：<font color="#2e4e7e">Levenshtein distance</font><br><a href="https://www.cnblogs.com/ivanyb/archive/2011/11/25/2263356.html">字符串相似度算法（编辑距离算法 Levenshtein Distance） - ZYB - 博客园</a></p></blockquote><p><strong>问题：</strong><br>  当处理并发任务的时候，Levenshtein distance并不适用于计算。例如&lt;a,b&gt;为预测的下一个事件，但实际上为&lt;b,a&gt;，这种情况只是因为ab并发顺序导致的，<font color="#DC143C">实际上并无相关</font>。但是Levenshtein distance结果为2,因为将预测序列转换为实际序列需要一次删除和一次插入操作。</p><p><strong>解决</strong><br>Damerau-Levenstein距离是一种更好地反映预测质量的评估度量，它为Levenshtein距离使用的操作集添加了交换操作。Damerau-Levenshtein距离将分配1的转换成本⟨a、 b⟩ 进入⟨b、 a⟩. 为了获得可变长度记录道的可比较结果，我们通过实际案例后缀长度和预测后缀长度的最大值对Damerau-Levenshtein距离进行归一化，归一化的Damerau-Levenshtein距离减1以获得Damerau-Levenshtein相似性（DLS）。</p><p><strong>模型</strong><br>采用的是双层架构，每层100个神经元的LSTM。</p><p><strong>数据集</strong><br>这是荷兰某市政当局环境许可程序的日志每宗个案涉及一份许可证申请。<br>该日志包含937个案例和381种事件类型的38944个事件。几乎每一种情况都遵循一个独特的路径，这使得后缀预测更具挑战性。</p><h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021728/1627479266512.png" alt="基于Damerau-Levenshtein相似性的后缀预测结果"><br>Polato为baseline，no duplicates表示去掉案例中的重复事件，但是保留一个【案例结尾即使为重复事件也不去掉】。</p><p>观察可以发现所有数据集中的LSTM预测结果都要好于baseline。在BPI12数据集种很多案例中的事件会重复的出现，这就会导致预测的后缀长于真实案例，因此删除了BPI12中重复的事件并重新进行评估。</p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ol><li>利用LSTM神经网络预测运行案例的下一个活动及其时间戳的技术。表明，这种技术在现实数据集上优于现有的基线。此外，我们发现通过单一模型（多任务学习）预测下一个活动及其时间戳比使用单独的模型进行预测具有更高的准确性。</li><li>提出了一个运行种的案例整个延续的预测和预测剩余的周期时间的解决方案。</li><li>发现了LSTM模型的局限性，**<font color="#9932CC">即在一个案例种某些事件多次重复出现时，导致后缀过长，性能就会很低</font>**。</li></ol>]]></content>
+    
+    
+    <summary type="html">Predictive Business Process Monitoring with LSTM Neural Networks</summary>
+    
+    
+    
+    <category term="paper" scheme="https://merlynr.github.io/categories/paper/"/>
+    
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="paper" scheme="https://merlynr.github.io/tags/paper/"/>
+    
+    <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
     
   </entry>
   
