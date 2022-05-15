@@ -188,33 +188,6 @@
   </entry>
   
   <entry>
-    <title>2021-11-8【周总结】</title>
-    <link href="https://merlynr.github.io/2021/11/08/2021-11-8%E3%80%90%E5%91%A8%E6%80%BB%E7%BB%93%E3%80%91/"/>
-    <id>https://merlynr.github.io/2021/11/08/2021-11-8%E3%80%90%E5%91%A8%E6%80%BB%E7%BB%93%E3%80%91/</id>
-    <published>2021-11-07T16:00:00.000Z</published>
-    <updated>2021-11-07T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li>[ ] 答辩总结</li><li>[ ] 本周学习—-强化学习</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><ol><li>答辩问题与总结</li></ol><ul><li>数据集哪来的</li><li>和老师们理解的智能化不一样，他们理解的是在创建过程中提示最佳策略</li><li>机器人范围不够详细，物流机器人这些都有可能</li><li>如何有效蒙特拉洛算法咋没写上</li><li>题目需要修改</li></ul><p>针对老师所提及的关键问题首先是针对算法层面的讲解确实不够详细，这方面确实也没有准备充分，由于开题准备确实比较粗浅，而且在工程应用方面的设计占比比较多，时间占用也比较大，所以忽视了在算法研究上的投入。同时与其它学硕进行比较都是针对某一点，然后进行算法上的刨析，进行研究，在这发面确实存在不足。其次针对另一个老师提出的覆盖面较大，应该抓住某一点进行研究，开题涉及面过大反而大致研究内容比较杂，同时研究方案存在比较空洞的问题，在开题前就担心自己所涉及到的更多的是应用层面，从而缺少对于深度学习深入讨论，虽然后期补了一个神经网路结构和强化学习算法，但是相较与其它学硕依旧显得很研究很单薄，不具有说服力。所以后期会针对某一方面进行深入研究。</p><ol><li>本周学习任务主要是完成强化学习的理论学习，包括主要的n步引导方法、表格方法规划和学习、在策略预测近似方法、在策略控制近似方法等。基本的强度学习方法无论是在策略强化学习还是离策略强化学习在时间序列的问题上都存在只能非平稳的学习到目标值的问题，所以目前的方法是策略由权重向量参数化，设置VE（均方值误差）作为度量，然后通过一些梯度下降方法来寻找最好的权重向量。另一个是目前还存在疑虑的就是对于长序列的记录效果差，这一块还没看完，所以还在看。</li></ol>]]></content>
-    
-    
-    <summary type="html">每周学习计划</summary>
-    
-    
-    
-    <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
-    
-    
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
-    <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
-    
-    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
-    
-  </entry>
-  
-  <entry>
     <title>2021-11-8【mission】</title>
     <link href="https://merlynr.github.io/2021/11/08/2021-11-8%E3%80%90mission%E3%80%91/"/>
     <id>https://merlynr.github.io/2021/11/08/2021-11-8%E3%80%90mission%E3%80%91/</id>
@@ -236,6 +209,33 @@
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2021-11-8【周总结】</title>
+    <link href="https://merlynr.github.io/2021/11/08/2021-11-8%E3%80%90%E5%91%A8%E6%80%BB%E7%BB%93%E3%80%91/"/>
+    <id>https://merlynr.github.io/2021/11/08/2021-11-8%E3%80%90%E5%91%A8%E6%80%BB%E7%BB%93%E3%80%91/</id>
+    <published>2021-11-07T16:00:00.000Z</published>
+    <updated>2021-11-07T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li>[ ] 答辩总结</li><li>[ ] 本周学习—-强化学习</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><ol><li>答辩问题与总结</li></ol><ul><li>数据集哪来的</li><li>和老师们理解的智能化不一样，他们理解的是在创建过程中提示最佳策略</li><li>机器人范围不够详细，物流机器人这些都有可能</li><li>如何有效蒙特拉洛算法咋没写上</li><li>题目需要修改</li></ul><p>针对老师所提及的关键问题首先是针对算法层面的讲解确实不够详细，这方面确实也没有准备充分，由于开题准备确实比较粗浅，而且在工程应用方面的设计占比比较多，时间占用也比较大，所以忽视了在算法研究上的投入。同时与其它学硕进行比较都是针对某一点，然后进行算法上的刨析，进行研究，在这发面确实存在不足。其次针对另一个老师提出的覆盖面较大，应该抓住某一点进行研究，开题涉及面过大反而大致研究内容比较杂，同时研究方案存在比较空洞的问题，在开题前就担心自己所涉及到的更多的是应用层面，从而缺少对于深度学习深入讨论，虽然后期补了一个神经网路结构和强化学习算法，但是相较与其它学硕依旧显得很研究很单薄，不具有说服力。所以后期会针对某一方面进行深入研究。</p><ol><li>本周学习任务主要是完成强化学习的理论学习，包括主要的n步引导方法、表格方法规划和学习、在策略预测近似方法、在策略控制近似方法等。基本的强度学习方法无论是在策略强化学习还是离策略强化学习在时间序列的问题上都存在只能非平稳的学习到目标值的问题，所以目前的方法是策略由权重向量参数化，设置VE（均方值误差）作为度量，然后通过一些梯度下降方法来寻找最好的权重向量。另一个是目前还存在疑虑的就是对于长序列的记录效果差，这一块还没看完，所以还在看。</li></ol>]]></content>
+    
+    
+    <summary type="html">每周学习计划</summary>
+    
+    
+    
+    <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
+    
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -510,29 +510,32 @@
   </entry>
   
   <entry>
-    <title>基于LSTM神经网络的业务过程预测监控</title>
-    <link href="https://merlynr.github.io/2021/07/19/%E5%9F%BA%E4%BA%8ELSTM%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%B8%9A%E5%8A%A1%E8%BF%87%E7%A8%8B%E9%A2%84%E6%B5%8B%E7%9B%91%E6%8E%A7/"/>
-    <id>https://merlynr.github.io/2021/07/19/%E5%9F%BA%E4%BA%8ELSTM%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%B8%9A%E5%8A%A1%E8%BF%87%E7%A8%8B%E9%A2%84%E6%B5%8B%E7%9B%91%E6%8E%A7/</id>
+    <title>Long Short Term Memory Networks</title>
+    <link href="https://merlynr.github.io/2021/07/19/Long%20Short%20Term%20Memory%20Networks/"/>
+    <id>https://merlynr.github.io/2021/07/19/Long%20Short%20Term%20Memory%20Networks/</id>
     <published>2021-07-18T16:00:00.000Z</published>
-    <updated>2021-07-27T16:00:00.000Z</updated>
+    <updated>2021-07-18T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://www.youtube.com/watch?v=VAPwMDAm550&amp;list=RDVAPwMDAm550&amp;start_radio=1" title="我還年輕 我還年輕"><img src="https://res.cloudinary.com/marcomontalbano/image/upload/v1626681958/video_to_markdown/images/youtube--VAPwMDAm550-c05b58ac6eb4c4700831b2b3070cd403.jpg" alt="我還年輕 我還年輕"></a></p><h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>本文研究了长-短期记忆（LSTM）神经网络作为一种预测模型。并证明LSTMs在预测运行案例的下一个事件及其时间戳方面优于现有的技术。</p><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>作者提到他的目的是提出一个可以适用的框架。本文的研究点：</p><ol><li>LSTMs能否被用于广泛的流程预测，以及如何应用？</li><li>如何保障LSTM在不同数据中的准确度始终如一？</li></ol><p>在不同预测内容中，作者适用了4个日志数据集进行验证比较。</p><h1 id="相关技术"><a href="#相关技术" class="headerlink" title="相关技术"></a>相关技术</h1><p>主要讲的是目前对于三种预测的技术，包括了，时间相关预测、事件结果的预测、正在执行事件的预测</p><h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><h2 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h2><ul><li>数据集A</li><li>数据集A中所有序列 $A^{*}$</li><li>一个长度为n的序列 σ =&lt;  $a<em>{1}$ ,  $a</em>{2}$ ,  $a<em>{3}$ , …… ,  $a</em>{n}$  &gt;,空序列为&lt;&gt;</li><li>$σ<em> { 1 } \cdot σ </em> { 2 }$ 表示序列 $σ<em>{1}$ 与 $σ</em>{2}$ 的串联</li><li>$h d ^ { k } ( o ) = ( a <em> { 1 } , a </em> { 2 } , \cdots , a <em> { k } )$ 为<strong>前缀长度</strong>为k（0&lt;k&lt;n） 的序列 σ的<strong>前缀</strong>。 $t l ^ { k } ( o ) = ( a </em> { k + 1 } \cdots , a _ { n } )$ 是它的后缀。</li></ul><p>对于前缀后缀的一个<strong>栗子</strong>：<br>序列： $σ <em> { 1 } = ( a , b , c , d , e )$<br>前缀长度为二的前缀： $h d ^ { 2 } ( σ </em> { 1 } ) = ( a , b )$<br>后缀为： $t l ^ { 2 } ( σ _ { 1 } ) = ( c , d , e )$</p><ul><li>$\varepsilon$ 【伊普西隆】为所有事件集合，T为时域。</li><li>$\pi _{ \tau }\in \varepsilon  \rightarrow T$ 为事件分配事件戳</li><li>$\pi _{ A }\in \varepsilon  \rightarrow A$ 从事件集A种为一个流程分配活动<h2 id="RNN和LSTM"><a href="#RNN和LSTM" class="headerlink" title="RNN和LSTM"></a>RNN和LSTM</h2></li></ul><p><a href="https://blog.zuishuailcq.xyz/2021/07/19/Long%20Short%20Term%20Memory%20Networks/">Long Short Term Memory Networks | 吾辈之人，自当自强不息！</a></p><h1 id="下一个活动和时间戳预测"><a href="#下一个活动和时间戳预测" class="headerlink" title="下一个活动和时间戳预测"></a>下一个活动和时间戳预测</h1><p>介绍评估多种体系结构预测下一个事件和时间戳。</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021728/1627442124718.png" alt="事件预测算法"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021728/1627442195597.png" alt="事件预测算法"></p><p>输入一个事件的前缀，然后预测下一个事件。</p><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><blockquote><p><strong><font color="#D2691E">知识补充</font></strong><br>one hot编码是将类别变量转换为机器学习算法易于利用的一种形式的过程。<br>假设“花”的特征可能的取值为daffodil（水仙）、lily（百合）、rose（玫瑰）。one hot编码将其转换为三个特征：is_daffodil、is_lily、is_rose，这些特征都是二进制的。<br><a href="https://zhuanlan.zhihu.com/p/37471802">什么是one hot编码？为什么要使用one hot编码？ - 知乎</a></p></blockquote><ol><li>首先为LSTM构建特征向量矩阵，作为输入。</li></ol><p>事件e=σ（i）的时间特征指的是在trace中的上一个时间和当前时间之间的时间。转换函数：<br><img src="https://gitee.com/merlynr/img-store/raw/master/2021720/1626745464036.png" alt="enter description here"></p><p>三种时间特征：fvt1表示事件的当前时间特征【与上一个时间的时间间隔】，同时也添加了包函一天时间的特征fvt2和包含一周的时间特征fvt3.这样当事件在工作日或者工作周结束的时候预测下一个活动的事件中时间间隔则会更长。</p><ul><li>LSTM可以通过fvt1学到不同节点的事件宇时间差的依赖关系。</li><li>fvt2，fvt3的加入，是为处理有些有些事件超出了工作日的特殊情况，因为传统的日志处理中只记录工作日中的。</li></ul><ol><li>对时间步长k【第k个事件的时间】的输出 $o _ { a } ^ { k }$ 进行one-hot编码。</li></ol><font color="#6495ED">异常情况</font><ul><li>当在时间k为事件的结尾，既没有新的事件可以预测。 </li></ul><font color="#B22222"> **解决**</font><ul><li>当在时间k结束时,给输出的one-hot编码向量增加额外标记值1 </li></ul><ol><li><p>设置第二个输出值 $o<em>{t}^{k}$ 为下一个时间间隔的 $fv</em>{t1}$ 值。当知道当前时间戳，就可以计算到下一个事件的时间戳。</p></li><li><p>使用Adam算法【梯度下降算法】进行神经网络权重优化</p></li></ol><p><strong><font color="#FF1493">如何优化：</font></strong></p><ul><li>最小化基础事件one-hot编码和被预测的下一个事件的one-hot编码的<font color="#0000FF">交叉熵</font>。</li><li>最小化事件和预测事件之间时间的<font color="#FF1493">平均误差</font>（MAE）</li></ul><h2 id="模型的构建"><a href="#模型的构建" class="headerlink" title="模型的构建"></a>模型的构建</h2><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021727/1627371341818.png" alt="单任务层神经网络结构"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021727/1627371437071.png" alt="共享多任务层神经网络结构"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021727/1627371484245.png" alt="n层共享，m层单任务混合神经网络结构"></p><ol><li>使用相同的数据特征，分别单独训练两个模型，一个是预测下一步事件，另一个是预测下一个时间戳，如图a</li><li>多任务学习可以在同一个神经网络结构学习到多个模型，例如图b，同一个LSTM神经网络结构学习输出两个模型。</li><li>混合模型</li></ol><h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><ul><li>使用的循环神经网络依赖库Keras构建项目</li><li>硬件是NVidia Tesla k80 GPU，每次epoch时间为15-90s。其中预测时间时间戳是以毫秒为单位的。</li></ul><h2 id="实验准备"><a href="#实验准备" class="headerlink" title="实验准备"></a>实验准备</h2><h3 id="评定标准"><a href="#评定标准" class="headerlink" title="评定标准"></a>评定标准</h3><p>本文使用的<font color="#FF8C00">MAE</font>（平均绝对误差）来作为实验结果比较的参考。在实验效果评价这块，作者通过修改 van der Aalst提出的论文中用于预测剩余时间的模型来作为baseline。</p><h3 id="实验准备-1"><a href="#实验准备-1" class="headerlink" title="实验准备"></a>实验准备</h3><p>使用两个数据集进行预测下一个活动和时间戳。其中2/3的数据用于训练模型，1/3的用于预测。</p><p><i class="fas fa-tags" ></i>这里数据中长度为2的序列进行 $2 \leq k \lt | o |$ 预测，长度小于2则不对其预测。</p><p><strong><font color="#00008B">数据集</font></strong></p><ol><li>帮助中心数据集</li></ol><p>来自于意大利软件公司的票务管理系统，主要包括9中事件，一种事务流程。其中流程总共有3804条，事件有13710个。</p><ol><li>BPI12子数据集W</li></ol><p>此事件日志源自Business Process Intelligence Challenge（BPI’12）2，包含来自大型金融机构金融产品应用程序的数据。此流程由三个子流程组成：一个子流程跟踪应用程序的状态，一个子流程跟踪与应用程序关联的工作项的状态，第三个子流程跟踪报价的状态。在预测未来事件及其时间戳的上下文中，我们对自动执行的事件不感兴趣。因此，我们将评估范围缩小到工作项子流程，<font color="#FF8C00">其中包含手动执行的事件</font>。此外，我们过滤日志以<strong>仅保留complete类型的事件</strong>。</p><h2 id="结果分析"><a href="#结果分析" class="headerlink" title="结果分析"></a>结果分析</h2><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021727/1627377231055.png" alt="result，前缀为all表示所有前缀的平均值"><br>N表示神经元。MAE为当前配置不同前缀长度的性能。</p><p>表1显示了help desk和BPI’12w子流程日志上各种LSTM体系结构在MAE预测时间和预测下一事件准确性方面的性能。由于BPI12中的流程长度较长，所以前缀较长。</p><p>TODO 前缀不是很懂</p><font color="#7FFF00">分析：</font><ol><li>ALL LSTM体系结构在所有前缀上都优于baseline，同时分别比较LSTM模型和baseline模型，可以发现 <strong><font color="#FF00FF">短前缀的增益要比长前缀要好。</font></strong></li><li>数据集helpdesk的预测准确度最好为71%；BPI’12 W数据集预测的最佳精度为76%，高于Breuker等人报告的71.9%的精度和Evermann等人报告的62.3%的精度。</li><li>预测精度最高的模型都为混合模型，尝试将每层的神经元数量减少到75个，对于只有一个共享层的架构，将其增加到150个，但发现这会导致两个任务的性能下降。可能有75个神经元导致模型欠拟合，而150个神经元导致模型过拟合。我们还在单层架构上对传统RNN进行了实验，发现它们在时间和活动预测方面都比LSTM差得多。</li></ol><h1 id="后缀预测"><a href="#后缀预测" class="headerlink" title="后缀预测"></a>后缀预测</h1><blockquote><p><strong><font color="#ff7500">本章理解</font></strong><br>区别于上一节，上一章是单个时间步长预测下一步，而本章是预测一个运行案例的整个延续。</p></blockquote><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021728/1627454393652.png" alt="事件预测"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021728/1627454420942.png" alt="时间预测"></p><h2 id="方法-1"><a href="#方法-1" class="headerlink" title="方法"></a>方法</h2><p>通过迭代地预测下一个事件和时间戳，然后再次进行预测直至这个案例结束。这里用 $\perp$ 表示案例结尾。</p><p><strong><font color="#006400">迭代预测：</font></strong></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021728/1627455885003.png" alt="事件预测算法"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021728/1627456583245.png" alt="时间预测算法"></p><font color="#FF1493">当当前事件为END，则不进行预测；否则将预测的结果输入到预测模块迭代预测。</font><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>对于预测准确度的评价这里采用的是通过计算预测结果与实际结果的编辑距离来衡量。</p><blockquote><p>知识补充：<font color="#2e4e7e">Levenshtein distance</font><br><a href="https://www.cnblogs.com/ivanyb/archive/2011/11/25/2263356.html">字符串相似度算法（编辑距离算法 Levenshtein Distance） - ZYB - 博客园</a></p></blockquote><p><strong>问题：</strong><br>  当处理并发任务的时候，Levenshtein distance并不适用于计算。例如<a,b>为预测的下一个事件，但实际上为<b,a>，这种情况只是因为ab并发顺序导致的，<font color="#DC143C">实际上并无相关</font>。但是Levenshtein distance结果为2,因为将预测序列转换为实际序列需要一次删除和一次插入操作。</p><p><strong>解决</strong><br>Damerau-Levenstein距离是一种更好地反映预测质量的评估度量，它为Levenshtein距离使用的操作集添加了交换操作。Damerau-Levenshtein距离将分配1的转换成本⟨a、 b⟩ 进入⟨b、 a⟩. 为了获得可变长度记录道的可比较结果，我们通过实际案例后缀长度和预测后缀长度的最大值对Damerau-Levenshtein距离进行归一化，归一化的Damerau-Levenshtein距离减1以获得Damerau-Levenshtein相似性（DLS）。</p><p><strong>模型</strong><br>采用的是双层架构，每层100个神经元的LSTM。</p><p><strong>数据集</strong><br>这是荷兰某市政当局环境许可程序的日志每宗个案涉及一份许可证申请。<br>该日志包含937个案例和381种事件类型的38944个事件。几乎每一种情况都遵循一个独特的路径，这使得后缀预测更具挑战性。</p><h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021728/1627479266512.png" alt="基于Damerau-Levenshtein相似性的后缀预测结果"><br>Polato为baseline，no duplicates表示去掉案例中的重复事件，但是保留一个【案例结尾即使为重复事件也不去掉】。</p><p>观察可以发现所有数据集中的LSTM预测结果都要好于baseline。在BPI12数据集种很多案例中的事件会重复的出现，这就会导致预测的后缀长于真实案例，因此删除了BPI12中重复的事件并重新进行评估。</p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ol><li>利用LSTM神经网络预测运行案例的下一个活动及其时间戳的技术。表明，这种技术在现实数据集上优于现有的基线。此外，我们发现通过单一模型（多任务学习）预测下一个活动及其时间戳比使用单独的模型进行预测具有更高的准确性。</li><li>提出了一个运行种的案例整个延续的预测和预测剩余的周期时间的解决方案。</li><li>发现了LSTM模型的局限性，<strong><font color="#9932CC">即在一个案例种某些事件多次重复出现时，导致后缀过长，性能就会很低</font></strong>。</li></ol>]]></content>
-    
-    
-    <summary type="html">Predictive Business Process Monitoring with LSTM Neural Networks</summary>
+    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1842025914&auto=1&height=66"></iframe><p><a href="https://zhuanlan.zhihu.com/p/32085405">人人都能看懂的LSTM - 知乎</a><br><a href="https://zhuanlan.zhihu.com/p/37644325">RNN、LSTM、GRU基础原理篇 - 知乎</a><br><a href="https://blog.csdn.net/matrix_space/article/details/53374040">机器学习：深入理解 LSTM 网络 (一)_Matrix-11-CSDN博客_lstm 机器学习</a></p><blockquote><p>中文分词、词性标注、命名实体识别、机器翻译、语音识别都属于序列挖掘的范畴。<font color="#DC143C">序列挖掘</font>的特点就是某一步的输出不仅依赖于这一步的输入，还依赖于其他步的输入或输出。在序列挖掘领域传统的机器学习方法有HMM（Hidden Markov Model，隐马尔可夫模型）和CRF（Conditional Random Field，条件随机场），近年来流行深度学习算法RNN（Recurrent Neural Networks，循环神经网络）。</p></blockquote><h1 id="RNN"><a href="#RNN" class="headerlink" title="RNN"></a>RNN</h1><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021719/1626698381786.png" alt="RNN网络架构图"></p><p>比如一个句子中有5个词，要给这5个词标注词性，那相应的RNN就是个5层的神经网络，每一层的输入是一个词，每一层的输出是这个词的词性。<br><img src="https://gitee.com/merlynr/img-store/raw/master/2021719/1626698589144.png" alt="讲解"></p><h1 id="RNN的变体"><a href="#RNN的变体" class="headerlink" title="RNN的变体"></a>RNN的变体</h1><h2 id="双向RNN"><a href="#双向RNN" class="headerlink" title="双向RNN"></a>双向RNN</h2><p>双向RNN认为otot不仅依赖于序列之前的元素，也跟tt之后的元素有关，这在序列挖掘中也是很常见的事实。</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021719/1626698749683.png" alt=" Bidirectional RNNs网络结构"></p><h2 id="深层双向RNN"><a href="#深层双向RNN" class="headerlink" title="深层双向RNN"></a>深层双向RNN</h2><p>在双向RNN的基础上，每一步由原来的一个隐藏层变成了多个隐藏层。</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021719/1626698820535.png" alt="Deep Bidirectional RNNs网络结构"></p><h1 id="LSTM"><a href="#LSTM" class="headerlink" title="LSTM"></a>LSTM</h1><p>前文提到，由于<font color="#9932CC"><strong>梯度消失/梯度爆炸</strong></font>的问题传统RNN在实际中很难处理长期依赖，而LSTM（Long Short Term Memory）则绕开了这些问题依然可以从语料中学习到长期依赖关系。</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021719/1626699453120.png" alt="传统RNN每一步的隐藏单元只是执行一个简单的tanh或ReLU操作"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021719/1626699501199.png" alt=" LSTM每个循环的模块内又有4层结构:3个sigmoid层，1个tanh层"></p><p><strong><font color="#D2691E">解释LSTM模块：</font></strong></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021719/1626699615537.png" alt="图标说明"></p><ul><li>粉色的圆圈表示一个二目运算。</li><li>两个箭头汇合成一个箭头表示2个向量首尾相连拼接在一起。</li><li><p>一个箭头分叉成2个箭头表示一个数据被复制成2份，分发到不同的地方去。</p><p>LSTM的关键是细胞状态C，一条水平线贯穿于图形的上方，这条线上只有些少量的线性操作，信息在上面流传很容易保持。</p></li></ul><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021719/1626699717681.png" alt="忘记层"></p><ol><li>忘记层，决定细胞状态中<strong>丢弃什么信息</strong>。把ht−1和xt拼接起来，传给一个sigmoid函数，该函数输出0到1之间的值，这个值乘到细胞状态Ct−1上去。<font color="#FF8C00">sigmoid函数的输出值直接决定了状态信息保留多少</font>。比如当我们要预测下一个词是什么时，细胞状态可能包含当前主语的性别，因此正确的代词可以被选择出来。当我们看到新的主语，我们希望忘记旧的主语。</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021719/1626700419154.png" alt="更新细胞状态"></p><ol><li>上一步的细胞状态Ct−1已经被忘记了一部分，接下来本步应该把哪些信息新加到细胞状态中呢？这里又包含2层：一个tanh层用来产生更新值的候选项C~t，tanh的输出在[-1,1]上，<strong>说明细胞状态在某些维度上需要加强，在某些维度上需要减弱</strong>；还有一个sigmoid层（输入门层），它的输出值要乘到tanh层的输出上，起到一个<strong>缩放</strong>的作用，<em>极端情况下sigmoid输出0说明相应维度上的细胞状态不需要更新</em>。在那个预测下一个词的例子中，我们希望增加新的主语的性别到细胞状态中，来替代旧的需要忘记的主语。</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021719/1626700649763.png" alt="生成新的细胞状态"></p><ol><li>现在可以让旧的细胞状态Ct−1与ft（f是forget忘记门的意思）相乘来丢弃一部分信息，然后再加个需要更新的部分it∗C~t（i是input输入门的意思），这就生成了<strong>新的细胞状态Ct</strong></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021719/1626700735024.png" alt="循环模块的输出"></p><ol><li>最后该决定输出什么了。输出值跟细胞状态有关，把Ct输给一个tanh函数得到输出值的候选项。<strong>候选项中的哪些部分最终会被输出由一个sigmoid层来决定</strong>。在那个预测下一个词的例子中，如果细胞状态告诉我们当前代词是第三人称，那我们就可以预测下一词可能是一个第三人称的动词。</li></ol><h1 id="GRU"><a href="#GRU" class="headerlink" title="GRU"></a>GRU</h1><p>GRU（Gated Recurrent Unit）是LSTM最流行的一个变体，比LSTM模型要简单。没有了存储单元</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021719/1626700963311.png" alt="GRU"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>RNN 结构的一个吸引人之处在于其可以利用之前的输入信息。但是一个关键的需要解决的问题是当前的信息与之前的信息的关联度有长有短。<br>LSTM的内部结构。通过门控状态来控制传输状态，<strong>记住需要长时间记忆的，忘记不重要的信息</strong>；而不像普通的RNN那样只能够“呆萌”地仅有一种记忆叠加方式。对很多需要“长期记忆”的任务来说，尤其好用。、<br>但也因为引入了很多内容，导致参数变多，也使得训练难度加大了很多。因此很多时候我们往往会使用效果和LSTM相当但参数更少的GRU来构建大训练量的模型。</p>]]></content>
     
     
+      
+      
+    <summary type="html">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1842</summary>
+      
     
-    <category term="paper" scheme="https://merlynr.github.io/categories/paper/"/>
+    
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/categories/algorithm/"/>
     
     
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
-    <category term="paper" scheme="https://merlynr.github.io/tags/paper/"/>
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
-    <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    <category term="process mining" scheme="https://merlynr.github.io/tags/process-mining/"/>
     
   </entry>
   
