@@ -191,14 +191,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/07/07/%E7%98%BE/</loc>
+    <loc>https://merlynr.github.io/2021/07/05/Markov%20Model%EF%BC%88%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E6%A8%A1%E5%9E%8B%EF%BC%89/</loc>
     
     <lastmod>2021-07-06</lastmod>
     
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/07/05/Markov%20Model%EF%BC%88%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E6%A8%A1%E5%9E%8B%EF%BC%89/</loc>
+    <loc>https://merlynr.github.io/2021/07/07/%E7%98%BE/</loc>
     
     <lastmod>2021-07-06</lastmod>
     
@@ -345,21 +345,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2020/10/09/2020-10-09/</loc>
-    
-    <lastmod>2021-05-24</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://merlynr.github.io/2020/11/10/%E5%BD%93%E5%89%8D%E5%8C%BA%E5%9D%97%E9%93%BE%E4%BA%A4%E6%98%93%E7%9A%84%E7%BC%BA%E9%99%B7/</loc>
-    
-    <lastmod>2021-05-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://merlynr.github.io/2020/06/19/xiang-ji-http-yu-https-zhi-jian-de-qu-bie/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -373,14 +359,21 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/03/28/what%E2%80%98s%20the%20mean%20of%20RPA/</loc>
+    <loc>https://merlynr.github.io/2020/10/09/2020-10-09/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2020/12/24/Towards%20developing%20a%20secure%20medical%20image%20sharing%20system%20based%20on%20zero%20trust%20principles%20and%20blockchain%20technology/</loc>
+    <loc>https://merlynr.github.io/2020/06/19/xiang-ji-http-yu-https-zhi-jian-de-qu-bie/</loc>
+    
+    <lastmod>2021-05-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://merlynr.github.io/2021/03/28/what%E2%80%98s%20the%20mean%20of%20RPA/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -394,7 +387,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/05/06/Nicholas%20Burns/</loc>
+    <loc>https://merlynr.github.io/2020/12/24/Towards%20developing%20a%20secure%20medical%20image%20sharing%20system%20based%20on%20zero%20trust%20principles%20and%20blockchain%20technology/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -409,6 +402,13 @@
   
   <url>
     <loc>https://merlynr.github.io/2021/05/17/RPA+AI/</loc>
+    
+    <lastmod>2021-05-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://merlynr.github.io/2021/05/06/Nicholas%20Burns/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -450,13 +450,6 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/05/19/2021-05-15%E3%80%90Week%E3%80%91/</loc>
-    
-    <lastmod>2021-05-24</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://merlynr.github.io/2021/04/12/2021-04-12%E3%80%90Week%E3%80%91/</loc>
     
     <lastmod>2021-05-24</lastmod>
@@ -464,7 +457,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/03/24/2021-03-24%E3%80%90Week%E3%80%91/</loc>
+    <loc>https://merlynr.github.io/2021/05/19/2021-05-15%E3%80%90Week%E3%80%91/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -472,6 +465,13 @@
   
   <url>
     <loc>https://merlynr.github.io/2020/10/24/2020-10-24daily/</loc>
+    
+    <lastmod>2021-05-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://merlynr.github.io/2021/03/24/2021-03-24%E3%80%90Week%E3%80%91/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -599,14 +599,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/RPA/</loc>
+    <loc>https://merlynr.github.io/tags/plan/</loc>
     <lastmod>2022-05-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/plan/</loc>
+    <loc>https://merlynr.github.io/tags/RPA/</loc>
     <lastmod>2022-05-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -627,14 +627,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/machine-learning/</loc>
+    <loc>https://merlynr.github.io/tags/algorithm/</loc>
     <lastmod>2022-05-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/code/</loc>
+    <loc>https://merlynr.github.io/tags/process-mining/</loc>
     <lastmod>2022-05-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -648,7 +648,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/algorithm/</loc>
+    <loc>https://merlynr.github.io/tags/machine-learning/</loc>
+    <lastmod>2022-05-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://merlynr.github.io/tags/code/</loc>
     <lastmod>2022-05-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -691,13 +698,6 @@
   
   <url>
     <loc>https://merlynr.github.io/tags/daily-weekly/</loc>
-    <lastmod>2022-05-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://merlynr.github.io/tags/process-mining/</loc>
     <lastmod>2022-05-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -776,6 +776,20 @@
   </url>
   
   <url>
+    <loc>https://merlynr.github.io/categories/algorithm/</loc>
+    <lastmod>2022-05-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://merlynr.github.io/categories/people/</loc>
+    <lastmod>2022-05-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://merlynr.github.io/categories/RPA/</loc>
     <lastmod>2022-05-15</lastmod>
     <changefreq>daily</changefreq>
@@ -790,21 +804,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/categories/people/</loc>
-    <lastmod>2022-05-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://merlynr.github.io/categories/security/</loc>
-    <lastmod>2022-05-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://merlynr.github.io/categories/algorithm/</loc>
     <lastmod>2022-05-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
