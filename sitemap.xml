@@ -359,6 +359,13 @@
   </url>
   
   <url>
+    <loc>https://merlynr.github.io/2020/10/15/2020-10-15daily/</loc>
+    
+    <lastmod>2021-05-24</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://merlynr.github.io/2020/10/17/2020-10-17daily/</loc>
     
     <lastmod>2021-05-24</lastmod>
@@ -380,7 +387,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2020/10/15/2020-10-15daily/</loc>
+    <loc>https://merlynr.github.io/2021/05/19/2021-05-15%E3%80%90Week%E3%80%91/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -388,13 +395,6 @@
   
   <url>
     <loc>https://merlynr.github.io/2021/04/12/2021-04-12%E3%80%90Week%E3%80%91/</loc>
-    
-    <lastmod>2021-05-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://merlynr.github.io/2021/05/19/2021-05-15%E3%80%90Week%E3%80%91/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -415,14 +415,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/05/17/RPA+AI/</loc>
+    <loc>https://merlynr.github.io/2021/05/06/Nicholas%20Burns/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/05/06/Nicholas%20Burns/</loc>
+    <loc>https://merlynr.github.io/2021/05/17/RPA+AI/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -436,14 +436,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2020/09/15/jia-mi-tong-xin-de-yan-hua/</loc>
+    <loc>https://merlynr.github.io/2020/12/24/Towards%20developing%20a%20secure%20medical%20image%20sharing%20system%20based%20on%20zero%20trust%20principles%20and%20blockchain%20technology/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2020/12/24/Towards%20developing%20a%20secure%20medical%20image%20sharing%20system%20based%20on%20zero%20trust%20principles%20and%20blockchain%20technology/</loc>
+    <loc>https://merlynr.github.io/2020/09/15/jia-mi-tong-xin-de-yan-hua/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -457,14 +457,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/02/22/%E4%BA%94%E4%B8%AARPA%E6%A1%86%E6%9E%B6%E9%80%9A%E8%AF%BB/</loc>
+    <loc>https://merlynr.github.io/2020/06/19/xiang-ji-http-yu-https-zhi-jian-de-qu-bie/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2020/06/19/xiang-ji-http-yu-https-zhi-jian-de-qu-bie/</loc>
+    <loc>https://merlynr.github.io/2021/02/22/%E4%BA%94%E4%B8%AARPA%E6%A1%86%E6%9E%B6%E9%80%9A%E8%AF%BB/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -585,13 +585,6 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/weekly/</loc>
-    <lastmod>2022-05-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://merlynr.github.io/tags/front-end/</loc>
     <lastmod>2022-05-16</lastmod>
     <changefreq>daily</changefreq>
@@ -599,7 +592,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/RPA/</loc>
+    <loc>https://merlynr.github.io/tags/weekly/</loc>
     <lastmod>2022-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -613,7 +606,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/exam/</loc>
+    <loc>https://merlynr.github.io/tags/RPA/</loc>
     <lastmod>2022-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -628,6 +621,13 @@
   
   <url>
     <loc>https://merlynr.github.io/tags/block-chain/</loc>
+    <lastmod>2022-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://merlynr.github.io/tags/exam/</loc>
     <lastmod>2022-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -662,14 +662,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/machine-learning/</loc>
+    <loc>https://merlynr.github.io/tags/people/</loc>
     <lastmod>2022-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/people/</loc>
+    <loc>https://merlynr.github.io/tags/machine-learning/</loc>
     <lastmod>2022-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -769,14 +769,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/categories/exam/</loc>
+    <loc>https://merlynr.github.io/categories/paper/</loc>
     <lastmod>2022-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/categories/paper/</loc>
+    <loc>https://merlynr.github.io/categories/exam/</loc>
     <lastmod>2022-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -790,14 +790,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/categories/RPA/</loc>
+    <loc>https://merlynr.github.io/categories/people/</loc>
     <lastmod>2022-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/categories/people/</loc>
+    <loc>https://merlynr.github.io/categories/RPA/</loc>
     <lastmod>2022-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
