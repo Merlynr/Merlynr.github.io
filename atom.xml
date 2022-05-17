@@ -6,7 +6,7 @@
   <link href="https://merlynr.github.io/atom.xml" rel="self"/>
   
   <link href="https://merlynr.github.io/"/>
-  <updated>2022-05-15T16:00:00.000Z</updated>
+  <updated>2022-05-16T16:00:00.000Z</updated>
   <id>https://merlynr.github.io/</id>
   
   <author>
@@ -17,11 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2022-5-17研究生的倒数第365天</title>
+    <link href="https://merlynr.github.io/2022/05/17/2022-5-17%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC365%E5%A4%A9/"/>
+    <id>https://merlynr.github.io/2022/05/17/2022-5-17%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC365%E5%A4%A9/</id>
+    <published>2022-05-16T16:00:00.000Z</published>
+    <updated>2022-05-16T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">JavaScript第二章</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">JavaScript第三章</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">小论文实验</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~20:00 无字幕版美剧</li><li><input disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">JavaScript第四章</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">JavaScript第五章</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结</li></ul><p>#DONE</p><ol><li>todo-1</li></ol><p>★★★★C0：准确、清晰地描述全新的一天，第一个行动目的。<br>行动目的：JavaScript第二章<br>开始时间：2022/5/17 14:45:03<br>任务耗时：0时,48分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<br>                 只完成了百分之十，个人学习速度太慢了。<br>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<br>                 目标与实际能力不匹配<br>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<br>                 继续完成第一个TODO<br>任务评价：2022/5/17 15:32:08■■■□□□□□□□30</p>]]></content>
+    
+    
+    <summary type="html">每天学习计划</summary>
+    
+    
+    
+    <category term="graduate student time" scheme="https://merlynr.github.io/categories/graduate-student-time/"/>
+    
+    
+    <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
+    
+    <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
+    
+    <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript高级程序设计第四版</title>
     <link href="https://merlynr.github.io/2022/05/16/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%AC%E5%9B%9B%E7%89%88/"/>
     <id>https://merlynr.github.io/2022/05/16/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%AC%E5%9B%9B%E7%89%88/</id>
     <published>2022-05-15T16:00:00.000Z</published>
     <updated>2022-05-15T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第二章-HTML-中的-JavaScript"><a href="#第二章-HTML-中的-JavaScript" class="headerlink" title="第二章 HTML 中的 JavaScript"></a>第二章 HTML 中的 JavaScript</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol><li>第2.1中提到type中设置为module，代码当成了<font color="#8B0000">ES6模块</font>，需要实践来验证。</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652770176911.png" alt="script标签中type属性"></p><ol start="2"><li>第2.1中提到浏览器不会对文件扩展名进行检测，为服务器<font color="#8B0000">动态生成js</font>提供可能性，不是很理解。</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652770868317.png" alt="不对文件后缀检测的作用"></p><ol start="3"><li>第2.1不是很懂其中提到的<font color="#8B0000">MIME</font>的作用及判断原理</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652771059896.png" alt="返回正确MIME类型"></p><ol start="4"><li>第2.1中提到src中url的请求策略，不理解<font color="#bf242a">同源策略</font></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652771809768.png" alt="src的请求策略，以及返回的JavaScript的受限规则"></p><ol start="5"><li>第2.1.2中推迟脚本执行中提到DOMContentLoad事件，没见过，下次学习一下HTML</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652773828884.png" alt="delay属性设置后依旧会在DOMContentLoad事件之前执行"></p><ol start="6"><li>第2.1.3async可以保证脚本在<font color="#E9967A">页面load事件之前执行</font></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652774411043.png" alt="async在页面中的执行顺序"></p><h2 id="理解与解决"><a href="#理解与解决" class="headerlink" title="理解与解决"></a>理解与解决</h2><h1 id="第三章语音基础"><a href="#第三章语音基础" class="headerlink" title="第三章语音基础"></a>第三章语音基础</h1><h2 id="问题-1"><a href="#问题-1" class="headerlink" title="问题"></a>问题</h2><ol><li>声明的提升</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652786738528.png" alt="var声明提升"></p><ol start="2"><li><p>补充：<font color="#8B0000"><a href="https://www.javascripttutorial.net/javascript-event-loop/">Event Loop</a></font></p></li><li><p>var与let在for中的使用</p></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652790271566.png" alt="for循环"></p><p>setTimeOut会在for循环结束后进行输出，var在这里读取的是一个全局变了 $i$ ,所有只会输出五，但是JavaScript引擎会为for循环中的let声明分别创建独立的变量实例，所以有五个 $i$ 进行输出。</p>]]></content>
     
     
     <summary type="html">每天学习JS</summary>
@@ -33,11 +66,17 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
+    <category term="front-end" scheme="https://merlynr.github.io/tags/front-end/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
+    
+    <category term="JavaScript" scheme="https://merlynr.github.io/tags/JavaScript/"/>
+    
+    <category term="book" scheme="https://merlynr.github.io/tags/book/"/>
     
   </entry>
   
@@ -58,11 +97,11 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -85,11 +124,11 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -112,11 +151,11 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -141,9 +180,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -166,11 +205,11 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -193,9 +232,9 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -218,11 +257,11 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -247,9 +286,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -272,11 +311,11 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -299,11 +338,11 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -326,11 +365,11 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -353,13 +392,13 @@
     <category term="paper" scheme="https://merlynr.github.io/categories/paper/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
-    <category term="paper" scheme="https://merlynr.github.io/tags/paper/"/>
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="paper" scheme="https://merlynr.github.io/tags/paper/"/>
     
     <category term="process mining" scheme="https://merlynr.github.io/tags/process-mining/"/>
     
@@ -387,9 +426,9 @@
     <category term="algorithm" scheme="https://merlynr.github.io/categories/algorithm/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
@@ -414,13 +453,13 @@
     <category term="paper" scheme="https://merlynr.github.io/categories/paper/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
-    <category term="paper" scheme="https://merlynr.github.io/tags/paper/"/>
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="paper" scheme="https://merlynr.github.io/tags/paper/"/>
     
   </entry>
   
@@ -444,9 +483,9 @@
     <category term="algorithm" scheme="https://merlynr.github.io/categories/algorithm/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
@@ -474,13 +513,13 @@
     <category term="paper" scheme="https://merlynr.github.io/categories/paper/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
-    <category term="paper" scheme="https://merlynr.github.io/tags/paper/"/>
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="paper" scheme="https://merlynr.github.io/tags/paper/"/>
     
   </entry>
   
@@ -504,9 +543,9 @@
     <category term="algorithm" scheme="https://merlynr.github.io/categories/algorithm/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
@@ -531,50 +570,15 @@
     <category term="algorithm" scheme="https://merlynr.github.io/categories/algorithm/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
-    <category term="machine leaning" scheme="https://merlynr.github.io/tags/machine-leaning/"/>
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
     
+    <category term="machine leaning" scheme="https://merlynr.github.io/tags/machine-leaning/"/>
+    
     <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>暑假学习安排以及前段学习总结</title>
-    <link href="https://merlynr.github.io/2021/07/11/%E6%9A%91%E5%81%87%E5%AD%A6%E4%B9%A0%E5%AE%89%E6%8E%92%E4%BB%A5%E5%8F%8A%E5%89%8D%E6%AE%B5%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
-    <id>https://merlynr.github.io/2021/07/11/%E6%9A%91%E5%81%87%E5%AD%A6%E4%B9%A0%E5%AE%89%E6%8E%92%E4%BB%A5%E5%8F%8A%E5%89%8D%E6%AE%B5%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</id>
-    <published>2021-07-10T16:00:00.000Z</published>
-    <updated>2021-07-10T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="已完成–前段时间"><a href="#已完成–前段时间" class="headerlink" title="已完成–前段时间"></a>已完成–前段时间</h2><ol><li>观看学习了吴恩达的机器学习课程视频，观看的主要的目的是对于机器学习有个整体的观念，同时我也学到了机器学习实验中简单的调参，验证以及最后结果的分析。</li><li>总结性的略读了几篇业务流程中对于异常的检测的paper，主要还是通过根据时间特征来检测事件的状态，主要包括有：<ul><li>基于时间边界的事件异常检测【通过对事件划分时间边界】</li><li>基于关键路径【确认业务流程关键路径，比对花费所时间】</li><li>通过对于执行时间建模方法来预测【即构建所有活动持续时间直立方图，然后通过比对当前节点和余下节点在图中占比来预测】</li><li>综合时间模型和流程步骤分析【综合运用时间统计模型和通过多个步骤分析方法生成运行时间概率分布、计算异常概率、与阈值比较的方法，提出一种基于运行的异常预测算法来预测工作流中的时间异常，该算法分为即设计时段和运行时段两个阶段，在设计时段，生成该模型所有可能产生的运行轨迹，并计算它们的预计执行时间的概率分布；在运行时段，通过分析计算流程超时的可能性与预设的阈值做比较来判断是否预测为异常】</li></ul></li><li>精读了2019年较为新的paper【基于机器学习的流程异常预测方法】，文中作者提出一种混合模型，就是结合了通过标注时间时间来对超期异常预测，但是由于系统执行时间很容易受到环境等因素导致超过人工标注时间，所以作者提出了通过机器学习学习各个事件在整个流程的流程所消费的时间占比来预测异常。自己对于其中的算法和模型都进行详细了解，同时结合以前略读的论文，感觉这篇论文就是结合了一下前人的方法，没有实际创新点。</li><li>整理了关于业务流程预测中的详细研究方向：<pre><code>- 预测完成一个案件的剩余时间- 流程预测结果评估【二元评估】- 预测下一个事件</code></pre></li><li>对于业务流程预测下一事件进行系统学习【只完成了部分,这一部分吗主要是2016年以前的论文，即普遍是用机器模型，而更复杂的深度学习模型是2016年后被应用到】：<ul><li>利用数据的时间分类特征来预测，使用更高阶马尔可夫模型（HMMs，这里指的是隐马尔可夫模型）和使用序列比对的流程结果来预测过程的下一个步骤。个人理解就是将序列KNN与HMMs相结合，通过HMMs学习数据，获得高阶模型，然后混合了序列KNN的替换矩阵，利用局部序列对比，<strong>降低了高阶HMMs的弱覆盖的缺陷影响</strong>。</li><li>针对处理半结构化业务流程数据，提出一种针对特定事件进程的模型（PPM），个人学习理解它作为过渡模型，主要负责学习记录半结构化业务流程的实例，和替换矩阵，然后映射到扩展马尔可夫链预测【当遇到并行事务的时候通过递归的方式学习转换矩阵】，作者的优点主要体现在针对<strong>半结构化业务流程数据</strong>进行预测。 </li></ul></li></ol><h2 id="未完成及原因–前段时间"><a href="#未完成及原因–前段时间" class="headerlink" title="未完成及原因–前段时间"></a>未完成及原因–前段时间</h2><ol><li>机器学习还是需要实操来检验自己所理解的知识，但是由于前期花费在理论上的时间比较多，同花了很多时间在数学上，虽然准备了环境准备实操但是也没有按时完成，也搁浅了。</li><li>在系统了解学习对于业务异常检测的时候中，还有两篇关于结合积极语义模型和受病毒传播启发病毒传染模型启发的时间延迟传播模型的预测检测的方法没有阅读，主要由于后面确认了自己要研究预测下一步，所以就没有继续阅读了。</li><li>在预测行为异常的论文中多次提到了对数据进行初始标注，但是都没有详细说明，所以这块没有详细研究，后面也没继续关注</li><li>本来应该在七月底将2016年前关于业务流程预测下一步的几篇全部看完，但是由于中间整理实验数据跑一下基本的模型【结果也没跑，数据量过大，笔记本不行，在挖掘流程的时候就很卡】，还有遇到了考试月就耽误了</li></ol><h2 id="暑假安排"><a href="#暑假安排" class="headerlink" title="暑假安排"></a>暑假安排</h2><ol><li>7.25号之前将剩下的四五篇关键论文看完【2016年前】</li><li>8.20系统学习看一下深度学习中在流程预测的使用，目前查阅的主要有循环神经网络，MMs，语法感知技术，基于过程发现技术，基于自动机的预测技术等，我现在收集了相关14篇论文【有一些是重复的改进模型】，开始可能看的慢一点，后面应该会快一点</li><li>读深度学习相关论文的时候，开始我会阅读最早的三四篇，然后后面倒着读剩下的，这样一旦有idea也能知道自己的想法是不是与最新的重复了。</li><li>9.17-9.27回家过个中秋，同时发小结婚</li></ol><h2 id="期望"><a href="#期望" class="headerlink" title="期望"></a>期望</h2><ol><li>老师前面提到与公司项目相结合，使用公司的数据，我当时考虑的是使用公工数据集，这样有对比也易于发表，现在我能想到的是，本来后面要帮老师做那个RPA程序，就想的后面在大论文中加入一部分流程挖掘，正好可以利用公司的日志信息挖掘，然后根据数据训练模型【这一块明天有空和老师聊一下哇，因为老师让我做的那块貌似没有日志哇，所以交流一下哇】</li><li>在我阅读业务流程预测论文的过程中，我开始发现预测事件由传统机器学习中的序列匹配开始向深度学习中的NLP靠拢，通过学习事件之间的因果来预测下一步，可能这块研究没有NLP那么超前，所以基本模型没有配套，但是依旧可以向他们学习，这样更加容易改进模型发表paper</li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;已完成–前段时间&quot;&gt;&lt;a href=&quot;#已完成–前段时间&quot; class=&quot;headerlink&quot; title=&quot;已完成–前段时间&quot;&gt;&lt;/a&gt;已完成–前段时间&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;观看学习了吴恩达的机器学习课程视频，观看的主要的目的是对于机器学习有个整体的观念</summary>
-      
-    
-    
-    
-    <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
-    
-    
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
-    <category term="summarize" scheme="https://merlynr.github.io/tags/summarize/"/>
-    
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
-    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
-    
-    <category term="paper" scheme="https://merlynr.github.io/tags/paper/"/>
-    
-    <category term="machine learning" scheme="https://merlynr.github.io/tags/machine-learning/"/>
     
   </entry>
   
