@@ -398,9 +398,9 @@
             
             <tag> paper </tag>
             
-            <tag> process mining </tag>
-            
             <tag> deep learning </tag>
+            
+            <tag> process mining </tag>
             
             <tag> LSTM </tag>
             
@@ -586,11 +586,11 @@
             
             <tag> study </tag>
             
-            <tag> algorithm </tag>
-            
             <tag> machine leaning </tag>
             
             <tag> deep learning </tag>
+            
+            <tag> algorithm </tag>
             
         </tags>
       
@@ -608,7 +608,7 @@
       
       <categories>
           
-          <category> plane </category>
+          <category> plan </category>
           
       </categories>
       
@@ -656,11 +656,11 @@
             
             <tag> paper </tag>
             
-            <tag> algorithm </tag>
-            
             <tag> machine leaning </tag>
             
             <tag> deep learning </tag>
+            
+            <tag> algorithm </tag>
             
         </tags>
       
@@ -691,11 +691,11 @@
             
             <tag> paper </tag>
             
-            <tag> algorithm </tag>
-            
             <tag> machine leaning </tag>
             
             <tag> deep learning </tag>
+            
+            <tag> algorithm </tag>
             
         </tags>
       
@@ -876,7 +876,7 @@
       
       <categories>
           
-          <category> machine learning </category>
+          <category> algorithm </category>
           
       </categories>
       
@@ -1101,7 +1101,7 @@
       
       <categories>
           
-          <category> FrameWork </category>
+          <category> RPA </category>
           
       </categories>
       

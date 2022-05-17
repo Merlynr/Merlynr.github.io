@@ -501,20 +501,6 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/algorithm/</loc>
-    <lastmod>2022-05-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://merlynr.github.io/tags/process-mining/</loc>
-    <lastmod>2022-05-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://merlynr.github.io/tags/machine-leaning/</loc>
     <lastmod>2022-05-17</lastmod>
     <changefreq>daily</changefreq>
@@ -529,6 +515,13 @@
   </url>
   
   <url>
+    <loc>https://merlynr.github.io/tags/algorithm/</loc>
+    <lastmod>2022-05-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://merlynr.github.io/tags/machine-learning/</loc>
     <lastmod>2022-05-17</lastmod>
     <changefreq>daily</changefreq>
@@ -536,7 +529,21 @@
   </url>
   
   <url>
+    <loc>https://merlynr.github.io/tags/process-mining/</loc>
+    <lastmod>2022-05-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://merlynr.github.io/tags/code/</loc>
+    <lastmod>2022-05-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://merlynr.github.io/tags/book/</loc>
     <lastmod>2022-05-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -565,13 +572,6 @@
   
   <url>
     <loc>https://merlynr.github.io/tags/kernal-function/</loc>
-    <lastmod>2022-05-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://merlynr.github.io/tags/book/</loc>
     <lastmod>2022-05-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -657,13 +657,6 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/categories/FrameWork/</loc>
-    <lastmod>2022-05-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://merlynr.github.io/categories/life/</loc>
     <lastmod>2022-05-17</lastmod>
     <changefreq>daily</changefreq>
@@ -672,20 +665,6 @@
   
   <url>
     <loc>https://merlynr.github.io/categories/security/</loc>
-    <lastmod>2022-05-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://merlynr.github.io/categories/machine-learning/</loc>
-    <lastmod>2022-05-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://merlynr.github.io/categories/plane/</loc>
     <lastmod>2022-05-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
