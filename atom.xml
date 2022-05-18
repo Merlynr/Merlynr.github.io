@@ -6,7 +6,7 @@
   <link href="https://merlynr.github.io/atom.xml" rel="self"/>
   
   <link href="https://merlynr.github.io/"/>
-  <updated>2022-05-16T16:00:00.000Z</updated>
+  <updated>2022-05-17T16:00:00.000Z</updated>
   <id>https://merlynr.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2022-5-18研究生的倒数第364天</title>
+    <link href="https://merlynr.github.io/2022/05/18/2022-5-18%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC364%E5%A4%A9/"/>
+    <id>https://merlynr.github.io/2022/05/18/2022-5-18%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC364%E5%A4%A9/</id>
+    <published>2022-05-17T16:00:00.000Z</published>
+    <updated>2022-05-17T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li><input disabled="" type="checkbox"> 10:20~10:50 leetcode             <strong><font color="#ff7500">leetcode</font></strong></li><li><input disabled="" type="checkbox"> 10:50~11:20 总结与反思</li></ul><hr><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">JavaScript高级程序设计第四章</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">JavaScript第五章一半</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">小论文</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~20:00 晚上学习安排            <strong><font color="#8B008B">小论文</font></strong></li><li><input disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">JavaScript第五章</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">英语</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结与查漏补缺</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><p>行动目的：JavaScript第三章<br>开始时间：2022/5/18 9:53:55<br>任务耗时：0时,58分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<br>                 完成60%</p><p>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<br>                 内容太细太多比自己想的多<br>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<br>                 继续学习第三章<br>任务评价：2022/5/18 10:50:36■■■■■■□□□□60</p><hr><p>行动目的：继续学习第三章<br>开始时间：2022/5/18 10:50:36<br>任务耗时：0时,59分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<br>                 完成65%<br>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<br>                 看了一小会手机<br>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<br>                 继续完成这一阶段<br>任务评价：2022/5/18 11:48:47■■■■■■□□□□■■■■■■■□□□65</p>]]></content>
+    
+    
+    <summary type="html">每天/周学习计划</summary>
+    
+    
+    
+    <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
+    
+    
+    <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
+    
+    <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
+    
+    <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+  </entry>
   
   <entry>
     <title>2022-5-17研究生的倒数第365天</title>
@@ -48,13 +81,38 @@
   </entry>
   
   <entry>
+    <title>LeetCode算法学习</title>
+    <link href="https://merlynr.github.io/2022/05/17/LeetCode%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://merlynr.github.io/2022/05/17/LeetCode%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/</id>
+    <published>2022-05-16T16:00:00.000Z</published>
+    <updated>2022-05-16T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">每天/周学习计划</summary>
+    
+    
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/categories/algorithm/"/>
+    
+    
+    <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript高级程序设计第四版</title>
     <link href="https://merlynr.github.io/2022/05/16/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%AC%E5%9B%9B%E7%89%88/"/>
     <id>https://merlynr.github.io/2022/05/16/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%AC%E5%9B%9B%E7%89%88/</id>
     <published>2022-05-15T16:00:00.000Z</published>
     <updated>2022-05-15T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="第二章-HTML-中的-JavaScript"><a href="#第二章-HTML-中的-JavaScript" class="headerlink" title="第二章 HTML 中的 JavaScript"></a>第二章 HTML 中的 JavaScript</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol><li>第2.1中提到type中设置为module，代码当成了<font color="#8B0000">ES6模块</font>，需要实践来验证。</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652770176911.png" alt="script标签中type属性"></p><ol start="2"><li>第2.1中提到浏览器不会对文件扩展名进行检测，为服务器<font color="#8B0000">动态生成js</font>提供可能性，不是很理解。</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652770868317.png" alt="不对文件后缀检测的作用"></p><ol start="3"><li>第2.1不是很懂其中提到的<font color="#8B0000">MIME</font>的作用及判断原理</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652771059896.png" alt="返回正确MIME类型"></p><ol start="4"><li>第2.1中提到src中url的请求策略，不理解<font color="#bf242a">同源策略</font></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652771809768.png" alt="src的请求策略，以及返回的JavaScript的受限规则"></p><ol start="5"><li>第2.1.2中推迟脚本执行中提到DOMContentLoad事件，没见过，下次学习一下HTML</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652773828884.png" alt="delay属性设置后依旧会在DOMContentLoad事件之前执行"></p><ol start="6"><li>第2.1.3async可以保证脚本在<font color="#E9967A">页面load事件之前执行</font></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652774411043.png" alt="async在页面中的执行顺序"></p><h2 id="理解与解决"><a href="#理解与解决" class="headerlink" title="理解与解决"></a>理解与解决</h2><h1 id="第三章语音基础"><a href="#第三章语音基础" class="headerlink" title="第三章语音基础"></a>第三章语音基础</h1><h2 id="学习与反思"><a href="#学习与反思" class="headerlink" title="学习与反思"></a>学习与反思</h2><ol><li>声明的提升</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652786738528.png" alt="var声明提升"></p><ol start="2"><li><p>补充：<font color="#8B0000"><a href="https://www.javascripttutorial.net/javascript-event-loop/">Event Loop</a></font></p></li><li><p>var，let与const在for中的使用</p></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652790271566.png" alt="for循环"></p><p>setTimeOut会在for循环结束后进行输出，var在这里读取的是一个全局变了 $i$ ,所有只会输出五，但是JavaScript引擎会为for循环中的let声明分别创建独立的变量实例，所以有五个 $i$ 进行输出。</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652790654029.png" alt="for中的let"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652790715199.png" alt="for中的const"></p><h2 id="问题-1"><a href="#问题-1" class="headerlink" title="问题"></a>问题</h2><ol><li>第3.4.5中提到八进制和十六进制在数学操作中都被视为十进制，什么意思？</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652792773822.png" alt="八进制和十六进制的运算方式"><br>答：都转化为十进制再进行计算。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="第二章-HTML-中的-JavaScript"><a href="#第二章-HTML-中的-JavaScript" class="headerlink" title="第二章 HTML 中的 JavaScript"></a>第二章 HTML 中的 JavaScript</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol><li>第2.1中提到type中设置为module，代码当成了<font color="#8B0000">ES6模块</font>，需要实践来验证。</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652770176911.png" alt="script标签中type属性"></p><ol start="2"><li>第2.1中提到浏览器不会对文件扩展名进行检测，为服务器<font color="#8B0000">动态生成js</font>提供可能性，不是很理解。</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652770868317.png" alt="不对文件后缀检测的作用"></p><ol start="3"><li>第2.1不是很懂其中提到的<font color="#8B0000">MIME</font>的作用及判断原理</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652771059896.png" alt="返回正确MIME类型"></p><ol start="4"><li>第2.1中提到src中url的请求策略，不理解<font color="#bf242a">同源策略</font></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652771809768.png" alt="src的请求策略，以及返回的JavaScript的受限规则"></p><ol start="5"><li>第2.1.2中推迟脚本执行中提到DOMContentLoad事件，没见过，下次学习一下HTML</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652773828884.png" alt="delay属性设置后依旧会在DOMContentLoad事件之前执行"></p><ol start="6"><li>第2.1.3async可以保证脚本在<font color="#E9967A">页面load事件之前执行</font></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652774411043.png" alt="async在页面中的执行顺序"></p><h2 id="理解与解决"><a href="#理解与解决" class="headerlink" title="理解与解决"></a>理解与解决</h2><h1 id="第三章语音基础"><a href="#第三章语音基础" class="headerlink" title="第三章语音基础"></a>第三章语音基础</h1><h2 id="学习与反思"><a href="#学习与反思" class="headerlink" title="学习与反思"></a>学习与反思</h2><ol><li>声明的提升</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652786738528.png" alt="var声明提升"></p><ol start="2"><li><p>补充：<font color="#8B0000"><a href="https://www.javascripttutorial.net/javascript-event-loop/">Event Loop</a></font></p></li><li><p>var，let与const在for中的使用</p></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652790271566.png" alt="for循环"></p><p>setTimeOut会在for循环结束后进行输出，var在这里读取的是一个全局变了 $i$ ,所有只会输出五，但是JavaScript引擎会为for循环中的let声明分别创建独立的变量实例，所以有五个 $i$ 进行输出。</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652790654029.png" alt="for中的let"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652790715199.png" alt="for中的const"></p><h2 id="问题与解释"><a href="#问题与解释" class="headerlink" title="问题与解释"></a>问题与解释</h2><ol><li>第3.4.5中提到八进制和十六进制在数学操作中都被视为十进制，什么意思？</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652792773822.png" alt="八进制和十六进制的运算方式"><br>答：都转化为十进制再进行计算。</p><ol start="2"><li>第3.4.7中为什么要避免Symbol()包装对象，以及包装对象的作用是什么？</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652843325753.png" alt="Symbol()无法包装对象"></p>]]></content>
     
     
     <summary type="html">每天学习JS</summary>
@@ -520,65 +578,6 @@
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
     
     <category term="paper" scheme="https://merlynr.github.io/tags/paper/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>注意力机制</title>
-    <link href="https://merlynr.github.io/2021/07/16/%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/"/>
-    <id>https://merlynr.github.io/2021/07/16/%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/</id>
-    <published>2021-07-15T16:00:00.000Z</published>
-    <updated>2021-07-15T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/105335191">注意力机制到底是什么——基于常识的基本结构介绍 - 知乎</a><br><a href="https://www.zhihu.com/question/304499365">(96 封私信 / 80 条消息) 「注意力机制」是什么意思？ - 知乎</a><br><a href="https://my.oschina.net/u/876354/blog/3061863">大话注意力机制（Attention Mechanism） - 雪饼的个人空间 - OSCHINA - 中文开源技术交流社区</a><br><a href="https://zhuanlan.zhihu.com/p/148737297">attention机制中的query,key,value的概念解释 - 知乎</a></p><h2 id="注意力机制"><a href="#注意力机制" class="headerlink" title="注意力机制"></a>注意力机制</h2><p>注意力机制(Attention Mechanism)是人们在机器学习模型中嵌入的一种特殊结构，用来自动学习和计算输入数据对输出数据的<font color="#1E90FF"><strong>贡献</strong></font>大小。</p><blockquote><p>目前，注意力机制已经成为深度学习领域，尤其是自然语言处理领域，应用最广泛的“组件”之一。这两年曝光度极高的BERT、GPT、Transformer等等模型或结构，都采用了注意力机制。</p></blockquote><h2 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h2><p>来自于认知工程领域提出的，类似人对于信息采集的机制—特征工程。</p><h3 id="人身上的注意力机制"><a href="#人身上的注意力机制" class="headerlink" title="人身上的注意力机制"></a>人身上的注意力机制</h3><p>去超市购物，和朋友去购物，作为提东西的工具人，不仅要体力跟的上，那么我们还需要的是跟的上朋友的步伐，人山人海中要跟上步伐确实比较困难，当我们用眼睛去一个一个寻找，把路人的信息特征衣服，脸，发色，发型~都传入到脑海中一个一个比对寻找朋友的时候，这时候不仅效率极其低而且大脑表示也遭不住，那么我们只需要记到部分明显特征发型身高等，然后扩大视野，这样效率会明显提高。<br>像这种情形，**<font color="#9932CC">有选择的处理信号</font>**，包括人类很多生物在处理外界信号时的策略，这种处理机制就是注意力机制。</p><h3 id="特征工程——模型外部的注意力机制"><a href="#特征工程——模型外部的注意力机制" class="headerlink" title="特征工程——模型外部的注意力机制"></a>特征工程——模型外部的注意力机制</h3><p>严格来说，「注意力机制」更像是一种方法论。没有严格的数学定义，而是根据具体任务目标，对关注的方向和加权模型进行调整。<br>简单的理解就是，在神经网络的隐藏层，增加「注意力机制」的加权。<br>使不符合注意力模型的内容弱化或者遗忘。</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021717/1626502007361.png" alt="特征工程"></p><h3 id="“key-query-value”理论"><a href="#“key-query-value”理论" class="headerlink" title="“key-query-value”理论"></a>“key-query-value”理论</h3><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021717/1626502458858.png" alt="Attention机制"></p><p>将Source中的构成元素想象成是由一系列的&lt;Key,Value&gt;数据对构成，此时给定Target中的某个元素Query，通过计算Query和各个Key的相似性或者相关性，得到每个Key对应Value的权重系数，然后对Value进行加权求和，即得到了最终的Attention数值。所以本质上Attention机制是对Source中元素的Value值进行加权求和，而Query和Key用来计算对应Value的权重系数。即可以将其本质思想改写为如下公式：<br>$Attention( Q u e r y , Source ) = \sum _ { i = 1 } ^ { L _ { x } }Similarity(Query,Key_{i})*Value_{i}$</p><blockquote><p><strong><font color="#7FFF00">个人理解</font></strong><br>可以把attention机制看作一种软寻址：Source可以看作存储器内存储的内容，元素由地址Key和值Value组成，当前有个Key=Query的查询，目的是取出存储器中对应的Value值，即Attention数值。通过Query和存储器内元素Key的地址进行相似性比较来寻址，之所以说是软寻址，指的不像一般寻址只从存储内容里面找出一条内容，而是可能从每个Key地址都会取出内容，**<font color="#7FFF00">取出内容的重要性根据Query和Key的相似性来决定</font>**，之后对Value进行加权求和，这样就可以取出最终的Value值，也即Attention值。</p></blockquote><p><strong><font color="#008B8B">Attention机制的具体计算过程：</font></strong></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021717/1626508762885.png" alt="计算过程"></p><ol><li>根据Query和Key计算两者的相似性或者相关性【学习】</li><li>对第一阶段的原始分值进行归一化处理【获取权重系数】</li><li>根据权重系数对Value进行加权求和</li></ol><blockquote><p><strong><font color="#00008B">知识补充</font></strong><br>点乘又叫向量的内积、数量积，是一个向量和它在另一个向量上的投影的长度的乘积；是标量。 <strong>点乘反映着两个向量的“相似度”</strong>，两个向量越“相似”，它们的点乘越大。<br>向量叉乘求的是<strong>垂直</strong>于这两个向量<br>Cosine相似性，求余弦<br>多层感知器（Multilayer Perceptron,缩写MLP）一种通用的函数近似方法，可以被用来拟合复杂的函数，或解决分类问题</p></blockquote><p>第一阶段中根据Query和Key求相似度目前常见的方法包括：求两者的向量点积、求两者的向量 Cosine相似性或者通过再引入额外的<br>神经网络来求值如下：<br>点积：<br>$Similarity(Query,Key_{i})=Query*Key_{i}$</p><p>Cosine相似性：<br>$Similarity(Query,Key_{i})=\frac { Query<em>Key_{i} } { ||Query||</em>||Key_{i}||}$</p><p>MLP网络：<br>$Similarity(Query,Key_{i})=MLP（Query*Key_{i}$</p><p>第二阶段引入类似SoftMax的计算方式对第一阶段的相似度得分进行数值转换，一方面可以进行归一化，将原始计算分值整理成所有元素权重之和为1的概率分布；另一方面也可以通过SoftMax的内在机制更加突出重要元素的权重。<br>$a_{i}=Softmax(Sim_{i})= \frac{e^{Sim_{i}}}{ \textstyle \sum_{j=1}^{L_{x}}e^{Sim_{j}} }$</p><p>最后一阶段是加权求和求Attention数值：<br>$Attention(Query,Source)={\textstyle \sum_{i=1}^{L_{x}}a_{i}\cdot Value_{i}}$</p><h2 id="深度学习领域的注意力机制"><a href="#深度学习领域的注意力机制" class="headerlink" title="深度学习领域的注意力机制"></a>深度学习领域的注意力机制</h2><h3 id="注意力机制的思想和基本框架"><a href="#注意力机制的思想和基本框架" class="headerlink" title="注意力机制的思想和基本框架"></a>注意力机制的思想和基本框架</h3><blockquote><p>一些学者尝试让<font color="#9400D3">模型自己学习如何分配自己的注意力</font>，即为输入信号加权。<em>他们用注意力机制的直接目的，就是为输入的各个维度打分，然后按照得分对特征加权，以突出重要特征对下游模型或模块的影响。这也是注意力机制的基本思想。</em></p></blockquote><p><strong>一般会采用”key-query-value”理论来描述注意力机制的机理。</strong></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/105335191&quot;&gt;注意力机制到底是什么——基于常识的基本结构介绍 - 知乎&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.zhihu.com/question/304499365&quot;&gt;(</summary>
-      
-    
-    
-    
-    <category term="algorithm" scheme="https://merlynr.github.io/categories/algorithm/"/>
-    
-    
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
-    <category term="process mining" scheme="https://merlynr.github.io/tags/process-mining/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>强化学习</title>
-    <link href="https://merlynr.github.io/2021/07/13/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/"/>
-    <id>https://merlynr.github.io/2021/07/13/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/</id>
-    <published>2021-07-12T16:00:00.000Z</published>
-    <updated>2021-07-12T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://www.cnblogs.com/steven-yang/p/6481772.html">强化学习读书笔记 - 00 - 术语和数学符号 - SNYang - 博客园</a><br><a href="https://www.cnblogs.com/wacc/p/5391209.html">强化学习笔记1 - Hiroki - 博客园</a></p><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>监督学习在机器学习中取得了重大的成功，然而在<strong>顺序决策制定</strong>和<strong>控制问题</strong>中，比如无人直升机、无人汽车等，难以给出显式的监督信息，因此这类问题中<strong>监督模型无法学习</strong>。<br>强化学习就是为了解决这类问题而产生的。在强化学习框架中，学习算法被称为一个agent，假设这个agent处于一个环境中，两者之间存在交互。<font color="#9400D3">agent通过与环境交互不断增强对环境的适应力，故得名强化学习。</font></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/2021713/1626145210759.png" alt="强化学习"></p><p>在每个时间步 $t$ ，agent：</p><ul><li>接受状态 $s _ { t }$</li><li>接受标量回报 $r _ { t }$</li><li>执行行动 $a _ { t }$</li></ul><p>环境：</p><ul><li>接受动作 $a _ { t }$</li><li>产生状态 $s _ { t }$</li><li>产生标量回报 $r _ { t }$</li></ul><h2 id="MDP-马尔科夫决策过程"><a href="#MDP-马尔科夫决策过程" class="headerlink" title="MDP(马尔科夫决策过程)"></a>MDP(马尔科夫决策过程)</h2><p>通常我们都是从MDP（马尔科夫决策过程）来了解强化学习的。MDP问题中，我们有一个五元组： $( S , A , P , \gamma , P )$</p><ul><li>$S$ :状态集，由agent所有可能的状态组成</li><li>$A$ :动作集，由agent所有可能的行动构成</li><li>$P ( s , a , s ^ { \prime } )$ :转移概率分布，表示状态s下执行动作a后下个时刻状态的概率分布</li><li>$\gamma$ :折扣因子，0≤ $\gamma$ ≤1，表示未来回报相对于当前回报的重要程度。如果 $\gamma$ =0，表示只重视当前立即回报； $\gamma$ =1表示将未来回报视为与当前回报同等重要。【<font color="#FF8C00">这块不懂，可以看后面下围棋的栗子</font>】</li><li>$R ( s , a , s ^ { \prime } )$ :标量立即回报函数。执行动作a，导致状态s转移到s′产生的回报。可以是关于状态-动作的函数 $S \times A \rightarrow R$ ，也可以是只关于状态的函数 $S \rightarrow R$ 。记t时刻的回报为 $r _ { t }$ ，为了后续表述方便，假设我们感兴趣的问题中回报函数只取决于状态，而状态-动作函数可以很容易地推广，这里暂不涉及。</li></ul><p><strong><font color="#8B008B">注：</font></strong> 这里阐述的MDP称为discounted MDP，即<font color="#00008B">带折扣因子的MDP</font>。有些MDP也可以定义为四元组： $( S , A , P , R )$ ，这是<em>因为这类MDP中使用的值函数不考虑折扣因子</em>。</p><blockquote><p>**<font color="#9932CC">马尔可夫性质</font>*<em>：当一个随机过程在给定现在状态及所有过去状态情况下，其未来状态的条件概率分布<font color="#006400">仅依赖于当前状态</font>；换句话说，在给定现在状态时，它与过去状态（即该过程的历史路径）是<font color="#1E90FF">条件独立</font>的，那么此随机过程即具有马尔可夫性质。<br>例如：</em>明天的天气（是否下大雨）仅与今天的天气（是否刮大风）有关，而与前天及以前的天气无关*。</p></blockquote><p>MDP过程具有马尔科夫性质，即给定当前状态，未来的状态与过去的状态无关。但与马尔科夫链不同的是，MDP还考虑了<strong>动作</strong>，也就是说MDP中状态的转移不仅和状态有关，还依赖于agent采取的动作。</p><p>我们可以通过下面表格了解各种马尔科夫模型的区别：</p><table><thead><tr><th></th><th>不考虑动作</th><th>考虑动作</th></tr></thead><tbody><tr><td>状态可观测</td><td>马尔科夫链（MC）</td><td>马尔科夫决策过程（MDP）</td></tr><tr><td>状态不完全可观测</td><td>隐马尔科夫模型（HMM）</td><td>不完全可观察马尔可夫决策过程（POMDP）</td></tr></tbody></table><p><strong><font color="#FF8C00">MDP的运行过程：</font></strong><br><img src="https://gitee.com/merlynr/img-store/raw/master/2021713/1626158954807.png" alt="MDP"></p><p>我们从初始状态 $s _ { 0 }$ 出发，执行某个动作 $a _ { 0 }$ ，根据转移概率分布确定下一个状态 $s _ { 1 }$ ∼ $P _ { s0a0 }$ ，接着执行动作 $a _ { 1 }$ ，再根据 $P _ { s1a1 }$ 确定 $s _ { 2 }$ …。</p><p>一个discounted MDP中，我们的目标最大化一个<font color="#1E90FF">累积未来折扣回报</font>:<br>$R _ { t } = \sum _ { k = 0 } ^ { \infty } \gamma ^ { k } r _ { t + k + 1 }$</p><p>具体地，我们希望学得一个<strong>策略</strong>（policy），通过执行这个策略使上式最大化。策略一般可以表示为一个函数，它以<font color="#9932CC">状态</font>为输入，输出<font color="#9932CC">对应的动作</font>。策略函数可以是确定的 $\pi ( s ) = a$ ，也可以是不确定的  $\pi ( s , a ) = p ( a | s )$ （这时策略函数是一个<em>条件概率分布</em>，表示给定状态s下执行下一个动作a的概率）。当agent执行一个策略时，每个状态下agent都执行策略指定的动作。</p><p>强化学习通常具有<strong>延迟回报</strong>的特点，以下围棋为例，只有在最终决定胜负的那个时刻才有回报（赢棋为1，输棋为-1），而之前的时刻立即回报均为0。这种情况下， $R _ { t }$ 等于1或-1，这将导致我们很难衡量策略的优劣，因为即使赢了一盘棋，未必能说明策略中每一步都是好棋；同样输了一盘棋也未必能说明每一步都是坏棋。因此我们需要一个目标函数来刻画策略的长期效用。<br>为此，我们可以为策略定义一个<strong>值函数</strong>（value function）来综合评估某个策略的好坏。这个函数既可以是只关于状态的值函数 $V ^ { \pi } ( s )$ ，也可以状态-动作值函数 $Q ^ { \pi } ( s , a )$ 。<font color="#2F4F4F">状态值函数评估agent处于某个状态下的长期收益</font>， 动作值函数评估agent在某个状态下执行某个动作的长期收益。</p><p>本文后续都将以 <strong><font color="#FF8C00">状态值函</font></strong> 数为例，进行阐述。一般常用的有三种形式：</p><ol><li>$V ^ { \pi } ( s ) = E _ { \pi } [ \sum _ { k = 0 } ^ { \infty } r _ { t + k + 1 } | s _ { t } = s ]$</li><li>$V ^ { \pi } ( s ) = E _ { \pi } [ \lim _ { k \rightarrow \infty } \frac { 1 } { k } \sum _ { i = 0 } ^ { k } T _ { t + i + 1 } | s _ { t } = s ]$</li><li>$V ^ { \pi } ( s ) = E _ { \pi } [ \sum _ { k = 0 } ^ { \infty } \gamma ^ { k } r _ { t + k + 1 } | s _ { t } = s ]$</li></ol><p>其中 $E _ { \pi } [ \cdot | s _ { t } = s ]$ 表示从状态s开始，通过执行策略 $π$  得到的累积回报的期望。有些情况下，agent和环境的交互是无止境的，比如一些控制问题，这样的问题称为 <strong><font color="#9400D3">continuing task</font></strong> 。还有一种情况是我们可以把交互过程打散成一个个 **<font color="#9400D3">片段式任务</font>**（episodic task），每个片段有一个起始态和一个终止态（或称为吸收态，absorbing state），比如下棋。当每个episode结束时，我们对整个过程重启随机设置一个起始态或者从某个随机起始分布采样决定一个起始态。<br>上面三种值函数中，我们一般常用第三种形式，我把它叫做 **<font color="#9400D3">折扣值函数</font>**（discounted value function）。</p>]]></content>
-    
-    
-    <summary type="html">【可選】文章描述</summary>
-    
-    
-    
-    <category term="algorithm" scheme="https://merlynr.github.io/categories/algorithm/"/>
-    
-    
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
-    <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
-    
-    <category term="machine leaning" scheme="https://merlynr.github.io/tags/machine-leaning/"/>
-    
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
