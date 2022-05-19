@@ -22,9 +22,9 @@
             
             <tag> daily </tag>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -59,9 +59,9 @@
             
             <tag> daily </tag>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -96,9 +96,9 @@
             
             <tag> daily </tag>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -131,9 +131,9 @@
             
             <tag> daily </tag>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -148,7 +148,7 @@
       <link href="/2022/05/16/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%AC%E5%9B%9B%E7%89%88/"/>
       <url>/2022/05/16/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%AC%E5%9B%9B%E7%89%88/</url>
       
-        <content type="html"><![CDATA[<h1 id="戴师帮忙选的important-point"><a href="#戴师帮忙选的important-point" class="headerlink" title="戴师帮忙选的important point"></a>戴师帮忙选的important point</h1><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652947733242.png" alt="important point page-1"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652947875807.png" alt="important point page-2"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948018182.png" alt="important point page-3"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948045914.png" alt="important point page-4"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948066093.png" alt="important point page-5"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948087661.png" alt="important point page-6"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948115340.png" alt="important point page-7"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948131262.png" alt="important point page-8"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948150528.png" alt="important point page-9"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948166840.png" alt="important point page-X"></p><h1 id="第二章-HTML-中的-JavaScript"><a href="#第二章-HTML-中的-JavaScript" class="headerlink" title="第二章 HTML 中的 JavaScript"></a>第二章 HTML 中的 JavaScript</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol><li>第2.1中提到type中设置为module，代码当成了<font color="#8B0000">ES6模块</font>，需要实践来验证。</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652770176911.png" alt="script标签中type属性"></p><ol start="2"><li>第2.1中提到浏览器不会对文件扩展名进行检测，为服务器<font color="#8B0000">动态生成js</font>提供可能性，不是很理解。</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652770868317.png" alt="不对文件后缀检测的作用"></p><ol start="3"><li>第2.1不是很懂其中提到的<font color="#8B0000">MIME</font>的作用及判断原理</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652771059896.png" alt="返回正确MIME类型"></p><ol start="4"><li>第2.1中提到src中url的请求策略，不理解<font color="#bf242a">同源策略</font></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652771809768.png" alt="src的请求策略，以及返回的JavaScript的受限规则"></p><ol start="5"><li>第2.1.2中推迟脚本执行中提到DOMContentLoad事件，没见过，下次学习一下HTML</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652773828884.png" alt="delay属性设置后依旧会在DOMContentLoad事件之前执行"></p><ol start="6"><li>第2.1.3async可以保证脚本在<font color="#E9967A">页面load事件之前执行</font></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652774411043.png" alt="async在页面中的执行顺序"></p><h2 id="理解与解决"><a href="#理解与解决" class="headerlink" title="理解与解决"></a>理解与解决</h2><h1 id="第三章语音基础"><a href="#第三章语音基础" class="headerlink" title="第三章语音基础"></a>第三章语音基础</h1><h2 id="学习与反思"><a href="#学习与反思" class="headerlink" title="学习与反思"></a>学习与反思</h2><ol><li>声明的提升</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652786738528.png" alt="var声明提升"></p><ol start="2"><li><p>补充：<font color="#8B0000"><a href="https://www.javascripttutorial.net/javascript-event-loop/">Event Loop</a></font></p></li><li><p>var，let与const在for中的使用</p></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652790271566.png" alt="for循环"></p><p>setTimeOut会在for循环结束后进行输出，var在这里读取的是一个全局变了 $i$ ,所有只会输出五，但是JavaScript引擎会为for循环中的let声明分别创建独立的变量实例，所以有五个 $i$ 进行输出。</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652790654029.png" alt="for中的let"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652790715199.png" alt="for中的const"></p><h2 id="问题与解释"><a href="#问题与解释" class="headerlink" title="问题与解释"></a>问题与解释</h2><ol><li>第3.4.5中提到八进制和十六进制在数学操作中都被视为十进制，什么意思？</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652792773822.png" alt="八进制和十六进制的运算方式"><br>答：都转化为十进制再进行计算。</p><ol start="2"><li>第3.4.7中为什么要避免Symbol()包装对象？</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652843325753.png" alt="Symbol()无法包装对象"><br>解：对象是引用类型，返回的是指针，针对同一类型的对象是同一个指针，这就与Symbol（）矛盾了。<br>3. 第3.4.7.4的使用Symbol实现异步迭代以及后续的内容不是很懂。</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652861220077.png" alt="相关异步的问题"><br>解：重构了迭代函数<br>4. 第3.4.7.16中with环境啥意思</p><p>解：</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652947545109.png" alt="with的使用"></p><ol start="5"><li>第3.6.7中标签语句进行学习</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652945995300.png" alt="标签语句"><br>解：</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="戴师帮忙选的important-point"><a href="#戴师帮忙选的important-point" class="headerlink" title="戴师帮忙选的important point"></a>戴师帮忙选的important point</h1><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652947733242.png" alt="important point page-1"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652947875807.png" alt="important point page-2"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948018182.png" alt="important point page-3"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948045914.png" alt="important point page-4"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948066093.png" alt="important point page-5"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948087661.png" alt="important point page-6"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948115340.png" alt="important point page-7"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948131262.png" alt="important point page-8"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948150528.png" alt="important point page-9"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652948166840.png" alt="important point page-X"></p><h1 id="第二章-HTML-中的-JavaScript"><a href="#第二章-HTML-中的-JavaScript" class="headerlink" title="第二章 HTML 中的 JavaScript"></a>第二章 HTML 中的 JavaScript</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol><li>第2.1中提到type中设置为module，代码当成了<font color="#8B0000">ES6模块</font>，需要实践来验证。</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652770176911.png" alt="script标签中type属性"></p><ol start="2"><li>第2.1中提到浏览器不会对文件扩展名进行检测，为服务器<font color="#8B0000">动态生成js</font>提供可能性，不是很理解。</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652770868317.png" alt="不对文件后缀检测的作用"></p><ol start="3"><li>第2.1不是很懂其中提到的<font color="#8B0000">MIME</font>的作用及判断原理</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652771059896.png" alt="返回正确MIME类型"></p><ol start="4"><li>第2.1中提到src中url的请求策略，不理解<font color="#bf242a">同源策略</font></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652771809768.png" alt="src的请求策略，以及返回的JavaScript的受限规则"></p><ol start="5"><li>第2.1.2中推迟脚本执行中提到DOMContentLoad事件，没见过，下次学习一下HTML</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652773828884.png" alt="delay属性设置后依旧会在DOMContentLoad事件之前执行"></p><ol start="6"><li>第2.1.3async可以保证脚本在<font color="#E9967A">页面load事件之前执行</font></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652774411043.png" alt="async在页面中的执行顺序"></p><h2 id="理解与解决"><a href="#理解与解决" class="headerlink" title="理解与解决"></a>理解与解决</h2><h1 id="第三章语音基础"><a href="#第三章语音基础" class="headerlink" title="第三章语音基础"></a>第三章语音基础</h1><h2 id="学习与反思"><a href="#学习与反思" class="headerlink" title="学习与反思"></a>学习与反思</h2><ol><li>声明的提升</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652786738528.png" alt="var声明提升"></p><ol start="2"><li><p>补充：<font color="#8B0000"><a href="https://www.javascripttutorial.net/javascript-event-loop/">Event Loop</a></font></p></li><li><p>var，let与const在for中的使用</p></li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652790271566.png" alt="for循环"></p><p>setTimeOut会在for循环结束后进行输出，var在这里读取的是一个全局变了 $i$ ,所有只会输出五，但是JavaScript引擎会为for循环中的let声明分别创建独立的变量实例，所以有五个 $i$ 进行输出。</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652790654029.png" alt="for中的let"></p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652790715199.png" alt="for中的const"></p><h2 id="问题与解释"><a href="#问题与解释" class="headerlink" title="问题与解释"></a>问题与解释</h2><ol><li>第3.4.5中提到八进制和十六进制在数学操作中都被视为十进制，什么意思？</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652792773822.png" alt="八进制和十六进制的运算方式"><br>答：都转化为十进制再进行计算。</p><ol start="2"><li>第3.4.7中为什么要避免Symbol()包装对象？</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652843325753.png" alt="Symbol()无法包装对象"><br>解：对象是引用类型，返回的是指针，针对同一类型的对象是同一个指针，这就与Symbol（）矛盾了。<br>3. 第3.4.7.4的使用Symbol实现异步迭代以及后续的内容不是很懂。</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652861220077.png" alt="相关异步的问题"><br>解：重构了迭代函数<br>4. 第3.4.7.16中with环境啥意思</p><p>解：</p><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652947545109.png" alt="with的使用"></p><ol start="5"><li>第3.6.7中标签语句进行学习</li></ol><p><img src="https://gitee.com/merlynr/img-store/raw/master/20225/1652945995300.png" alt="标签语句"><br>解：</p><p><img src="http://blog.shanqianche.cn/merlynr/1652970288088.png" alt="DDDD"></p>]]></content>
       
       
       <categories>
@@ -162,9 +162,9 @@
             
             <tag> daily </tag>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> front-end </tag>
             
@@ -197,9 +197,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> weekly </tag>
             
@@ -228,9 +228,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> weekly </tag>
             
@@ -259,9 +259,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> weekly </tag>
             
@@ -292,9 +292,9 @@
             
             <tag> daily </tag>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -321,9 +321,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> weekly </tag>
             
@@ -352,9 +352,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -381,9 +381,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> weekly </tag>
             
@@ -414,9 +414,9 @@
             
             <tag> daily </tag>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -443,9 +443,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> weekly </tag>
             
@@ -474,9 +474,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> weekly </tag>
             
@@ -505,9 +505,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> weekly </tag>
             
@@ -536,9 +536,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> deep learning </tag>
             
@@ -571,9 +571,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -602,9 +602,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> deep learning </tag>
             
@@ -633,9 +633,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -664,9 +664,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> deep learning </tag>
             
@@ -695,9 +695,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -726,9 +726,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> deep learning </tag>
             
@@ -759,11 +759,11 @@
       
         <tags>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> summarize </tag>
-            
-            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -794,9 +794,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> deep learning </tag>
             
@@ -829,9 +829,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> deep learning </tag>
             
@@ -864,9 +864,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> RPA </tag>
             
@@ -899,9 +899,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> deep learning </tag>
             
@@ -961,9 +961,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -994,9 +994,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -1027,9 +1027,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -1095,9 +1095,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> algorithm </tag>
             
@@ -1124,9 +1124,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> RPA </tag>
             
@@ -1190,11 +1190,11 @@
       
         <tags>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> report </tag>
-            
-            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1252,9 +1252,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> RPA </tag>
             
@@ -1283,9 +1283,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> weekly </tag>
             
@@ -1314,17 +1314,17 @@
       
         <tags>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> report </tag>
             
-            <tag> study </tag>
-            
             <tag> weekly </tag>
             
-            <tag> plan </tag>
-            
             <tag> RPA </tag>
+            
+            <tag> plan </tag>
             
         </tags>
       
@@ -1349,9 +1349,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> RPA </tag>
             
@@ -1378,11 +1378,11 @@
       
         <tags>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> report </tag>
-            
-            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1409,11 +1409,11 @@
       
         <tags>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> report </tag>
-            
-            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1442,9 +1442,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> RPA </tag>
             
@@ -1471,11 +1471,11 @@
       
         <tags>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> report </tag>
-            
-            <tag> study </tag>
             
         </tags>
       
@@ -1500,9 +1500,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -1533,9 +1533,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -1564,9 +1564,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> study </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -1738,6 +1738,8 @@
             
             <tag> daily </tag>
             
+            <tag> study </tag>
+            
             <tag> graduate student </tag>
             
             <tag> report </tag>
@@ -1745,8 +1747,6 @@
             <tag> summarize </tag>
             
             <tag> Java </tag>
-            
-            <tag> study </tag>
             
         </tags>
       
