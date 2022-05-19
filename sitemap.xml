@@ -310,14 +310,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/03/24/2021-03-24%E3%80%90Week%E3%80%91/</loc>
+    <loc>https://merlynr.github.io/2021/05/19/2021-05-15%E3%80%90Week%E3%80%91/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/05/19/2021-05-15%E3%80%90Week%E3%80%91/</loc>
+    <loc>https://merlynr.github.io/2021/03/24/2021-03-24%E3%80%90Week%E3%80%91/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -352,14 +352,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2020/06/19/xiang-ji-http-yu-https-zhi-jian-de-qu-bie/</loc>
+    <loc>https://merlynr.github.io/2021/03/28/what%E2%80%98s%20the%20mean%20of%20RPA/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/03/28/what%E2%80%98s%20the%20mean%20of%20RPA/</loc>
+    <loc>https://merlynr.github.io/2020/06/19/xiang-ji-http-yu-https-zhi-jian-de-qu-bie/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -380,14 +380,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/01/03/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%A4%8D%E4%B9%A0-2/</loc>
+    <loc>https://merlynr.github.io/2020/12/28/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%A4%8D%E4%B9%A0-1/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2020/12/28/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%A4%8D%E4%B9%A0-1/</loc>
+    <loc>https://merlynr.github.io/2021/01/03/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%A4%8D%E4%B9%A0-2/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -529,6 +529,13 @@
   </url>
   
   <url>
+    <loc>https://merlynr.github.io/tags/exam/</loc>
+    <lastmod>2022-05-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://merlynr.github.io/tags/paper/</loc>
     <lastmod>2022-05-19</lastmod>
     <changefreq>daily</changefreq>
@@ -537,13 +544,6 @@
   
   <url>
     <loc>https://merlynr.github.io/tags/block-chain/</loc>
-    <lastmod>2022-05-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://merlynr.github.io/tags/exam/</loc>
     <lastmod>2022-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -664,14 +664,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/categories/paper/</loc>
+    <loc>https://merlynr.github.io/categories/exam/</loc>
     <lastmod>2022-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/categories/exam/</loc>
+    <loc>https://merlynr.github.io/categories/paper/</loc>
     <lastmod>2022-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
