@@ -380,7 +380,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/03/24/2021-03-24%E3%80%90Week%E3%80%91/</loc>
+    <loc>https://merlynr.github.io/2020/10/15/2020-10-15daily/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -389,7 +389,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2020/10/15/2020-10-15daily/</loc>
+    <loc>https://merlynr.github.io/2021/05/19/2021-05-15%E3%80%90Week%E3%80%91/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -407,7 +407,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/05/19/2021-05-15%E3%80%90Week%E3%80%91/</loc>
+    <loc>https://merlynr.github.io/2021/03/24/2021-03-24%E3%80%90Week%E3%80%91/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -558,6 +558,13 @@
   </url>
   
   <url>
+    <loc>https://merlynr.github.io/tags/study/</loc>
+    <lastmod>2022-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://merlynr.github.io/tags/graduate-student/</loc>
     <lastmod>2022-05-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -586,20 +593,6 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/study/</loc>
-    <lastmod>2022-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://merlynr.github.io/tags/weekly/</loc>
-    <lastmod>2022-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://merlynr.github.io/tags/front-end/</loc>
     <lastmod>2022-05-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -614,7 +607,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/RPA/</loc>
+    <loc>https://merlynr.github.io/tags/weekly/</loc>
     <lastmod>2022-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -628,6 +621,13 @@
   </url>
   
   <url>
+    <loc>https://merlynr.github.io/tags/RPA/</loc>
+    <lastmod>2022-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://merlynr.github.io/tags/FE/</loc>
     <lastmod>2022-05-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -635,14 +635,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/algorithm/</loc>
+    <loc>https://merlynr.github.io/tags/deep-learning/</loc>
     <lastmod>2022-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/deep-learning/</loc>
+    <loc>https://merlynr.github.io/tags/algorithm/</loc>
     <lastmod>2022-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
