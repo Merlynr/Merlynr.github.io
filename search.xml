@@ -162,11 +162,11 @@
             
             <tag> daily </tag>
             
-            <tag> front-end </tag>
-            
             <tag> study </tag>
             
             <tag> graduate student </tag>
+            
+            <tag> front-end </tag>
             
             <tag> plan </tag>
             
@@ -199,9 +199,9 @@
             
             <tag> study </tag>
             
-            <tag> weekly </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> weekly </tag>
             
             <tag> plan </tag>
             
@@ -230,9 +230,9 @@
             
             <tag> study </tag>
             
-            <tag> weekly </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> weekly </tag>
             
             <tag> plan </tag>
             
@@ -261,9 +261,9 @@
             
             <tag> study </tag>
             
-            <tag> weekly </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> weekly </tag>
             
             <tag> plan </tag>
             
@@ -323,9 +323,9 @@
             
             <tag> study </tag>
             
-            <tag> weekly </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> weekly </tag>
             
             <tag> plan </tag>
             
@@ -383,9 +383,9 @@
             
             <tag> study </tag>
             
-            <tag> weekly </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> weekly </tag>
             
             <tag> plan </tag>
             
@@ -445,9 +445,9 @@
             
             <tag> study </tag>
             
-            <tag> weekly </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> weekly </tag>
             
             <tag> plan </tag>
             
@@ -476,9 +476,9 @@
             
             <tag> study </tag>
             
-            <tag> weekly </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> weekly </tag>
             
             <tag> plan </tag>
             
@@ -507,9 +507,9 @@
             
             <tag> study </tag>
             
-            <tag> weekly </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> weekly </tag>
             
             <tag> plan </tag>
             
@@ -759,11 +759,11 @@
       
         <tags>
             
-            <tag> summarize </tag>
-            
             <tag> study </tag>
             
             <tag> graduate student </tag>
+            
+            <tag> summarize </tag>
             
             <tag> plan </tag>
             
@@ -1192,11 +1192,11 @@
             
             <tag> study </tag>
             
-            <tag> weekly </tag>
-            
             <tag> graduate student </tag>
             
             <tag> report </tag>
+            
+            <tag> weekly </tag>
             
             <tag> plan </tag>
             
@@ -1285,9 +1285,9 @@
             
             <tag> study </tag>
             
-            <tag> weekly </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> weekly </tag>
             
             <tag> plan </tag>
             
@@ -1316,15 +1316,15 @@
             
             <tag> study </tag>
             
-            <tag> weekly </tag>
-            
             <tag> graduate student </tag>
             
             <tag> report </tag>
             
-            <tag> RPA </tag>
+            <tag> weekly </tag>
             
             <tag> plan </tag>
+            
+            <tag> RPA </tag>
             
         </tags>
       
@@ -1380,11 +1380,11 @@
             
             <tag> study </tag>
             
-            <tag> weekly </tag>
-            
             <tag> graduate student </tag>
             
             <tag> report </tag>
+            
+            <tag> weekly </tag>
             
         </tags>
       
@@ -1411,11 +1411,11 @@
             
             <tag> study </tag>
             
-            <tag> weekly </tag>
-            
             <tag> graduate student </tag>
             
             <tag> report </tag>
+            
+            <tag> weekly </tag>
             
             <tag> plan </tag>
             
@@ -1738,15 +1738,15 @@
             
             <tag> daily </tag>
             
-            <tag> summarize </tag>
-            
-            <tag> Java </tag>
-            
             <tag> study </tag>
             
             <tag> graduate student </tag>
             
             <tag> report </tag>
+            
+            <tag> summarize </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
