@@ -380,15 +380,6 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/03/24/2021-03-24%E3%80%90Week%E3%80%91/</loc>
-    
-    <lastmod>2021-05-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://merlynr.github.io/2020/10/15/2020-10-15daily/</loc>
     
     <lastmod>2021-05-24</lastmod>
@@ -399,6 +390,15 @@
   
   <url>
     <loc>https://merlynr.github.io/2021/04/12/2021-04-12%E3%80%90Week%E3%80%91/</loc>
+    
+    <lastmod>2021-05-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://merlynr.github.io/2021/03/24/2021-03-24%E3%80%90Week%E3%80%91/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -488,7 +488,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2020/12/28/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%A4%8D%E4%B9%A0-1/</loc>
+    <loc>https://merlynr.github.io/2021/01/03/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%A4%8D%E4%B9%A0-2/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -497,7 +497,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/01/03/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%A4%8D%E4%B9%A0-2/</loc>
+    <loc>https://merlynr.github.io/2020/12/28/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%A4%8D%E4%B9%A0-1/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -593,13 +593,6 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/weekly/</loc>
-    <lastmod>2022-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://merlynr.github.io/tags/front-end/</loc>
     <lastmod>2022-05-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -608,6 +601,13 @@
   
   <url>
     <loc>https://merlynr.github.io/tags/security/</loc>
+    <lastmod>2022-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://merlynr.github.io/tags/weekly/</loc>
     <lastmod>2022-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
