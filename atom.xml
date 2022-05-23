@@ -6,7 +6,7 @@
   <link href="https://merlynr.github.io/atom.xml" rel="self"/>
   
   <link href="https://merlynr.github.io/"/>
-  <updated>2022-05-18T16:00:00.000Z</updated>
+  <updated>2022-05-22T16:00:00.000Z</updated>
   <id>https://merlynr.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2022-5-23研究生的倒数第359天</title>
+    <link href="https://merlynr.github.io/2022/05/23/2022-5-23%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC359%E5%A4%A9/"/>
+    <id>https://merlynr.github.io/2022/05/23/2022-5-23%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC359%E5%A4%A9/</id>
+    <published>2022-05-22T16:00:00.000Z</published>
+    <updated>2022-05-22T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><hr><ul><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">完成算法相关改进</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">采样优先度计算完成</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~20:00 无字幕版美剧</li><li><input disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">JavaScript高级程序设计</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">英语</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结</li></ul>]]></content>
+    
+    
+    <summary type="html">每天学习计划</summary>
+    
+    
+    
+    <category term="graduate student time" scheme="https://merlynr.github.io/categories/graduate-student-time/"/>
+    
+    
+    <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
+    
+    <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
+    
+    <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
+    
+  </entry>
   
   <entry>
     <title>2022-5-19研究生的倒数第363天</title>
@@ -551,36 +584,6 @@
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
     
     <category term="paper" scheme="https://merlynr.github.io/tags/paper/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>损失函数之交叉熵(一般用于分类问题)</title>
-    <link href="https://merlynr.github.io/2021/07/18/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E4%B9%8B%E4%BA%A4%E5%8F%89%E7%86%B5(%E4%B8%80%E8%88%AC%E7%94%A8%E4%BA%8E%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98)/"/>
-    <id>https://merlynr.github.io/2021/07/18/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E4%B9%8B%E4%BA%A4%E5%8F%89%E7%86%B5(%E4%B8%80%E8%88%AC%E7%94%A8%E4%BA%8E%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98)/</id>
-    <published>2021-07-17T16:00:00.000Z</published>
-    <updated>2021-07-17T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://www.youtube.com/watch?v=i73Lh3h0DpQ" title="ONE HOUR"><img src="https://res.cloudinary.com/marcomontalbano/image/upload/v1626618085/video_to_markdown/images/youtube--i73Lh3h0DpQ-c05b58ac6eb4c4700831b2b3070cd403.jpg" alt="ONE HOUR"></a></p><p><a href="https://blog.csdn.net/u014453898/article/details/81559462">损失函数之交叉熵(一般用于分类问题)_ZJE-CSDN博客</a></p><h2 id="信息量、信息熵、相对熵"><a href="#信息量、信息熵、相对熵" class="headerlink" title="信息量、信息熵、相对熵"></a>信息量、信息熵、相对熵</h2><h3 id="信息量"><a href="#信息量" class="headerlink" title="信息量"></a>信息量</h3><p><font color="#FF8C00">一件事发生的概率越大，其蕴含的信息量就越少，反之，若发生的几率越小，则蕴含的信息量就越大</font>。</p><p>例如，“太阳从东方升起”：这件事发生概率极大，大家都习以为常，所以不觉得有什么不妥的地方，因此蕴含信息量很小。但“国足踢入世界杯”：这就蕴含的信息量很大了，因为这件事的发生概率很小。</p><p><img src="http://rc4u2dn8t.hd-bkt.clouddn.com/2021718/1626617713541.png" alt="信息量"></p><p>若某事x的发生概率为P(x)，则信息量的计算公式为：<br>$I ( x ) = - \log ( P ( x ) )$</p><p>上式的log的底为2，当然也可以是e、10。在神经网络中，log的底一般是e。当log的底大于1，log的图形就像下图红色线。因为P(x)的取值范围为0<del>1，可以看到，log的图像，在0</del>1的时候是负数，且P(x)越接近0，log越接近负无穷，P(x)越接近1，log越接近0，所以信息量的公式会在log前面加个负号，让log的取值范围为0~∞。当P(x)接近0，log接近无穷，P(x)接近1，log接近0，这符合信息量的概率越小，信息量越大的定义。</p><h3 id="信息熵"><a href="#信息熵" class="headerlink" title="信息熵"></a>信息熵</h3><p>信息熵可以表达<strong>数据的信息量大小</strong>。<br>信息熵也被称为熵，用来表示所有信息量的<strong>期望</strong>。<br>期望是试验中每次可能结果的概率乘以其结果的总和。<br>信息熵的公式如下：<br>$H ( X ) = - \sum _ { i = 1 } ^ { n } P ( x _ { i } ) \log ( P ( x _ { i } )  )$ $( X = x _ { 1 } , x _ { 2 } , x _ { 3 } , x _ { n - 1 } , x _ { n } )$</p><p>使用明天的天气概率来计算其信息熵：</p><p><img src="http://rc4u2dn8t.hd-bkt.clouddn.com/2021718/1626618468307.png" alt="天气"><br>$H ( X ) = - ( 0.5 * \log ( 0.5 ) + 0.2 * \log ( 0.2 ) + 0.3 * \log ( 0.3 ) )$</p><h3 id="KL散度（相对熵）—–用于衡量两个概率分布的差异"><a href="#KL散度（相对熵）—–用于衡量两个概率分布的差异" class="headerlink" title="KL散度（相对熵）—–用于衡量两个概率分布的差异"></a>KL散度（相对熵）—–用于衡量两个概率分布的差异</h3><p><strong><font color="#8A2BE2">如何理解 “衡量两个概率分布的差异”？</font></strong></p><p>例如在机器学习中，常常用P(x)表示样本的真实分布，用Q(x)表示模型预测的分布，比如在一个三分类任务中（例如，猫狗马分类器），[x1，x2，x3]分别表示猫，狗，马的概率，输入一张猫的图片，其真实分布为P(x)=[1，0，0]，预测分布为Q(x)=[0.7，0.2，0，1]，那么P(x)和Q(x)就是两个不同的概率分布，可以用KL散度来计算他们的差异。<br>公式为：<br><img src="http://rc4u2dn8t.hd-bkt.clouddn.com/2021718/1626618687852.png" alt="enter description here"><br>KL散度越小，表示P(x)和Q(x)越接近，所以可以通过反复训练，来使Q(x)逼近P(x)，但KL散度有个特点，就是不对称，就是用P来你和Q和用Q来你和P的KL散度(相对熵)是不一样的，但是P和Q的距离是不变的。</p><p><strong>那KL散度(相对熵)和交叉熵有什么联系呢</strong>？</p><p>我们通过对相对熵公式进行变形：<br><img src="http://rc4u2dn8t.hd-bkt.clouddn.com/2021718/1626618747252.png" alt="enter description here"><br>H(X)为之前的信息熵，后面那一坨其实就是交叉熵了，所以可以看到：**<font color="#FF00FF">KL散度 = 交叉熵 - 信息熵</font>**</p><p>所以交叉熵的公式如下：<br><img src="http://rc4u2dn8t.hd-bkt.clouddn.com/2021718/1626618800801.png" alt="enter description here"><br>从信息熵的公式，我们知道，对于同一个数据集，其信息熵是不变的，所以信息熵可以看作一个常数，因此<font color="#9400D3">当KL散度最小时，也即是当交叉熵最小时</font>。在多分类任务中，KL散度(相对熵)和交叉熵是等价的。</p><h2 id="交叉熵的原理"><a href="#交叉熵的原理" class="headerlink" title="交叉熵的原理"></a>交叉熵的原理</h2><p>交叉熵是<font color="#057748">用来衡量两个 概率分布 的距离</font>(也可以叫差别)。[概率分布：即[0.1，0.5，0.2，0.1，0.1]，每个类别的概率都在0~1，且加起来为1]。</p><p>若有两个概率分布p(x)和q(x)，通过q来表示p的交叉熵为：(<strong>注意</strong>，p和q呼唤位置后，交叉熵是不同的)<br>$H ( p , q ) = - \sum p ( x ) \log q ( x )$<br>只要把p作为正确结果(如[0，0，0，1，0，0])，把q作为预测结果(如[0.1，0.1，0.4，0.1，0.2，0.1])，就可以得到两个概率分布的交叉熵了，<strong>交叉熵值越低，表示两个概率分布越靠近</strong>。</p><p><strong>交叉熵计算实例：</strong><br>假设有一个三分类问题，某个样例的正确答案是(1，0，0)，某个模型经过softmax回归之后的预测答案是(0.5，0.4，0.1)，那么他们的交叉熵为：<br><img src="http://rc4u2dn8t.hd-bkt.clouddn.com/2021718/1626619013263.png" alt="enter description here"><br>如果另一个模型的预测概率分布为(0.8，0.1，0.1)，则这个预测与真实的交叉熵为：<br><img src="http://rc4u2dn8t.hd-bkt.clouddn.com/2021718/1626619026409.png" alt="enter description here"><br>由于0.1小于0.3，所以第二个预测结果要由于第一个。</p><h2 id="使用交叉熵的背景"><a href="#使用交叉熵的背景" class="headerlink" title="使用交叉熵的背景"></a>使用交叉熵的背景</h2><p>通过神经网络解决分类问题时，一般会设置k个输出点，k代表类别的个数，如下图<br><img src="http://rc4u2dn8t.hd-bkt.clouddn.com/2021718/1626619104894.png" alt="enter description here"><br>每个输出结点，都会输出该结点对应类别的得分，如[cat，dog，car，pedestrian] 为[44，10，22，5]</p><p>但是输出结点输出的是得分，而不是概率分布，那么就没有办法用交叉熵来衡量预测结果和真确结果了，那怎么办呢，**<font color="#FF00FF">解决方法是在输出结果后接一层 softmax，softmax的作用就是把输出得分换算为概率分布</font>**。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=i73Lh3h0DpQ&quot; title=&quot;ONE HOUR&quot;&gt;&lt;img src=&quot;https://res.cloudinary.com/marcomontalbano/image/upload/</summary>
-      
-    
-    
-    
-    <category term="algorithm" scheme="https://merlynr.github.io/categories/algorithm/"/>
-    
-    
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
-    <category term="process mining" scheme="https://merlynr.github.io/tags/process-mining/"/>
     
   </entry>
   
