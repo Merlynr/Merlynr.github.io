@@ -447,7 +447,7 @@
     <published>2022-05-16T16:00:00.000Z</published>
     <updated>2022-05-16T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="总述"><a href="#总述" class="headerlink" title="总述"></a>总述</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ol><li>master公式，计算时间复杂度</li></ol><p><img src="http://files.shanqianche.cn/20227/1656895833852.png" alt="时间复杂度"></p><p>$N^{d}$为剩余空间复杂度，master公式思想就是取时间或空间时间复杂度最大值。</p><ol start="2"><li>对数器，对算法进行测试</li></ol><hr><p>0.有一个你想测试的方法a</p><p>1.实现一个绝对正确但是时间复杂度不好的方法b</p><p>2.实现一个随机样本产生器</p><p>3.实现比对的方法</p><p>4.把方法a和方法b比对很多次来验证方法a是否正确</p><p>5.如果有一个样本比对出错，打印样本分析是哪个方法出错</p><p>6.当样本数量很多时，比对测试依然正确，可以确定方法a已经正确。</p><hr>]]></content>
+    <content type="html"><![CDATA[<h1 id="总述"><a href="#总述" class="headerlink" title="总述"></a>总述</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ol><li>master公式，计算时间复杂度</li></ol><p><img src="http://files.shanqianche.cn/20227/1656895833852.png" alt="时间复杂度"></p><p>$N^{d}$为剩余空间复杂度，master公式思想就是取时间或空间时间复杂度最大值。</p><ol start="2"><li>对数器，对算法进行测试</li></ol><hr><p>0.有一个你想测试的方法a</p><p>1.实现一个绝对正确但是时间复杂度不好的方法b</p><p>2.实现一个随机样本产生器</p><p>3.实现比对的方法</p><p>4.把方法a和方法b比对很多次来验证方法a是否正确</p><p>5.如果有一个样本比对出错，打印样本分析是哪个方法出错</p><p>6.当样本数量很多时，比对测试依然正确，可以确定方法a已经正确。</p><hr><h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><ol><li>随机排序中的partition理解一下</li></ol>]]></content>
     
     
     <summary type="html">每天/周学习计划</summary>
