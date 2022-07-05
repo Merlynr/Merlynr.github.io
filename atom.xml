@@ -6,7 +6,7 @@
   <link href="https://merlynr.github.io/atom.xml" rel="self"/>
   
   <link href="https://merlynr.github.io/"/>
-  <updated>2022-07-03T16:00:00.000Z</updated>
+  <updated>2022-07-04T16:00:00.000Z</updated>
   <id>https://merlynr.github.io/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2022-7-4研究生的倒数第317天</title>
-    <link href="https://merlynr.github.io/2022/07/04/2022-7-4%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC317%E5%A4%A9/"/>
-    <id>https://merlynr.github.io/2022/07/04/2022-7-4%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC317%E5%A4%A9/</id>
-    <published>2022-07-03T16:00:00.000Z</published>
-    <updated>2022-07-03T16:00:00.000Z</updated>
+    <title>2022-7-5研究生的倒数第316天</title>
+    <link href="https://merlynr.github.io/2022/07/05/2022-7-5%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC316%E5%A4%A9/"/>
+    <id>https://merlynr.github.io/2022/07/05/2022-7-5%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC316%E5%A4%A9/</id>
+    <published>2022-07-04T16:00:00.000Z</published>
+    <updated>2022-07-04T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li>[ ] 9:00~10:00 今日学习学习            <strong><font color="#D2691E">算法</font></strong></li><li>[ ] 10:00~10:20 今日学习学习             <strong><font color="#D2691E">js测试器</font></strong></li><li>[ ] 10:20~10:50 今日学习学习  <strong><font color="#D2691E">js，原型链，直接看视频</font></strong></li><li>[ ] 10:50~11:20 今日学习学习  <strong><font color="#D2691E">生成模式</font></strong></li></ul><hr><h2 id="午饭时间-找期刊模板"><a href="#午饭时间-找期刊模板" class="headerlink" title="- [] 午饭时间 找期刊模板"></a>- [] 午饭时间 <strong><font color="#D2691E">找期刊模板</font></strong></h2><ul><li>[ ] 14:00~15:00 今日学习安排            <strong><font color="#ff7500">解决上午问题</font></strong></li><li>[ ] 15:00~16:00 今日学习安排            <strong><font color="#01274F">论文转移</font></strong></li><li>[ ] 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">论文转移</font></strong></li><li>[ ] 16:40~17:10 下午学习总结</li></ul><hr><ul><li>[ ] 17:30~20：00 晚上学习安排            <strong><font color="#8B008B">录视频</font></strong>    </li><li>[ ] 晚上学习总结 <font color="#00CED1"><strong>算法</strong></font></li></ul><h1 id="DONE-List"><a href="#DONE-List" class="headerlink" title="DONE List"></a>DONE List</h1><ol><li>算法这块，快排</li><li>js测试器同一个文件下正常，其它文件函数存在问题</li><li></li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h1><ol><li>量力而行，任务被问题卡住，js</li><li>论文转移效率低</li><li>早上问题也未解决</li><li>算法任务也未完成，先看完，再做其他的，不要卡</li></ol><h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:00~10:00 今日学习学习            <strong><font color="#D2691E">算法</font></strong></li><li><input disabled="" type="checkbox"> 10:00~10:20 今日学习学习             <strong><font color="#D2691E">js</font></strong></li><li><input disabled="" type="checkbox"> 10:20~10:50 今日学习学习  <strong><font color="#D2691E">设计模式</font></strong></li><li><input disabled="" type="checkbox"> 10:50~11:20 今日学习学习  <strong><font color="#D2691E">论文</font></strong></li></ul><hr><ul><li>[] 午饭时间 <strong><font color="#D2691E">找期刊模板</font></strong></li></ul><hr><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">解决上午问题</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">论文转移</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">论文转移</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 17:30~20：00 晚上学习安排            <strong><font color="#8B008B">录视频</font></strong>    </li><li><input disabled="" type="checkbox"> 晚上学习总结 <font color="#00CED1"><strong>算法</strong></font></li></ul>]]></content>
     
     
     <summary type="html">每天学习计划</summary>
@@ -35,9 +35,42 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
+    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
+    
+    <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
+    
+    <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022-7-4研究生的倒数第317天</title>
+    <link href="https://merlynr.github.io/2022/07/04/2022-7-4%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC317%E5%A4%A9/"/>
+    <id>https://merlynr.github.io/2022/07/04/2022-7-4%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC317%E5%A4%A9/</id>
+    <published>2022-07-03T16:00:00.000Z</published>
+    <updated>2022-07-03T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:00~10:00 今日学习学习            <strong><font color="#D2691E">算法</font></strong></li><li><input disabled="" type="checkbox"> 10:00~10:20 今日学习学习             <strong><font color="#D2691E">js测试器</font></strong></li><li><input disabled="" type="checkbox"> 10:20~10:50 今日学习学习  <strong><font color="#D2691E">js，原型链，直接看视频</font></strong></li><li><input disabled="" type="checkbox"> 10:50~11:20 今日学习学习  <strong><font color="#D2691E">生成模式</font></strong></li></ul><hr><ul><li>[] 午饭时间 <strong><font color="#D2691E">找期刊模板</font></strong></li></ul><hr><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">解决上午问题</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">论文转移</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">论文转移</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 17:30~20：00 晚上学习安排            <strong><font color="#8B008B">录视频</font></strong>    </li><li><input disabled="" type="checkbox"> 晚上学习总结 <font color="#00CED1"><strong>算法</strong></font></li></ul><h1 id="DONE-List"><a href="#DONE-List" class="headerlink" title="DONE List"></a>DONE List</h1><ol><li>算法这块，快排</li><li>js测试器同一个文件下正常，其它文件函数存在问题</li><li></li></ol>]]></content>
+    
+    
+    <summary type="html">每天学习计划</summary>
+    
+    
+    
+    <category term="graduate student time" scheme="https://merlynr.github.io/categories/graduate-student-time/"/>
+    
+    
+    <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
+    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -56,7 +89,7 @@
     <published>2022-07-02T16:00:00.000Z</published>
     <updated>2022-07-02T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li>[ ] 10:00~11:00 JS  <strong><font color="#D2691E">todo-1</font></strong></li><li>[ ] 11:10~ 算法 <strong><font color="#8BB382">todo-2</font></strong></li></ul><hr><ul><li>[ ] 13:40~15:00 JS            <strong><font color="#ff7500">todo-3</font></strong></li><li>[ ] 15:00~16:30 算法            <strong><font color="#01274F">todo-4</font></strong></li><li>[ ] 16:35~17:20 JS            <strong><font color="#2e4e7e">todo-5</font></strong></li></ul><hr><ul><li>[ ] 20:00~21:30 小论文重写            <strong><font color="#8B008B">todo-6</font></strong></li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><ol><li>原型链这块比较难，又很重要还在啃。</li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 10:00~11:00 JS  <strong><font color="#D2691E">todo-1</font></strong></li><li><input disabled="" type="checkbox"> 11:10~ 算法 <strong><font color="#8BB382">todo-2</font></strong></li></ul><hr><ul><li><input disabled="" type="checkbox"> 13:40~15:00 JS            <strong><font color="#ff7500">todo-3</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:30 算法            <strong><font color="#01274F">todo-4</font></strong></li><li><input disabled="" type="checkbox"> 16:35~17:20 JS            <strong><font color="#2e4e7e">todo-5</font></strong></li></ul><hr><ul><li><input disabled="" type="checkbox"> 20:00~21:30 小论文重写            <strong><font color="#8B008B">todo-6</font></strong></li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><ol><li>原型链这块比较难，又很重要还在啃。</li></ol>]]></content>
     
     
     <summary type="html">每天学习计划</summary>
@@ -68,9 +101,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -101,9 +134,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -116,7 +149,7 @@
     <published>2022-07-02T16:00:00.000Z</published>
     <updated>2022-07-02T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><ol><li>master准则，计算时间复杂度</li></ol><p><img src="https://files.shanqianche.cn/20227/1656853689146.png" alt="时间复杂度-master公式"></p><ol><li>归并排序的实质：有序的部分data在全体data中进行排序</li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><ol><li>master准则，计算时间复杂度</li></ol><p><img src="https://files.shanqianche.cn/20227/1656853689146.png" alt="时间复杂度-master公式"><br>2. 归并排序的实质：有序的部分data在全体data中进行排序</p>]]></content>
     
     
     <summary type="html">每天学习计划</summary>
@@ -128,9 +161,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -143,7 +176,7 @@
     <published>2022-07-01T16:00:00.000Z</published>
     <updated>2022-07-01T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="慎行"><a href="#慎行" class="headerlink" title="慎行"></a>慎行</h1><ol><li>心情不好时，冷静20分钟，再说话做事，记得向小羊说下，不要突然消失</li><li>永远永远不要因为一时不爽就做一些自以为舒服的事，这就是一种不负责任而且还害人害己的事</li><li>与小羊约定好的事就提上日程安排，不要拖拉，不要总是把事情划个三六九等，这样会让事情变质</li><li>每次做事都要先问情自己想要的是什么，你是为了什么，这样在与小羊交流的时候你才不会跑偏</li><li><font color="#FF00FF">永远要认清，你是小羊男朋友，以后最依靠的人</font>，这样做事情就要掌握分寸。</li><li>小羊需要的不仅仅是线上虚无缥缈的搞笑，她更需要的是生活中<font color="#DC143C">实实际际的关怀和陪伴</font>，是可以感受到的，要记得。</li></ol><h1 id="慎言"><a href="#慎言" class="headerlink" title="慎言"></a>慎言</h1><ol><li>少说废话，没用，说话的时候思考一下再说，慢点说，又不花钱</li><li>对爱人要有爱语，不是朋友，摆清楚自个位置，没用的搞笑显得很蠢</li><li>永远不要说一些人格污蔑的话，这是底线，谁都原谅不了你</li><li>有些话少说，可是有些话必须说，不是为了说，是为了陪伴，刷手机看视频的时候记得记录有趣的话题，在小羊上下班的时候，给她看，这样就不孤单了。收藏起来没用的，<font color="#00008B">想做和做是两回事。</font></li><li>永远不要中断两个人的甜言蜜语，爱人之间，在彼此能获得的东西不多了，千万要珍惜。</li></ol><h1 id="2022Plan"><a href="#2022Plan" class="headerlink" title="2022Plan"></a>2022Plan</h1><ol><li>情侣衣服【TODO 7月5之前】</li><li>控制体重【TODO 七月要到标准值内】<font size=2><em>要进行锻炼，长坚实了，硬邦邦的腹肌</em></font></li></ol><p><img src="http://files.shanqianche.cn/20227/1656728341646.png" alt="标准体重"></p><ol><li>北京相聚【TODO 七月】<font size=2>有一部电影，我攒了五年多了，找对的人看了它</font></li><li>完成普通一线大厂工作寻找【TODO 七月八月九月十月】</li><li>春节回家，商量见家长【TODO 拿好你的offer】</li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="慎行"><a href="#慎行" class="headerlink" title="慎行"></a>慎行</h1><ol><li>心情不好时，冷静20分钟，再说话做事，记得向小羊说下，不要突然消失</li><li>永远永远不要因为一时不爽就做一些自以为舒服的事，这就是一种不负责任而且还害人害己的事</li><li>与小羊约定好的事就提上日程安排，不要拖拉，不要总是把事情划个三六九等，这样会让事情变质</li><li>每次做事都要先问情自己想要的是什么，你是为了什么，这样在与小羊交流的时候你才不会跑偏</li><li><font color="#FF00FF">永远要认清，你是小羊男朋友，以后最依靠的人</font>，这样做事情就要掌握分寸。</li><li>小羊需要的不仅仅是线上虚无缥缈的搞笑，她更需要的是生活中<font color="#DC143C">实实际际的关怀和陪伴</font>，是可以感受到的，要记得。</li></ol><h1 id="慎言"><a href="#慎言" class="headerlink" title="慎言"></a>慎言</h1><ol><li>少说废话，没用，说话的时候思考一下再说，慢点说，又不花钱</li><li>对爱人要有爱语，不是朋友，摆清楚自个位置，没用的搞笑显得很蠢</li><li>永远不要说一些人格污蔑的话，这是底线，谁都原谅不了你</li><li>有些话少说，可是有些话必须说，不是为了说，是为了陪伴，刷手机看视频的时候记得记录有趣的话题，在小羊上下班的时候，给她看，这样就不孤单了。收藏起来没用的，<font color="#00008B">想做和做是两回事。</font></li><li>永远不要中断两个人的甜言蜜语，爱人之间，在彼此能获得的东西不多了，千万要珍惜。</li></ol><h1 id="2022Plan"><a href="#2022Plan" class="headerlink" title="2022Plan"></a>2022Plan</h1><ol><li>情侣衣服【TODO 7月5之前】</li><li>控制体重【TODO 七月要到标准值内】<font size=2><em>要进行锻炼，长坚实了，硬邦邦的腹肌</em></font></li></ol><p><img src="http://files.shanqianche.cn/20227/1656728341646.png" alt="标准体重"><br>3. 北京相聚【TODO 七月】<font size=2>有一部电影，我攒了五年多了，找对的人看了它</font><br>4. 完成普通一线大厂工作寻找【TODO 七月八月九月十月】<br>5. 春节回家，商量见家长【TODO 拿好你的offer】</p>]]></content>
     
     
     <summary type="html">小羊专属计划</summary>
@@ -180,11 +213,11 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -197,7 +230,7 @@
     <published>2022-06-19T16:00:00.000Z</published>
     <updated>2022-06-19T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li>[ ] 9:00~10:00 今日学习安排            <strong><font color="#D2691E">JavaScript</font></strong></li><li>[ ] 10:00~10:50 今日学习安排          <strong><font color="#D2691E">JavaScript</font></strong></li><li>[ ] 10:50~11:20 上午学习总结</li></ul><hr><ul><li>[ ] 14:00~15:00 今日学习安排            <strong><font color="#ff7500">JavaScript</font></strong></li><li>[ ] 15:00~16:00 今日学习安排            <strong><font color="#01274F">paper</font></strong></li><li>[ ] 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">paper</font></strong></li><li>[ ] 16:40~17:10 下午学习总结</li></ul><hr><ul><li>[ ] 18:30~20:00 无字幕版美剧</li><li>[ ] 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">计网</font></strong></li><li>[ ] 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">JavaScript</font></strong></li><li>[ ] 22:10~22:30 晚上学习总结</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:00~10:00 今日学习安排            <strong><font color="#D2691E">JavaScript</font></strong></li><li><input disabled="" type="checkbox"> 10:00~10:50 今日学习安排          <strong><font color="#D2691E">JavaScript</font></strong></li><li><input disabled="" type="checkbox"> 10:50~11:20 上午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">JavaScript</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">paper</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">paper</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~20:00 无字幕版美剧</li><li><input disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">计网</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">JavaScript</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结</li></ul>]]></content>
     
     
     <summary type="html">每天学习计划</summary>
@@ -209,9 +242,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -230,7 +263,7 @@
     <published>2022-06-04T16:00:00.000Z</published>
     <updated>2022-06-04T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="马格南基金"><a href="#马格南基金" class="headerlink" title="马格南基金"></a>马格南基金</h1><h2 id="组织关系"><a href="#组织关系" class="headerlink" title="组织关系"></a>组织关系</h2><ol><li>与<font color="#ff7500">索罗斯的基金会</font>【疑是金主】、福特基金会，美国民主基金会有关联</li><li>下属有马格南画报社，马格南记者协会<h2 id="重要人员"><a href="#重要人员" class="headerlink" title="重要人员"></a>重要人员</h2></li><li>肖慕漪-国内记者【国内媒体摄影师，路透社以及“中参馆”】 @muyixiao +12014695771</li><li>曹梦雯-现任<strong><font color="#FF1493">马格南基金会项目经理</font></strong>， 纽约文化沙龙”的成员</li><li>沈璐-“中参馆”</li><li>余心妍-BBC</li><li>周优游-“石英”网站</li><li><font color="#7FFF00">曹梦雯和肖慕漪有在马格南基金会的联系，而沈璐又和肖慕漪一样在“中参馆”供职。</font></li></ol><p><img src="http://files.shanqianche.cn/20226/1654429696469.png" alt="相关人员"></p><h2 id="活动"><a href="#活动" class="headerlink" title="活动"></a>活动</h2><ol><li>2020《纽约时报》肖慕漪故意造谣抹黑武汉疫情</li><li>2021年10月30日，在余心妍的主持下，他们开始宣传一部由福特基金会赞助的武汉疫情纪录片，推进他们的切尔诺贝利叙事。</li></ol><h1 id="亚裔美国记者协会（Asian-American-Journalists-Association，AAJA）"><a href="#亚裔美国记者协会（Asian-American-Journalists-Association，AAJA）" class="headerlink" title="亚裔美国记者协会（Asian American Journalists Association，AAJA）"></a>亚裔美国记者协会（Asian American Journalists Association，AAJA）</h1><h2 id="组织关系-1"><a href="#组织关系-1" class="headerlink" title="组织关系"></a>组织关系</h2><ol><li>美国亚裔和太平洋岛民（简称为“AAPI”）社区召集人、孵化器和资助人美国亚裔基金会（The Asian American Foundation，简称为“TAAF“ 于2021年5月成立。以下组织已获得TAAF的首次赠款，现已成为其网络的一部分：Act to Change、美国亚裔记者协会、Interfaith Youth Core、<font color="#FF1493">美国亚太裔律师协会（NAPABA）</font>、RISE Together Fund、美国锡克法律辩护和教育基金（SALDEF）和锡克联盟。</li></ol><h2 id="重要人物"><a href="#重要人物" class="headerlink" title="重要人物"></a>重要人物</h2><ol><li>Sonal Shah-TAAF总裁</li><li>妮可·邓卡（Nicole Dungca）-波士顿环球报“聚焦”专栏组的调查记者</li><li>迈克尔吉田 （Michael Yoshida）-WHDH电视台新闻记者</li><li>乔伊·廉·尼科瑞恩（Joy Lim Nakrin）-NBC波士顿电视台</li><li>扬·金（Young-Jin Kim）-NBC波士顿电视台的社交媒体总编辑</li><li>本·渡边（Ben Watanabe）-NESN电视台的数据编辑</li><li><a href="https://twitter.com/i/status/1373026515772968961">重要组成人物</a></li></ol><p><img src="http://files.shanqianche.cn/20226/1654431976778.png" alt="NBC波士顿社交媒体总编辑扬·金讲话 徐施钰摄    "></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="马格南基金"><a href="#马格南基金" class="headerlink" title="马格南基金"></a>马格南基金</h1><h2 id="组织关系"><a href="#组织关系" class="headerlink" title="组织关系"></a>组织关系</h2><ol><li>与<font color="#ff7500">索罗斯的基金会</font>【疑是金主】、福特基金会，美国民主基金会有关联</li><li>下属有马格南画报社，马格南记者协会<h2 id="重要人员"><a href="#重要人员" class="headerlink" title="重要人员"></a>重要人员</h2></li><li>肖慕漪-国内记者【国内媒体摄影师，路透社以及“中参馆”】 @muyixiao +12014695771</li><li>曹梦雯-现任**<font color="#FF1493">马格南基金会项目经理</font>**， 纽约文化沙龙”的成员</li><li>沈璐-“中参馆”</li><li>余心妍-BBC</li><li>周优游-“石英”网站</li><li><font color="#7FFF00">曹梦雯和肖慕漪有在马格南基金会的联系，而沈璐又和肖慕漪一样在“中参馆”供职。</font></li></ol><p><img src="http://files.shanqianche.cn/20226/1654429696469.png" alt="相关人员"></p><h2 id="活动"><a href="#活动" class="headerlink" title="活动"></a>活动</h2><ol><li>2020《纽约时报》肖慕漪故意造谣抹黑武汉疫情</li><li>2021年10月30日，在余心妍的主持下，他们开始宣传一部由福特基金会赞助的武汉疫情纪录片，推进他们的切尔诺贝利叙事。</li></ol><h1 id="亚裔美国记者协会（Asian-American-Journalists-Association，AAJA）"><a href="#亚裔美国记者协会（Asian-American-Journalists-Association，AAJA）" class="headerlink" title="亚裔美国记者协会（Asian American Journalists Association，AAJA）"></a>亚裔美国记者协会（Asian American Journalists Association，AAJA）</h1><h2 id="组织关系-1"><a href="#组织关系-1" class="headerlink" title="组织关系"></a>组织关系</h2><ol><li>美国亚裔和太平洋岛民（简称为“AAPI”）社区召集人、孵化器和资助人美国亚裔基金会（The Asian American Foundation，简称为“TAAF“ 于2021年5月成立。以下组织已获得TAAF的首次赠款，现已成为其网络的一部分：Act to Change、美国亚裔记者协会、Interfaith Youth Core、<font color="#FF1493">美国亚太裔律师协会（NAPABA）</font>、RISE Together Fund、美国锡克法律辩护和教育基金（SALDEF）和锡克联盟。</li></ol><h2 id="重要人物"><a href="#重要人物" class="headerlink" title="重要人物"></a>重要人物</h2><ol><li>Sonal Shah-TAAF总裁</li><li>妮可·邓卡（Nicole Dungca）-波士顿环球报“聚焦”专栏组的调查记者</li><li>迈克尔吉田 （Michael Yoshida）-WHDH电视台新闻记者</li><li>乔伊·廉·尼科瑞恩（Joy Lim Nakrin）-NBC波士顿电视台</li><li>扬·金（Young-Jin Kim）-NBC波士顿电视台的社交媒体总编辑</li><li>本·渡边（Ben Watanabe）-NESN电视台的数据编辑</li><li><a href="https://twitter.com/i/status/1373026515772968961">重要组成人物</a></li></ol><p><img src="http://files.shanqianche.cn/20226/1654431976778.png" alt="NBC波士顿社交媒体总编辑扬·金讲话 徐施钰摄    "></p>]]></content>
     
     
     <summary type="html">每天/周学习计划</summary>
@@ -251,7 +284,7 @@
     <published>2022-05-29T16:00:00.000Z</published>
     <updated>2022-05-29T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li>[ ] 9:00~10:00 今日学习学习            <strong><font color="#D2691E">小论文相关问题</font></strong></li><li>[ ] 10:00~10:20 上午学习总结</li><li>[ ] 10:20~10:50  今日学习学习            <strong><font color="#D2691E">小论文设计方案</font></strong></li><li>[ ] 10:50~11:20  今日学习学习            <strong><font color="#D2691E">看好js放松</font></strong></li></ul><hr><ul><li>[ ] 14:00~15:00 今日学习安排            <strong><font color="#ff7500">todo-2</font></strong></li><li>[ ] 15:00~16:00 今日学习安排            <strong><font color="#01274F">todo-3</font></strong></li><li>[ ] 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">todo-4</font></strong></li><li>[ ] 16:40~17:10 下午学习总结</li></ul><hr><ul><li>[ ] 18:30~20:00 无字幕版美剧</li><li>[ ] 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">todo-5</font></strong></li><li>[ ] 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">todo-6</font></strong></li><li>[ ] 22:10~22:30 晚上学习总结</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:00~10:00 今日学习学习            <strong><font color="#D2691E">小论文相关问题</font></strong></li><li><input disabled="" type="checkbox"> 10:00~10:20 上午学习总结</li><li><input disabled="" type="checkbox"> 10:20~10:50  今日学习学习            <strong><font color="#D2691E">小论文设计方案</font></strong></li><li><input disabled="" type="checkbox"> 10:50~11:20  今日学习学习            <strong><font color="#D2691E">看好js放松</font></strong></li></ul><hr><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">todo-2</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">todo-3</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">todo-4</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~20:00 无字幕版美剧</li><li><input disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">todo-5</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">todo-6</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结</li></ul>]]></content>
     
     
     <summary type="html">每天学习计划</summary>
@@ -263,9 +296,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -284,7 +317,7 @@
     <published>2022-05-23T16:00:00.000Z</published>
     <updated>2022-05-23T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li>[ ] 9:50~10:20 今日学习学习            <strong><font color="#D2691E">实验</font></strong></li><li>[ ] 10:20~10:50 今日学习学习</li><li>[ ] 10:50~11:20 今日学习学习</li></ul><hr><ul><li>[ ] 14:00~15:00 今日学习安排            <strong><font color="#ff7500">实验</font></strong></li><li>[ ] 15:00~16:00 今日学习安排            <strong><font color="#01274F">JavaScript高级程序设计</font></strong></li><li>[ ] 16:00~16:40 今日学习安排            </li><li>[ ] 16:40~17:10 下午学习总结</li></ul><hr><ul><li>[ ] 18:30~20:00 无字幕版美剧</li><li>[ ] 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">英语</font></strong></li><li>[ ] 21:30~22:10 晚上学习安排        </li><li>[ ] 22:10~22:30 晚上学习总结</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><p>[(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 0, -1, array([[ 1.73, 14.  ,  0.  ,  1.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 6, -1, array([[ 1.73, 13.  ,  6.  ,  0.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 13, -1, array([[ 1.73, 13.  ,  6.  ,  1.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 15, 1.01, array([[ 1.73, 10.  ,  1.  ,  3.  ,  1.73, 11.  ]]), True, 0.6666666666666666),<br>(array([[ 1.73, 12.  ,  1.  ,  1.  ,  1.73, 11.  ]]), 20, -1, array([[ 1.73, 12.  ,  6.  ,  2.  ,  1.73, 11.  ]]), False, 0.6666666666666666)]</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:50~10:20 今日学习学习            <strong><font color="#D2691E">实验</font></strong></li><li><input disabled="" type="checkbox"> 10:20~10:50 今日学习学习</li><li><input disabled="" type="checkbox"> 10:50~11:20 今日学习学习</li></ul><hr><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">实验</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">JavaScript高级程序设计</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            </li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~20:00 无字幕版美剧</li><li><input disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">英语</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排        </li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><p>[(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 0, -1, array([[ 1.73, 14.  ,  0.  ,  1.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 6, -1, array([[ 1.73, 13.  ,  6.  ,  0.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 13, -1, array([[ 1.73, 13.  ,  6.  ,  1.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 15, 1.01, array([[ 1.73, 10.  ,  1.  ,  3.  ,  1.73, 11.  ]]), True, 0.6666666666666666),<br>(array([[ 1.73, 12.  ,  1.  ,  1.  ,  1.73, 11.  ]]), 20, -1, array([[ 1.73, 12.  ,  6.  ,  2.  ,  1.73, 11.  ]]), False, 0.6666666666666666)]</p>]]></content>
     
     
     <summary type="html">每天学习计划</summary>
@@ -296,9 +329,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -317,7 +350,7 @@
     <published>2022-05-22T16:00:00.000Z</published>
     <updated>2022-05-22T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><hr><ul><li>[ ] 15:00~16:00 今日学习安排            <strong><font color="#01274F">完成算法相关改进</font></strong></li><li>[ ] 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">采样优先度计算完成</font></strong></li><li>[ ] 16:40~17:10 下午学习总结</li></ul><hr><ul><li>[ ] 18:30~20:00 无字幕版美剧</li><li>[ ] 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">JavaScript高级程序设计</font></strong></li><li>[ ] 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">英语</font></strong></li><li>[ ] 22:10~22:30 晚上学习总结</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><p><img src="http://files.shanqianche.cn/20225/1653316893624.png" alt="相关系数"></p><p>[(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 8, -1, array([[ 1.73, 11.  ,  1.  ,  2.  ,  1.73, 11.  ]]), False, 1.0),<br>(array([[ 1.73, 10.  ,  1.  ,  3.  ,  1.73, 11.  ]]), 3, -1, array([[ 2.6 ,  9.5 ,  3.  ,  1.  ,  1.73, 11.  ]]), False, 0.75),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 1, 1.01, array([[ 1.73, 12.  ,  1.  ,  1.  ,  1.73, 11.  ]]), True, 0.6666666666666666),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 15, 1.01, array([[ 1.73, 10.  ,  1.  ,  3.  ,  1.73, 11.  ]]), True, 0.6666666666666666),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 15, 1.01, array([[ 1.73, 10.  ,  1.  ,  3.  ,  1.73, 11.  ]]), True, 0.6666666666666666),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 1, 1.01, array([[ 1.73, 12.  ,  1.  ,  1.  ,  1.73, 11.  ]]), True, 0.6666666666666666),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 15, 1.01, array([[ 1.73, 10.  ,  1.  ,  3.  ,  1.73, 11.  ]]), True, 0.6666666666666666),<br>(array([[ 1.73, 10.  ,  1.  ,  3.  ,  1.73, 11.  ]]), 6, 1.01, array([[ 1.73, 10.  ,  6.  ,  0.  ,  1.73, 11.  ]]), True, 0.6666666666666666),<br>(array([[ 1.73, 10.  ,  1.  ,  3.  ,  1.73, 11.  ]]), 11, -1, array([[ 0.  ,  9.  ,  4.  ,  2.  ,  1.73, 11.  ]]), False, 0.6),<br>(array([[ 1.73, 10.  ,  6.  ,  0.  ,  1.73, 11.  ]]), 7, -1, array([[-6.93, 12.  ,  0.  ,  2.  ,  1.73, 11.  ]]), False, 0.5),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 11, -1, array([[ 0.  , 12.  ,  4.  ,  2.  ,  1.73, 11.  ]]), False, 0.375),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 7, -1, array([[ 1.73, 15.  ,  0.  ,  2.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 12.  ,  1.  ,  1.  ,  1.73, 11.  ]]), 19, -1, array([[ 4.33, 13.5 ,  5.  ,  3.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 18, -1, array([[-0.87, 11.5 ,  4.  ,  3.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 0, -1, array([[ 1.73, 14.  ,  0.  ,  1.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 5, -1, array([[ 2.6 , 13.5 ,  5.  ,  1.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 9, -1, array([[ 0.  , 14.  ,  2.  ,  2.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 12, -1, array([[ 3.46, 14.  ,  5.  ,  2.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 9, -1, array([[ 0.  , 14.  ,  2.  ,  2.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 7, -1, array([[ 1.73, 15.  ,  0.  ,  2.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 0, -1, array([[ 1.73, 14.  ,  0.  ,  1.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 19, -1, array([[ 4.33, 14.5 ,  5.  ,  3.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 20, -1, array([[ 1.73, 13.  ,  6.  ,  2.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 6, -1, array([[ 1.73, 13.  ,  6.  ,  0.  ,  1.73, 11.  ]]), False, 0.0), (array([[ 1.73, 12.  ,  1.  ,  1.  ,  1.73, 11.  ]]), 2, -1, array([[ 0.87, 12.5 ,  2.  ,  1.  ,  1.73, 11.  ]]), False, 0.0), (array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 17, -1, array([[ 4.33, 11.5 ,  3.  ,  3.  ,  1.73, 11.  ]]), False, 0.0), (array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 2, -1, array([[ 0.87, 13.5 ,  2.  ,  1.  ,  1.73, 11.  ]]), False, 0.0), (array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 10, -1, array([[ 3.46, 12.  ,  3.  ,  2.  ,  1.73, 11.  ]]), False, 0.0), (array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 9, -1, array([[ 0.  , 14.  ,  2.  ,  2.  ,  1.73, 11.  ]]), False, 0.0), (array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 17, -1, array([[ 4.33, 11.5 ,  3.  ,  3.  ,  1.73, 11.  ]]), False, 0.0), (array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 19, -1, array([[ 4.33, 14.5 ,  5.  ,  3.  ,  1.73, 11.  ]]), False, 0.0)]</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><hr><ul><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">完成算法相关改进</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">采样优先度计算完成</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~20:00 无字幕版美剧</li><li><input disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">JavaScript高级程序设计</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">英语</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><p><img src="http://files.shanqianche.cn/20225/1653316893624.png" alt="相关系数"></p><p>[(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 8, -1, array([[ 1.73, 11.  ,  1.  ,  2.  ,  1.73, 11.  ]]), False, 1.0),<br>(array([[ 1.73, 10.  ,  1.  ,  3.  ,  1.73, 11.  ]]), 3, -1, array([[ 2.6 ,  9.5 ,  3.  ,  1.  ,  1.73, 11.  ]]), False, 0.75),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 1, 1.01, array([[ 1.73, 12.  ,  1.  ,  1.  ,  1.73, 11.  ]]), True, 0.6666666666666666),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 15, 1.01, array([[ 1.73, 10.  ,  1.  ,  3.  ,  1.73, 11.  ]]), True, 0.6666666666666666),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 15, 1.01, array([[ 1.73, 10.  ,  1.  ,  3.  ,  1.73, 11.  ]]), True, 0.6666666666666666),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 1, 1.01, array([[ 1.73, 12.  ,  1.  ,  1.  ,  1.73, 11.  ]]), True, 0.6666666666666666),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 15, 1.01, array([[ 1.73, 10.  ,  1.  ,  3.  ,  1.73, 11.  ]]), True, 0.6666666666666666),<br>(array([[ 1.73, 10.  ,  1.  ,  3.  ,  1.73, 11.  ]]), 6, 1.01, array([[ 1.73, 10.  ,  6.  ,  0.  ,  1.73, 11.  ]]), True, 0.6666666666666666),<br>(array([[ 1.73, 10.  ,  1.  ,  3.  ,  1.73, 11.  ]]), 11, -1, array([[ 0.  ,  9.  ,  4.  ,  2.  ,  1.73, 11.  ]]), False, 0.6),<br>(array([[ 1.73, 10.  ,  6.  ,  0.  ,  1.73, 11.  ]]), 7, -1, array([[-6.93, 12.  ,  0.  ,  2.  ,  1.73, 11.  ]]), False, 0.5),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 11, -1, array([[ 0.  , 12.  ,  4.  ,  2.  ,  1.73, 11.  ]]), False, 0.375),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 7, -1, array([[ 1.73, 15.  ,  0.  ,  2.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 12.  ,  1.  ,  1.  ,  1.73, 11.  ]]), 19, -1, array([[ 4.33, 13.5 ,  5.  ,  3.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 18, -1, array([[-0.87, 11.5 ,  4.  ,  3.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 0, -1, array([[ 1.73, 14.  ,  0.  ,  1.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 5, -1, array([[ 2.6 , 13.5 ,  5.  ,  1.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 9, -1, array([[ 0.  , 14.  ,  2.  ,  2.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 12, -1, array([[ 3.46, 14.  ,  5.  ,  2.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 9, -1, array([[ 0.  , 14.  ,  2.  ,  2.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 7, -1, array([[ 1.73, 15.  ,  0.  ,  2.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 0, -1, array([[ 1.73, 14.  ,  0.  ,  1.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 19, -1, array([[ 4.33, 14.5 ,  5.  ,  3.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 20, -1, array([[ 1.73, 13.  ,  6.  ,  2.  ,  1.73, 11.  ]]), False, 0.0),<br>(array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 6, -1, array([[ 1.73, 13.  ,  6.  ,  0.  ,  1.73, 11.  ]]), False, 0.0), (array([[ 1.73, 12.  ,  1.  ,  1.  ,  1.73, 11.  ]]), 2, -1, array([[ 0.87, 12.5 ,  2.  ,  1.  ,  1.73, 11.  ]]), False, 0.0), (array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 17, -1, array([[ 4.33, 11.5 ,  3.  ,  3.  ,  1.73, 11.  ]]), False, 0.0), (array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 2, -1, array([[ 0.87, 13.5 ,  2.  ,  1.  ,  1.73, 11.  ]]), False, 0.0), (array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 10, -1, array([[ 3.46, 12.  ,  3.  ,  2.  ,  1.73, 11.  ]]), False, 0.0), (array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 9, -1, array([[ 0.  , 14.  ,  2.  ,  2.  ,  1.73, 11.  ]]), False, 0.0), (array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 17, -1, array([[ 4.33, 11.5 ,  3.  ,  3.  ,  1.73, 11.  ]]), False, 0.0), (array([[ 1.73, 13.  , -1.  , -1.  ,  1.73, 11.  ]]), 19, -1, array([[ 4.33, 14.5 ,  5.  ,  3.  ,  1.73, 11.  ]]), False, 0.0)]</p>]]></content>
     
     
     <summary type="html">每天学习计划</summary>
@@ -329,9 +362,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -350,7 +383,7 @@
     <published>2022-05-18T16:00:00.000Z</published>
     <updated>2022-05-18T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li>[ ] 9:40~10:20 今日学习学习            <strong><font color="#D2691E">JavaScript第三章Go On</font></strong></li><li>[ ] 10:20~10:50 今日学习学习            <strong><font color="#D2691E">JavaScript第三章Go On</font></strong></li><li>[ ] 10:50~11:20 LeetCode </li><li>[ ] 10:50~11:20 总结</li></ul><hr><ul><li>[ ] 14:00~15:00 今日学习安排            <strong><font color="#ff7500">第四章</font></strong></li><li>[ ] 15:00~16:00 今日学习安排            <strong><font color="#01274F">小论文</font></strong></li><li>[ ] 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">小论文</font></strong></li><li>[ ] 16:40~17:10 下午学习总结</li></ul><hr><ul><li>[ ] 18:30~20:00 无字幕版美剧</li><li>[ ] 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">todo-5</font></strong></li><li>[ ] 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">todo-6</font></strong></li><li>[ ] 22:10~22:30 晚上学习总结</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li><input disabled="" type="checkbox"> 9:40~10:20 今日学习学习            <strong><font color="#D2691E">JavaScript第三章Go On</font></strong></li><li><input disabled="" type="checkbox"> 10:20~10:50 今日学习学习            <strong><font color="#D2691E">JavaScript第三章Go On</font></strong></li><li><input disabled="" type="checkbox"> 10:50~11:20 LeetCode </li><li><input disabled="" type="checkbox"> 10:50~11:20 总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">第四章</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">小论文</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">小论文</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~20:00 无字幕版美剧</li><li><input disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">todo-5</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">todo-6</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结</li></ul>]]></content>
     
     
     <summary type="html">每天学习计划</summary>
@@ -362,9 +395,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -383,7 +416,7 @@
     <published>2022-05-17T16:00:00.000Z</published>
     <updated>2022-05-17T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li>[ ] 10:20~10:50 leetcode             <strong><font color="#ff7500">leetcode</font></strong></li><li>[ ] 10:50~11:20 总结与反思</li></ul><hr><ul><li>[ ] 14:00~15:00 今日学习安排            <strong><font color="#ff7500">JavaScript高级程序设计第四章</font></strong></li><li>[ ] 15:00~16:00 今日学习安排            <strong><font color="#01274F">JavaScript第五章一半</font></strong></li><li>[ ] 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">小论文</font></strong></li><li>[ ] 16:40~17:10 下午学习总结</li></ul><hr><ul><li>[ ] 18:30~20:00 晚上学习安排            <strong><font color="#8B008B">小论文</font></strong></li><li>[ ] 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">JavaScript第五章</font></strong></li><li>[ ] 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">英语</font></strong></li><li>[ ] 22:10~22:30 晚上学习总结与查漏补缺</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><p>行动目的：JavaScript第三章<br>开始时间：2022/5/18 9:53:55<br>任务耗时：0时,58分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<br>                 完成60%</p><p>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<br>                 内容太细太多比自己想的多<br>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<br>                 继续学习第三章<br>任务评价：2022/5/18 10:50:36■■■■■■□□□□60</p><hr><p>行动目的：继续学习第三章<br>开始时间：2022/5/18 10:50:36<br>任务耗时：0时,59分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<br>                 完成65%<br>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<br>                 看了一小会手机<br>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<br>                 继续完成这一阶段<br>任务评价：2022/5/18 11:48:47■■■■■■□□□□■■■■■■■□□□65</p><hr><p>行动目的：第三章，冲冲冲<br>开始时间：2022/5/18 14:49:27<br>任务耗时：1时,32分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<br>                 效果不是很好，去厕所了</p><p>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<br>                 嗯呢，生理条件不允许了，，，，<br>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<br>                 继续学习吧，晚上搞小论文<br>任务评价：2022/5/18 16:20:49■■■□□□□□□□30</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li><input disabled="" type="checkbox"> 10:20~10:50 leetcode             <strong><font color="#ff7500">leetcode</font></strong></li><li><input disabled="" type="checkbox"> 10:50~11:20 总结与反思</li></ul><hr><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">JavaScript高级程序设计第四章</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">JavaScript第五章一半</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">小论文</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~20:00 晚上学习安排            <strong><font color="#8B008B">小论文</font></strong></li><li><input disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">JavaScript第五章</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">英语</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结与查漏补缺</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><p>行动目的：JavaScript第三章<br>开始时间：2022/5/18 9:53:55<br>任务耗时：0时,58分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<br>                 完成60%</p><p>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<br>                 内容太细太多比自己想的多<br>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<br>                 继续学习第三章<br>任务评价：2022/5/18 10:50:36■■■■■■□□□□60</p><hr><p>行动目的：继续学习第三章<br>开始时间：2022/5/18 10:50:36<br>任务耗时：0时,59分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<br>                 完成65%<br>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<br>                 看了一小会手机<br>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<br>                 继续完成这一阶段<br>任务评价：2022/5/18 11:48:47■■■■■■□□□□■■■■■■■□□□65</p><hr><p>行动目的：第三章，冲冲冲<br>开始时间：2022/5/18 14:49:27<br>任务耗时：1时,32分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<br>                 效果不是很好，去厕所了</p><p>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<br>                 嗯呢，生理条件不允许了，，，，<br>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<br>                 继续学习吧，晚上搞小论文<br>任务评价：2022/5/18 16:20:49■■■□□□□□□□30</p>]]></content>
     
     
     <summary type="html">每天/周学习计划</summary>
@@ -395,9 +428,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -416,7 +449,7 @@
     <published>2022-05-16T16:00:00.000Z</published>
     <updated>2022-05-16T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li>[ ] 14:00~15:00 今日学习安排            <strong><font color="#ff7500">JavaScript第二章</font></strong></li><li>[ ] 15:00~16:00 今日学习安排            <strong><font color="#01274F">JavaScript第三章</font></strong></li><li>[ ] 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">小论文实验</font></strong></li><li>[ ] 16:40~17:10 下午学习总结</li></ul><hr><ul><li>[ ] 18:30~20:00 无字幕版美剧</li><li>[ ] 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">JavaScript第四章</font></strong></li><li>[ ] 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">JavaScript第五章</font></strong></li><li>[ ] 22:10~22:30 晚上学习总结</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><ol><li>todo-1</li></ol><p>★★★★C0：准确、清晰地描述全新的一天，第一个行动目的。<br>行动目的：JavaScript第二章<br>开始时间：2022/5/17 14:45:03<br>任务耗时：0时,48分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<br>                 只完成了百分之十，个人学习速度太慢了。<br>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<br>                 目标与实际能力不匹配<br>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<br>                 继续完成第一个TODO<br>任务评价：2022/5/17 15:32:08■■■□□□□□□□30</p><ol><li>todo-2</li></ol><p>行动目的：JavaScript第三章<br>开始时间：2022/5/17 19:52:18<br>任务耗时：1时,2分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<br>                 完成百分之二十吧<br>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<br>                 没有<br>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<br>                 下一个做小论文实验呀</p><p>任务评价：2022/5/17 20:53:50■■■□□□□□□□30</p><ol><li>todo-2<br>行动目的：JavaScript第三章继续肝<br>开始时间：2022/5/17 20:55:50<br>任务耗时：0时,48分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<pre><code>          还短很大一块</code></pre>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<pre><code>          看到最后看手机去了，，，，，</code></pre>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<pre><code>          学个算法吧</code></pre></li></ol><p>任务评价：2022/5/17 21:42:37■■■■■□□□□□50</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">JavaScript第二章</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">JavaScript第三章</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">小论文实验</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~20:00 无字幕版美剧</li><li><input disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">JavaScript第四章</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">JavaScript第五章</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结</li></ul><p>#DONE</p><ol><li>todo-1</li></ol><p>★★★★C0：准确、清晰地描述全新的一天，第一个行动目的。<br>行动目的：JavaScript第二章<br>开始时间：2022/5/17 14:45:03<br>任务耗时：0时,48分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<br>                 只完成了百分之十，个人学习速度太慢了。<br>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<br>                 目标与实际能力不匹配<br>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<br>                 继续完成第一个TODO<br>任务评价：2022/5/17 15:32:08■■■□□□□□□□30</p><ol start="2"><li>todo-2</li></ol><p>行动目的：JavaScript第三章<br>开始时间：2022/5/17 19:52:18<br>任务耗时：1时,2分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<br>                 完成百分之二十吧<br>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<br>                 没有<br>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<br>                 下一个做小论文实验呀</p><p>任务评价：2022/5/17 20:53:50■■■□□□□□□□30<br>3. todo-2<br>行动目的：JavaScript第三章继续肝<br>开始时间：2022/5/17 20:55:50<br>任务耗时：0时,48分<br>★★★★C1：在整体任务进程中，事情已经完成到什么程度？<br>                 还短很大一块<br>★★★★C2：任务执行中间存在行动偏差，或被迫中断吗？下一步如何纠正？<br>                 看到最后看手机去了，，，，，<br>★★★★C3：恭喜你，再一次强化了自己的执行力。再接再厉，下一步继续做什么？让时间看得见，记录你的生命历程。<br>                 学个算法吧</p><p>任务评价：2022/5/17 21:42:37■■■■■□□□□□50</p>]]></content>
     
     
     <summary type="html">每天学习计划</summary>
@@ -428,9 +461,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -459,9 +492,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -476,7 +509,7 @@
     <published>2022-05-15T16:00:00.000Z</published>
     <updated>2022-06-25T00:48:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="戴师帮忙选的important-point"><a href="#戴师帮忙选的important-point" class="headerlink" title="戴师帮忙选的important point"></a>戴师帮忙选的important point</h1><p><img src="http://files.shanqianche.cn/20225/1652971169338.png" alt="important point page-1"></p><p><img src="http://files.shanqianche.cn/20225/1652971169333.png" alt="important point page-2"></p><p><img src="http://files.shanqianche.cn/20225/1652971169335.png" alt="important point page-3"></p><p><img src="http://files.shanqianche.cn/20225/1652971169334.png" alt="important point page-4"></p><p><img src="http://files.shanqianche.cn/20225/1652971169337.png" alt="important point page-5"></p><p><img src="http://files.shanqianche.cn/20225/1652971169336.png" alt="important point page-6"></p><p><img src="http://files.shanqianche.cn/20225/1652971169339.png" alt="important point page-7"></p><p><img src="http://files.shanqianche.cn/20225/1652971169340.png" alt="important point page-8"></p><p><img src="http://files.shanqianche.cn/20225/1652971169411.png" alt="important point page-9"></p><p><img src="http://files.shanqianche.cn/20225/1652971169408.png" alt="important point page-X"></p><h1 id="第二章-HTML-中的-JavaScript"><a href="#第二章-HTML-中的-JavaScript" class="headerlink" title="第二章 HTML 中的 JavaScript"></a>第二章 HTML 中的 JavaScript</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol><li>第2.1中提到type中设置为module，代码当成了<font color="#8B0000">ES6模块</font>，需要实践来验证。</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169412.png" alt="script标签中type属性"></p><ol><li>第2.1中提到浏览器不会对文件扩展名进行检测，为服务器<font color="#8B0000">动态生成js</font>提供可能性，不是很理解。</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169413.png" alt="不对文件后缀检测的作用"></p><ol><li>第2.1不是很懂其中提到的<font color="#8B0000">MIME</font>的作用及判断原理</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169416.png" alt="返回正确MIME类型"></p><ol><li>第2.1中提到src中url的请求策略，不理解<font color="#bf242a">同源策略</font></li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169414.png" alt="src的请求策略，以及返回的JavaScript的受限规则"></p><ol><li>第2.1.2中推迟脚本执行中提到DOMContentLoad事件，没见过，下次学习一下HTML</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169421.png" alt="delay属性设置后依旧会在DOMContentLoad事件之前执行"></p><ol><li>第2.1.3async可以保证脚本在<font color="#E9967A">页面load事件之前执行</font></li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169415.png" alt="async在页面中的执行顺序"></p><h2 id="理解与解决"><a href="#理解与解决" class="headerlink" title="理解与解决"></a>理解与解决</h2><h1 id="第三章语言基础"><a href="#第三章语言基础" class="headerlink" title="第三章语言基础"></a>第三章语言基础</h1><h2 id="学习与反思"><a href="#学习与反思" class="headerlink" title="学习与反思"></a>学习与反思</h2><ol><li>声明的提升</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169420.png" alt="var声明提升"></p><ol><li><p>补充：<font color="#8B0000"><a href="https://www.javascripttutorial.net/javascript-event-loop/">Event Loop</a></font></p></li><li><p>var，let与const在for中的使用</p></li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169419.png" alt="for循环"></p><p>setTimeOut会在for循环结束后进行输出，var在这里读取的是一个全局变了 $i$ ,所有只会输出五，但是JavaScript引擎会为for循环中的let声明分别创建独立的变量实例，所以有五个 $i$ 进行输出。</p><p><img src="http://files.shanqianche.cn/20225/1652971169494.png" alt="for中的let"></p><p><img src="http://files.shanqianche.cn/20225/1652971169495.png" alt="for中的const"></p><h2 id="问题与解释"><a href="#问题与解释" class="headerlink" title="问题与解释"></a>问题与解释</h2><ol><li>第3.4.5中提到八进制和十六进制在数学操作中都被视为十进制，什么意思？</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169496.png" alt="八进制和十六进制的运算方式"><br>答：都转化为十进制再进行计算。</p><ol><li>第3.4.7中为什么要避免Symbol()包装对象？</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169497.png" alt="Symbol()无法包装对象"><br>解：对象是引用类型，返回的是指针，针对同一类型的对象是同一个指针，这就与Symbol（）矛盾了。</p><ol><li>第3.4.7.4的使用Symbol实现异步迭代以及后续的内容不是很懂。</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169498.png" alt="相关异步的问题"><br>解：重构了迭代函数</p><ol><li>第3.4.7.16中with环境啥意思</li></ol><p>解：</p><p><img src="http://files.shanqianche.cn/20225/1652971169499.png" alt="with的使用"></p><ol><li>第3.6.7中标签语句进行学习</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169500.png" alt="标签语句"><br>解：</p><h1 id="第四章变量、作用域与内存"><a href="#第四章变量、作用域与内存" class="headerlink" title="第四章变量、作用域与内存"></a>第四章变量、作用域与内存</h1><h2 id="问题与解"><a href="#问题与解" class="headerlink" title="问题与解"></a>问题与解</h2><ol><li>第4.2.2中let与var的提升的区别，let提升出现暂时性死区啥意思？</li></ol><p><img src="http://files.shanqianche.cn/20226/1655395936285.png" alt="let与var的hoisting"></p><ol><li>第4.3.4.3中提到内存泄漏的原因，那么如何检测内存泄漏呢？</li></ol><h1 id="第五章基本引用类型"><a href="#第五章基本引用类型" class="headerlink" title="第五章基本引用类型"></a>第五章基本引用类型</h1><ol><li>引用值与传统面向对象编程语言中的类相似，但实现不同？<b>理解</b></li></ol><h1 id="第六章集合引用类型"><a href="#第六章集合引用类型" class="headerlink" title="第六章集合引用类型"></a>第六章集合引用类型</h1><ol><li>第6.2.4中提到会出现无法判断一个对象是否为数组的现象？</li></ol><p><img src="http://files.shanqianche.cn/20226/1655908202281.png" alt="无法判断是否为数组"></p><ol><li>第6.2.13中迭代器的作用域对象的使用。</li></ol><p><a href="https://blog.csdn.net/qq_35087256/article/details/79658253">相关文档</a></p><p><img src="http://files.shanqianche.cn/20226/1656118450989.png" alt="作用域对象"></p><ol><li>第6.3.4中提到的上溢和下溢不是很懂。</li></ol><p><img src="http://files.shanqianche.cn/20226/1656257982512.png" alt="解决上溢下溢问题"></p><ol><li>第6.9中，“每种包装类型都映射到同名的原始类型”什么意思？</li><li>第6.9中，“在以读模式访问原始值时，后台会实例化一个原始值包装对象，通过这个对象可以操作数据。”？</li><li>第6.9中，“涉及原始值的语句只要一执行完毕，包装对象就会立即销毁。”？</li></ol><h1 id="第七章迭代器与生成器"><a href="#第七章迭代器与生成器" class="headerlink" title="第七章迭代器与生成器"></a>第七章迭代器与生成器</h1><h2 id="问题与解决"><a href="#问题与解决" class="headerlink" title="问题与解决"></a>问题与解决</h2><ol><li>第7.3.2.4中描述到yied*实现递归，没看懂代码</li></ol><p><img src="http://files.shanqianche.cn/20226/1656581774389.png" alt="enter description here"></p><h1 id="第八章对象、类与面向对象变成"><a href="#第八章对象、类与面向对象变成" class="headerlink" title="第八章对象、类与面向对象变成"></a>第八章对象、类与面向对象变成</h1><ol><li>第8.1.7中对象结构中提到解构在内部使用函数这块不是很懂</li></ol><p><img src="http://files.shanqianche.cn/20227/1656743508866.png" alt="解构在内部使用函数"></p><p><strong><font color="#FF1493">结构这的语法糖还是比较怪的，建议都看</font></strong></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="戴师帮忙选的important-point"><a href="#戴师帮忙选的important-point" class="headerlink" title="戴师帮忙选的important point"></a>戴师帮忙选的important point</h1><p><img src="http://files.shanqianche.cn/20225/1652971169338.png" alt="important point page-1"></p><p><img src="http://files.shanqianche.cn/20225/1652971169333.png" alt="important point page-2"></p><p><img src="http://files.shanqianche.cn/20225/1652971169335.png" alt="important point page-3"></p><p><img src="http://files.shanqianche.cn/20225/1652971169334.png" alt="important point page-4"></p><p><img src="http://files.shanqianche.cn/20225/1652971169337.png" alt="important point page-5"></p><p><img src="http://files.shanqianche.cn/20225/1652971169336.png" alt="important point page-6"></p><p><img src="http://files.shanqianche.cn/20225/1652971169339.png" alt="important point page-7"></p><p><img src="http://files.shanqianche.cn/20225/1652971169340.png" alt="important point page-8"></p><p><img src="http://files.shanqianche.cn/20225/1652971169411.png" alt="important point page-9"></p><p><img src="http://files.shanqianche.cn/20225/1652971169408.png" alt="important point page-X"></p><h1 id="第二章-HTML-中的-JavaScript"><a href="#第二章-HTML-中的-JavaScript" class="headerlink" title="第二章 HTML 中的 JavaScript"></a>第二章 HTML 中的 JavaScript</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol><li>第2.1中提到type中设置为module，代码当成了<font color="#8B0000">ES6模块</font>，需要实践来验证。</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169412.png" alt="script标签中type属性"></p><ol start="2"><li>第2.1中提到浏览器不会对文件扩展名进行检测，为服务器<font color="#8B0000">动态生成js</font>提供可能性，不是很理解。</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169413.png" alt="不对文件后缀检测的作用"></p><ol start="3"><li>第2.1不是很懂其中提到的<font color="#8B0000">MIME</font>的作用及判断原理</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169416.png" alt="返回正确MIME类型"></p><ol start="4"><li>第2.1中提到src中url的请求策略，不理解<font color="#bf242a">同源策略</font></li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169414.png" alt="src的请求策略，以及返回的JavaScript的受限规则"></p><ol start="5"><li>第2.1.2中推迟脚本执行中提到DOMContentLoad事件，没见过，下次学习一下HTML</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169421.png" alt="delay属性设置后依旧会在DOMContentLoad事件之前执行"></p><ol start="6"><li>第2.1.3async可以保证脚本在<font color="#E9967A">页面load事件之前执行</font></li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169415.png" alt="async在页面中的执行顺序"></p><h2 id="理解与解决"><a href="#理解与解决" class="headerlink" title="理解与解决"></a>理解与解决</h2><h1 id="第三章语言基础"><a href="#第三章语言基础" class="headerlink" title="第三章语言基础"></a>第三章语言基础</h1><h2 id="学习与反思"><a href="#学习与反思" class="headerlink" title="学习与反思"></a>学习与反思</h2><ol><li>声明的提升</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169420.png" alt="var声明提升"></p><ol start="2"><li><p>补充：<font color="#8B0000"><a href="https://www.javascripttutorial.net/javascript-event-loop/">Event Loop</a></font></p></li><li><p>var，let与const在for中的使用</p></li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169419.png" alt="for循环"></p><p>setTimeOut会在for循环结束后进行输出，var在这里读取的是一个全局变了 $i$ ,所有只会输出五，但是JavaScript引擎会为for循环中的let声明分别创建独立的变量实例，所以有五个 $i$ 进行输出。</p><p><img src="http://files.shanqianche.cn/20225/1652971169494.png" alt="for中的let"></p><p><img src="http://files.shanqianche.cn/20225/1652971169495.png" alt="for中的const"></p><h2 id="问题与解释"><a href="#问题与解释" class="headerlink" title="问题与解释"></a>问题与解释</h2><ol><li>第3.4.5中提到八进制和十六进制在数学操作中都被视为十进制，什么意思？</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169496.png" alt="八进制和十六进制的运算方式"><br>答：都转化为十进制再进行计算。</p><ol start="2"><li>第3.4.7中为什么要避免Symbol()包装对象？</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169497.png" alt="Symbol()无法包装对象"><br>解：对象是引用类型，返回的是指针，针对同一类型的对象是同一个指针，这就与Symbol（）矛盾了。<br>3. 第3.4.7.4的使用Symbol实现异步迭代以及后续的内容不是很懂。</p><p><img src="http://files.shanqianche.cn/20225/1652971169498.png" alt="相关异步的问题"><br>解：重构了迭代函数<br>4. 第3.4.7.16中with环境啥意思</p><p>解：</p><p><img src="http://files.shanqianche.cn/20225/1652971169499.png" alt="with的使用"></p><ol start="5"><li>第3.6.7中标签语句进行学习</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169500.png" alt="标签语句"><br>解：</p><h1 id="第四章变量、作用域与内存"><a href="#第四章变量、作用域与内存" class="headerlink" title="第四章变量、作用域与内存"></a>第四章变量、作用域与内存</h1><h2 id="问题与解"><a href="#问题与解" class="headerlink" title="问题与解"></a>问题与解</h2><ol><li>第4.2.2中let与var的提升的区别，let提升出现暂时性死区啥意思？</li></ol><p><img src="http://files.shanqianche.cn/20226/1655395936285.png" alt="let与var的hoisting"><br>2. 第4.3.4.3中提到内存泄漏的原因，那么如何检测内存泄漏呢？</p><h1 id="第五章基本引用类型"><a href="#第五章基本引用类型" class="headerlink" title="第五章基本引用类型"></a>第五章基本引用类型</h1><ol><li>引用值与传统面向对象编程语言中的类相似，但实现不同？<b>理解</b></li></ol><h1 id="第六章集合引用类型"><a href="#第六章集合引用类型" class="headerlink" title="第六章集合引用类型"></a>第六章集合引用类型</h1><ol><li>第6.2.4中提到会出现无法判断一个对象是否为数组的现象？</li></ol><p><img src="http://files.shanqianche.cn/20226/1655908202281.png" alt="无法判断是否为数组"></p><ol start="2"><li>第6.2.13中迭代器的作用域对象的使用。</li></ol><p><a href="https://blog.csdn.net/qq_35087256/article/details/79658253">相关文档</a></p><p><img src="http://files.shanqianche.cn/20226/1656118450989.png" alt="作用域对象"></p><ol start="3"><li>第6.3.4中提到的上溢和下溢不是很懂。</li></ol><p><img src="http://files.shanqianche.cn/20226/1656257982512.png" alt="解决上溢下溢问题"><br>4. 第6.9中，“每种包装类型都映射到同名的原始类型”什么意思？<br>5. 第6.9中，“在以读模式访问原始值时，后台会实例化一个原始值包装对象，通过这个对象可以操作数据。”？<br>6. 第6.9中，“涉及原始值的语句只要一执行完毕，包装对象就会立即销毁。”？</p><h1 id="第七章迭代器与生成器"><a href="#第七章迭代器与生成器" class="headerlink" title="第七章迭代器与生成器"></a>第七章迭代器与生成器</h1><h2 id="问题与解决"><a href="#问题与解决" class="headerlink" title="问题与解决"></a>问题与解决</h2><ol><li>第7.3.2.4中描述到yied*实现递归，没看懂代码</li></ol><p><img src="http://files.shanqianche.cn/20226/1656581774389.png" alt="enter description here"></p><h1 id="第八章对象、类与面向对象变成"><a href="#第八章对象、类与面向对象变成" class="headerlink" title="第八章对象、类与面向对象变成"></a>第八章对象、类与面向对象变成</h1><ol><li>第8.1.7中对象结构中提到解构在内部使用函数这块不是很懂</li></ol><p><img src="http://files.shanqianche.cn/20227/1656743508866.png" alt="解构在内部使用函数"></p><p><strong><font color="#FF1493">结构这的语法糖还是比较怪的，建议都看</font></strong></p>]]></content>
     
     
     <summary type="html">每天学习JS</summary>
@@ -488,17 +521,17 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
-    <category term="front-end" scheme="https://merlynr.github.io/tags/front-end/"/>
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
     <category term="JavaScript" scheme="https://merlynr.github.io/tags/JavaScript/"/>
     
     <category term="book" scheme="https://merlynr.github.io/tags/book/"/>
+    
+    <category term="front-end" scheme="https://merlynr.github.io/tags/front-end/"/>
     
   </entry>
   
@@ -509,7 +542,7 @@
     <published>2021-11-29T16:00:00.000Z</published>
     <updated>2021-11-29T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li>[x] 完成开题整体结构</li><li>[x] 修改开题依据和研究内容</li><li>[x] 调研增强学习的探索方式，并选取适合开题的方式</li><li>[x] 完善开题中关于页面元素映射的相关思路</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><ol><li>根据上次开题反馈以及后期选取的研究点，重新构建了新的研究方向和开题内容，主要研究的是业务流程智能化，即对于流程策略的优化</li><li>经过上次演讲和老师辅导，反思自己在研究背景，研究意义以及趋势的书写错误进行改正。这块应该是正对业务流程发展进行描写，而不是描写后面对于模型的改进。</li><li>调研了目前主要的几种探索方式，包括了持续的随机的探索方式以及其改进，和通过监控环境的方式来进行探索。最后结合业务流程自动化的场景可能随时变化，同时页面元素复杂，通过监督的方式进行探索花费的资源比较大，所以选择了持续的一种探索方式，通过加入动作噪声来进行探索。</li><li>对于页面元素映射的算法进行了研究，结合页面元素本身定位复杂，同时不同页面的元素结构不同，这就导致一些对于数据结构要求固定的算发无法被应用到。我们直接采用顺序的元素捕获方式，将其有序映射到固定表单。</li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li><input checked="" disabled="" type="checkbox"> 完成开题整体结构</li><li><input checked="" disabled="" type="checkbox"> 修改开题依据和研究内容</li><li><input checked="" disabled="" type="checkbox"> 调研增强学习的探索方式，并选取适合开题的方式</li><li><input checked="" disabled="" type="checkbox"> 完善开题中关于页面元素映射的相关思路</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><ol><li>根据上次开题反馈以及后期选取的研究点，重新构建了新的研究方向和开题内容，主要研究的是业务流程智能化，即对于流程策略的优化</li><li>经过上次演讲和老师辅导，反思自己在研究背景，研究意义以及趋势的书写错误进行改正。这块应该是正对业务流程发展进行描写，而不是描写后面对于模型的改进。</li><li>调研了目前主要的几种探索方式，包括了持续的随机的探索方式以及其改进，和通过监控环境的方式来进行探索。最后结合业务流程自动化的场景可能随时变化，同时页面元素复杂，通过监督的方式进行探索花费的资源比较大，所以选择了持续的一种探索方式，通过加入动作噪声来进行探索。</li><li>对于页面元素映射的算法进行了研究，结合页面元素本身定位复杂，同时不同页面的元素结构不同，这就导致一些对于数据结构要求固定的算发无法被应用到。我们直接采用顺序的元素捕获方式，将其有序映射到固定表单。</li></ol>]]></content>
     
     
     <summary type="html">每周学习计划</summary>
@@ -519,11 +552,11 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -536,7 +569,7 @@
     <published>2021-11-20T16:00:00.000Z</published>
     <updated>2021-11-20T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li>[x] 构建开题中的部分研究点</li><li>[x] 阅读和理解强化学习与深度学习相结合的模型DPG和DDPG</li><li>[x] 重新梳理开题的研究背景和内容等</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><p>1、重新修改开题题目，将业务流程自动化最优制定策略提取出来作为专门的研究点展开研究，研究过程中，发现深度学习模型仅仅是可以学习到已有的、被大部分沿用的流程策略，只能帮助员工进行流程制作，而无法对已有的流程进行优化，所以进行了进一步研究，发现策略优化是强化学习的一个重要研究点。所以加深了对于强化学习的研究，在研究过程中发现，简单的强化学习无法对于样本利用率低，同时针对业务流程这样的生产环境发现，强化学习模型无法存储这么多&lt;状态-动作&gt;,所以又引入深度学习，主要是RNN模型来存储离散的序列，这样就可以有效提升业务流程过程中的优化。其中还有很多需要克服的问题，后期会一一提出，并寻找解决方法。<br>2、第二部分是对于两个主流的深度增强学习模型进行学习。进行比较学习了两个模型的优缺和演变过程。<br>3、这一部分是听取老师的建议后进行了重新修改开题的结构，上次演讲过后进行反思，认为自己的整体结构确实比较散乱，既没有以流程自动化为中心进行研究，也没有将深度学习与强化学习的结合融汇到一块，所以其它同学没有听懂我要做什么，所有又进一步进行了修改整体脉络。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li><input checked="" disabled="" type="checkbox"> 构建开题中的部分研究点</li><li><input checked="" disabled="" type="checkbox"> 阅读和理解强化学习与深度学习相结合的模型DPG和DDPG</li><li><input checked="" disabled="" type="checkbox"> 重新梳理开题的研究背景和内容等</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><p>1、重新修改开题题目，将业务流程自动化最优制定策略提取出来作为专门的研究点展开研究，研究过程中，发现深度学习模型仅仅是可以学习到已有的、被大部分沿用的流程策略，只能帮助员工进行流程制作，而无法对已有的流程进行优化，所以进行了进一步研究，发现策略优化是强化学习的一个重要研究点。所以加深了对于强化学习的研究，在研究过程中发现，简单的强化学习无法对于样本利用率低，同时针对业务流程这样的生产环境发现，强化学习模型无法存储这么多&lt;状态-动作&gt;,所以又引入深度学习，主要是RNN模型来存储离散的序列，这样就可以有效提升业务流程过程中的优化。其中还有很多需要克服的问题，后期会一一提出，并寻找解决方法。<br>2、第二部分是对于两个主流的深度增强学习模型进行学习。进行比较学习了两个模型的优缺和演变过程。<br>3、这一部分是听取老师的建议后进行了重新修改开题的结构，上次演讲过后进行反思，认为自己的整体结构确实比较散乱，既没有以流程自动化为中心进行研究，也没有将深度学习与强化学习的结合融汇到一块，所以其它同学没有听懂我要做什么，所有又进一步进行了修改整体脉络。</p>]]></content>
     
     
     <summary type="html">每天/周学习计划</summary>
@@ -546,11 +579,11 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -563,7 +596,7 @@
     <published>2021-11-15T16:00:00.000Z</published>
     <updated>2021-11-15T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li>[x] 强化学习</li><li>[x] 深度学习在深度强化学习的作用</li><li>[ ] 开题准备</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><ol><li>学习了强化学习中关于离策略近似方法、资格迹和策略梯度方法。同时阅读了《自适应序列生成的建筑能耗预测》</li><li>学习了DQN，DP以及DDPG模型</li><li>主要针对构建策略函数、价值函数的构建进行了深入研究，同时由于主要考虑了<strong>==强化学习在Web场景中进行广义探索探索方式 #F44336==</strong> ，同时在Web场景中状态的数量也很多，提出使用==高维数 #F44336==据来记录代理机器人状态，通过映射函数记录状态与动作的映射关系。</li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li><input checked="" disabled="" type="checkbox"> 强化学习</li><li><input checked="" disabled="" type="checkbox"> 深度学习在深度强化学习的作用</li><li><input disabled="" type="checkbox"> 开题准备</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><ol><li>学习了强化学习中关于离策略近似方法、资格迹和策略梯度方法。同时阅读了《自适应序列生成的建筑能耗预测》</li><li>学习了DQN，DP以及DDPG模型</li><li>主要针对构建策略函数、价值函数的构建进行了深入研究，同时由于主要考虑了**==强化学习在Web场景中进行广义探索探索方式 #F44336==** ，同时在Web场景中状态的数量也很多，提出使用==高维数 #F44336==据来记录代理机器人状态，通过映射函数记录状态与动作的映射关系。</li></ol>]]></content>
     
     
     <summary type="html">每周学习计划</summary>
@@ -573,38 +606,11 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
     
-    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2021-11-8【mission】</title>
-    <link href="https://merlynr.github.io/2021/11/08/2021-11-8%E3%80%90mission%E3%80%91/"/>
-    <id>https://merlynr.github.io/2021/11/08/2021-11-8%E3%80%90mission%E3%80%91/</id>
-    <published>2021-11-07T16:00:00.000Z</published>
-    <updated>2021-11-07T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ol><li>20.50-11.20 <a href="https://rl.qiwihui.com/zh_CN/latest/partII/chapter9/on-policy_prediction_with_approximation.html">在策略预测近似方法</a></li><li>在策略控制近似方法</li><li>离策略近似方法</li><li>资格迹</li><li>策略梯度的方法</li><li>周报</li></ol><h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p> 如果强化学习系统要适用于人工智能或大型工程应用，则必须能够进行 泛化。 为了实现这一点，可以简单地通过将每个更新视为训练样例，使用用于 监督学习函数近似 的任何广泛的现有方法。</p><p>也许最合适的监督学习方法是使用 参数化函数近似 的方法，其中策略由权向量 w 参数化。 虽然权重向量有很多分量，但状态空间仍然大得多，我们必须找到一个近似的解决方案。 我们将 均方值误差 VE¯¯¯¯¯¯¯¯(w) 定义为 在策略分布 μ 下 权重向量 w 的值 vπw(s) 中的误差的度量。 VE¯¯¯¯¯¯¯¯ 为我们提供了一种明确的方法，可以在在<a href="https://rl.qiwihui.com/zh_CN/latest/partII/chapter9/on-policy_prediction_with_approximation.html#id16">策略案例</a>中对不同的价值函数近似进行排序。<br>为了找到一个好的权重向量，最流行的方法是 随机梯度下降 （SGD）的变化。 在本章中，我们重点关注具有 固定策略 的 在策略 案例，也称为策略评估或预测； 这种情况下的自然学习算法是 n步半梯度TD，其包括梯度蒙特卡罗和半梯度TD(0)算法 作为 n=∞ 和 n=1 的特殊情况。半梯度TD方法不是真正的梯度方法。 在这种自举方法（包括DP）中，权重向量出现在更新目标中，但在计算梯度时不考虑这一点──因此它们是 半 梯度方法。 因此，他们不能依赖于经典的SGD结果。</p><p>然而，在 线性 函数近似的特殊情况下，半梯度方法可以获得良好的结果， 其中价值估计是特征的总和乘以相应的权重。线性情况在理论上是最容易理解的，并且在提供适当特征时在实践中工作良好。 选择特征是将先前领域知识添加到强化学习系统的最重要方法之一。 它们可以被选择为多项式，但是这种情况在通常在强化学习中考虑的在线学习设置中很难感化。 更好的是根据傅立叶基选择特征，或者根据稀疏重叠感受域的某种形式的粗编码。 铺片编码是粗编码的一种形式，其特别具有计算效率和灵活性。 径向基函数对于一维或二维任务非常有用，其中平滑变化的响应很重要。 LSTD是数据最有效的线性TD预测方法，但<font color="#8A2BE2">需要与权重数的平方成比例的计算</font>，而所有其他方法在权重数量上<font color="#A52A2A">具有线性复杂性</font>。 非线性方法包括通过反向传播训练的人工神经网络和SGD的变化；这些方法近年来以 深度强化学习 的名义变得非常流行。</p><p>对于所有 n，线性半梯度n步TD保证在标准条件下 收敛到最佳误差范围内的 VE¯¯¯¯¯¯¯¯ （通过蒙特卡罗方法渐近实现）。 对于更高的n，这个界限总是更紧，并且对于 n→∞ 来说接近零。 然而，在实践中，非常高的n导致学习非常缓慢，并且一定程度的自举（n&lt;∞）通常是可取的， 正如我们在第7章中的表格n步法和和第5章中表格TD和蒙特卡罗方法的比较中所看到的那样。</p><p><a href="https://www.sohu.com/a/136502405_114877">采样</a> </p><p><img src="http://files.shanqianche.cn/20211113/1636808280633.png" alt="最后用伪代码进行阐述"></p><p>需要修改的是动作策略</p>]]></content>
-    
-    
-    <summary type="html">每天学习计划</summary>
-    
-    
-    
-    <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
-    
-    
-    <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
