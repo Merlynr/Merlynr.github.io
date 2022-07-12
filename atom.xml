@@ -6,7 +6,7 @@
   <link href="https://merlynr.github.io/atom.xml" rel="self"/>
   
   <link href="https://merlynr.github.io/"/>
-  <updated>2022-07-04T16:00:00.000Z</updated>
+  <updated>2022-07-11T16:00:00.000Z</updated>
   <id>https://merlynr.github.io/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2022-7-5研究生的倒数第316天</title>
-    <link href="https://merlynr.github.io/2022/07/05/2022-7-5%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC316%E5%A4%A9/"/>
-    <id>https://merlynr.github.io/2022/07/05/2022-7-5%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC316%E5%A4%A9/</id>
-    <published>2022-07-04T16:00:00.000Z</published>
-    <updated>2022-07-04T16:00:00.000Z</updated>
+    <title>2022-7-12研究生的倒数第309天</title>
+    <link href="https://merlynr.github.io/2022/07/12/2022-7-12%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC309%E5%A4%A9/"/>
+    <id>https://merlynr.github.io/2022/07/12/2022-7-12%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC309%E5%A4%A9/</id>
+    <published>2022-07-11T16:00:00.000Z</published>
+    <updated>2022-07-11T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h1><ol><li>量力而行，任务被问题卡住，js</li><li>论文转移效率低</li><li>早上问题也未解决</li><li>算法任务也未完成，先看完，再做其他的，不要卡</li></ol><h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:00~10:00 今日学习学习            <strong><font color="#D2691E">算法</font></strong></li><li><input disabled="" type="checkbox"> 10:00~10:20 今日学习学习             <strong><font color="#D2691E">js</font></strong></li><li><input disabled="" type="checkbox"> 10:20~10:50 今日学习学习  <strong><font color="#D2691E">设计模式</font></strong></li><li><input disabled="" type="checkbox"> 10:50~11:20 今日学习学习  <strong><font color="#D2691E">论文</font></strong></li></ul><hr><ul><li>[] 午饭时间 <strong><font color="#D2691E">找期刊模板</font></strong></li></ul><hr><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">解决上午问题</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">论文转移</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">论文转移</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 17:30~20：00 晚上学习安排            <strong><font color="#8B008B">录视频</font></strong>    </li><li><input disabled="" type="checkbox"> 晚上学习总结 <font color="#00CED1"><strong>算法</strong></font></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:00~10:00 今日学习学习            <strong><font color="#D2691E">JS完成第八章</font></strong></li><li><input disabled="" type="checkbox"> 10:00~10:50 今日学习学习            <strong><font color="#D2691E">算法</font></strong></li><li><input disabled="" type="checkbox"> 10:50~11:20 <strong><font color="#D2691E">实现算法</font></strong></li></ul><hr><ul><li><input disabled="" type="checkbox"> 中午总结and下午安排 <strong><font color="#D2691E">算法</font></strong></li></ul><hr><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">JS</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">小论文</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">小论文</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~20:00 无字幕版美剧</li><li><input disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">算法</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">算法6</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结</li></ul>]]></content>
     
     
     <summary type="html">每天学习计划</summary>
@@ -35,9 +35,75 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
+    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
+    
+    <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
+    
+    <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022-7-6研究生的倒数第315天</title>
+    <link href="https://merlynr.github.io/2022/07/06/2022-7-6%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC315%E5%A4%A9/"/>
+    <id>https://merlynr.github.io/2022/07/06/2022-7-6%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC315%E5%A4%A9/</id>
+    <published>2022-07-05T16:00:00.000Z</published>
+    <updated>2022-07-05T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:00~10:00     <strong><font color="#D2691E">转移论文</font></strong></li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~20:00 无字幕版美剧</li><li><input disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">todo-5</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">todo-6</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结</li></ul>]]></content>
+    
+    
+    <summary type="html">每天学习计划</summary>
+    
+    
+    
+    <category term="graduate student time" scheme="https://merlynr.github.io/categories/graduate-student-time/"/>
+    
+    
+    <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
+    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
+    
+    <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
+    
+    <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022-7-5研究生的倒数第316天</title>
+    <link href="https://merlynr.github.io/2022/07/05/2022-7-5%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC316%E5%A4%A9/"/>
+    <id>https://merlynr.github.io/2022/07/05/2022-7-5%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC316%E5%A4%A9/</id>
+    <published>2022-07-04T16:00:00.000Z</published>
+    <updated>2022-07-04T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h1><ol><li>量力而行，任务被问题卡住，js</li><li>论文转移效率低</li><li>早上问题也未解决</li><li>算法任务也未完成，先看完，再做其他的，不要卡</li></ol><h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:00~10:00 今日学习学习            <strong><font color="#D2691E">算法</font></strong></li><li><input disabled="" type="checkbox"> 10:00~10:20 今日学习学习             <strong><font color="#D2691E">js</font></strong></li><li><input disabled="" type="checkbox"> 10:20~10:50 今日学习学习  <strong><font color="#D2691E">设计模式</font></strong></li><li><input disabled="" type="checkbox"> 10:50~11:20 今日学习学习  <strong><font color="#D2691E">论文</font></strong></li></ul><hr><ul><li>[] 午饭时间 <strong><font color="#D2691E">算法看完</font></strong></li></ul><hr><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">论文转移</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">论文转移</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">论文转移</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 17:30~20：00 晚上学习安排            <strong><font color="#8B008B">录视频</font></strong>    </li><li><input disabled="" type="checkbox"> 晚上学习总结 <font color="#00CED1"><strong>算法</strong></font></li></ul>]]></content>
+    
+    
+    <summary type="html">每天学习计划</summary>
+    
+    
+    
+    <category term="graduate student time" scheme="https://merlynr.github.io/categories/graduate-student-time/"/>
+    
+    
+    <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -68,9 +134,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -101,9 +167,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -134,9 +200,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -161,9 +227,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -213,11 +279,11 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
-    
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -242,9 +308,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -296,9 +362,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -329,9 +395,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -362,9 +428,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -395,9 +461,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -428,9 +494,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -461,9 +527,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -480,7 +546,7 @@
     <published>2022-05-16T16:00:00.000Z</published>
     <updated>2022-05-16T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="总述"><a href="#总述" class="headerlink" title="总述"></a>总述</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="master公式，计算时间复杂度"><a href="#master公式，计算时间复杂度" class="headerlink" title="master公式，计算时间复杂度"></a>master公式，计算时间复杂度</h3><p><img src="http://files.shanqianche.cn/20227/1656895833852.png" alt="时间复杂度"></p><p>$N^{d}$为剩余空间复杂度，master公式思想就是取时间或空间时间复杂度最大值。</p><h3 id="对数器，对算法进行测试"><a href="#对数器，对算法进行测试" class="headerlink" title="对数器，对算法进行测试"></a>对数器，对算法进行测试</h3><hr><p>0.有一个你想测试的方法a</p><p>1.实现一个绝对正确但是时间复杂度不好的方法b</p><p>2.实现一个随机样本产生器</p><p>3.实现比对的方法</p><p>4.把方法a和方法b比对很多次来验证方法a是否正确</p><p>5.如果有一个样本比对出错，打印样本分析是哪个方法出错</p><p>6.当样本数量很多时，比对测试依然正确，可以确定方法a已经正确。</p><hr><h3 id="树"><a href="#树" class="headerlink" title="树"></a>树</h3><ol><li>完全二叉树</li></ol><p>长度size的完全二叉树，左节点为（2i+1）/2，右节点为（2i+2）/2，根为（i-1）/2</p><h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><ol><li>随机排序中的partition理解一下</li></ol><h3 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h3>]]></content>
+    <content type="html"><![CDATA[<h1 id="总述"><a href="#总述" class="headerlink" title="总述"></a>总述</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="master公式，计算时间复杂度"><a href="#master公式，计算时间复杂度" class="headerlink" title="master公式，计算时间复杂度"></a>master公式，计算时间复杂度</h3><p><img src="http://files.shanqianche.cn/20227/1656895833852.png" alt="时间复杂度"></p><p>$N^{d}$为剩余空间复杂度，master公式思想就是取时间或空间时间复杂度最大值。</p><h3 id="对数器，对算法进行测试"><a href="#对数器，对算法进行测试" class="headerlink" title="对数器，对算法进行测试"></a>对数器，对算法进行测试</h3><hr><p>0.有一个你想测试的方法a</p><p>1.实现一个绝对正确但是时间复杂度不好的方法b</p><p>2.实现一个随机样本产生器</p><p>3.实现比对的方法</p><p>4.把方法a和方法b比对很多次来验证方法a是否正确</p><p>5.如果有一个样本比对出错，打印样本分析是哪个方法出错</p><p>6.当样本数量很多时，比对测试依然正确，可以确定方法a已经正确。</p><hr><h3 id="树"><a href="#树" class="headerlink" title="树"></a>树</h3><ol><li>完全二叉树</li></ol><p>长度size的完全二叉树，左节点为（2i+1）/2，右节点为（2i+2）/2，根为（i-1）/2</p><h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><ol><li><p>随机排序中的partition理解一下</p></li><li><p>总结</p></li></ol><p><img src="http://files.shanqianche.cn/20227/1656982584796.png" alt="排序"></p><p><img src="http://files.shanqianche.cn/20227/1656983964217.png" alt="总结"></p><p><img src="http://files.shanqianche.cn/20227/1656984335881.png" alt="坑"></p><ol start="3"><li>排序在工业上的优化<ul><li>充分利用O(N*logN)和O(N^2)排序的各自优势</li></ul></li></ol><p><em><font color="#9932CC">在大样本量下使用快排的调度思想进行递归，在小样本下使用插入排序，虽然为O（N^2）但是，插入排序常熟项低速度更快。</font></em><br>    - 稳定性的考虑<br><em><font color="#9932CC">排序的优势</font></em></p><h3 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h3><h3 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h3>]]></content>
     
     
     <summary type="html">每天/周学习计划</summary>
@@ -492,9 +558,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -521,17 +587,17 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    <category term="front-end" scheme="https://merlynr.github.io/tags/front-end/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
     <category term="JavaScript" scheme="https://merlynr.github.io/tags/JavaScript/"/>
     
     <category term="book" scheme="https://merlynr.github.io/tags/book/"/>
-    
-    <category term="front-end" scheme="https://merlynr.github.io/tags/front-end/"/>
     
   </entry>
   
@@ -552,65 +618,11 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
-    <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
-    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2021-11-21【周总结】</title>
-    <link href="https://merlynr.github.io/2021/11/21/2021-11-21%E3%80%90%E5%91%A8%E6%80%BB%E7%BB%93%E3%80%91/"/>
-    <id>https://merlynr.github.io/2021/11/21/2021-11-21%E3%80%90%E5%91%A8%E6%80%BB%E7%BB%93%E3%80%91/</id>
-    <published>2021-11-20T16:00:00.000Z</published>
-    <updated>2021-11-20T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li><input checked="" disabled="" type="checkbox"> 构建开题中的部分研究点</li><li><input checked="" disabled="" type="checkbox"> 阅读和理解强化学习与深度学习相结合的模型DPG和DDPG</li><li><input checked="" disabled="" type="checkbox"> 重新梳理开题的研究背景和内容等</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><p>1、重新修改开题题目，将业务流程自动化最优制定策略提取出来作为专门的研究点展开研究，研究过程中，发现深度学习模型仅仅是可以学习到已有的、被大部分沿用的流程策略，只能帮助员工进行流程制作，而无法对已有的流程进行优化，所以进行了进一步研究，发现策略优化是强化学习的一个重要研究点。所以加深了对于强化学习的研究，在研究过程中发现，简单的强化学习无法对于样本利用率低，同时针对业务流程这样的生产环境发现，强化学习模型无法存储这么多&lt;状态-动作&gt;,所以又引入深度学习，主要是RNN模型来存储离散的序列，这样就可以有效提升业务流程过程中的优化。其中还有很多需要克服的问题，后期会一一提出，并寻找解决方法。<br>2、第二部分是对于两个主流的深度增强学习模型进行学习。进行比较学习了两个模型的优缺和演变过程。<br>3、这一部分是听取老师的建议后进行了重新修改开题的结构，上次演讲过后进行反思，认为自己的整体结构确实比较散乱，既没有以流程自动化为中心进行研究，也没有将深度学习与强化学习的结合融汇到一块，所以其它同学没有听懂我要做什么，所有又进一步进行了修改整体脉络。</p>]]></content>
-    
-    
-    <summary type="html">每天/周学习计划</summary>
-    
-    
-    
-    <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
-    
     
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
-    
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
-    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2021-11-16【周总结】</title>
-    <link href="https://merlynr.github.io/2021/11/16/2021-11-16%E3%80%90%E5%91%A8%E6%80%BB%E7%BB%93%E3%80%91/"/>
-    <id>https://merlynr.github.io/2021/11/16/2021-11-16%E3%80%90%E5%91%A8%E6%80%BB%E7%BB%93%E3%80%91/</id>
-    <published>2021-11-15T16:00:00.000Z</published>
-    <updated>2021-11-15T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li><input checked="" disabled="" type="checkbox"> 强化学习</li><li><input checked="" disabled="" type="checkbox"> 深度学习在深度强化学习的作用</li><li><input disabled="" type="checkbox"> 开题准备</li></ul><h1 id="DONE"><a href="#DONE" class="headerlink" title="DONE"></a>DONE</h1><ol><li>学习了强化学习中关于离策略近似方法、资格迹和策略梯度方法。同时阅读了《自适应序列生成的建筑能耗预测》</li><li>学习了DQN，DP以及DDPG模型</li><li>主要针对构建策略函数、价值函数的构建进行了深入研究，同时由于主要考虑了**==强化学习在Web场景中进行广义探索探索方式 #F44336==** ，同时在Web场景中状态的数量也很多，提出使用==高维数 #F44336==据来记录代理机器人状态，通过映射函数记录状态与动作的映射关系。</li></ol>]]></content>
-    
-    
-    <summary type="html">每周学习计划</summary>
-    
-    
-    
-    <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
-    
-    
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
-    <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
-    
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
