@@ -6,7 +6,7 @@
   <link href="https://merlynr.github.io/atom.xml" rel="self"/>
   
   <link href="https://merlynr.github.io/"/>
-  <updated>2022-07-12T16:00:00.000Z</updated>
+  <updated>2022-07-13T16:00:00.000Z</updated>
   <id>https://merlynr.github.io/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2022-7-13研究生最后的七月</title>
-    <link href="https://merlynr.github.io/2022/07/13/2022-7-13%E7%A0%94%E7%A9%B6%E7%94%9F%E6%9C%80%E5%90%8E%E7%9A%84%E4%B8%83%E6%9C%88/"/>
-    <id>https://merlynr.github.io/2022/07/13/2022-7-13%E7%A0%94%E7%A9%B6%E7%94%9F%E6%9C%80%E5%90%8E%E7%9A%84%E4%B8%83%E6%9C%88/</id>
-    <published>2022-07-12T16:00:00.000Z</published>
-    <updated>2022-07-12T16:00:00.000Z</updated>
+    <title>2022-7-14研究生的倒数第307天</title>
+    <link href="https://merlynr.github.io/2022/07/14/2022-7-14%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC307%E5%A4%A9/"/>
+    <id>https://merlynr.github.io/2022/07/14/2022-7-14%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC307%E5%A4%A9/</id>
+    <published>2022-07-13T16:00:00.000Z</published>
+    <updated>2022-07-13T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 7.13-7.17完成JS，算法视频课程，设计模式</li><li><input disabled="" type="checkbox"> 7.18-7.20完成计组计网</li><li><input disabled="" type="checkbox"> 7.21-7.21完成html，css基本</li><li><input disabled="" type="checkbox"> 7.22-7.24完成vue[八股文]</li><li><input disabled="" type="checkbox"> 7.25-7.31webpack，node，流程测试，，，，八股文，项目，简历</li></ul><h1 id="DONE-Daily"><a href="#DONE-Daily" class="headerlink" title="DONE Daily"></a>DONE Daily</h1><ol><li>7.13完成情况</li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:00~10:20 今日学习学习            <strong><font color="#D2691E">JS完成第八章</font></strong></li><li><input disabled="" type="checkbox"> 10:20~11:20 今日学习学习            <strong><font color="#D2691E">算法</font></strong></li></ul>]]></content>
     
     
     <summary type="html">每天学习计划</summary>
@@ -43,9 +43,42 @@
     
     <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
     
+    <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
     <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
+  </entry>
+  
+  <entry>
+    <title>2022-7-13研究生最后的七月</title>
+    <link href="https://merlynr.github.io/2022/07/13/2022-7-13%E7%A0%94%E7%A9%B6%E7%94%9F%E6%9C%80%E5%90%8E%E7%9A%84%E4%B8%83%E6%9C%88/"/>
+    <id>https://merlynr.github.io/2022/07/13/2022-7-13%E7%A0%94%E7%A9%B6%E7%94%9F%E6%9C%80%E5%90%8E%E7%9A%84%E4%B8%83%E6%9C%88/</id>
+    <published>2022-07-12T16:00:00.000Z</published>
+    <updated>2022-07-12T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 7.13-7.17完成JS，算法视频课程，设计模式</li><li><input disabled="" type="checkbox"> 7.18-7.20完成计组计网操作系统</li><li><input disabled="" type="checkbox"> 7.21-7.21完成html，css基本</li><li><input disabled="" type="checkbox"> 7.22-7.24完成vue[八股文]</li><li><input disabled="" type="checkbox"> 7.25-7.31webpack，node，流程测试，，，，八股文，项目，简历</li></ul><h1 id="DONE-Daily"><a href="#DONE-Daily" class="headerlink" title="DONE Daily"></a>DONE Daily</h1><ol><li>7.13完成情况</li></ol>]]></content>
+    
+    
+    <summary type="html">每天学习计划</summary>
+    
+    
+    
+    <category term="graduate student time" scheme="https://merlynr.github.io/categories/graduate-student-time/"/>
+    
+    
+    <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
+    
+    <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
+    
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
@@ -76,9 +109,9 @@
     
     <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
     
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
@@ -109,9 +142,9 @@
     
     <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
     
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
@@ -142,9 +175,9 @@
     
     <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
     
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
@@ -175,9 +208,9 @@
     
     <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
     
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
@@ -208,9 +241,9 @@
     
     <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
     
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
@@ -241,9 +274,9 @@
     
     <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
     
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
@@ -281,7 +314,7 @@
     <published>2022-07-02T16:00:00.000Z</published>
     <updated>2022-07-02T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><ol><li>master准则，计算时间复杂度</li></ol><p><img src="https://files.shanqianche.cn/20227/1656853689146.png" alt="时间复杂度-master公式"><br>2. 归并排序的实质：有序的部分data在全体data中进行排序</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><ol><li>master准则，计算时间复杂度</li></ol><p><img src="https://files.shanqianche.cn/20227/1656853689146.png" alt="时间复杂度-master公式"><br>2. 归并排序的实质：有序的部分data在全体data中进行排序<br>3. 计组计网卡住了</p><p><img src="https://files.shanqianche.cn/20227/1657721593588.png" alt="位运算"></p><h1 id="基础提升"><a href="#基础提升" class="headerlink" title="基础提升"></a>基础提升</h1><h2 id="哈希函数和哈希表"><a href="#哈希函数和哈希表" class="headerlink" title="哈希函数和哈希表"></a>哈希函数和哈希表</h2><ol><li>布隆过滤器</li></ol><p>两个重要参数：n(样本量)，p(失误率)</p><p>关键因素：是否为集合模型【没有删除，类似黑名单】，失误率</p><p>公式【<font color="#E9967A">根据样本量和失误率求内存</font>】： $$m=-\frac { n * \ln p } { ( \ln 2 ) ^ { 2 } }$$ m为bit，除以8为字节。</p><p>公式【<font color="#9932CC">求hash函数个数</font>，向上取整】：$$k=\ln 2 * \frac { m } { n } \approx 0.7 * \frac { m } { n }$$<br>公式【根据前两个求出<font color="#FF00FF">失误率的真实值，主要确认容量大小</font>】：$$R _ { 真 } = ( 1 - e ^ { - \frac { n * k _ { 真 } } { m _ { 真 } } } ) ^ { k _ { 真 } }$$</p><ol start="2"><li><p>hash一致性</p><ul><li>在环上并不能通过hash函数均匀分布</li><li>扩容后的内存分配不均</li></ul></li></ol><p>解决方案：<font color="#7FFF00">虚拟节点vnode</font></p>]]></content>
     
     
     <summary type="html">每天学习计划</summary>
@@ -382,9 +415,9 @@
     
     <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
     
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
@@ -436,9 +469,9 @@
     
     <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
     
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
@@ -469,9 +502,9 @@
     
     <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
     
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
@@ -502,9 +535,9 @@
     
     <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
     
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
@@ -535,9 +568,9 @@
     
     <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
     
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
@@ -568,9 +601,9 @@
     
     <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
     
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
-    
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
+    
+    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
@@ -602,35 +635,6 @@
     <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
     
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode算法学习</title>
-    <link href="https://merlynr.github.io/2022/05/17/LeetCode%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
-    <id>https://merlynr.github.io/2022/05/17/LeetCode%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/</id>
-    <published>2022-05-16T16:00:00.000Z</published>
-    <updated>2022-05-16T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="总述"><a href="#总述" class="headerlink" title="总述"></a>总述</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="master公式，计算时间复杂度"><a href="#master公式，计算时间复杂度" class="headerlink" title="master公式，计算时间复杂度"></a>master公式，计算时间复杂度</h3><p><img src="http://files.shanqianche.cn/20227/1656895833852.png" alt="时间复杂度"></p><p>$N^{d}$为剩余空间复杂度，master公式思想就是取时间或空间时间复杂度最大值。</p><h3 id="对数器，对算法进行测试"><a href="#对数器，对算法进行测试" class="headerlink" title="对数器，对算法进行测试"></a>对数器，对算法进行测试</h3><hr><p>0.有一个你想测试的方法a</p><p>1.实现一个绝对正确但是时间复杂度不好的方法b</p><p>2.实现一个随机样本产生器</p><p>3.实现比对的方法</p><p>4.把方法a和方法b比对很多次来验证方法a是否正确</p><p>5.如果有一个样本比对出错，打印样本分析是哪个方法出错</p><p>6.当样本数量很多时，比对测试依然正确，可以确定方法a已经正确。</p><hr><h3 id="树"><a href="#树" class="headerlink" title="树"></a>树</h3><ol><li>完全二叉树</li></ol><p>长度size的完全二叉树，左节点为（2i+1）/2，右节点为（2i+2）/2，根为（i-1）/2</p><h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><ol><li><p>随机排序中的partition理解一下</p></li><li><p>总结</p></li></ol><p><img src="http://files.shanqianche.cn/20227/1656982584796.png" alt="排序"></p><p><img src="http://files.shanqianche.cn/20227/1656983964217.png" alt="总结"></p><p><img src="http://files.shanqianche.cn/20227/1656984335881.png" alt="坑"></p><ol start="3"><li>排序在工业上的优化<ul><li>充分利用O(N*logN)和O(N^2)排序的各自优势</li></ul></li></ol><p><em><font color="#9932CC">在大样本量下使用快排的调度思想进行递归，在小样本下使用插入排序，虽然为O（N^2）但是，插入排序常熟项低速度更快。</font></em><br>    - 稳定性的考虑<br><em><font color="#9932CC">排序的优势</font></em></p><h3 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h3><h3 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h3>]]></content>
-    
-    
-    <summary type="html">每天/周学习计划</summary>
-    
-    
-    
-    <category term="algorithm" scheme="https://merlynr.github.io/categories/algorithm/"/>
-    
-    
-    <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
-    
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
-    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
-    
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
