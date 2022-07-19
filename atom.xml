@@ -35,9 +35,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -68,9 +68,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -101,9 +101,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -134,9 +134,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -167,9 +167,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -200,9 +200,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -233,9 +233,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -266,9 +266,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -299,9 +299,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -314,7 +314,7 @@
     <published>2022-07-02T16:00:00.000Z</published>
     <updated>2022-07-02T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><ol><li>master准则，计算时间复杂度</li></ol><p><img src="https://files.shanqianche.cn/20227/1656853689146.png" alt="时间复杂度-master公式"><br>2. 归并排序的实质：有序的部分data在全体data中进行排序<br>3. 计组计网卡住了</p><p><img src="https://files.shanqianche.cn/20227/1657721593588.png" alt="位运算"></p><h1 id="基础提升"><a href="#基础提升" class="headerlink" title="基础提升"></a>基础提升</h1><h2 id="哈希函数和哈希表"><a href="#哈希函数和哈希表" class="headerlink" title="哈希函数和哈希表"></a>哈希函数和哈希表</h2><ol><li>布隆过滤器</li></ol><p>两个重要参数：n(样本量)，p(失误率)</p><p>关键因素：是否为集合模型【没有删除，类似黑名单】，失误率</p><p>公式【<font color="#E9967A">根据样本量和失误率求内存</font>】： $$m=-\frac { n * \ln p } { ( \ln 2 ) ^ { 2 } }$$ m为bit，除以8为字节。</p><p>公式【<font color="#9932CC">求hash函数个数</font>，向上取整】：$$k=\ln 2 * \frac { m } { n } \approx 0.7 * \frac { m } { n }$$<br>公式【根据前两个求出<font color="#FF00FF">失误率的真实值，主要确认容量大小</font>】：$$R _ { 真 } = ( 1 - e ^ { - \frac { n * k _ { 真 } } { m _ { 真 } } } ) ^ { k _ { 真 } }$$</p><ol start="2"><li><p>hash一致性</p><ul><li>在环上并不能通过hash函数均匀分布</li><li>扩容后的内存分配不均</li></ul></li></ol><p>解决方案：<font color="#7FFF00">虚拟节点vnode</font></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><ol><li>master准则，计算时间复杂度</li></ol><p><img src="https://files.shanqianche.cn/20227/1656853689146.png" alt="时间复杂度-master公式"><br>2. 归并排序的实质：有序的部分data在全体data中进行排序<br>3. 计组计网卡住了</p><p><img src="https://files.shanqianche.cn/20227/1657721593588.png" alt="位运算"></p><ol start="4"><li>资源限制类题目</li></ol><p><img src="https://files.shanqianche.cn/20227/1658153778430.png" alt="资源限制类题目"></p><h1 id="基础提升"><a href="#基础提升" class="headerlink" title="基础提升"></a>基础提升</h1><h2 id="哈希函数和哈希表"><a href="#哈希函数和哈希表" class="headerlink" title="哈希函数和哈希表"></a>哈希函数和哈希表</h2><ol><li>布隆过滤器</li></ol><p>两个重要参数：n(样本量)，p(失误率)</p><p>关键因素：是否为集合模型【没有删除，类似黑名单】，失误率</p><p>公式【<font color="#E9967A">根据样本量和失误率求内存</font>】： $$m=-\frac { n * \ln p } { ( \ln 2 ) ^ { 2 } }$$ m为bit，除以8为字节。</p><p>公式【<font color="#9932CC">求hash函数个数</font>，向上取整】：$$k=\ln 2 * \frac { m } { n } \approx 0.7 * \frac { m } { n }$$<br>公式【根据前两个求出<font color="#FF00FF">失误率的真实值，主要确认容量大小</font>】：$$R _ { 真 } = ( 1 - e ^ { - \frac { n * k _ { 真 } } { m _ { 真 } } } ) ^ { k _ { 真 } }$$</p><ol start="2"><li><p>hash一致性</p><ul><li>在环上并不能通过hash函数均匀分布</li><li>扩容后的内存分配不均</li></ul></li></ol><p>解决方案：<font color="#7FFF00">虚拟节点vnode</font></p><h1 id="pedding"><a href="#pedding" class="headerlink" title="pedding"></a>pedding</h1><p><img src="https://files.shanqianche.cn/20227/1658154932146.png" alt="0718"></p>]]></content>
     
     
     <summary type="html">每天学习计划</summary>
@@ -326,9 +326,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -378,11 +378,11 @@
     <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
     
     
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
-    
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -407,9 +407,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -461,9 +461,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -494,9 +494,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -527,9 +527,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -560,9 +560,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -593,9 +593,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
@@ -626,9 +626,9 @@
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     

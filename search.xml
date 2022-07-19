@@ -22,9 +22,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -59,9 +59,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -96,9 +96,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -133,9 +133,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -170,9 +170,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -207,9 +207,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -244,9 +244,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -281,9 +281,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -318,9 +318,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -335,7 +335,7 @@
       <link href="/2022/07/03/leetcode%E4%B8%AD%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
       <url>/2022/07/03/leetcode%E4%B8%AD%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
       
-        <content type="html"><![CDATA[<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><ol><li>master准则，计算时间复杂度</li></ol><p><img src="https://files.shanqianche.cn/20227/1656853689146.png" alt="时间复杂度-master公式"><br>2. 归并排序的实质：有序的部分data在全体data中进行排序<br>3. 计组计网卡住了</p><p><img src="https://files.shanqianche.cn/20227/1657721593588.png" alt="位运算"></p><h1 id="基础提升"><a href="#基础提升" class="headerlink" title="基础提升"></a>基础提升</h1><h2 id="哈希函数和哈希表"><a href="#哈希函数和哈希表" class="headerlink" title="哈希函数和哈希表"></a>哈希函数和哈希表</h2><ol><li>布隆过滤器</li></ol><p>两个重要参数：n(样本量)，p(失误率)</p><p>关键因素：是否为集合模型【没有删除，类似黑名单】，失误率</p><p>公式【<font color="#E9967A">根据样本量和失误率求内存</font>】： $$m=-\frac { n * \ln p } { ( \ln 2 ) ^ { 2 } }$$ m为bit，除以8为字节。</p><p>公式【<font color="#9932CC">求hash函数个数</font>，向上取整】：$$k=\ln 2 * \frac { m } { n } \approx 0.7 * \frac { m } { n }$$<br>公式【根据前两个求出<font color="#FF00FF">失误率的真实值，主要确认容量大小</font>】：$$R _ { 真 } = ( 1 - e ^ { - \frac { n * k _ { 真 } } { m _ { 真 } } } ) ^ { k _ { 真 } }$$</p><ol start="2"><li><p>hash一致性</p><ul><li>在环上并不能通过hash函数均匀分布</li><li>扩容后的内存分配不均</li></ul></li></ol><p>解决方案：<font color="#7FFF00">虚拟节点vnode</font></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><ol><li>master准则，计算时间复杂度</li></ol><p><img src="https://files.shanqianche.cn/20227/1656853689146.png" alt="时间复杂度-master公式"><br>2. 归并排序的实质：有序的部分data在全体data中进行排序<br>3. 计组计网卡住了</p><p><img src="https://files.shanqianche.cn/20227/1657721593588.png" alt="位运算"></p><ol start="4"><li>资源限制类题目</li></ol><p><img src="https://files.shanqianche.cn/20227/1658153778430.png" alt="资源限制类题目"></p><h1 id="基础提升"><a href="#基础提升" class="headerlink" title="基础提升"></a>基础提升</h1><h2 id="哈希函数和哈希表"><a href="#哈希函数和哈希表" class="headerlink" title="哈希函数和哈希表"></a>哈希函数和哈希表</h2><ol><li>布隆过滤器</li></ol><p>两个重要参数：n(样本量)，p(失误率)</p><p>关键因素：是否为集合模型【没有删除，类似黑名单】，失误率</p><p>公式【<font color="#E9967A">根据样本量和失误率求内存</font>】： $$m=-\frac { n * \ln p } { ( \ln 2 ) ^ { 2 } }$$ m为bit，除以8为字节。</p><p>公式【<font color="#9932CC">求hash函数个数</font>，向上取整】：$$k=\ln 2 * \frac { m } { n } \approx 0.7 * \frac { m } { n }$$<br>公式【根据前两个求出<font color="#FF00FF">失误率的真实值，主要确认容量大小</font>】：$$R _ { 真 } = ( 1 - e ^ { - \frac { n * k _ { 真 } } { m _ { 真 } } } ) ^ { k _ { 真 } }$$</p><ol start="2"><li><p>hash一致性</p><ul><li>在环上并不能通过hash函数均匀分布</li><li>扩容后的内存分配不均</li></ul></li></ol><p>解决方案：<font color="#7FFF00">虚拟节点vnode</font></p><h1 id="pedding"><a href="#pedding" class="headerlink" title="pedding"></a>pedding</h1><p><img src="https://files.shanqianche.cn/20227/1658154932146.png" alt="0718"></p>]]></content>
       
       
       <categories>
@@ -349,9 +349,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -409,11 +409,11 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
             <tag> study </tag>
             
             <tag> weekly </tag>
-            
-            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -442,9 +442,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -504,9 +504,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -541,9 +541,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -578,9 +578,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -615,9 +615,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -652,9 +652,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -689,9 +689,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -724,9 +724,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -743,7 +743,7 @@
       <link href="/2022/05/16/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%AC%E5%9B%9B%E7%89%88/"/>
       <url>/2022/05/16/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%AC%E5%9B%9B%E7%89%88/</url>
       
-        <content type="html"><![CDATA[<h1 id="戴师帮忙选的important-point"><a href="#戴师帮忙选的important-point" class="headerlink" title="戴师帮忙选的important point"></a>戴师帮忙选的important point</h1><p><img src="http://files.shanqianche.cn/20225/1652971169338.png" alt="important point page-1"></p><p><img src="http://files.shanqianche.cn/20225/1652971169333.png" alt="important point page-2"></p><p><img src="http://files.shanqianche.cn/20225/1652971169335.png" alt="important point page-3"></p><p><img src="http://files.shanqianche.cn/20225/1652971169334.png" alt="important point page-4"></p><p><img src="http://files.shanqianche.cn/20225/1652971169337.png" alt="important point page-5"></p><p><img src="http://files.shanqianche.cn/20225/1652971169336.png" alt="important point page-6"></p><p><img src="http://files.shanqianche.cn/20225/1652971169339.png" alt="important point page-7"></p><p><img src="http://files.shanqianche.cn/20225/1652971169340.png" alt="important point page-8"></p><p><img src="http://files.shanqianche.cn/20225/1652971169411.png" alt="important point page-9"></p><p><img src="http://files.shanqianche.cn/20225/1652971169408.png" alt="important point page-X"></p><h1 id="第二章-HTML-中的-JavaScript"><a href="#第二章-HTML-中的-JavaScript" class="headerlink" title="第二章 HTML 中的 JavaScript"></a>第二章 HTML 中的 JavaScript</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol><li>第2.1中提到type中设置为module，代码当成了<font color="#8B0000">ES6模块</font>，需要实践来验证。</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169412.png" alt="script标签中type属性"></p><ol start="2"><li>第2.1中提到浏览器不会对文件扩展名进行检测，为服务器<font color="#8B0000">动态生成js</font>提供可能性，不是很理解。</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169413.png" alt="不对文件后缀检测的作用"></p><ol start="3"><li>第2.1不是很懂其中提到的<font color="#8B0000">MIME</font>的作用及判断原理</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169416.png" alt="返回正确MIME类型"></p><ol start="4"><li>第2.1中提到src中url的请求策略，不理解<font color="#bf242a">同源策略</font></li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169414.png" alt="src的请求策略，以及返回的JavaScript的受限规则"></p><ol start="5"><li>第2.1.2中推迟脚本执行中提到DOMContentLoad事件，没见过，下次学习一下HTML</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169421.png" alt="delay属性设置后依旧会在DOMContentLoad事件之前执行"></p><ol start="6"><li>第2.1.3async可以保证脚本在<font color="#E9967A">页面load事件之前执行</font></li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169415.png" alt="async在页面中的执行顺序"></p><h2 id="理解与解决"><a href="#理解与解决" class="headerlink" title="理解与解决"></a>理解与解决</h2><h1 id="第三章语言基础"><a href="#第三章语言基础" class="headerlink" title="第三章语言基础"></a>第三章语言基础</h1><h2 id="学习与反思"><a href="#学习与反思" class="headerlink" title="学习与反思"></a>学习与反思</h2><ol><li>声明的提升</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169420.png" alt="var声明提升"></p><ol start="2"><li><p>补充：<font color="#8B0000"><a href="https://www.javascripttutorial.net/javascript-event-loop/">Event Loop</a></font></p></li><li><p>var，let与const在for中的使用</p></li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169419.png" alt="for循环"></p><p>setTimeOut会在for循环结束后进行输出，var在这里读取的是一个全局变了 $i$ ,所有只会输出五，但是JavaScript引擎会为for循环中的let声明分别创建独立的变量实例，所以有五个 $i$ 进行输出。</p><p><img src="http://files.shanqianche.cn/20225/1652971169494.png" alt="for中的let"></p><p><img src="http://files.shanqianche.cn/20225/1652971169495.png" alt="for中的const"></p><h2 id="问题与解释"><a href="#问题与解释" class="headerlink" title="问题与解释"></a>问题与解释</h2><ol><li>第3.4.5中提到八进制和十六进制在数学操作中都被视为十进制，什么意思？</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169496.png" alt="八进制和十六进制的运算方式"><br>答：都转化为十进制再进行计算。</p><ol start="2"><li>第3.4.7中为什么要避免Symbol()包装对象？</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169497.png" alt="Symbol()无法包装对象"><br>解：对象是引用类型，返回的是指针，针对同一类型的对象是同一个指针，这就与Symbol（）矛盾了。<br>3. 第3.4.7.4的使用Symbol实现异步迭代以及后续的内容不是很懂。</p><p><img src="http://files.shanqianche.cn/20225/1652971169498.png" alt="相关异步的问题"><br>解：重构了迭代函数<br>4. 第3.4.7.16中with环境啥意思</p><p>解：</p><p><img src="http://files.shanqianche.cn/20225/1652971169499.png" alt="with的使用"></p><ol start="5"><li>第3.6.7中标签语句进行学习</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169500.png" alt="标签语句"><br>解：</p><h1 id="第四章变量、作用域与内存"><a href="#第四章变量、作用域与内存" class="headerlink" title="第四章变量、作用域与内存"></a>第四章变量、作用域与内存</h1><h2 id="问题与解"><a href="#问题与解" class="headerlink" title="问题与解"></a>问题与解</h2><ol><li>第4.2.2中let与var的提升的区别，let提升出现暂时性死区啥意思？</li></ol><p><img src="http://files.shanqianche.cn/20226/1655395936285.png" alt="let与var的hoisting"><br>2. 第4.3.4.3中提到内存泄漏的原因，那么如何检测内存泄漏呢？</p><h1 id="第五章基本引用类型"><a href="#第五章基本引用类型" class="headerlink" title="第五章基本引用类型"></a>第五章基本引用类型</h1><ol><li>引用值与传统面向对象编程语言中的类相似，但实现不同？<b>理解</b></li></ol><h1 id="第六章集合引用类型"><a href="#第六章集合引用类型" class="headerlink" title="第六章集合引用类型"></a>第六章集合引用类型</h1><ol><li>第6.2.4中提到会出现无法判断一个对象是否为数组的现象？</li></ol><p><img src="http://files.shanqianche.cn/20226/1655908202281.png" alt="无法判断是否为数组"></p><ol start="2"><li>第6.2.13中迭代器的作用域对象的使用。</li></ol><p><a href="https://blog.csdn.net/qq_35087256/article/details/79658253">相关文档</a></p><p><img src="http://files.shanqianche.cn/20226/1656118450989.png" alt="作用域对象"></p><ol start="3"><li>第6.3.4中提到的上溢和下溢不是很懂。</li></ol><p><img src="http://files.shanqianche.cn/20226/1656257982512.png" alt="解决上溢下溢问题"><br>4. 第6.9中，“每种包装类型都映射到同名的原始类型”什么意思？<br>5. 第6.9中，“在以读模式访问原始值时，后台会实例化一个原始值包装对象，通过这个对象可以操作数据。”？<br>6. 第6.9中，“涉及原始值的语句只要一执行完毕，包装对象就会立即销毁。”？</p><h1 id="第七章迭代器与生成器"><a href="#第七章迭代器与生成器" class="headerlink" title="第七章迭代器与生成器"></a>第七章迭代器与生成器</h1><h2 id="问题与解决"><a href="#问题与解决" class="headerlink" title="问题与解决"></a>问题与解决</h2><ol><li>第7.3.2.4中描述到yied*实现递归，没看懂代码</li></ol><p><img src="http://files.shanqianche.cn/20226/1656581774389.png" alt="enter description here"></p><h1 id="第八章对象、类与面向对象变成"><a href="#第八章对象、类与面向对象变成" class="headerlink" title="第八章对象、类与面向对象变成"></a>第八章对象、类与面向对象变成</h1><ol><li>第8.1.7中对象结构中提到解构在内部使用函数这块不是很懂</li></ol><p><img src="http://files.shanqianche.cn/20227/1656743508866.png" alt="解构在内部使用函数"></p><p><strong><font color="#FF1493">结构这的语法糖还是比较怪的，建议都看</font></strong></p><ol start="2"><li>第8.3.2.2中提到盗用构造函数的缺点不是很理解 <img src="https://files.shanqianche.cn/20227/1657633886960.png" alt="缺点"> <img src="https://files.shanqianche.cn/20227/1657633898659.png" alt="缺点"></li><li>第8.3.4中原型式的继承不是很懂作用</li></ol><p><img src="https://files.shanqianche.cn/20227/1657635961798.png" alt="原型式继承"><br>3. 第8.3.6中寄生组合继承，重新梳理一下继承中的逻辑</p><p><img src="https://files.shanqianche.cn/20227/1657637338484.png" alt="理论"></p><p><img src="https://files.shanqianche.cn/20227/1657637456555.png" alt="为什么说只调用一次"><br>4. 第8.4.4.5中类混入提到利用辅助函数进行展开嵌套，不是很懂原理和作用。</p><p><img src="https://files.shanqianche.cn/20227/1657711373381.png" alt="展开嵌套"></p><h1 id="第九章代理与反射"><a href="#第九章代理与反射" class="headerlink" title="第九章代理与反射"></a>第九章代理与反射</h1><ol><li>第9.1.6.2中提到使用反射不在抛错而是返回false，与实际代码不一样。</li></ol><p><img src="https://files.shanqianche.cn/20227/1657938559413.png" alt="文档"></p><p><img src="https://files.shanqianche.cn/20227/1657938590087.png" alt="实际演示"></p><h1 id="第十章函数"><a href="#第十章函数" class="headerlink" title="第十章函数"></a>第十章函数</h1><ol><li>第10.14闭包的作用和定义依旧不是很懂</li><li>第10.14.1中this对象的作用域不清楚</li></ol><p><img src="http://files.shanqianche.cn/20227/1658048008355.png" alt="this对象的作用域"></p><ol start="3"><li>第10.14.2中</li></ol><p><img src="http://files.shanqianche.cn/20227/1658049551215.png" alt="闭包问题"></p><ol start="4"><li>第10.15，10.16都不是很懂了</li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="戴师帮忙选的important-point"><a href="#戴师帮忙选的important-point" class="headerlink" title="戴师帮忙选的important point"></a>戴师帮忙选的important point</h1><p><img src="http://files.shanqianche.cn/20225/1652971169338.png" alt="important point page-1"></p><p><img src="http://files.shanqianche.cn/20225/1652971169333.png" alt="important point page-2"></p><p><img src="http://files.shanqianche.cn/20225/1652971169335.png" alt="important point page-3"></p><p><img src="http://files.shanqianche.cn/20225/1652971169334.png" alt="important point page-4"></p><p><img src="http://files.shanqianche.cn/20225/1652971169337.png" alt="important point page-5"></p><p><img src="http://files.shanqianche.cn/20225/1652971169336.png" alt="important point page-6"></p><p><img src="http://files.shanqianche.cn/20225/1652971169339.png" alt="important point page-7"></p><p><img src="http://files.shanqianche.cn/20225/1652971169340.png" alt="important point page-8"></p><p><img src="http://files.shanqianche.cn/20225/1652971169411.png" alt="important point page-9"></p><p><img src="http://files.shanqianche.cn/20225/1652971169408.png" alt="important point page-X"></p><h1 id="第二章-HTML-中的-JavaScript"><a href="#第二章-HTML-中的-JavaScript" class="headerlink" title="第二章 HTML 中的 JavaScript"></a>第二章 HTML 中的 JavaScript</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol><li>第2.1中提到type中设置为module，代码当成了<font color="#8B0000">ES6模块</font>，需要实践来验证。</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169412.png" alt="script标签中type属性"></p><ol start="2"><li>第2.1中提到浏览器不会对文件扩展名进行检测，为服务器<font color="#8B0000">动态生成js</font>提供可能性，不是很理解。</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169413.png" alt="不对文件后缀检测的作用"></p><ol start="3"><li>第2.1不是很懂其中提到的<font color="#8B0000">MIME</font>的作用及判断原理</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169416.png" alt="返回正确MIME类型"></p><ol start="4"><li>第2.1中提到src中url的请求策略，不理解<font color="#bf242a">同源策略</font></li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169414.png" alt="src的请求策略，以及返回的JavaScript的受限规则"></p><ol start="5"><li>第2.1.2中推迟脚本执行中提到DOMContentLoad事件，没见过，下次学习一下HTML</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169421.png" alt="delay属性设置后依旧会在DOMContentLoad事件之前执行"></p><ol start="6"><li>第2.1.3async可以保证脚本在<font color="#E9967A">页面load事件之前执行</font></li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169415.png" alt="async在页面中的执行顺序"></p><h2 id="理解与解决"><a href="#理解与解决" class="headerlink" title="理解与解决"></a>理解与解决</h2><h1 id="第三章语言基础"><a href="#第三章语言基础" class="headerlink" title="第三章语言基础"></a>第三章语言基础</h1><h2 id="学习与反思"><a href="#学习与反思" class="headerlink" title="学习与反思"></a>学习与反思</h2><ol><li>声明的提升</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169420.png" alt="var声明提升"></p><ol start="2"><li><p>补充：<font color="#8B0000"><a href="https://www.javascripttutorial.net/javascript-event-loop/">Event Loop</a></font></p></li><li><p>var，let与const在for中的使用</p></li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169419.png" alt="for循环"></p><p>setTimeOut会在for循环结束后进行输出，var在这里读取的是一个全局变了 $i$ ,所有只会输出五，但是JavaScript引擎会为for循环中的let声明分别创建独立的变量实例，所以有五个 $i$ 进行输出。</p><p><img src="http://files.shanqianche.cn/20225/1652971169494.png" alt="for中的let"></p><p><img src="http://files.shanqianche.cn/20225/1652971169495.png" alt="for中的const"></p><h2 id="问题与解释"><a href="#问题与解释" class="headerlink" title="问题与解释"></a>问题与解释</h2><ol><li>第3.4.5中提到八进制和十六进制在数学操作中都被视为十进制，什么意思？</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169496.png" alt="八进制和十六进制的运算方式"><br>答：都转化为十进制再进行计算。</p><ol start="2"><li>第3.4.7中为什么要避免Symbol()包装对象？</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169497.png" alt="Symbol()无法包装对象"><br>解：对象是引用类型，返回的是指针，针对同一类型的对象是同一个指针，这就与Symbol（）矛盾了。<br>3. 第3.4.7.4的使用Symbol实现异步迭代以及后续的内容不是很懂。</p><p><img src="http://files.shanqianche.cn/20225/1652971169498.png" alt="相关异步的问题"><br>解：重构了迭代函数<br>4. 第3.4.7.16中with环境啥意思</p><p>解：</p><p><img src="http://files.shanqianche.cn/20225/1652971169499.png" alt="with的使用"></p><ol start="5"><li>第3.6.7中标签语句进行学习</li></ol><p><img src="http://files.shanqianche.cn/20225/1652971169500.png" alt="标签语句"><br>解：</p><h1 id="第四章变量、作用域与内存"><a href="#第四章变量、作用域与内存" class="headerlink" title="第四章变量、作用域与内存"></a>第四章变量、作用域与内存</h1><h2 id="问题与解"><a href="#问题与解" class="headerlink" title="问题与解"></a>问题与解</h2><ol><li>第4.2.2中let与var的提升的区别，let提升出现暂时性死区啥意思？</li></ol><p><img src="http://files.shanqianche.cn/20226/1655395936285.png" alt="let与var的hoisting"><br>2. 第4.3.4.3中提到内存泄漏的原因，那么如何检测内存泄漏呢？</p><h1 id="第五章基本引用类型"><a href="#第五章基本引用类型" class="headerlink" title="第五章基本引用类型"></a>第五章基本引用类型</h1><ol><li>引用值与传统面向对象编程语言中的类相似，但实现不同？<b>理解</b></li></ol><h1 id="第六章集合引用类型"><a href="#第六章集合引用类型" class="headerlink" title="第六章集合引用类型"></a>第六章集合引用类型</h1><ol><li>第6.2.4中提到会出现无法判断一个对象是否为数组的现象？</li></ol><p><img src="http://files.shanqianche.cn/20226/1655908202281.png" alt="无法判断是否为数组"></p><ol start="2"><li>第6.2.13中迭代器的作用域对象的使用。</li></ol><p><a href="https://blog.csdn.net/qq_35087256/article/details/79658253">相关文档</a></p><p><img src="http://files.shanqianche.cn/20226/1656118450989.png" alt="作用域对象"></p><ol start="3"><li>第6.3.4中提到的上溢和下溢不是很懂。</li></ol><p><img src="http://files.shanqianche.cn/20226/1656257982512.png" alt="解决上溢下溢问题"><br>4. 第6.9中，“每种包装类型都映射到同名的原始类型”什么意思？<br>5. 第6.9中，“在以读模式访问原始值时，后台会实例化一个原始值包装对象，通过这个对象可以操作数据。”？<br>6. 第6.9中，“涉及原始值的语句只要一执行完毕，包装对象就会立即销毁。”？</p><h1 id="第七章迭代器与生成器"><a href="#第七章迭代器与生成器" class="headerlink" title="第七章迭代器与生成器"></a>第七章迭代器与生成器</h1><h2 id="问题与解决"><a href="#问题与解决" class="headerlink" title="问题与解决"></a>问题与解决</h2><ol><li>第7.3.2.4中描述到yied*实现递归，没看懂代码</li></ol><p><img src="http://files.shanqianche.cn/20226/1656581774389.png" alt="enter description here"></p><h1 id="第八章对象、类与面向对象变成"><a href="#第八章对象、类与面向对象变成" class="headerlink" title="第八章对象、类与面向对象变成"></a>第八章对象、类与面向对象变成</h1><ol><li>第8.1.7中对象结构中提到解构在内部使用函数这块不是很懂</li></ol><p><img src="http://files.shanqianche.cn/20227/1656743508866.png" alt="解构在内部使用函数"></p><p><strong><font color="#FF1493">结构这的语法糖还是比较怪的，建议都看</font></strong></p><ol start="2"><li>第8.3.2.2中提到盗用构造函数的缺点不是很理解 <img src="https://files.shanqianche.cn/20227/1657633886960.png" alt="缺点"> <img src="https://files.shanqianche.cn/20227/1657633898659.png" alt="缺点"></li><li>第8.3.4中原型式的继承不是很懂作用</li></ol><p><img src="https://files.shanqianche.cn/20227/1657635961798.png" alt="原型式继承"><br>3. 第8.3.6中寄生组合继承，重新梳理一下继承中的逻辑</p><p><img src="https://files.shanqianche.cn/20227/1657637338484.png" alt="理论"></p><p><img src="https://files.shanqianche.cn/20227/1657637456555.png" alt="为什么说只调用一次"><br>4. 第8.4.4.5中类混入提到利用辅助函数进行展开嵌套，不是很懂原理和作用。</p><p><img src="https://files.shanqianche.cn/20227/1657711373381.png" alt="展开嵌套"></p><h1 id="第九章代理与反射"><a href="#第九章代理与反射" class="headerlink" title="第九章代理与反射"></a>第九章代理与反射</h1><ol><li>第9.1.6.2中提到使用反射不在抛错而是返回false，与实际代码不一样。</li></ol><p><img src="https://files.shanqianche.cn/20227/1657938559413.png" alt="文档"></p><p><img src="https://files.shanqianche.cn/20227/1657938590087.png" alt="实际演示"></p><h1 id="第十章函数"><a href="#第十章函数" class="headerlink" title="第十章函数"></a>第十章函数</h1><ol><li>第10.14闭包的作用和定义依旧不是很懂</li><li>第10.14.1中this对象的作用域不清楚</li></ol><p><img src="http://files.shanqianche.cn/20227/1658048008355.png" alt="this对象的作用域"></p><ol start="3"><li>第10.14.2中</li></ol><p><img src="http://files.shanqianche.cn/20227/1658049551215.png" alt="闭包问题"></p><ol start="4"><li>第10.15，10.16都不是很懂了</li></ol><h1 id="期约和异步函数"><a href="#期约和异步函数" class="headerlink" title="期约和异步函数"></a>期约和异步函数</h1><ol><li>第11.2.4.4中对于reduce的使用不是很懂</li></ol><p><img src="http://files.shanqianche.cn/20227/1658200969767.png" alt="promise+reduce"></p><p><img src="http://files.shanqianche.cn/20227/1658201198623.png" alt="promise reduce"></p><ol start="2"><li>第11.2.5.1中期约的取消，实现这块函数不是很懂</li></ol><p><img src="http://files.shanqianche.cn/20227/code.png" alt="期约取消功能的实现"></p>]]></content>
       
       
       <categories>
@@ -757,13 +757,13 @@
             
             <tag> daily </tag>
             
-            <tag> front-end </tag>
+            <tag> graduate student </tag>
             
             <tag> study </tag>
             
-            <tag> graduate student </tag>
-            
             <tag> plan </tag>
+            
+            <tag> front-end </tag>
             
             <tag> JavaScript </tag>
             
@@ -792,11 +792,11 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
             <tag> study </tag>
             
             <tag> weekly </tag>
-            
-            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -823,11 +823,11 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
             <tag> study </tag>
             
             <tag> weekly </tag>
-            
-            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -854,11 +854,11 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
             <tag> study </tag>
             
             <tag> weekly </tag>
-            
-            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -887,9 +887,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -916,11 +916,11 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
             <tag> study </tag>
             
             <tag> weekly </tag>
-            
-            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -947,9 +947,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -976,11 +976,11 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
             <tag> study </tag>
             
             <tag> weekly </tag>
-            
-            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -1009,9 +1009,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1038,11 +1038,11 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
             <tag> study </tag>
             
             <tag> weekly </tag>
-            
-            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -1069,11 +1069,11 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
             <tag> study </tag>
             
             <tag> weekly </tag>
-            
-            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -1100,11 +1100,11 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
             <tag> study </tag>
             
             <tag> weekly </tag>
-            
-            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -1131,9 +1131,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -1166,9 +1166,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -1197,9 +1197,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -1228,9 +1228,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -1259,9 +1259,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -1290,9 +1290,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -1321,9 +1321,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -1354,11 +1354,11 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
             <tag> summarize </tag>
             
             <tag> study </tag>
-            
-            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -1389,9 +1389,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -1424,9 +1424,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -1459,9 +1459,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> RPA </tag>
             
@@ -1494,9 +1494,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -1556,9 +1556,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -1589,9 +1589,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -1622,9 +1622,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -1690,9 +1690,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -1719,9 +1719,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> RPA </tag>
             
@@ -1785,15 +1785,15 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
+            <tag> report </tag>
+            
             <tag> study </tag>
             
             <tag> weekly </tag>
             
-            <tag> graduate student </tag>
-            
             <tag> plan </tag>
-            
-            <tag> report </tag>
             
         </tags>
       
@@ -1847,9 +1847,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> RPA </tag>
             
@@ -1878,11 +1878,11 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
             <tag> study </tag>
             
             <tag> weekly </tag>
-            
-            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -1909,17 +1909,17 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
+            <tag> report </tag>
+            
             <tag> study </tag>
             
             <tag> weekly </tag>
             
-            <tag> graduate student </tag>
-            
             <tag> RPA </tag>
             
             <tag> plan </tag>
-            
-            <tag> report </tag>
             
         </tags>
       
@@ -1944,9 +1944,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> RPA </tag>
             
@@ -1973,13 +1973,13 @@
       
         <tags>
             
-            <tag> study </tag>
-            
-            <tag> weekly </tag>
-            
             <tag> graduate student </tag>
             
             <tag> report </tag>
+            
+            <tag> study </tag>
+            
+            <tag> weekly </tag>
             
         </tags>
       
@@ -2004,15 +2004,15 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
+            <tag> report </tag>
+            
             <tag> study </tag>
             
             <tag> weekly </tag>
             
-            <tag> graduate student </tag>
-            
             <tag> plan </tag>
-            
-            <tag> report </tag>
             
         </tags>
       
@@ -2037,9 +2037,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> RPA </tag>
             
@@ -2066,42 +2066,11 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
             
             <tag> report </tag>
             
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>高级软件考试准备---研究生</title>
-      <link href="/2021/01/03/%E9%AB%98%E7%BA%A7%E8%BD%AF%E4%BB%B6%E8%80%83%E8%AF%95%E5%87%86%E5%A4%87---%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
-      <url>/2021/01/03/%E9%AB%98%E7%BA%A7%E8%BD%AF%E4%BB%B6%E8%80%83%E8%AF%95%E5%87%86%E5%A4%87---%E7%A0%94%E7%A9%B6%E7%94%9F/</url>
-      
-        <content type="html"><![CDATA[<h1 id="考试内容"><a href="#考试内容" class="headerlink" title="考试内容"></a>考试内容</h1><ol><li>面向对象</li></ol><ol start="2"><li>六大原则</li></ol><ul><li>单一职责原则</li><li>里氏替换原则</li><li>依赖倒置原则</li><li>接口隔离原则</li><li>迪米特法则</li><li>关闭原则</li></ul><ol start="3"><li>主讲了九个模式一个机制</li></ol><ul><li>策略</li><li>观察[主动or被动]</li><li>工厂，抽象工厂</li><li>装饰</li><li>建造</li><li>组合</li><li>外观</li><li>状态</li><li>适配</li><li>反射机制</li></ul><p><img src="http://files.shanqianche.cn/202113/%E9%AB%98%E8%BD%AF%E5%A4%8D%E8%AF%95%E6%9D%90%E6%96%99.jpg" alt="往年考试题"></p><h1 id="分数占比分析"><a href="#分数占比分析" class="headerlink" title="分数占比分析"></a>分数占比分析</h1><blockquote><p>概念:模式设计 = 六四开<br><font color="red">抓好概念，模式设计这些言之有理即可</font></p></blockquote><h1 id="复习记录"><a href="#复习记录" class="headerlink" title="复习记录"></a>复习记录</h1><h2 id="程序设计方法基础"><a href="#程序设计方法基础" class="headerlink" title="程序设计方法基础"></a>程序设计方法基础</h2><ol><li>传统分层</li></ol><p>划分方式： 物理/逻辑<br>层数：两/三层</p><ol start="2"><li>逻辑上的三层结构</li></ol><ul><li>显示层View/UI（User Interface)</li><li>业务逻辑层BLL（Business Logic Layer）</li><li>数据访问层DAL（Data Access Layer）</li></ul><ol start="3"><li>原则，目的，优点</li></ol><p>分层访问<strong>原则</strong>：不可跨层进行访问、当前层只处理该职责的业务<br><strong>目的</strong>：隔离/解耦合<br><strong>优点</strong>：可维护性/扩展性/性能/安全性/</p><h2 id="面向对象方法的引入"><a href="#面向对象方法的引入" class="headerlink" title="面向对象方法的引入"></a>面向对象方法的引入</h2><ol><li>推广原因</li></ol><p><strong>为了解决块间的同名变量冲突，就会在编程中进行封装（保护）的尝试</strong>，对封装的进一步发展就提出了对象的概念，并增加了类，类继承的概念。、</p><ol start="2"><li>那么如何度量派生继承是良好的呢？</li></ol><p><strong>存在问题</strong>：代码的重用性和可扩展性都大大提升了，但是也带来了强耦合</p><blockquote><p><font color="#FF726A">LSP</font>：Liskov Substitution Principle<br>里氏原则可度量继承关系的质量，是面向对象的重要基石，该原则使得软件的功能扩展成为可能。</p></blockquote><ul><li>向下兼容思想【高版本可以打开低版本，子类可以透明替代父类，反之则否】</li></ul><p>如何满足向下兼容，且可扩展？<br>功能模块的<strong>可修改性</strong>，即程序中函数的调用不是在编译的时候确定，而是在运行时刻被确定的。</p><p><img src="http://files.shanqianche.cn/202113/1609667788985.png" alt="虚函数"></p><p><em>c++的虚基类用在控制重复继承上，表示这个基类在实例化子类时只生成一个副本 java只能单继承，不存在重复继承</em></p><ol start="3"><li>面向对象的特性</li></ol><ul><li>抽象(Abstraction)</li><li>封装(Encapsulation)</li><li>继承派生(Inheritance)</li><li>多态(Polymorphism)</li><li>组合(Composition)</li></ul><ol start="4"><li>面向对象引入的目的</li></ol><ul><li>重用（Reuse：Inheritance &amp; composition）</li><li>统一接口（Unified interface）</li><li>适用变化（Adapt to Change of Request）</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> exam </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
             <tag> study </tag>
-            
-            <tag> graduate student </tag>
-            
-            <tag> plan </tag>
-            
-            <tag> exam </tag>
             
         </tags>
       
@@ -2126,15 +2095,46 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
             <tag> exam </tag>
             
             <tag> design-model </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>高级软件考试准备---研究生</title>
+      <link href="/2021/01/03/%E9%AB%98%E7%BA%A7%E8%BD%AF%E4%BB%B6%E8%80%83%E8%AF%95%E5%87%86%E5%A4%87---%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
+      <url>/2021/01/03/%E9%AB%98%E7%BA%A7%E8%BD%AF%E4%BB%B6%E8%80%83%E8%AF%95%E5%87%86%E5%A4%87---%E7%A0%94%E7%A9%B6%E7%94%9F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="考试内容"><a href="#考试内容" class="headerlink" title="考试内容"></a>考试内容</h1><ol><li>面向对象</li></ol><ol start="2"><li>六大原则</li></ol><ul><li>单一职责原则</li><li>里氏替换原则</li><li>依赖倒置原则</li><li>接口隔离原则</li><li>迪米特法则</li><li>关闭原则</li></ul><ol start="3"><li>主讲了九个模式一个机制</li></ol><ul><li>策略</li><li>观察[主动or被动]</li><li>工厂，抽象工厂</li><li>装饰</li><li>建造</li><li>组合</li><li>外观</li><li>状态</li><li>适配</li><li>反射机制</li></ul><p><img src="http://files.shanqianche.cn/202113/%E9%AB%98%E8%BD%AF%E5%A4%8D%E8%AF%95%E6%9D%90%E6%96%99.jpg" alt="往年考试题"></p><h1 id="分数占比分析"><a href="#分数占比分析" class="headerlink" title="分数占比分析"></a>分数占比分析</h1><blockquote><p>概念:模式设计 = 六四开<br><font color="red">抓好概念，模式设计这些言之有理即可</font></p></blockquote><h1 id="复习记录"><a href="#复习记录" class="headerlink" title="复习记录"></a>复习记录</h1><h2 id="程序设计方法基础"><a href="#程序设计方法基础" class="headerlink" title="程序设计方法基础"></a>程序设计方法基础</h2><ol><li>传统分层</li></ol><p>划分方式： 物理/逻辑<br>层数：两/三层</p><ol start="2"><li>逻辑上的三层结构</li></ol><ul><li>显示层View/UI（User Interface)</li><li>业务逻辑层BLL（Business Logic Layer）</li><li>数据访问层DAL（Data Access Layer）</li></ul><ol start="3"><li>原则，目的，优点</li></ol><p>分层访问<strong>原则</strong>：不可跨层进行访问、当前层只处理该职责的业务<br><strong>目的</strong>：隔离/解耦合<br><strong>优点</strong>：可维护性/扩展性/性能/安全性/</p><h2 id="面向对象方法的引入"><a href="#面向对象方法的引入" class="headerlink" title="面向对象方法的引入"></a>面向对象方法的引入</h2><ol><li>推广原因</li></ol><p><strong>为了解决块间的同名变量冲突，就会在编程中进行封装（保护）的尝试</strong>，对封装的进一步发展就提出了对象的概念，并增加了类，类继承的概念。、</p><ol start="2"><li>那么如何度量派生继承是良好的呢？</li></ol><p><strong>存在问题</strong>：代码的重用性和可扩展性都大大提升了，但是也带来了强耦合</p><blockquote><p><font color="#FF726A">LSP</font>：Liskov Substitution Principle<br>里氏原则可度量继承关系的质量，是面向对象的重要基石，该原则使得软件的功能扩展成为可能。</p></blockquote><ul><li>向下兼容思想【高版本可以打开低版本，子类可以透明替代父类，反之则否】</li></ul><p>如何满足向下兼容，且可扩展？<br>功能模块的<strong>可修改性</strong>，即程序中函数的调用不是在编译的时候确定，而是在运行时刻被确定的。</p><p><img src="http://files.shanqianche.cn/202113/1609667788985.png" alt="虚函数"></p><p><em>c++的虚基类用在控制重复继承上，表示这个基类在实例化子类时只生成一个副本 java只能单继承，不存在重复继承</em></p><ol start="3"><li>面向对象的特性</li></ol><ul><li>抽象(Abstraction)</li><li>封装(Encapsulation)</li><li>继承派生(Inheritance)</li><li>多态(Polymorphism)</li><li>组合(Composition)</li></ul><ol start="4"><li>面向对象引入的目的</li></ol><ul><li>重用（Reuse：Inheritance &amp; composition）</li><li>统一接口（Unified interface）</li><li>适用变化（Adapt to Change of Request）</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> exam </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> graduate student </tag>
+            
+            <tag> study </tag>
+            
+            <tag> plan </tag>
+            
+            <tag> exam </tag>
             
         </tags>
       
@@ -2159,9 +2159,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -2333,15 +2333,15 @@
             
             <tag> daily </tag>
             
+            <tag> graduate student </tag>
+            
+            <tag> report </tag>
+            
             <tag> summarize </tag>
             
             <tag> Java </tag>
             
             <tag> study </tag>
-            
-            <tag> graduate student </tag>
-            
-            <tag> report </tag>
             
         </tags>
       
