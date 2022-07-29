@@ -2,42 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://merlynr.github.io/2022/07/26/attachments/1658834221501.table/</loc>
-    
-    <lastmod>2022-07-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://merlynr.github.io/2022/07/27/attachments/1658852684512.table/</loc>
-    
-    <lastmod>2022-07-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://merlynr.github.io/2022/07/26/attachments/1658849080070.table/</loc>
-    
-    <lastmod>2022-07-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://merlynr.github.io/2022/07/26/attachments/1658836808282.table/</loc>
-    
-    <lastmod>2022-07-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://merlynr.github.io/2022/07/26/JavaScript%E5%9F%BA%E7%A1%80/</loc>
     
     <lastmod>2022-07-25</lastmod>
@@ -623,7 +587,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/04/12/2021-04-12%E3%80%90Week%E3%80%91/</loc>
+    <loc>https://merlynr.github.io/2021/05/19/2021-05-15%E3%80%90Week%E3%80%91/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -632,7 +596,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/05/19/2021-05-15%E3%80%90Week%E3%80%91/</loc>
+    <loc>https://merlynr.github.io/2021/04/12/2021-04-12%E3%80%90Week%E3%80%91/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -677,7 +641,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2021/03/28/what%E2%80%98s%20the%20mean%20of%20RPA/</loc>
+    <loc>https://merlynr.github.io/2020/06/19/xiang-ji-http-yu-https-zhi-jian-de-qu-bie/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -686,7 +650,7 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/2020/06/19/xiang-ji-http-yu-https-zhi-jian-de-qu-bie/</loc>
+    <loc>https://merlynr.github.io/2021/03/28/what%E2%80%98s%20the%20mean%20of%20RPA/</loc>
     
     <lastmod>2021-05-24</lastmod>
     
@@ -839,14 +803,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/RPA/</loc>
+    <loc>https://merlynr.github.io/tags/plan/</loc>
     <lastmod>2022-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/plan/</loc>
+    <loc>https://merlynr.github.io/tags/RPA/</loc>
     <lastmod>2022-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -860,14 +824,14 @@
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/algorithm/</loc>
+    <loc>https://merlynr.github.io/tags/deep-learning/</loc>
     <lastmod>2022-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://merlynr.github.io/tags/deep-learning/</loc>
+    <loc>https://merlynr.github.io/tags/algorithm/</loc>
     <lastmod>2022-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
