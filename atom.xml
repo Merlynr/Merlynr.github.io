@@ -6,7 +6,7 @@
   <link href="https://merlynr.github.io/atom.xml" rel="self"/>
   
   <link href="https://merlynr.github.io/"/>
-  <updated>2022-08-01T16:00:00.000Z</updated>
+  <updated>2022-08-02T16:00:00.000Z</updated>
   <id>https://merlynr.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>上下文this相关内容</title>
+    <link href="https://merlynr.github.io/2022/08/03/%E4%B8%8A%E4%B8%8B%E6%96%87this%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/"/>
+    <id>https://merlynr.github.io/2022/08/03/%E4%B8%8A%E4%B8%8B%E6%96%87this%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</id>
+    <published>2022-08-02T16:00:00.000Z</published>
+    <updated>2022-08-02T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="call-appy-bind的作用和区别"><a href="#call-appy-bind的作用和区别" class="headerlink" title="call appy bind的作用和区别"></a>call appy bind的作用和区别</h1><p><strong>作用：</strong><br>都可以改变函数内部的this指向。</p><p><strong>区别点：</strong><br>call 和 apply 会调用函数，并且改变函数内部this指向。<br>call 和 apply 传递的参数不一样，call 传递参数arg1,arg2…形式 apply 必须数组形式[arg]<br>bind 不会调用函数，可以改变函数内部this指向。</p><p><strong>解析：</strong><br>call方法<br>改变函数内部this指向<br>call()方法<font color="#FF00FF">调用一个对象。简单理解为调用函数的方式</font>，但是它可以改变函数的this指向。<br>写法：fun.call(thisArg, arg1, arg3, …) // thisArg为想要指向的对象，arg1,arg3为参数</p><p>call 的主要作用也可以<font color="#FF8C00">实现继承</font></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function Person(uname, age) &#123;</span><br><span class="line">    this.uname = uname;</span><br><span class="line">    this.age = age;</span><br><span class="line">  &#125;</span><br><span class="line">  function Son(uname, age) &#123;</span><br><span class="line">    Person.call(this, uname, age);</span><br><span class="line">  &#125;</span><br><span class="line">  var son = new Son(&quot;zhang&quot;, 12);</span><br><span class="line">  console.log(son);</span><br></pre></td></tr></table></figure><p>apply方法</p><p>apply()方法调用<font color="#FF00FF">一个函数</font>。简单理解为调用函数的方式，但是它可以改变函数的this指向。<br>写法：fun.apply(thisArg, [argsArray])<br>thisArg:在fun函数运行时指定的this值<br>argsArray:传递的值，必须包含在数组里面<br>返回值就是函数的返回值，因为他就是调用函数<br>apply的主要应用，比如可以利用apply可以求得数组中最大值</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const arr = [1, 22, 3, 44, 5, 66, 7, 88, 9];</span><br><span class="line">const max = Math.max.apply(Math, arr);</span><br><span class="line">console.log(max);</span><br></pre></td></tr></table></figure><p>bind方法</p><p>bind()方法<font color="#FF00FF">不会调用函数</font>，但是能改变函数内部this指向<br>写法：fun.bind(thisArg, arg1, arg2, …)</p><p>thisArg:<font color="#FF8C00">在fun函数运行时指定的this值</font><br>arg1,arg2:传递的其他参数<br><font color="#FF00FF">返回由指定的this值和初始化参数改造的原函数拷贝</font></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var o = &#123;</span><br><span class="line">    name: &quot;lisa&quot;</span><br><span class="line">&#125;;</span><br><span class="line">function fn() &#123;</span><br><span class="line">    console.log(this);</span><br><span class="line">&#125;</span><br><span class="line">var f = fn.bind(o);</span><br><span class="line">f();</span><br></pre></td></tr></table></figure><p>如果有的函数我们不需要立即调用，但是<font color="#FF00FF">又需要改变这个函数的this指向</font>，此时用bind再合适不过了</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const btns = document.querySelectorAll(&quot;button&quot;);</span><br><span class="line">for (let i = 0; i &lt; btns.length; i++) &#123;</span><br><span class="line">    btns[i].onclick = function() &#123;</span><br><span class="line">      this.disabled = true;</span><br><span class="line">      setTimeout(</span><br><span class="line">        function() &#123;</span><br><span class="line">          this.disabled = false;</span><br><span class="line">        &#125;.bind(this),</span><br><span class="line">        2000</span><br><span class="line">      );</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>主要应用场景</strong>：<br>call 经常做继承。<br>apply 经常跟数组有关系，比如借助于数学对象实现数组最大值最小值。<br>bind 不调用函数，但是还想改变this指向，比如改变定时器内部的this指向。</p><h1 id="this指向（普通函数、箭头函数）"><a href="#this指向（普通函数、箭头函数）" class="headerlink" title="this指向（普通函数、箭头函数）"></a>this指向（普通函数、箭头函数）</h1><h2 id="普通函数中的this"><a href="#普通函数中的this" class="headerlink" title="普通函数中的this"></a>普通函数中的this</h2><p>谁调用了函数或者方法，那么这个函数或者对象中的this就指向谁</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">let getThis = function () &#123;</span><br><span class="line">    console.log(this);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let obj=&#123;</span><br><span class="line">    name:&quot;Jack&quot;,</span><br><span class="line">    getThis:function()&#123;</span><br><span class="line">        console.log(this);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//getThis()方法是由window在全局作用域中调用的，所以this指向调用该方法的对象，即window</span><br><span class="line">getThis();//window</span><br><span class="line">//此处的getThis()方法是obj这个对象调用的，所以this指向obj</span><br><span class="line">obj.getThis();//obj</span><br></pre></td></tr></table></figure><h2 id="匿名函数中的this"><a href="#匿名函数中的this" class="headerlink" title="匿名函数中的this"></a>匿名函数中的this</h2><p>匿名函数的执行<font color="#FF8C00">具有全局性，则匿名函数中的this指向是window，而不是调用该匿名函数的对象</font></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let obj = &#123;</span><br><span class="line">    getThis: function () &#123;</span><br><span class="line">        return function () &#123; //匿名函数</span><br><span class="line">            console.log(this);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">obj.getThis()(); //window</span><br></pre></td></tr></table></figure><p>上面代码中，getThi()方法是由obj调用，但是obj.getThis()返回的是一个匿名函数，而匿名函数中的this指向window，所以打印出window。 如<font color="#FF00FF">果想在上述代码中使this指向调用该方法的对象，可以提前把this传值给另外一个变量(_this或者that)</font>：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">let obj = &#123;</span><br><span class="line">     getThis: function () &#123;</span><br><span class="line">     //提前保存this指向</span><br><span class="line">         let _this=this</span><br><span class="line">         return function () &#123;</span><br><span class="line">             console.log(_this);</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br><span class="line"> obj.getThis()(); //obj</span><br></pre></td></tr></table></figure><h2 id="箭头函数中的this"><a href="#箭头函数中的this" class="headerlink" title="箭头函数中的this"></a>箭头函数中的this</h2><ol><li>箭头函数中的this是<font color="#FF00FF">在函数定义的时候就确定下来的</font>，而不是在函数调用的时候确定的；</li><li>箭头函数中的<font color="#FF00FF">this指向父级作用域的执行上下文</font>；（技巧：<font color="#FF8C00">因为javascript中除了全局作用域，其他作用域都是由函数创建出来的，所以如果想确定this的指向，则找到离箭头函数最近的function，与该function平级的执行上下文中的this即是箭头函数中的this</font>）</li><li><font color="#FF00FF">箭头函数无法使用apply、call和bind方法改变this指向，因为其this值在函数定义的时候就被确定下来</font>。</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">let obj = &#123;</span><br><span class="line">    【this】//此处的this即是箭头函数中的this</span><br><span class="line">    getThis: function () &#123;</span><br><span class="line">        return  ()=&gt; &#123;</span><br><span class="line">            console.log(this);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">obj.getThis()(); //obj</span><br></pre></td></tr></table></figure><p>首先，距离箭头函数最近的是getThis(){}，与该函数平级的执行上下文是obj中的执行上下文，箭头函数中的this就是下注释代码处的this，即obj。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> //代码中有两个箭头函数，由于找不到对应的function，所以this会指向window对象。</span><br><span class="line">let obj = &#123;</span><br><span class="line">     getThis: ()=&gt; &#123;</span><br><span class="line">         return  ()=&gt; &#123;</span><br><span class="line">             console.log(this);</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br><span class="line"> obj.getThis()(); //window</span><br></pre></td></tr></table></figure><p>该段代码中存在两个箭头函数，this找不到对应的function(){}，所以一直往上找直到指向window</p><h2 id="手写bind"><a href="#手写bind" class="headerlink" title="手写bind"></a>手写bind</h2>]]></content>
+    
+    
+    <summary type="html">每天/周学习计划</summary>
+    
+    
+    
+    <category term="plan" scheme="https://merlynr.github.io/categories/plan/"/>
+    
+    
+    <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
+    
+    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
+    
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
+    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
+    
+  </entry>
   
   <entry>
     <title>算法之数组（2）</title>
@@ -574,39 +601,6 @@
     <category term="weekly" scheme="https://merlynr.github.io/tags/weekly/"/>
     
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2022-6-20研究生的倒数第331天</title>
-    <link href="https://merlynr.github.io/2022/06/20/2022-6-20%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC331%E5%A4%A9/"/>
-    <id>https://merlynr.github.io/2022/06/20/2022-6-20%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC331%E5%A4%A9/</id>
-    <published>2022-06-19T16:00:00.000Z</published>
-    <updated>2022-06-19T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:00~10:00 今日学习安排            <strong><font color="#D2691E">JavaScript</font></strong></li><li><input disabled="" type="checkbox"> 10:00~10:50 今日学习安排          <strong><font color="#D2691E">JavaScript</font></strong></li><li><input disabled="" type="checkbox"> 10:50~11:20 上午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 14:00~15:00 今日学习安排            <strong><font color="#ff7500">JavaScript</font></strong></li><li><input disabled="" type="checkbox"> 15:00~16:00 今日学习安排            <strong><font color="#01274F">paper</font></strong></li><li><input disabled="" type="checkbox"> 16:00~16:40 今日学习安排            <strong><font color="#2e4e7e">paper</font></strong></li><li><input disabled="" type="checkbox"> 16:40~17:10 下午学习总结</li></ul><hr><ul><li><input disabled="" type="checkbox"> 18:30~20:00 无字幕版美剧</li><li><input disabled="" type="checkbox"> 20:00~21:30 晚上学习安排            <strong><font color="#8B008B">计网</font></strong></li><li><input disabled="" type="checkbox"> 21:30~22:10 晚上学习安排            <strong><font color="#7FFF00">JavaScript</font></strong></li><li><input disabled="" type="checkbox"> 22:10~22:30 晚上学习总结</li></ul>]]></content>
-    
-    
-    <summary type="html">每天学习计划</summary>
-    
-    
-    
-    <category term="graduate student time" scheme="https://merlynr.github.io/categories/graduate-student-time/"/>
-    
-    
-    <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
-    
-    <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
-    
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
-    
-    <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
-    
-    <category term="FE" scheme="https://merlynr.github.io/tags/FE/"/>
-    
-    <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
-    
-    <category term="algorithm" scheme="https://merlynr.github.io/tags/algorithm/"/>
     
   </entry>
   
