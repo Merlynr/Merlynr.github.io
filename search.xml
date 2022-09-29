@@ -22,9 +22,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -33,6 +33,37 @@
             <tag> algorithm </tag>
             
             <tag> deep learning </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JavaScript中原始类型有趣的事</title>
+      <link href="/2022/08/24/JavaScript%E4%B8%AD%E5%8E%9F%E5%A7%8B%E7%B1%BB%E5%9E%8B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%8B-DESKTOP-861NK7E/"/>
+      <url>/2022/08/24/JavaScript%E4%B8%AD%E5%8E%9F%E5%A7%8B%E7%B1%BB%E5%9E%8B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BA%8B-DESKTOP-861NK7E/</url>
+      
+        <content type="html"><![CDATA[<h1 id="函数参数命名出现的问题"><a href="#函数参数命名出现的问题" class="headerlink" title="函数参数命名出现的问题"></a>函数参数命名出现的问题</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">// 基本类型</span><br><span class="line">let foo = 5;</span><br><span class="line"></span><br><span class="line">// 定义一个貌似可以改变基本类型值的函数</span><br><span class="line">function addTwo(num) &#123;</span><br><span class="line">    num += 2;</span><br><span class="line">&#125;</span><br><span class="line">// 和前面的函数一样</span><br><span class="line">function addTwo_v2(foo) &#123;</span><br><span class="line">    foo += 2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 调用第一个函数，并传入基本类型值作为参数</span><br><span class="line">addTwo(foo);</span><br><span class="line">// Getting the current Primitive value</span><br><span class="line">console.log(foo);   // 5</span><br><span class="line"></span><br><span class="line">// 尝试调用第二个函数...</span><br><span class="line">addTwo_v2(foo);</span><br><span class="line">console.log(foo);   // 5</span><br></pre></td></tr></table></figure><p><strong>你是否认为会得到7，而不是5？如果是，请看看代码是如何运行的：</strong></p><ul><li>addTwo和addTwo_v2函数调用时，JavaScript 会检查标识符foo的值，从而准确无误的找到第一行实例化变量的声明语句。</li><li>找到以后，JavaScript 将其作为参数传递给函数的形参。</li><li>在执行函数体内语句之前，JavaScript 会将传递进来的参数（基本类型的值）复制一份，<font color="#FF00FF">创建一个本地副本。</font>这个副本只存在于该函数的作用域中，我们能够通过指定在函数中的标识符访问到它（addTwo中的num，addTwo_v2中的foo）。</li><li>接下来，函数体中的语句开始执行：<ul><li>第一个函数中，创建了本地num参数，num的值加 2，但这个值并不是原来的foo的值。</li><li>第二个函数中，创建了本地参数foo，并将它的值加 2，<font color="#FF00FF">这个值不是外部 foo 的值。在这种情况下，外部的foo变量不能以任何方式被访问到。这是因为 JavaScript 的词法作用域（lexical scoping）所导致的变量覆盖，本地的变量foo覆盖了外部的变量foo。</font>欲知详情，请参阅闭包。</li></ul></li><li>综上所述，函数中的任何操作都不会影响到最初的foo，我们操作的只不过是它的副本。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> plan </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> daily </tag>
+            
+            <tag> graduate student </tag>
+            
+            <tag> study </tag>
+            
+            <tag> plan </tag>
             
         </tags>
       
@@ -59,9 +90,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -90,9 +121,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -121,9 +152,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -152,9 +183,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -183,9 +214,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -214,40 +245,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
             
-            <tag> plan </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>未完成的List</title>
-      <link href="/2022/08/05/%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84List-DESKTOP-B0TSPR2/"/>
-      <url>/2022/08/05/%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84List-DESKTOP-B0TSPR2/</url>
-      
-        <content type="html"><![CDATA[<h1 id="八月"><a href="#八月" class="headerlink" title="八月"></a>八月</h1><h2 id="第一周"><a href="#第一周" class="headerlink" title="第一周"></a>第一周</h2><ul><li><input disabled="" type="checkbox"> CSS新样式未写完</li><li><input disabled="" type="checkbox"> Promise概念未梳理完</li><li><input disabled="" type="checkbox"> 基本算法</li></ul><h2 id="第二周"><a href="#第二周" class="headerlink" title="第二周"></a>第二周</h2><ul><li><input disabled="" type="checkbox"> 基础算法</li><li><input disabled="" type="checkbox"> 腾讯的小红</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> plan </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
             <tag> study </tag>
-            
-            <tag> graduate student </tag>
-            
-            <tag> weekly </tag>
             
             <tag> plan </tag>
             
@@ -274,9 +274,40 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
             <tag> study </tag>
             
+            <tag> weekly </tag>
+            
+            <tag> plan </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>未完成的List</title>
+      <link href="/2022/08/05/%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84List-DESKTOP-B0TSPR2/"/>
+      <url>/2022/08/05/%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84List-DESKTOP-B0TSPR2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="八月"><a href="#八月" class="headerlink" title="八月"></a>八月</h1><h2 id="第一周"><a href="#第一周" class="headerlink" title="第一周"></a>第一周</h2><ul><li><input disabled="" type="checkbox"> CSS新样式未写完</li><li><input disabled="" type="checkbox"> Promise概念未梳理完</li><li><input disabled="" type="checkbox"> 基本算法</li></ul><h2 id="第二周"><a href="#第二周" class="headerlink" title="第二周"></a>第二周</h2><ul><li><input disabled="" type="checkbox"> 基础算法</li><li><input disabled="" type="checkbox"> 腾讯的小红</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> plan </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -307,9 +338,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -338,9 +369,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -369,9 +400,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -398,40 +429,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
             
-            <tag> plan </tag>
-            
-            <tag> daily/weekly </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>JS工作原理(第七天)</title>
-      <link href="/2022/08/03/JS%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86(%E7%AC%AC%E4%B8%83%E5%A4%A9)/"/>
-      <url>/2022/08/03/JS%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86(%E7%AC%AC%E4%B8%83%E5%A4%A9)/</url>
-      
-        <content type="html"><![CDATA[<h1 id="为什么js是单线程"><a href="#为什么js是单线程" class="headerlink" title="为什么js是单线程"></a>为什么js是单线程</h1><p>这主要和js的用途有关，js是作为浏览器的脚本语言，主要是实现用户与浏览器的交互，以及操作dom；这决定了它只能是单线程，否则会带来很复杂的同步问题。 <strong>举个例子：如果js被设计了多线程，如果有一个线程要修改一个dom元素，另一个线程要删除这个dom元素，此时浏览器就会一脸茫然，不知所措。</strong> 所以，为了避免复杂性，从一诞生，JavaScript就是单线程，这已经成了这门语言的核心特征，将来也不会改变</p><p><font color="#FF8C00">扩展：</font></p><p>什么是进程？<br>进程：是<font color="#FF8C00">cpu分配资源的最小单位</font>；（<font color="#FF8C00">是能拥有资源和独立运行的最小单位</font>）</p><p>什么是线程？<br>线程：<font color="#FF8C00">是cpu调度的最小单位；（线程是建立在进程的基础上的一次程序运行单位，一个进程中可以有多个线程</font>）</p><p>浏览器是多进程的？<br>放在浏览器中，<font color="#FF8C00">每打开一个tab页面，其实就是新开了一个进程，在这个进程中，还有ui渲染线程，js引擎线程，http请求线程等。 所以，浏览器是一个多进程的。</font></p><p><font color="#FF00FF">为了利用多核CPU的计算能力，HTML5提出Web Worker标准，允许JavaScript脚本创建多个线程，但是子线程完全受主线程控制，且不得操作DOM。所以，这个新标准并没有改变JavaScript单线程的本质</font>。</p><h1 id="宏微队列及执行顺序"><a href="#宏微队列及执行顺序" class="headerlink" title="宏微队列及执行顺序"></a>宏微队列及执行顺序</h1><p>JS 中用来存储待执行回调函数的队列包含 2 个不同特定的列队</p><ul><li>宏列队：用来保存待执行的宏任务（回调），比如：定时器回调、DOM 事件回调、ajax 回调</li><li>微列队：用来保存待执行的微任务（回调），比如：promise的回调、MutationObserver 的回调</li></ul><p>JS 执行时会区别这 2 个队列</p><ul><li>JS 引擎首先必须先执行所有的初始化同步任务代码</li><li><font color="#FF8C00">每次准备取出第一个宏任务执行前, 都要将所有的微任务一个一个取出来执行，也就是优先级比宏任务高，且与微任务所处的代码位置无关</font></li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(() =&gt; &#123; //立即放入宏队列</span><br><span class="line">      console.log(&#x27;timeout callback1（）&#x27;)</span><br><span class="line">      Promise.resolve(3).then(</span><br><span class="line">        value =&gt; &#123; //立即放入微队列</span><br><span class="line">          console.log(&#x27;Promise onResolved3()&#x27;, value)</span><br><span class="line">        &#125;</span><br><span class="line">      )</span><br><span class="line">    &#125;, 0)</span><br><span class="line"></span><br><span class="line">    setTimeout(() =&gt; &#123; //立即放入宏队列</span><br><span class="line">      console.log(&#x27;timeout callback2（）&#x27;)</span><br><span class="line">    &#125;, 0)</span><br><span class="line"></span><br><span class="line">    Promise.resolve(1).then(</span><br><span class="line">      value =&gt; &#123; //立即放入微队列</span><br><span class="line">        console.log(&#x27;Promise onResolved1()&#x27;, value)</span><br><span class="line">        setTimeout(() =&gt; &#123;</span><br><span class="line">          console.log(&#x27;timeout callback3（）&#x27;, value)</span><br><span class="line">        &#125;, 0)</span><br><span class="line">      &#125;</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    Promise.resolve(2).then(</span><br><span class="line">      value =&gt; &#123; //立即放入微队列</span><br><span class="line">        console.log(&#x27;Promise onResolved2()&#x27;, value)</span><br><span class="line">      &#125;</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    // Promise onResolved1() 1</span><br><span class="line">    // Promise onResolved2() 2</span><br><span class="line">    // timeout callback1（）</span><br><span class="line">    // Promise onResolved3() 3</span><br><span class="line">    // timeout callback2（）</span><br><span class="line">    // timeout callback3（） 1</span><br></pre></td></tr></table></figure><h1 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h1><p><font color="#FF8C00">死锁是指两个或两个以上的进程在执行过程中，由于竞争资源而造成阻塞的现象，若无外力作用，它们都将无法继续执行</font></p><p><strong>产生原因</strong></p><ul><li>竞争资源引起进程死锁</li><li>可剥夺和非剥夺资源</li><li>竞争非剥夺资源</li><li>竞争临时性资源</li><li>进程推进顺序不当</li><li></li></ul><p><strong>产生条件</strong></p><ol><li>互斥条件：涉及的资源是非共享的<ul><li>涉及的资源是非共享的,一段时间内某资源只由一个进程占用,如果此时还有其它进程请求资源，则请求者只能等待，直至占有资源的进程用毕释放</li></ul></li><li>不剥夺条件：不能强行剥夺进程拥有的资源<ul><li>进程已获得的资源，在未使用完之前，不能被剥夺，只能在使用完时由自己释放</li></ul></li><li>请求和保持条件：进程在等待一新资源时继续占有已分配的资源<ul><li>指进程已经保持至少一个资源，但又提出了新的资源请求，而该资源已被其它进程占有，此时请求进程阻塞，但又对自己已获得的其它资源保持不放</li></ul></li><li>环路等待条件：存在一种进程的循环链，链中的每一个进程已获得的资源同时被链中的下一个进程所请求 在发生死锁时，必然存在一个进程——资源的环形链</li></ol><p><font color="#FF00FF">解决办法</font><br>只要打破四个必要条件之一就能有效预防死锁的发生</p><h1 id="暂时性死区"><a href="#暂时性死区" class="headerlink" title="暂时性死区"></a>暂时性死区</h1><p>暂时性死区的本质就是，<font color="#FF00FF">只要一进入当前作用域，所要使用的变量就已经存在了，但是不可获取，只有等到声明变量的那一行代码出现，才可以获取和使用该变量</font>。<br><strong>扩展：</strong><br>let 、const与暂时性死区</p><p>let或const声明的变量拥有暂时性死区（TDZ）：当进入它的作用域，它不能被访问（获取或设置）直到执行到达声明。</p><p>首先看看<font color="#FF8C00">不具有</font>暂时性死区的var：</p><ul><li>当进入var变量的作用域（包围它的函数）<strong>，立即为它创建（绑定）存储空间。变量会立即<font color="#FF00FF">被初始化并赋值</font>为undefined。</strong></li><li>当执行到变量声明的时候，如果变量定义了值则会被赋值。</li></ul><p>通过let声明的变量拥有暂时性死区，生命周期如下：</p><ul><li>当进入let变量的作用域（包围它的语法块），立即为它创建（绑定）存储空间。此时变量仍是<font color="#FF00FF">未初始化</font>的。</li><li>获取或设置未初始化的变量将抛出异常ReferenceError。</li><li>当执行到变量声明的时候，如果变量定义了值则会被赋值。如果没有定义值，则赋值为undefined。</li><li>const工作方式与let类似，但是**<font color="#FF8C00">定义的时候必须赋值并且不能改变。</font>**</li></ul><blockquote><p>在 TDZ 内部，如果获取或设置变量将抛出异常：</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">if (true) &#123; // enter new scope, TDZ starts</span><br><span class="line">    // Uninitialized binding for `tmp` is created</span><br><span class="line"></span><br><span class="line">    tmp = &#x27;abc&#x27;; // ReferenceError</span><br><span class="line">    console.log(tmp); // ReferenceError</span><br><span class="line"></span><br><span class="line">    let tmp; // TDZ ends, `tmp` is initialized with `undefined`</span><br><span class="line">    console.log(tmp); // undefined</span><br><span class="line"></span><br><span class="line">    tmp = 123;</span><br><span class="line">    console.log(tmp); // 123</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>下面的示例将演示死区（dead zone）是<font color="#FF00FF">真正短暂的（基于时间）和不受空间条件限制（基于位置）</font></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">if (true) &#123; // enter new scope, TDZ starts</span><br><span class="line">    const func = function () &#123;</span><br><span class="line">        console.log(myVar); // OK!</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    // Here we are within the TDZ and</span><br><span class="line">    // accessing `myVar` would cause a `ReferenceError`</span><br><span class="line"></span><br><span class="line">    let myVar = 3; // TDZ ends</span><br><span class="line">    func(); // called outside TDZ</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>typeof与暂时性死区，变量在暂时性死区无法被访问，所以无法对它使用typeof：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if (true) &#123;</span><br><span class="line">    console.log(typeof tmp); // ReferenceError</span><br><span class="line">    let tmp;</span><br><span class="line">&#125;s</span><br></pre></td></tr></table></figure><h1 id="面向对象的三个特征，分别说一下什么意思"><a href="#面向对象的三个特征，分别说一下什么意思" class="headerlink" title="面向对象的三个特征，分别说一下什么意思"></a>面向对象的三个特征，分别说一下什么意思</h1><p><strong>封装：</strong> 将对象运行所需的资源封装在程序对象中——基本上，是方法和数据。对象是“公布其接口”。其他附加到这些接口上的对象不需要关心对象实现的方法即可使用这个对象。这个概念就是“不要告诉我你是怎么做的，只要做就可以了。”对象可以看作是一个自我包含的原子。<font color="#FF8C00">对象接口包括了公共的方法和初始化数据。</font></p><p><strong>继承：</strong> 继承可以解决代码复用，让编程更加靠近人类思维。当多个类存在相同的属性(变量)和方法时，可以从这些类中抽象出父类，在父类中定义这些相同的属性和方法，所有的子类不需要重新定义这些属性和方法，只需要通过继承父类中的属性和方法。</p><p><strong>多态：</strong> 多态是指一个引用(类型)在不同情况下的多种状态。也可以理解成：<font color="#FF00FF">多态是指通过指向父类的引用，来调用在不同子类中实现的方法</font>。</p><p><font color="#FF8C00">特点：</font></p><ul><li>封装可以隐藏实现细节，使得代码模块化；</li><li>继承可以扩展已存在的代码模块（类），它们的目的都是为了——代码重用。</li><li>多态就是<font color="#FF00FF">相同的事物，调用其相同的方法，参数也相同时，但表现的行为却不同。多态分为两种，一种是行为多态与对象的多态</font></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> plan </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
             <tag> study </tag>
-            
-            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -460,9 +460,40 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
             <tag> study </tag>
             
+            <tag> plan </tag>
+            
+            <tag> daily/weekly </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JS工作原理(第七天)</title>
+      <link href="/2022/08/03/JS%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86(%E7%AC%AC%E4%B8%83%E5%A4%A9)/"/>
+      <url>/2022/08/03/JS%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86(%E7%AC%AC%E4%B8%83%E5%A4%A9)/</url>
+      
+        <content type="html"><![CDATA[<h1 id="为什么js是单线程"><a href="#为什么js是单线程" class="headerlink" title="为什么js是单线程"></a>为什么js是单线程</h1><p>这主要和js的用途有关，js是作为浏览器的脚本语言，主要是实现用户与浏览器的交互，以及操作dom；这决定了它只能是单线程，否则会带来很复杂的同步问题。 <strong>举个例子：如果js被设计了多线程，如果有一个线程要修改一个dom元素，另一个线程要删除这个dom元素，此时浏览器就会一脸茫然，不知所措。</strong> 所以，为了避免复杂性，从一诞生，JavaScript就是单线程，这已经成了这门语言的核心特征，将来也不会改变</p><p><font color="#FF8C00">扩展：</font></p><p>什么是进程？<br>进程：是<font color="#FF8C00">cpu分配资源的最小单位</font>；（<font color="#FF8C00">是能拥有资源和独立运行的最小单位</font>）</p><p>什么是线程？<br>线程：<font color="#FF8C00">是cpu调度的最小单位；（线程是建立在进程的基础上的一次程序运行单位，一个进程中可以有多个线程</font>）</p><p>浏览器是多进程的？<br>放在浏览器中，<font color="#FF8C00">每打开一个tab页面，其实就是新开了一个进程，在这个进程中，还有ui渲染线程，js引擎线程，http请求线程等。 所以，浏览器是一个多进程的。</font></p><p><font color="#FF00FF">为了利用多核CPU的计算能力，HTML5提出Web Worker标准，允许JavaScript脚本创建多个线程，但是子线程完全受主线程控制，且不得操作DOM。所以，这个新标准并没有改变JavaScript单线程的本质</font>。</p><h1 id="宏微队列及执行顺序"><a href="#宏微队列及执行顺序" class="headerlink" title="宏微队列及执行顺序"></a>宏微队列及执行顺序</h1><p>JS 中用来存储待执行回调函数的队列包含 2 个不同特定的列队</p><ul><li>宏列队：用来保存待执行的宏任务（回调），比如：定时器回调、DOM 事件回调、ajax 回调</li><li>微列队：用来保存待执行的微任务（回调），比如：promise的回调、MutationObserver 的回调</li></ul><p>JS 执行时会区别这 2 个队列</p><ul><li>JS 引擎首先必须先执行所有的初始化同步任务代码</li><li><font color="#FF8C00">每次准备取出第一个宏任务执行前, 都要将所有的微任务一个一个取出来执行，也就是优先级比宏任务高，且与微任务所处的代码位置无关</font></li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(() =&gt; &#123; //立即放入宏队列</span><br><span class="line">      console.log(&#x27;timeout callback1（）&#x27;)</span><br><span class="line">      Promise.resolve(3).then(</span><br><span class="line">        value =&gt; &#123; //立即放入微队列</span><br><span class="line">          console.log(&#x27;Promise onResolved3()&#x27;, value)</span><br><span class="line">        &#125;</span><br><span class="line">      )</span><br><span class="line">    &#125;, 0)</span><br><span class="line"></span><br><span class="line">    setTimeout(() =&gt; &#123; //立即放入宏队列</span><br><span class="line">      console.log(&#x27;timeout callback2（）&#x27;)</span><br><span class="line">    &#125;, 0)</span><br><span class="line"></span><br><span class="line">    Promise.resolve(1).then(</span><br><span class="line">      value =&gt; &#123; //立即放入微队列</span><br><span class="line">        console.log(&#x27;Promise onResolved1()&#x27;, value)</span><br><span class="line">        setTimeout(() =&gt; &#123;</span><br><span class="line">          console.log(&#x27;timeout callback3（）&#x27;, value)</span><br><span class="line">        &#125;, 0)</span><br><span class="line">      &#125;</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    Promise.resolve(2).then(</span><br><span class="line">      value =&gt; &#123; //立即放入微队列</span><br><span class="line">        console.log(&#x27;Promise onResolved2()&#x27;, value)</span><br><span class="line">      &#125;</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    // Promise onResolved1() 1</span><br><span class="line">    // Promise onResolved2() 2</span><br><span class="line">    // timeout callback1（）</span><br><span class="line">    // Promise onResolved3() 3</span><br><span class="line">    // timeout callback2（）</span><br><span class="line">    // timeout callback3（） 1</span><br></pre></td></tr></table></figure><h1 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h1><p><font color="#FF8C00">死锁是指两个或两个以上的进程在执行过程中，由于竞争资源而造成阻塞的现象，若无外力作用，它们都将无法继续执行</font></p><p><strong>产生原因</strong></p><ul><li>竞争资源引起进程死锁</li><li>可剥夺和非剥夺资源</li><li>竞争非剥夺资源</li><li>竞争临时性资源</li><li>进程推进顺序不当</li><li></li></ul><p><strong>产生条件</strong></p><ol><li>互斥条件：涉及的资源是非共享的<ul><li>涉及的资源是非共享的,一段时间内某资源只由一个进程占用,如果此时还有其它进程请求资源，则请求者只能等待，直至占有资源的进程用毕释放</li></ul></li><li>不剥夺条件：不能强行剥夺进程拥有的资源<ul><li>进程已获得的资源，在未使用完之前，不能被剥夺，只能在使用完时由自己释放</li></ul></li><li>请求和保持条件：进程在等待一新资源时继续占有已分配的资源<ul><li>指进程已经保持至少一个资源，但又提出了新的资源请求，而该资源已被其它进程占有，此时请求进程阻塞，但又对自己已获得的其它资源保持不放</li></ul></li><li>环路等待条件：存在一种进程的循环链，链中的每一个进程已获得的资源同时被链中的下一个进程所请求 在发生死锁时，必然存在一个进程——资源的环形链</li></ol><p><font color="#FF00FF">解决办法</font><br>只要打破四个必要条件之一就能有效预防死锁的发生</p><h1 id="暂时性死区"><a href="#暂时性死区" class="headerlink" title="暂时性死区"></a>暂时性死区</h1><p>暂时性死区的本质就是，<font color="#FF00FF">只要一进入当前作用域，所要使用的变量就已经存在了，但是不可获取，只有等到声明变量的那一行代码出现，才可以获取和使用该变量</font>。<br><strong>扩展：</strong><br>let 、const与暂时性死区</p><p>let或const声明的变量拥有暂时性死区（TDZ）：当进入它的作用域，它不能被访问（获取或设置）直到执行到达声明。</p><p>首先看看<font color="#FF8C00">不具有</font>暂时性死区的var：</p><ul><li>当进入var变量的作用域（包围它的函数）<strong>，立即为它创建（绑定）存储空间。变量会立即<font color="#FF00FF">被初始化并赋值</font>为undefined。</strong></li><li>当执行到变量声明的时候，如果变量定义了值则会被赋值。</li></ul><p>通过let声明的变量拥有暂时性死区，生命周期如下：</p><ul><li>当进入let变量的作用域（包围它的语法块），立即为它创建（绑定）存储空间。此时变量仍是<font color="#FF00FF">未初始化</font>的。</li><li>获取或设置未初始化的变量将抛出异常ReferenceError。</li><li>当执行到变量声明的时候，如果变量定义了值则会被赋值。如果没有定义值，则赋值为undefined。</li><li>const工作方式与let类似，但是**<font color="#FF8C00">定义的时候必须赋值并且不能改变。</font>**</li></ul><blockquote><p>在 TDZ 内部，如果获取或设置变量将抛出异常：</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">if (true) &#123; // enter new scope, TDZ starts</span><br><span class="line">    // Uninitialized binding for `tmp` is created</span><br><span class="line"></span><br><span class="line">    tmp = &#x27;abc&#x27;; // ReferenceError</span><br><span class="line">    console.log(tmp); // ReferenceError</span><br><span class="line"></span><br><span class="line">    let tmp; // TDZ ends, `tmp` is initialized with `undefined`</span><br><span class="line">    console.log(tmp); // undefined</span><br><span class="line"></span><br><span class="line">    tmp = 123;</span><br><span class="line">    console.log(tmp); // 123</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>下面的示例将演示死区（dead zone）是<font color="#FF00FF">真正短暂的（基于时间）和不受空间条件限制（基于位置）</font></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">if (true) &#123; // enter new scope, TDZ starts</span><br><span class="line">    const func = function () &#123;</span><br><span class="line">        console.log(myVar); // OK!</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    // Here we are within the TDZ and</span><br><span class="line">    // accessing `myVar` would cause a `ReferenceError`</span><br><span class="line"></span><br><span class="line">    let myVar = 3; // TDZ ends</span><br><span class="line">    func(); // called outside TDZ</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>typeof与暂时性死区，变量在暂时性死区无法被访问，所以无法对它使用typeof：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if (true) &#123;</span><br><span class="line">    console.log(typeof tmp); // ReferenceError</span><br><span class="line">    let tmp;</span><br><span class="line">&#125;s</span><br></pre></td></tr></table></figure><h1 id="面向对象的三个特征，分别说一下什么意思"><a href="#面向对象的三个特征，分别说一下什么意思" class="headerlink" title="面向对象的三个特征，分别说一下什么意思"></a>面向对象的三个特征，分别说一下什么意思</h1><p><strong>封装：</strong> 将对象运行所需的资源封装在程序对象中——基本上，是方法和数据。对象是“公布其接口”。其他附加到这些接口上的对象不需要关心对象实现的方法即可使用这个对象。这个概念就是“不要告诉我你是怎么做的，只要做就可以了。”对象可以看作是一个自我包含的原子。<font color="#FF8C00">对象接口包括了公共的方法和初始化数据。</font></p><p><strong>继承：</strong> 继承可以解决代码复用，让编程更加靠近人类思维。当多个类存在相同的属性(变量)和方法时，可以从这些类中抽象出父类，在父类中定义这些相同的属性和方法，所有的子类不需要重新定义这些属性和方法，只需要通过继承父类中的属性和方法。</p><p><strong>多态：</strong> 多态是指一个引用(类型)在不同情况下的多种状态。也可以理解成：<font color="#FF00FF">多态是指通过指向父类的引用，来调用在不同子类中实现的方法</font>。</p><p><font color="#FF8C00">特点：</font></p><ul><li>封装可以隐藏实现细节，使得代码模块化；</li><li>继承可以扩展已存在的代码模块（类），它们的目的都是为了——代码重用。</li><li>多态就是<font color="#FF00FF">相同的事物，调用其相同的方法，参数也相同时，但表现的行为却不同。多态分为两种，一种是行为多态与对象的多态</font></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> plan </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -493,9 +524,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -524,9 +555,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -555,9 +586,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -586,9 +617,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -617,9 +648,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -648,9 +679,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -679,9 +710,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -710,9 +741,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -741,9 +772,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -770,9 +801,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -803,46 +834,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
             
-            <tag> plan </tag>
-            
-            <tag> FE </tag>
-            
-            <tag> algorithm </tag>
-            
-            <tag> deep learning </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>2022-7-13研究生的倒数第308天</title>
-      <link href="/2022/07/13/2022-7-13%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC308%E5%A4%A9/"/>
-      <url>/2022/07/13/2022-7-13%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC308%E5%A4%A9/</url>
-      
-        <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:00~10:00 今日学习学习            <strong><font color="#D2691E">JS完成第八章</font></strong></li><li><input disabled="" type="checkbox"> 10:00~10:50 今日学习学习            <strong><font color="#D2691E">算法</font></strong></li><li><input disabled="" type="checkbox"> 10:50~11:20 <strong><font color="#D2691E">实现算法</font></strong></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> graduate student time </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> daily </tag>
-            
             <tag> study </tag>
-            
-            <tag> graduate student </tag>
             
             <tag> plan </tag>
             
@@ -877,9 +871,46 @@
             
             <tag> daily </tag>
             
+            <tag> graduate student </tag>
+            
             <tag> study </tag>
             
+            <tag> plan </tag>
+            
+            <tag> FE </tag>
+            
+            <tag> algorithm </tag>
+            
+            <tag> deep learning </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2022-7-13研究生的倒数第308天</title>
+      <link href="/2022/07/13/2022-7-13%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC308%E5%A4%A9/"/>
+      <url>/2022/07/13/2022-7-13%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC308%E5%A4%A9/</url>
+      
+        <content type="html"><![CDATA[<h1 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h1><ul><li><input disabled="" type="checkbox"> 9:00~10:00 今日学习学习            <strong><font color="#D2691E">JS完成第八章</font></strong></li><li><input disabled="" type="checkbox"> 10:00~10:50 今日学习学习            <strong><font color="#D2691E">算法</font></strong></li><li><input disabled="" type="checkbox"> 10:50~11:20 <strong><font color="#D2691E">实现算法</font></strong></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> graduate student time </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> daily </tag>
+            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -914,9 +945,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -951,9 +982,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -988,9 +1019,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1025,9 +1056,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1062,9 +1093,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1099,9 +1130,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1130,9 +1161,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1159,9 +1190,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1192,9 +1223,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1254,9 +1285,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1291,9 +1322,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1328,9 +1359,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1365,9 +1396,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1402,9 +1433,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1439,9 +1470,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1474,9 +1505,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1507,9 +1538,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> front-end </tag>
             
@@ -1542,9 +1573,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1573,9 +1604,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1604,9 +1635,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1637,9 +1668,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1666,9 +1697,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1697,9 +1728,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1726,9 +1757,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1759,9 +1790,9 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -1788,9 +1819,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1819,9 +1850,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1850,9 +1881,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -1881,9 +1912,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -1916,9 +1947,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -1947,9 +1978,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -1978,9 +2009,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -2009,9 +2040,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -2040,9 +2071,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -2071,9 +2102,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -2104,11 +2135,11 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
             
             <tag> summarize </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -2139,9 +2170,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -2174,9 +2205,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -2209,9 +2240,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> RPA </tag>
             
@@ -2244,9 +2275,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -2306,9 +2337,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -2339,9 +2370,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -2372,9 +2403,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -2440,9 +2471,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -2469,9 +2500,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> RPA </tag>
             
@@ -2535,11 +2566,11 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
             
             <tag> report </tag>
+            
+            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -2597,9 +2628,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> RPA </tag>
             
@@ -2628,9 +2659,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -2659,17 +2690,17 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
             
             <tag> report </tag>
             
+            <tag> study </tag>
+            
             <tag> weekly </tag>
             
-            <tag> RPA </tag>
-            
             <tag> plan </tag>
+            
+            <tag> RPA </tag>
             
         </tags>
       
@@ -2694,9 +2725,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> RPA </tag>
             
@@ -2723,11 +2754,11 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
             
             <tag> report </tag>
+            
+            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -2754,11 +2785,11 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
             
             <tag> report </tag>
+            
+            <tag> study </tag>
             
             <tag> weekly </tag>
             
@@ -2787,9 +2818,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> RPA </tag>
             
@@ -2816,11 +2847,11 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
             
             <tag> report </tag>
+            
+            <tag> study </tag>
             
         </tags>
       
@@ -2845,9 +2876,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -2878,9 +2909,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -2909,9 +2940,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> plan </tag>
             
@@ -3083,8 +3114,6 @@
             
             <tag> daily </tag>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
             
             <tag> report </tag>
@@ -3092,6 +3121,8 @@
             <tag> summarize </tag>
             
             <tag> Java </tag>
+            
+            <tag> study </tag>
             
         </tags>
       
