@@ -1,0 +1,395 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>C/C++基础（二） | 吾辈之人，自当自强不息！</title><meta name="keywords" content="keywords"><meta name="author" content="Merlynr"><meta name="copyright" content="Merlynr"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="description">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C&#x2F;C++基础（二）">
+<meta property="og:url" content="https://merlynr.github.io/2022/11/14/C/C++%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/index.html">
+<meta property="og:site_name" content="吾辈之人，自当自强不息！">
+<meta property="og:description" content="description">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://images.wallpaperscraft.com/image/single/puppy_husky_dog_146772_300x168.jpg">
+<meta property="article:published_time" content="2022-11-13T20:31:00.000Z">
+<meta property="article:modified_time" content="2022-11-13T20:31:00.000Z">
+<meta property="article:author" content="Merlynr">
+<meta property="article:tag" content="study, graduate student,C&#x2F;C++">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://images.wallpaperscraft.com/image/single/puppy_husky_dog_146772_300x168.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://merlynr.github.io/2022/11/14/C/C++%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="NxG6l55lxRJBy3WWiA4lqhdm77dCzqIMonHurWHQtu0"/><meta name="baidu-site-verification" content="code-K9eCtVEPQ1"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2b88427b12";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=NxG6l55lxRJBy3WWiA4lqhdm77dCzqIMonHurWHQtu0"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'NxG6l55lxRJBy3WWiA4lqhdm77dCzqIMonHurWHQtu0');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Merlynr","link":"链接: ","source":"来源: 吾辈之人，自当自强不息！","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'C/C++基础（二）',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-11-14 04:31:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="吾辈之人，自当自强不息！" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/thumb-78833.gif" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">103</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.wallpaperscraft.com/image/single/puppy_husky_dog_146772_300x168.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">吾辈之人，自当自强不息！</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">C/C++基础（二）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-13T20:31:00.000Z" title="发表于 2022-11-14 04:31:00">2022-11-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-11-13T20:31:00.000Z" title="更新于 2022-11-14 04:31:00">2022-11-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/graduate-student-time/">graduate student time</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>15分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="C/C++基础（二）"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="C-内存"><a href="#C-内存" class="headerlink" title="C++内存"></a>C++内存</h1><h2 id="简述一下堆和栈的区别"><a href="#简述一下堆和栈的区别" class="headerlink" title="简述一下堆和栈的区别"></a>简述一下堆和栈的区别</h2><h3 id="堆栈空间分配不同"><a href="#堆栈空间分配不同" class="headerlink" title="堆栈空间分配不同"></a>堆栈空间分配不同</h3><p>栈由操作系统自动分配释放 ，存放函数的参数值，局部变量的值等；堆一般由程序员分配释放。</p>
+<h3 id="堆栈缓存方式不同"><a href="#堆栈缓存方式不同" class="headerlink" title="堆栈缓存方式不同"></a>堆栈缓存方式不同</h3><p>栈使用的是一级缓存， 它们通常都是被调用时处于存储空间中，调用完毕立即释放；堆则是存放在二级缓存中，速度要慢些。</p>
+<h3 id="堆栈数据结构不同"><a href="#堆栈数据结构不同" class="headerlink" title="堆栈数据结构不同"></a>堆栈数据结构不同</h3><p><font color="#FF00FF">堆类似数组结构</font>；栈类似栈结构，先进后出。</p>
+<h2 id="简述C-的内存管理"><a href="#简述C-的内存管理" class="headerlink" title="简述C++的内存管理"></a>简述C++的内存管理</h2><h3 id="内存分配方式"><a href="#内存分配方式" class="headerlink" title="内存分配方式"></a>内存分配方式</h3><blockquote>
+<p>在C++中，内存分成5个区，他们分别是<font color="#FF00FF">堆、栈、自由存储区、全局/静态存储区和常量存储区</font>。</p>
+</blockquote>
+<h4 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h4><p>在执行函数时，函数内局部变量的存储单元都可以在栈上创建，函数执行结束时这些存储单元自动被释放。</p>
+<h4 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h4><p>就是那些由new分配的内存块，一般一个new就要对应一个delete</p>
+<h4 id="自由存储区"><a href="#自由存储区" class="headerlink" title="自由存储区"></a>自由存储区</h4><p><font color="#FF8C00">就是那些由malloc等分配的内存块，和堆是十分相似的，不过是用free来结束自己的生命</font>。</p>
+<h4 id="全局-静态存储区"><a href="#全局-静态存储区" class="headerlink" title="全局/静态存储区"></a>全局/静态存储区</h4><p>全局变量和静态变量被分配到同一块内存中</p>
+<h4 id="常量存储区"><a href="#常量存储区" class="headerlink" title="常量存储区"></a>常量存储区</h4><p>这是一块比较特殊的存储区，里面存放的是常量，不允许修改。</p>
+<h3 id="常见的内存错误及其对策"><a href="#常见的内存错误及其对策" class="headerlink" title="常见的内存错误及其对策"></a>常见的内存错误及其对策</h3><h4 id="错误"><a href="#错误" class="headerlink" title="错误"></a>错误</h4><p>（1）内存<font color="#FF8C00">分配未成功</font>，却使用了它。<br>（2）内存分配虽然成功，但是尚<font color="#FF8C00">未初始化</font>就引用它。<br>（3）内存分配成功并且已经初始化，但操作<font color="#FF8C00">越过了内存的边界</font>。<br>（4）忘记了释放内存，造成<font color="#FF8C00">内存泄露</font>。<br>（5）<font color="#FF8C00">释放了内存却继续使用它</font>。</p>
+<h4 id="对策"><a href="#对策" class="headerlink" title="对策"></a>对策</h4><p>（1）定义指针时，先初始化为NULL。<br>（2）用malloc或new申请内存之后，应该<strong>立即检查</strong>指针值是否为NULL。防止使用指针值为NULL的内存。<br>（3）不要忘记为数组和动态内存<strong>赋初值</strong>。防止将未被初始化的内存作为右值使用。<br>（4）避免数字或指针的下标<strong>越界</strong>，特别要当心发生“多1”或者“少1”操作<br>（5）动态内存的申请与释放必须配对，防止<strong>内存泄漏</strong><br>（6）用free或delete释放了内存之后，立即将指针<strong>设置为NULL</strong>，防止“野指针”<br>（7）使用智能指针。</p>
+<h2 id="内存泄露及解决办法"><a href="#内存泄露及解决办法" class="headerlink" title="内存泄露及解决办法"></a>内存泄露及解决办法</h2><h3 id="什么是内存泄露？"><a href="#什么是内存泄露？" class="headerlink" title="什么是内存泄露？"></a>什么是内存泄露？</h3><p>简单地说就是申请了一块内存空间，使用完毕后没有释放掉。（1）new和malloc申请资源使用后，没有用delete和free释放；<font color="#FF8C00">（2）子类继承父类时，父类析构函数不是虚函数。（3）Windows句柄资源使用后没有释放。</font></p>
+<h3 id="怎么检测？"><a href="#怎么检测？" class="headerlink" title="怎么检测？"></a>怎么检测？</h3><p>第一：良好的编码习惯，使用了内存分配的函数，一旦使用完毕,要记得使用其相应的函数释放掉。<br>第二：<font color="#FF8C00">将分配的内存的指针以链表的形式自行管理</font>，使用完毕之后从链表中删除，程序结束时可检查改链表。<br>第三：使用智能指针。<br>第四：一些常见的工具插件，如ccmalloc、Dmalloc、Leaky、Valgrind等等。</p>
+<h2 id="malloc和局部变量分配在堆还是栈"><a href="#malloc和局部变量分配在堆还是栈" class="headerlink" title="malloc和局部变量分配在堆还是栈"></a>malloc和局部变量分配在堆还是栈</h2><p><font color="#FF8C00">malloc是在堆上分配内存，需要程序员自己回收内存</font>；<font color="#DEB887">局部变量是在栈中分配内存，超过作用域就自动回收</font>。</p>
+<h2 id="程序有哪些section，分别的作用？程序启动的过程？怎么判断数据分配在栈上还是堆上？"><a href="#程序有哪些section，分别的作用？程序启动的过程？怎么判断数据分配在栈上还是堆上？" class="headerlink" title="程序有哪些section，分别的作用？程序启动的过程？怎么判断数据分配在栈上还是堆上？"></a>程序有哪些section，分别的作用？程序启动的过程？怎么判断数据分配在栈上还是堆上？</h2><p><img src="https://files.shanqianche.cn/202211/1668432991745.png" alt="程序结构图"><br><strong>一个程序有哪些section：</strong></p>
+<blockquote>
+<p>从低地址到高地址，一个程序由代码段、数据段、BSS段、堆、共享区、栈等组成。</p>
+</blockquote>
+<ol>
+<li><strong>数据段：</strong> 存放程序中已初始化的全局变量和静态变量的一块内存区域。</li>
+<li><strong>代码段</strong>：存放程序执行代码的一块内存区域。只读，代码段的头部还会包含一些只读的常数变量</li>
+<li><strong>BSS</strong>：存放程序中未初始化的全局变量和静态变量的一块内存区域。</li>
+<li>可执行程序在运行时又会多出两个区域：<strong>堆区和栈区。</strong><ul>
+<li>堆区：动态申请内存用。堆从低地址向高地址增长。</li>
+<li>栈区：存储局部变量、函数参数值。栈从高地址向低地址增长。是一块连续的空间。</li>
+</ul>
+</li>
+<li>最后还有一个共享区，位于堆和栈之间。</li>
+</ol>
+<p><strong><font color="#FF00FF">程序启动的过程</font>：</strong></p>
+<ol>
+<li>操作系统首先创建相应的进程并分配私有的进程空间，然后操作系统的加载器负责把可执行文件的数据段和代码段映射到进程的虚拟内存空间中。</li>
+<li>加载器读入可执行程序的导入符号表，根据这些符号表可以查找出该可执行程序的所有依赖的动态链接库。</li>
+<li>加载器针对该程序的每一个动态链接库调用LoadLibrary （1）查找对应的动态库文件，加载器为该动态链接库确定一个合适的基地址。 （2）加载器读取该动态链接库的导入符号表和导出符号表，比较应用程序要求的导入符号是否匹配该库的导出符号。 （3）针对该库的导入符号表，查找对应的依赖的动态链接库，如有跳转，则跳到3 （4）调用该动态链接库的初始化函数</li>
+<li>初始化应用程序的全局变量，对于全局对象自动调用构造函数。</li>
+<li>进入应用程序入口点函数开始执行。</li>
+</ol>
+<p><strong>怎么判断数据分配在栈上还是堆上</strong>：首先局部变量分配在栈上；而通过malloc和new申请的空间是在堆上</p>
+<h2 id="初始化为0的全局变量在bss还是data"><a href="#初始化为0的全局变量在bss还是data" class="headerlink" title="初始化为0的全局变量在bss还是data"></a>初始化为0的全局变量在bss还是data</h2><p>BSS段通常是指用来<font color="#FF8C00">存放程序中未初始化的或者初始化为0的全局变量和静态变量的一块内存区域</font>。特点是可读写的，在程序执行之前BSS段会自动清0。</p>
+<h2 id="什么是内存泄露，内存泄露怎么检测？"><a href="#什么是内存泄露，内存泄露怎么检测？" class="headerlink" title="什么是内存泄露，内存泄露怎么检测？"></a>什么是内存泄露，内存泄露怎么检测？</h2><blockquote>
+<p>简单地说就是申请了一块内存空间，使用完毕后没有释放掉。（1）new和malloc申请资源使用后，没有用delete和free释放；（2）子类继承父类时，父类析构函数不是虚函数。（3）Windows句柄资源使用后没有释放。</p>
+</blockquote>
+<h2 id="请简述一下atomoic内存顺序"><a href="#请简述一下atomoic内存顺序" class="headerlink" title="请简述一下atomoic内存顺序"></a>请简述一下atomoic内存顺序</h2><p><strong>有六个内存顺序选项可应用于对原子类型的操作：</strong></p>
+<ol>
+<li>memory_order_relaxed：在原子类型上的操作以自由序列执行，没有任何同步关系，仅对此操作要求原子性。</li>
+<li>memory_order_consume：memory_order_consume只会对其标识的对象保证该对象存储先行于那些需要加载该对象的操作。</li>
+<li>memory_order_acquire：使用memory_order_acquire的原子操作，当前线程的读写操作都不能重排到此操作之前。</li>
+<li>memory_order_release：使用memory_order_release的原子操作，当前线程的读写操作都不能重排到此操作之后。</li>
+<li>memory_order_acq_rel：memory_order_acq_rel在此内存顺序的读-改-写操作既是获得加载又是释放操作。没有操作能够从此操作之后被重排到此操作之前，也没有操作能够从此操作之前被重排到此操作之后。</li>
+<li>memory_order_seq_cst：memory_order_seq_cst比std::memory_order_acq_rel更为严格。memory_order_seq_cst不仅是一个”获取释放”内存顺序，它还会对所有拥有此标签的内存操作建立一个单独全序。</li>
+</ol>
+<p><strong>除非你为特定的操作指定一个顺序选项，否则内存顺序选项对于所有原子类型默认都是memory_order_seq_cst。</strong></p>
+<h2 id="简述C-中内存对齐的使用场景"><a href="#简述C-中内存对齐的使用场景" class="headerlink" title="简述C++中内存对齐的使用场景"></a>简述C++中内存对齐的使用场景</h2><blockquote>
+<p><font color="#FF8C00">内存对齐</font>应用于三种数据类型中：struct/class/union</p>
+</blockquote>
+<p><strong>struct/class/union内存对齐原则有四个：</strong></p>
+<ol>
+<li>数据成员对齐规则：结构(struct)或联合(union)的数据成员，第一个数据成员放在offset为0的地方，以后每个数据成员存储的起始位置要从该成员大小或者成员的子成员大小的整数倍开始。</li>
+<li>结构体作为成员:如果一个结构里有某些结构体成员,则结构体成员要从其内部”最宽基本类型成员”的整数倍地址开始存储。(struct a里存有struct b,b里有char,int ,double等元素,那b应该从8的整数倍开始存储)。</li>
+<li>收尾工作:结构体的总大小，也就是sizeof的结果，必须是其内部最大成员的”最宽基本类型成员”的整数倍。不足的要补齐。(基本类型不包括struct/class/uinon)。</li>
+<li>sizeof(union)，以结构里面size最大元素为union的size，因为在某一时刻，union只有一个成员真正存储于该地址。</li>
+</ol>
+<h3 id="什么是内存对齐？"><a href="#什么是内存对齐？" class="headerlink" title="什么是内存对齐？"></a>什么是内存对齐？</h3><p>在C语言中，结构体是一种复合数据类型，其构成元素既可以是基本数据类型（如int、long、float等）的变量，也可以是一些复合数据类型（如数组、结构体、联合体等）的数据单元。在结构体中，**<font color="#FF8C00">编译器为结构体的每个成员按其自然边界（alignment）分配空间</font>**。各个成员按照它们被声明的顺序在内存中顺序存储，第一个成员的地址和整个结构体的地址相同。</p>
+<p>为了使CPU能够对变量进行快速的访问，变量的起始地址应该具有某些特性，即所谓的“对齐”，比如4字节的int型，其起始地址应该位于4字节的边界上，即起始地址能够被4整除，也即“对齐”跟数据在内存中的位置有关。<font color="#FF8C00">如果一个变量的内存地址正好位于它长度的整数倍，他就被称做自然对齐</font>。</p>
+<p>比如在32位cpu下，假设一个整型变量的地址为0x00000004(为4的倍数)，那它就是自然对齐的，而如果其地址为0x00000002（非4的倍数）则是非对齐的。现代计算机中内存空间都是按照byte划分的，从理论上讲似乎对任何类型的变量的访问可以从任何地址开始，但实际情况是在访问特定类型变量的时候经常在特定的内存地址访问，这就需要各种类型数据按照一定的规则在空间上排列，而不是顺序的一个接一个的排放，这就是对齐。</p>
+<h3 id="为什么要字节对齐？"><a href="#为什么要字节对齐？" class="headerlink" title="为什么要字节对齐？"></a>为什么要字节对齐？</h3><p>需要字节对齐的根本原因在于CPU访问数据的效率问题。假设上面整型变量的地址不是自然对齐，比如为0x00000002，则CPU如果取它的值的话需要访问两次内存，第一次取从0x00000002-0x00000003的一个short，第二次取从0x00000004-0x00000005的一个short然后组合得到所要的数据，如果变量在0x00000003地址上的话则要访问三次内存，第一次为char，第二次为short，第三次为char，然后组合得到整型数据。</p>
+<p>而如果变量在自然对齐位置上，则只要一次就可以取出数据。一些系统对对齐要求非常严格，比如sparc系统，如果取未对齐的数据会发生错误，而在x86上就不会出现错误，只是效率下降。</p>
+<p>各个硬件平台对存储空间的处理上有很大的不同。一些平台对某些特定类型的数据只能从某些特定地址开始存取。比如有些平台每次读都是从偶地址开始，如果一个int型（假设为32位系统）如果存放在偶地址开始的地方，那么一个读周期就可以读出这32bit，而如果存放在奇地址开始的地方，就需要2个读周期，并对两次读出的结果的高低字节进行拼凑才能得到该32bit数据。显然在读取效率上下降很多。</p>
+<h3 id="字节对齐实例"><a href="#字节对齐实例" class="headerlink" title="字节对齐实例"></a>字节对齐实例</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">union</span> <span class="title">example</span> &#123;</span>    <span class="keyword">int</span> a[<span class="number">5</span>];    <span class="keyword">char</span> b;    <span class="keyword">double</span> c;   &#125;; </span><br><span class="line"><span class="keyword">int</span> result = <span class="built_in"><span class="keyword">sizeof</span></span>(example);   <span class="comment">/* 如果以最长20字节为准，内部double占8字节，这段内存的地址0x00000020并不是double的整数倍，只有当最小为0x00000024时可以满足整除double（8Byte）同时又可以容纳int a[5]的大小，所以正确的结果应该是result=24 */</span>  </span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">example</span> &#123;</span>    <span class="keyword">int</span> a[<span class="number">5</span>];    <span class="keyword">char</span> b;    <span class="keyword">double</span> c;   &#125;test_struct; <span class="keyword">int</span> result = <span class="built_in"><span class="keyword">sizeof</span></span>(test_struct);   <span class="comment">/* 如果我们不考虑字节对齐，那么内存地址0x0021不是double（8Byte）的整数倍，所以需要字节对齐，那么此时满足是double（8Byte）的整数倍的最小整数是0x0024，说明此时char b对齐int扩充了三个字节。所以最后的结果是result=32 */</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">example</span> &#123;</span>    <span class="keyword">char</span> b;    <span class="keyword">double</span> c;    <span class="keyword">int</span> a;   &#125;test_struct;   <span class="keyword">int</span> result = <span class="built_in"><span class="keyword">sizeof</span></span>(test_struct);   <span class="comment">/* 字节对齐除了内存起始地址要是数据类型的整数倍以外，还要满足一个条件，那就是占用的内存空间大小需要是结构体中占用最大内存空间的类型的整数倍，所以20不是double（8Byte）的整数倍，我们还要扩充四个字节，最后的结果是result=24 */</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="面向对象（一）"><a href="#面向对象（一）" class="headerlink" title="面向对象（一）"></a>面向对象（一）</h1><h2 id="简述一下面向对象的三大特征"><a href="#简述一下面向对象的三大特征" class="headerlink" title="简述一下面向对象的三大特征"></a>简述一下面向对象的三大特征</h2><blockquote>
+<p>面向对象的三大特征是封装、继承、多态。</p>
+</blockquote>
+<ol>
+<li><p>封装</p>
+<p> 将数据和操作数据的方法进行有机结合，隐藏对象的属性和实现细节，仅对外公开接口来和对象进行 交互。封装本质上是一种管理：我们如何管理兵马俑呢？比如如果什么都不管，兵马俑就被随意破坏了。那么我们首先建了一座房子把兵马俑给封装起来。但是我们目的全封装起来，不让别人看。所以我们开放了售票通 道，可以买票突破封装在合理的监管机制下进去参观。类也是一样，不想给别人看到的，我们使用protected/private把成员封装起来。开放一些共有的成员函数对成员合理的访问。所以封装本质是一种管理。 </p>
+</li>
+<li><p><font color="#FF8C00">继承</font></p>
+<p> 可以使用现有类的所有功能，并在无需重新编写原来的类的情况下对这些功能进行扩展。</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>继承方式</th>
+<th>private继承</th>
+<th>protected继承</th>
+<th>public继承</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基类的private成员</td>
+<td>不可见</td>
+<td>不可见</td>
+<td>不可见</td>
+</tr>
+<tr>
+<td>基类的protected成员</td>
+<td>变为private成员</td>
+<td>仍为protected成员</td>
+<td>仍为protected成员</td>
+</tr>
+<tr>
+<td>基类的public成员</td>
+<td>变为private成员</td>
+<td>变为protected成员</td>
+<td>仍为public成员仍为public成员</td>
+</tr>
+<tr>
+<td>3. 多态</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<pre><code>&lt;font color=&quot;#FF00FF&quot;&gt;用父类型别的指针指向其子类的实例，然后通过父类的指针调用实际子类的成员函数。&lt;/font&gt;实现多态，有二种方式，重写，重载。
+</code></pre>
+<h2 id="简述一下-C-的重载和重写，以及它们的区别"><a href="#简述一下-C-的重载和重写，以及它们的区别" class="headerlink" title="简述一下 C++ 的重载和重写，以及它们的区别"></a>简述一下 C++ 的重载和重写，以及它们的区别</h2><h3 id="重写"><a href="#重写" class="headerlink" title="重写"></a>重写</h3><pre><code>是指派生类中存在重新定义的函数。其函数名，参数列表，返回值类型，所有都必须同基类中被重写的函数一致。只有函数体不同（花括号内），派生类对象调用时会调用派生类的重写函数，不会调用被重写函数。重写的基类中被重写的函数必须有virtual修饰。
+</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span>  </span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;  </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> &#123;</span> </span><br><span class="line"><span class="keyword">public</span>:  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span>  </span>&#123;  </span><br><span class="line">						cout &lt;&lt; <span class="string">&quot;A&quot;</span>;  </span><br><span class="line">						&#125; </span><br><span class="line">				&#125;; </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span> :</span><span class="keyword">public</span> A &#123; </span><br><span class="line">		<span class="keyword">public</span>:  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span>  </span>&#123;  </span><br><span class="line">				cout &lt;&lt; <span class="string">&quot;B&quot;</span>;</span><br><span class="line">				&#125; </span><br><span class="line">			&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123;</span><br><span class="line">A* a = <span class="keyword">new</span> <span class="built_in">B</span>();</span><br><span class="line">a-&gt;<span class="built_in">fun</span>();<span class="comment">//输出B，A类中的fun在B类中重写</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="重载"><a href="#重载" class="headerlink" title="重载"></a>重载</h3><pre><code>我们在平时写代码中会用到几个函数但是他们的实现功能相同，但是有些细节却不同。例如：交换两个数的值其中包括（int, float,char,double)这些个类型。在C语言中我们是利用不同的函数名来加以区分。这样的代码不美观而且给程序猿也带来了很多的不便。于是在C++中人们提出了用一个函数名定义多个函数，也就是所谓的函数重载。函数重载是指同一可访问区内被声明的几个具有不同参数列（参数的类型，个数，顺序不同）的同名函数，根据参数列表确定调用哪个函数，重载不关心函数返回类型。
+</code></pre>
+<h2 id="说说-C-的重载和重写是如何实现的"><a href="#说说-C-的重载和重写是如何实现的" class="headerlink" title="说说 C++ 的重载和重写是如何实现的"></a>说说 C++ 的重载和重写是如何实现的</h2><h3 id="重载-1"><a href="#重载-1" class="headerlink" title="重载"></a>重载</h3><blockquote>
+<p>C++利用命名倾轧（name mangling）技术，来改名函数名，区分参数不同的同名函数。命名倾轧是在<font color="#FF00FF">编译阶段</font>完成的。 </p>
+</blockquote>
+<p><strong>C++定义同名重载函数</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span> </span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std; </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">func</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">double</span> b)</span> </span>&#123; </span><br><span class="line"><span class="keyword">return</span> ((a)+(b)); &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">func</span><span class="params">(<span class="keyword">double</span> a,<span class="keyword">float</span> b)</span> </span>&#123;  </span><br><span class="line"><span class="keyword">return</span> ((a)+(b)); &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">func</span><span class="params">(<span class="keyword">float</span> a,<span class="keyword">int</span> b)</span> </span>&#123;  </span><br><span class="line"><span class="keyword">return</span> ((a)+(b)); &#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;  <span class="keyword">return</span> <span class="number">0</span>; &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://files.shanqianche.cn/202211/1668527548093.png" alt="由上图可得，d代表double，f代表float，i代表int，加上参数首字母以区分同名函数"></p>
+<h3 id="重写-1"><a href="#重写-1" class="headerlink" title="重写"></a>重写</h3><blockquote>
+<p>在基类的函数前加上virtual关键字，在派生类中重写该函数，<font color="#FF8C00">运行时将会根据对象的实际类型来调用相应的函数。如果对象类型是派生类，就调用派生类的函数；如果对象类型是基类，就调用基类的函数。</font></p>
+</blockquote>
+<ol>
+<li>用virtual关键字申明的函数叫做虚函数，虚函数肯定是类的成员函数。 </li>
+<li>存在虚函数的类都有一个一维的虚函数表叫做虚表，类的对象有一个指向虚表开始的虚指针。虚表是和类对应的，虚表指针是和对象对应的。</li>
+<li>多态性是一个接口多种实现，是面向对象的核心，分为类的多态性和函数的多态性。 </li>
+<li>重写用虚函数来实现，结合动态绑定。</li>
+<li>纯虚函数是虚函数再加上 = 0。</li>
+<li>抽象类是指包括至少一个纯虚函数的类。</li>
+<li>纯虚函数：virtual void fun()=0。即抽象类必须在子类实现这个函数，即先有名称，没有内容，在派生类实现内容。</li>
+</ol>
+<h2 id="说说-C-语言如何实现-C-语言中的重载"><a href="#说说-C-语言如何实现-C-语言中的重载" class="headerlink" title="说说 C 语言如何实现 C++ 语言中的重载"></a>说说 C 语言如何实现 C++ 语言中的重载</h2><blockquote>
+<p><font color="#FF00FF">c语言中不允许有同名函数，因为编译时函数命名是一样的</font>，不像c++会添加参数类型和返回类型作为函数编译后的名称，进而实现重载。如果要用c语言显现函数重载，可通过以下方式来实现：</p>
+</blockquote>
+<ol>
+<li>使用函数指针来实现，重载的函数不能使用同名称，只是类似的实现了函数重载功能</li>
+<li>重载函数使用可变参数，方式如打开文件open函数</li>
+<li>gcc有内置函数，程序使用编译函数可以实现函数重载.</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span>   </span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span>   </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func_int</span><span class="params">(<span class="keyword">void</span> * a)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%dn&quot;</span>,*(<span class="keyword">int</span>*)a);  <span class="comment">//输出int类型，注意 void * 转化为int </span></span><br><span class="line">&#125;   </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func_double</span><span class="params">(<span class="keyword">void</span> * b)</span> </span>&#123;    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%.2fn&quot;</span>,*(<span class="keyword">double</span>*)b);</span><br><span class="line">&#125;   </span><br><span class="line"><span class="function"><span class="keyword">typedef</span> <span class="title">void</span> <span class="params">(*ptr)</span><span class="params">(<span class="keyword">void</span> *)</span></span>;  <span class="comment">//typedef申明一个函数指针   </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">c_func</span><span class="params">(ptr p,<span class="keyword">void</span> *param)</span> </span>&#123;     </span><br><span class="line">      p(param);                <span class="comment">//调用对应函数 </span></span><br><span class="line">&#125;   </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;    </span><br><span class="line">      <span class="keyword">int</span> a = <span class="number">23</span>;     </span><br><span class="line">      <span class="keyword">double</span> b = <span class="number">23.23</span>;    </span><br><span class="line">      c_func(func_int,&amp;a);   </span><br><span class="line">      c_func(func_double,&amp;b);    </span><br><span class="line">      <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="说说构造函数有几种，分别什么作用"><a href="#说说构造函数有几种，分别什么作用" class="headerlink" title="说说构造函数有几种，分别什么作用"></a>说说构造函数有几种，分别什么作用</h2><p><strong>strong text</strong></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.shanqianche.cn">Merlynr</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://merlynr.github.io/2022/11/14/C/C++%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/">https://merlynr.github.io/2022/11/14/C/C++基础（二）/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://merlynr.github.io" target="_blank">吾辈之人，自当自强不息！</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/study-graduate-student-C-C/">study, graduate student,C/C++</a></div><div class="post_share"><div class="social-share" data-image="https://images.wallpaperscraft.com/image/single/puppy_husky_dog_146772_300x168.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/11/14/C%E5%92%8CC++%E7%9A%84%E5%8C%BA%E5%88%AB/"><img class="prev-cover" src="https://images.wallpaperscraft.com/image/single/cosmonaut_space_suit_multicolored_123724_300x168.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">C/C++基础（一）</div></div></a></div><div class="next-post pull-right"><a href="/2022/11/14/%E5%A4%A9%E5%A4%A9PLAN/"><img class="next-cover" src="https://reddirect.ru/wp-content/uploads/2020/02/124062-scaled.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">天天PLAN</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/11/14/C%E5%92%8CC++%E7%9A%84%E5%8C%BA%E5%88%AB/" title="C&#x2F;C++基础（一）"><img class="cover" src="https://images.wallpaperscraft.com/image/single/cosmonaut_space_suit_multicolored_123724_300x168.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-11-14</div><div class="title">C&#x2F;C++基础（一）</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/thumb-78833.gif" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Merlynr</div><div class="author-info__description">向前一步</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">103</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Merlynr" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:lcq1013962426@gmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#C-%E5%86%85%E5%AD%98"><span class="toc-number">1.</span> <span class="toc-text">C++内存</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E8%BF%B0%E4%B8%80%E4%B8%8B%E5%A0%86%E5%92%8C%E6%A0%88%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.1.</span> <span class="toc-text">简述一下堆和栈的区别</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A0%86%E6%A0%88%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D%E4%B8%8D%E5%90%8C"><span class="toc-number">1.1.1.</span> <span class="toc-text">堆栈空间分配不同</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A0%86%E6%A0%88%E7%BC%93%E5%AD%98%E6%96%B9%E5%BC%8F%E4%B8%8D%E5%90%8C"><span class="toc-number">1.1.2.</span> <span class="toc-text">堆栈缓存方式不同</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A0%86%E6%A0%88%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8D%E5%90%8C"><span class="toc-number">1.1.3.</span> <span class="toc-text">堆栈数据结构不同</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E8%BF%B0C-%E7%9A%84%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86"><span class="toc-number">1.2.</span> <span class="toc-text">简述C++的内存管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E6%96%B9%E5%BC%8F"><span class="toc-number">1.2.1.</span> <span class="toc-text">内存分配方式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%88"><span class="toc-number">1.2.1.1.</span> <span class="toc-text">栈</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A0%86"><span class="toc-number">1.2.1.2.</span> <span class="toc-text">堆</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E7%94%B1%E5%AD%98%E5%82%A8%E5%8C%BA"><span class="toc-number">1.2.1.3.</span> <span class="toc-text">自由存储区</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%A8%E5%B1%80-%E9%9D%99%E6%80%81%E5%AD%98%E5%82%A8%E5%8C%BA"><span class="toc-number">1.2.1.4.</span> <span class="toc-text">全局&#x2F;静态存储区</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E9%87%8F%E5%AD%98%E5%82%A8%E5%8C%BA"><span class="toc-number">1.2.1.5.</span> <span class="toc-text">常量存储区</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E5%86%85%E5%AD%98%E9%94%99%E8%AF%AF%E5%8F%8A%E5%85%B6%E5%AF%B9%E7%AD%96"><span class="toc-number">1.2.2.</span> <span class="toc-text">常见的内存错误及其对策</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%94%99%E8%AF%AF"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">错误</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E7%AD%96"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">对策</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95"><span class="toc-number">1.3.</span> <span class="toc-text">内存泄露及解决办法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%EF%BC%9F"><span class="toc-number">1.3.1.</span> <span class="toc-text">什么是内存泄露？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%8E%E4%B9%88%E6%A3%80%E6%B5%8B%EF%BC%9F"><span class="toc-number">1.3.2.</span> <span class="toc-text">怎么检测？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#malloc%E5%92%8C%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F%E5%88%86%E9%85%8D%E5%9C%A8%E5%A0%86%E8%BF%98%E6%98%AF%E6%A0%88"><span class="toc-number">1.4.</span> <span class="toc-text">malloc和局部变量分配在堆还是栈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E6%9C%89%E5%93%AA%E4%BA%9Bsection%EF%BC%8C%E5%88%86%E5%88%AB%E7%9A%84%E4%BD%9C%E7%94%A8%EF%BC%9F%E7%A8%8B%E5%BA%8F%E5%90%AF%E5%8A%A8%E7%9A%84%E8%BF%87%E7%A8%8B%EF%BC%9F%E6%80%8E%E4%B9%88%E5%88%A4%E6%96%AD%E6%95%B0%E6%8D%AE%E5%88%86%E9%85%8D%E5%9C%A8%E6%A0%88%E4%B8%8A%E8%BF%98%E6%98%AF%E5%A0%86%E4%B8%8A%EF%BC%9F"><span class="toc-number">1.5.</span> <span class="toc-text">程序有哪些section，分别的作用？程序启动的过程？怎么判断数据分配在栈上还是堆上？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E4%B8%BA0%E7%9A%84%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F%E5%9C%A8bss%E8%BF%98%E6%98%AFdata"><span class="toc-number">1.6.</span> <span class="toc-text">初始化为0的全局变量在bss还是data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%EF%BC%8C%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E6%80%8E%E4%B9%88%E6%A3%80%E6%B5%8B%EF%BC%9F"><span class="toc-number">1.7.</span> <span class="toc-text">什么是内存泄露，内存泄露怎么检测？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B7%E7%AE%80%E8%BF%B0%E4%B8%80%E4%B8%8Batomoic%E5%86%85%E5%AD%98%E9%A1%BA%E5%BA%8F"><span class="toc-number">1.8.</span> <span class="toc-text">请简述一下atomoic内存顺序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E8%BF%B0C-%E4%B8%AD%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90%E7%9A%84%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-number">1.9.</span> <span class="toc-text">简述C++中内存对齐的使用场景</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90%EF%BC%9F"><span class="toc-number">1.9.1.</span> <span class="toc-text">什么是内存对齐？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%AD%97%E8%8A%82%E5%AF%B9%E9%BD%90%EF%BC%9F"><span class="toc-number">1.9.2.</span> <span class="toc-text">为什么要字节对齐？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E8%8A%82%E5%AF%B9%E9%BD%90%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.9.3.</span> <span class="toc-text">字节对齐实例</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%EF%BC%88%E4%B8%80%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">面向对象（一）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E8%BF%B0%E4%B8%80%E4%B8%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E5%BE%81"><span class="toc-number">2.1.</span> <span class="toc-text">简述一下面向对象的三大特征</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E8%BF%B0%E4%B8%80%E4%B8%8B-C-%E7%9A%84%E9%87%8D%E8%BD%BD%E5%92%8C%E9%87%8D%E5%86%99%EF%BC%8C%E4%BB%A5%E5%8F%8A%E5%AE%83%E4%BB%AC%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">2.2.</span> <span class="toc-text">简述一下 C++ 的重载和重写，以及它们的区别</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%86%99"><span class="toc-number">2.2.1.</span> <span class="toc-text">重写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%BD%BD"><span class="toc-number">2.2.2.</span> <span class="toc-text">重载</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4-C-%E7%9A%84%E9%87%8D%E8%BD%BD%E5%92%8C%E9%87%8D%E5%86%99%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84"><span class="toc-number">2.3.</span> <span class="toc-text">说说 C++ 的重载和重写是如何实现的</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%BD%BD-1"><span class="toc-number">2.3.1.</span> <span class="toc-text">重载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%86%99-1"><span class="toc-number">2.3.2.</span> <span class="toc-text">重写</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4-C-%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0-C-%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E9%87%8D%E8%BD%BD"><span class="toc-number">2.4.</span> <span class="toc-text">说说 C 语言如何实现 C++ 语言中的重载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E6%9C%89%E5%87%A0%E7%A7%8D%EF%BC%8C%E5%88%86%E5%88%AB%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8"><span class="toc-number">2.5.</span> <span class="toc-text">说说构造函数有几种，分别什么作用</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/12/09/%E7%AE%80%E5%8E%86%E6%A2%B3%E7%90%86/" title="简历梳理"><img src="https://images.wallpaperscraft.com/image/single/cosmonaut_space_suit_multicolored_123724_300x168.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="简历梳理"/></a><div class="content"><a class="title" href="/2022/12/09/%E7%AE%80%E5%8E%86%E6%A2%B3%E7%90%86/" title="简历梳理">简历梳理</a><time datetime="2022-12-09T07:14:10.259Z" title="发表于 2022-12-09 15:14:10">2022-12-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/28/%E5%91%A8%E6%8A%A5/" title="周报"><img src="https://images.wallpaperscraft.com/image/single/smileys_stars_happy_125856_300x168.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="周报"/></a><div class="content"><a class="title" href="/2022/11/28/%E5%91%A8%E6%8A%A5/" title="周报">周报</a><time datetime="2022-11-28T01:01:00.000Z" title="发表于 2022-11-28 09:01:00">2022-11-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/17/Linux%E7%A7%BB%E6%A4%8D%E5%85%A5%E9%97%A8/" title="Linux移植入门"><img src="http://www.obzhi.com/wp-content/uploads/2020/12/qilongzhu-1024x576.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux移植入门"/></a><div class="content"><a class="title" href="/2022/11/17/Linux%E7%A7%BB%E6%A4%8D%E5%85%A5%E9%97%A8/" title="Linux移植入门">Linux移植入门</a><time datetime="2022-11-17T00:58:00.000Z" title="发表于 2022-11-17 08:58:00">2022-11-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/14/%E5%A4%A9%E5%A4%A9PLAN/" title="天天PLAN"><img src="https://reddirect.ru/wp-content/uploads/2020/02/124062-scaled.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="天天PLAN"/></a><div class="content"><a class="title" href="/2022/11/14/%E5%A4%A9%E5%A4%A9PLAN/" title="天天PLAN">天天PLAN</a><time datetime="2022-11-14T01:11:00.000Z" title="发表于 2022-11-14 09:11:00">2022-11-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/14/C/C++%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/" title="C/C++基础（二）"><img src="https://images.wallpaperscraft.com/image/single/puppy_husky_dog_146772_300x168.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C/C++基础（二）"/></a><div class="content"><a class="title" href="/2022/11/14/C/C++%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/" title="C/C++基础（二）">C/C++基础（二）</a><time datetime="2022-11-13T20:31:00.000Z" title="发表于 2022-11-14 04:31:00">2022-11-14</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://images.wallpaperscraft.com/image/single/silhouettes_mannequins_drops_214100_1920x1200.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Merlynr</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, 加油！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>(() => {
+  const $mermaidWrap = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaidWrap.length) {
+    window.runMermaid = () => {
+      window.loadMermaid = true
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+      Array.from($mermaidWrap).forEach((item, index) => {
+        const mermaidSrc = item.firstElementChild
+        const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+        const mermaidID = 'mermaid-' + index
+        const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+        mermaid.mermaidAPI.render(mermaidID, mermaidDefinition, (svgCode) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svgCode)
+        })
+      })
+    }
+
+    const loadMermaid = () => {
+      window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+    }
+
+    window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'oS5GRWrcL4mqhmTb76gIam4o-gzGzoHsz',
+      appKey: 'O3n8aheKbJxQxt2T6eYVtHDT',
+      avatar: 'monsterid',
+      serverURLs: 'https://os5grwrc.lc-cn-n1-shared.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script>((window.gitter = {}).chat = {}).options = {
+  disableDefaultChat: true,
+};
+document.addEventListener('gitter-sidecar-ready', (e) => {
+  const GitterChat = e.detail.Chat
+  let chat
+
+  function initGitter () {
+    chat = new GitterChat({
+      room: 'Merlynr/blog_chat',
+      activationElement: '#chat_btn'
+    });
+  }
+
+  initGitter()
+
+  if (false) {
+    document.addEventListener('pjax:complete', () => {
+      chat.destroy()
+      initGitter()
+    })
+  }
+
+})</script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="async" defer="defer"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
