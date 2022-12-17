@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://merlynr.github.io/2022/12/16/%E5%9F%BA%E4%BA%8EESP32S3%E7%9A%84FreeRTOS%E4%B9%8B%E4%BA%8B%E4%BB%B6%E7%BB%84(%E4%BA%94)/</loc>
+    <lastmod>2022-12-16</lastmod>
+  </url>
+  <url>
+    <loc>https://merlynr.github.io/2022/12/16/%E5%9F%BA%E4%BA%8EESP32S3%E7%9A%84FreeRTOS%E4%B9%8B%E5%AE%9A%E6%97%B6%E5%99%A8(%E5%9B%9B)/</loc>
+    <lastmod>2022-12-16</lastmod>
+  </url>
+  <url>
+    <loc>https://merlynr.github.io/2022/12/16/%E5%9F%BA%E4%BA%8EESP32S3%E7%9A%84FreeRTOS%E4%B9%8B%E4%BF%A1%E5%8F%B7%E9%87%8F(%E5%85%AD)/</loc>
+    <lastmod>2022-12-16</lastmod>
+  </url>
+  <url>
+    <loc>https://merlynr.github.io/2022/12/16/%E5%9F%BA%E4%BA%8EESP32S3%E7%9A%84FreeRTOS%E4%B9%8B%E9%98%9F%E5%88%97(%E4%B8%89)/</loc>
+    <lastmod>2022-12-16</lastmod>
+  </url>
+  <url>
+    <loc>https://merlynr.github.io/2022/12/16/%E5%9F%BA%E4%BA%8EESP32S3%E7%9A%84FreeRTOS%E4%B9%8BTask(%E4%BA%8C)/</loc>
+    <lastmod>2022-12-16</lastmod>
+  </url>
+  <url>
+    <loc>https://merlynr.github.io/2022/12/16/%E5%9F%BA%E4%BA%8EESP32S3%E7%9A%84FreeRTOS%E4%B9%8B%E5%9F%BA%E6%9C%AC%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86(%E4%B8%80)/</loc>
+    <lastmod>2022-12-16</lastmod>
+  </url>
+  <url>
+    <loc>https://merlynr.github.io/2022/12/16/%E5%9F%BA%E4%BA%8EESP32S3%E7%9A%84FreeRTOS%E4%B9%8B%E4%BF%A1%E6%81%AF%E6%B5%81(%E5%85%AB)/</loc>
+    <lastmod>2022-12-16</lastmod>
+  </url>
+  <url>
+    <loc>https://merlynr.github.io/2022/12/16/%E5%9F%BA%E4%BA%8EESP32S3%E7%9A%84FreeRTOS%E4%B9%8B%E6%95%B0%E6%8D%AE%E6%B5%81(%E4%B8%83)/</loc>
+    <lastmod>2022-12-16</lastmod>
+  </url>
+  <url>
     <loc>https://merlynr.github.io/2020/10/19/lesslessqiu-tu-greatergreater-pu-xi-jin/</loc>
     <lastmod>2022-12-12</lastmod>
   </url>
   <url>
     <loc>https://merlynr.github.io/2022/11/11/STM32F108%E7%9A%84%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2022-11-11</lastmod>
-  </url>
-  <url>
-    <loc>https://merlynr.github.io/2022/11/01/%E5%9F%BA%E4%BA%8EESP32%E5%AD%A6%E4%B9%A0Free%20RTOS/</loc>
-    <lastmod>2022-11-01</lastmod>
   </url>
   <url>
     <loc>https://merlynr.github.io/2022/05/16/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%AC%E5%9B%9B%E7%89%88/</loc>
