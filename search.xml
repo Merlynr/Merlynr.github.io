@@ -579,11 +579,11 @@
             
             <tag> graduate student </tag>
             
-            <tag> study </tag>
-            
             <tag> RPA </tag>
             
             <tag> machine learning </tag>
+            
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -614,9 +614,9 @@
             
             <tag> graduate student </tag>
             
-            <tag> study </tag>
-            
             <tag> machine learning </tag>
+            
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -645,11 +645,11 @@
             
             <tag> graduate student </tag>
             
+            <tag> machine learning </tag>
+            
             <tag> study </tag>
             
             <tag> algorithm </tag>
-            
-            <tag> machine learning </tag>
             
             <tag> data mining </tag>
             
@@ -678,11 +678,11 @@
             
             <tag> graduate student </tag>
             
+            <tag> machine learning </tag>
+            
             <tag> study </tag>
             
             <tag> algorithm </tag>
-            
-            <tag> machine learning </tag>
             
             <tag> data mining </tag>
             
@@ -711,11 +711,11 @@
             
             <tag> graduate student </tag>
             
+            <tag> machine learning </tag>
+            
             <tag> study </tag>
             
             <tag> algorithm </tag>
-            
-            <tag> machine learning </tag>
             
             <tag> data mining </tag>
             
@@ -810,13 +810,13 @@
             
             <tag> graduate student </tag>
             
-            <tag> study </tag>
-            
-            <tag> algorithm </tag>
-            
             <tag> RPA </tag>
             
             <tag> machine learning </tag>
+            
+            <tag> study </tag>
+            
+            <tag> algorithm </tag>
             
         </tags>
       
@@ -841,11 +841,11 @@
       
         <tags>
             
+            <tag> machine learning </tag>
+            
             <tag> study </tag>
             
             <tag> algorithm </tag>
-            
-            <tag> machine learning </tag>
             
             <tag> data mining </tag>
             
@@ -903,11 +903,11 @@
             
             <tag> graduate student </tag>
             
-            <tag> study </tag>
-            
             <tag> RPA </tag>
             
             <tag> code </tag>
+            
+            <tag> study </tag>
             
         </tags>
       
@@ -934,9 +934,9 @@
             
             <tag> graduate student </tag>
             
-            <tag> study </tag>
-            
             <tag> RPA </tag>
+            
+            <tag> study </tag>
             
         </tags>
       
@@ -963,9 +963,9 @@
             
             <tag> graduate student </tag>
             
-            <tag> study </tag>
-            
             <tag> RPA </tag>
+            
+            <tag> study </tag>
             
         </tags>
       
