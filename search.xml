@@ -288,42 +288,11 @@
             
             <tag> study </tag>
             
-            <tag> process mining </tag>
-            
             <tag> deep learning </tag>
             
-            <tag> LSTM </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Long Short Term Memory Networks</title>
-      <link href="/2021/07/19/Long%20Short%20Term%20Memory%20Networks/"/>
-      <url>/2021/07/19/Long%20Short%20Term%20Memory%20Networks/</url>
-      
-        <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1842025914&auto=1&height=66"></iframe><p><a href="https://zhuanlan.zhihu.com/p/32085405">人人都能看懂的LSTM - 知乎</a><br><a href="https://zhuanlan.zhihu.com/p/37644325">RNN、LSTM、GRU基础原理篇 - 知乎</a><br><a href="https://blog.csdn.net/matrix_space/article/details/53374040">机器学习：深入理解 LSTM 网络 (一)_Matrix-11-CSDN博客_lstm 机器学习</a></p><blockquote><p>中文分词、词性标注、命名实体识别、机器翻译、语音识别都属于序列挖掘的范畴。<font color="#DC143C">序列挖掘</font>的特点就是某一步的输出不仅依赖于这一步的输入，还依赖于其他步的输入或输出。在序列挖掘领域传统的机器学习方法有HMM（Hidden Markov Model，隐马尔可夫模型）和CRF（Conditional Random Field，条件随机场），近年来流行深度学习算法RNN（Recurrent Neural Networks，循环神经网络）。</p></blockquote><h1 id="RNN"><a href="#RNN" class="headerlink" title="RNN"></a>RNN</h1><p><img src="http://files.shanqianche.cn/2021719/1626698381786.png" alt="RNN网络架构图"></p><p>比如一个句子中有5个词，要给这5个词标注词性，那相应的RNN就是个5层的神经网络，每一层的输入是一个词，每一层的输出是这个词的词性。<br><img src="http://files.shanqianche.cn/2021719/1626698589144.png" alt="讲解"></p><h1 id="RNN的变体"><a href="#RNN的变体" class="headerlink" title="RNN的变体"></a>RNN的变体</h1><h2 id="双向RNN"><a href="#双向RNN" class="headerlink" title="双向RNN"></a>双向RNN</h2><p>双向RNN认为otot不仅依赖于序列之前的元素，也跟tt之后的元素有关，这在序列挖掘中也是很常见的事实。</p><p><img src="http://files.shanqianche.cn/2021719/1626698749683.png" alt=" Bidirectional RNNs网络结构"></p><h2 id="深层双向RNN"><a href="#深层双向RNN" class="headerlink" title="深层双向RNN"></a>深层双向RNN</h2><p>在双向RNN的基础上，每一步由原来的一个隐藏层变成了多个隐藏层。</p><p><img src="http://files.shanqianche.cn/2021719/1626698820535.png" alt="Deep Bidirectional RNNs网络结构"></p><h1 id="LSTM"><a href="#LSTM" class="headerlink" title="LSTM"></a>LSTM</h1><p>前文提到，由于<font color="#9932CC"><strong>梯度消失/梯度爆炸</strong></font>的问题传统RNN在实际中很难处理长期依赖，而LSTM（Long Short Term Memory）则绕开了这些问题依然可以从语料中学习到长期依赖关系。</p><p><img src="http://files.shanqianche.cn/2021719/1626699453120.png" alt="传统RNN每一步的隐藏单元只是执行一个简单的tanh或ReLU操作"></p><p><img src="http://files.shanqianche.cn/2021719/1626699501199.png" alt=" LSTM每个循环的模块内又有4层结构:3个sigmoid层，1个tanh层"></p><p><strong><font color="#D2691E">解释LSTM模块：</font></strong></p><p><img src="http://files.shanqianche.cn/2021719/1626699615537.png" alt="图标说明"></p><ul><li>粉色的圆圈表示一个二目运算。</li><li>两个箭头汇合成一个箭头表示2个向量首尾相连拼接在一起。</li><li>一个箭头分叉成2个箭头表示一个数据被复制成2份，分发到不同的地方去。</li></ul><p> LSTM的关键是细胞状态C，一条水平线贯穿于图形的上方，这条线上只有些少量的线性操作，信息在上面流传很容易保持。</p><p><img src="http://files.shanqianche.cn/2021719/1626699717681.png" alt="忘记层"></p><ol><li>忘记层，决定细胞状态中<strong>丢弃什么信息</strong>。把ht−1和xt拼接起来，传给一个sigmoid函数，该函数输出0到1之间的值，这个值乘到细胞状态Ct−1上去。<font color="#FF8C00">sigmoid函数的输出值直接决定了状态信息保留多少</font>。比如当我们要预测下一个词是什么时，细胞状态可能包含当前主语的性别，因此正确的代词可以被选择出来。当我们看到新的主语，我们希望忘记旧的主语。</li></ol><p><img src="http://files.shanqianche.cn/2021719/1626700419154.png" alt="更新细胞状态"><br>2. 上一步的细胞状态Ct−1已经被忘记了一部分，接下来本步应该把哪些信息新加到细胞状态中呢？这里又包含2层：一个tanh层用来产生更新值的候选项C~t，tanh的输出在[-1,1]上，<strong>说明细胞状态在某些维度上需要加强，在某些维度上需要减弱</strong>；还有一个sigmoid层（输入门层），它的输出值要乘到tanh层的输出上，起到一个<strong>缩放</strong>的作用，<em>极端情况下sigmoid输出0说明相应维度上的细胞状态不需要更新</em>。在那个预测下一个词的例子中，我们希望增加新的主语的性别到细胞状态中，来替代旧的需要忘记的主语。</p><p><img src="http://files.shanqianche.cn/2021719/1626700649763.png" alt="生成新的细胞状态"><br>3. 现在可以让旧的细胞状态Ct−1与ft（f是forget忘记门的意思）相乘来丢弃一部分信息，然后再加个需要更新的部分it∗C~t（i是input输入门的意思），这就生成了<strong>新的细胞状态Ct</strong></p><p><img src="http://files.shanqianche.cn/2021719/1626700735024.png" alt="循环模块的输出"><br>4. 最后该决定输出什么了。输出值跟细胞状态有关，把Ct输给一个tanh函数得到输出值的候选项。<strong>候选项中的哪些部分最终会被输出由一个sigmoid层来决定</strong>。在那个预测下一个词的例子中，如果细胞状态告诉我们当前代词是第三人称，那我们就可以预测下一词可能是一个第三人称的动词。</p><h1 id="GRU"><a href="#GRU" class="headerlink" title="GRU"></a>GRU</h1><p>GRU（Gated Recurrent Unit）是LSTM最流行的一个变体，比LSTM模型要简单。没有了存储单元</p><p><img src="http://files.shanqianche.cn/2021719/1626700963311.png" alt="GRU"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>RNN 结构的一个吸引人之处在于其可以利用之前的输入信息。但是一个关键的需要解决的问题是当前的信息与之前的信息的关联度有长有短。<br>LSTM的内部结构。通过门控状态来控制传输状态，<strong>记住需要长时间记忆的，忘记不重要的信息</strong>；而不像普通的RNN那样只能够“呆萌”地仅有一种记忆叠加方式。对很多需要“长期记忆”的任务来说，尤其好用。、<br>但也因为引入了很多内容，导致参数变多，也使得训练难度加大了很多。因此很多时候我们往往会使用效果和LSTM相当但参数更少的GRU来构建大训练量的模型。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> algorithm </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> graduate student </tag>
-            
-            <tag> study </tag>
-            
-            <tag> algorithm </tag>
-            
             <tag> process mining </tag>
+            
+            <tag> LSTM </tag>
             
         </tags>
       
@@ -355,6 +324,37 @@
             <tag> study </tag>
             
             <tag> deep learning </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Long Short Term Memory Networks</title>
+      <link href="/2021/07/19/Long%20Short%20Term%20Memory%20Networks/"/>
+      <url>/2021/07/19/Long%20Short%20Term%20Memory%20Networks/</url>
+      
+        <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1842025914&auto=1&height=66"></iframe><p><a href="https://zhuanlan.zhihu.com/p/32085405">人人都能看懂的LSTM - 知乎</a><br><a href="https://zhuanlan.zhihu.com/p/37644325">RNN、LSTM、GRU基础原理篇 - 知乎</a><br><a href="https://blog.csdn.net/matrix_space/article/details/53374040">机器学习：深入理解 LSTM 网络 (一)_Matrix-11-CSDN博客_lstm 机器学习</a></p><blockquote><p>中文分词、词性标注、命名实体识别、机器翻译、语音识别都属于序列挖掘的范畴。<font color="#DC143C">序列挖掘</font>的特点就是某一步的输出不仅依赖于这一步的输入，还依赖于其他步的输入或输出。在序列挖掘领域传统的机器学习方法有HMM（Hidden Markov Model，隐马尔可夫模型）和CRF（Conditional Random Field，条件随机场），近年来流行深度学习算法RNN（Recurrent Neural Networks，循环神经网络）。</p></blockquote><h1 id="RNN"><a href="#RNN" class="headerlink" title="RNN"></a>RNN</h1><p><img src="http://files.shanqianche.cn/2021719/1626698381786.png" alt="RNN网络架构图"></p><p>比如一个句子中有5个词，要给这5个词标注词性，那相应的RNN就是个5层的神经网络，每一层的输入是一个词，每一层的输出是这个词的词性。<br><img src="http://files.shanqianche.cn/2021719/1626698589144.png" alt="讲解"></p><h1 id="RNN的变体"><a href="#RNN的变体" class="headerlink" title="RNN的变体"></a>RNN的变体</h1><h2 id="双向RNN"><a href="#双向RNN" class="headerlink" title="双向RNN"></a>双向RNN</h2><p>双向RNN认为otot不仅依赖于序列之前的元素，也跟tt之后的元素有关，这在序列挖掘中也是很常见的事实。</p><p><img src="http://files.shanqianche.cn/2021719/1626698749683.png" alt=" Bidirectional RNNs网络结构"></p><h2 id="深层双向RNN"><a href="#深层双向RNN" class="headerlink" title="深层双向RNN"></a>深层双向RNN</h2><p>在双向RNN的基础上，每一步由原来的一个隐藏层变成了多个隐藏层。</p><p><img src="http://files.shanqianche.cn/2021719/1626698820535.png" alt="Deep Bidirectional RNNs网络结构"></p><h1 id="LSTM"><a href="#LSTM" class="headerlink" title="LSTM"></a>LSTM</h1><p>前文提到，由于<font color="#9932CC"><strong>梯度消失/梯度爆炸</strong></font>的问题传统RNN在实际中很难处理长期依赖，而LSTM（Long Short Term Memory）则绕开了这些问题依然可以从语料中学习到长期依赖关系。</p><p><img src="http://files.shanqianche.cn/2021719/1626699453120.png" alt="传统RNN每一步的隐藏单元只是执行一个简单的tanh或ReLU操作"></p><p><img src="http://files.shanqianche.cn/2021719/1626699501199.png" alt=" LSTM每个循环的模块内又有4层结构:3个sigmoid层，1个tanh层"></p><p><strong><font color="#D2691E">解释LSTM模块：</font></strong></p><p><img src="http://files.shanqianche.cn/2021719/1626699615537.png" alt="图标说明"></p><ul><li>粉色的圆圈表示一个二目运算。</li><li>两个箭头汇合成一个箭头表示2个向量首尾相连拼接在一起。</li><li>一个箭头分叉成2个箭头表示一个数据被复制成2份，分发到不同的地方去。</li></ul><p> LSTM的关键是细胞状态C，一条水平线贯穿于图形的上方，这条线上只有些少量的线性操作，信息在上面流传很容易保持。</p><p><img src="http://files.shanqianche.cn/2021719/1626699717681.png" alt="忘记层"></p><ol><li>忘记层，决定细胞状态中<strong>丢弃什么信息</strong>。把ht−1和xt拼接起来，传给一个sigmoid函数，该函数输出0到1之间的值，这个值乘到细胞状态Ct−1上去。<font color="#FF8C00">sigmoid函数的输出值直接决定了状态信息保留多少</font>。比如当我们要预测下一个词是什么时，细胞状态可能包含当前主语的性别，因此正确的代词可以被选择出来。当我们看到新的主语，我们希望忘记旧的主语。</li></ol><p><img src="http://files.shanqianche.cn/2021719/1626700419154.png" alt="更新细胞状态"><br>2. 上一步的细胞状态Ct−1已经被忘记了一部分，接下来本步应该把哪些信息新加到细胞状态中呢？这里又包含2层：一个tanh层用来产生更新值的候选项C~t，tanh的输出在[-1,1]上，<strong>说明细胞状态在某些维度上需要加强，在某些维度上需要减弱</strong>；还有一个sigmoid层（输入门层），它的输出值要乘到tanh层的输出上，起到一个<strong>缩放</strong>的作用，<em>极端情况下sigmoid输出0说明相应维度上的细胞状态不需要更新</em>。在那个预测下一个词的例子中，我们希望增加新的主语的性别到细胞状态中，来替代旧的需要忘记的主语。</p><p><img src="http://files.shanqianche.cn/2021719/1626700649763.png" alt="生成新的细胞状态"><br>3. 现在可以让旧的细胞状态Ct−1与ft（f是forget忘记门的意思）相乘来丢弃一部分信息，然后再加个需要更新的部分it∗C~t（i是input输入门的意思），这就生成了<strong>新的细胞状态Ct</strong></p><p><img src="http://files.shanqianche.cn/2021719/1626700735024.png" alt="循环模块的输出"><br>4. 最后该决定输出什么了。输出值跟细胞状态有关，把Ct输给一个tanh函数得到输出值的候选项。<strong>候选项中的哪些部分最终会被输出由一个sigmoid层来决定</strong>。在那个预测下一个词的例子中，如果细胞状态告诉我们当前代词是第三人称，那我们就可以预测下一词可能是一个第三人称的动词。</p><h1 id="GRU"><a href="#GRU" class="headerlink" title="GRU"></a>GRU</h1><p>GRU（Gated Recurrent Unit）是LSTM最流行的一个变体，比LSTM模型要简单。没有了存储单元</p><p><img src="http://files.shanqianche.cn/2021719/1626700963311.png" alt="GRU"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>RNN 结构的一个吸引人之处在于其可以利用之前的输入信息。但是一个关键的需要解决的问题是当前的信息与之前的信息的关联度有长有短。<br>LSTM的内部结构。通过门控状态来控制传输状态，<strong>记住需要长时间记忆的，忘记不重要的信息</strong>；而不像普通的RNN那样只能够“呆萌”地仅有一种记忆叠加方式。对很多需要“长期记忆”的任务来说，尤其好用。、<br>但也因为引入了很多内容，导致参数变多，也使得训练难度加大了很多。因此很多时候我们往往会使用效果和LSTM相当但参数更少的GRU来构建大训练量的模型。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> algorithm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> graduate student </tag>
+            
+            <tag> study </tag>
+            
+            <tag> algorithm </tag>
+            
+            <tag> process mining </tag>
             
         </tags>
       
@@ -579,11 +579,11 @@
             
             <tag> graduate student </tag>
             
-            <tag> study </tag>
-            
             <tag> RPA </tag>
             
             <tag> machine learning </tag>
+            
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -614,9 +614,9 @@
             
             <tag> graduate student </tag>
             
-            <tag> study </tag>
-            
             <tag> machine learning </tag>
+            
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -645,9 +645,9 @@
             
             <tag> graduate student </tag>
             
-            <tag> study </tag>
-            
             <tag> machine learning </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -678,9 +678,9 @@
             
             <tag> graduate student </tag>
             
-            <tag> study </tag>
-            
             <tag> machine learning </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -711,9 +711,9 @@
             
             <tag> graduate student </tag>
             
-            <tag> study </tag>
-            
             <tag> machine learning </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -810,11 +810,11 @@
             
             <tag> graduate student </tag>
             
-            <tag> study </tag>
-            
             <tag> RPA </tag>
             
             <tag> machine learning </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -841,9 +841,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> machine learning </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -903,11 +903,11 @@
             
             <tag> graduate student </tag>
             
-            <tag> study </tag>
-            
             <tag> RPA </tag>
             
             <tag> code </tag>
+            
+            <tag> study </tag>
             
         </tags>
       
@@ -934,9 +934,9 @@
             
             <tag> graduate student </tag>
             
-            <tag> study </tag>
-            
             <tag> RPA </tag>
+            
+            <tag> study </tag>
             
         </tags>
       
@@ -963,9 +963,9 @@
             
             <tag> graduate student </tag>
             
-            <tag> study </tag>
-            
             <tag> RPA </tag>
+            
+            <tag> study </tag>
             
         </tags>
       
