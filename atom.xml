@@ -226,13 +226,13 @@
     
     <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
-    <category term="book" scheme="https://merlynr.github.io/tags/book/"/>
-    
     <category term="plan" scheme="https://merlynr.github.io/tags/plan/"/>
     
     <category term="daily" scheme="https://merlynr.github.io/tags/daily/"/>
     
     <category term="JavaScript" scheme="https://merlynr.github.io/tags/JavaScript/"/>
+    
+    <category term="book" scheme="https://merlynr.github.io/tags/book/"/>
     
     <category term="front-end" scheme="https://merlynr.github.io/tags/front-end/"/>
     
@@ -535,11 +535,11 @@
     
     <category term="graduate student" scheme="https://merlynr.github.io/tags/graduate-student/"/>
     
+    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
+    
     <category term="RPA" scheme="https://merlynr.github.io/tags/RPA/"/>
     
     <category term="machine learning" scheme="https://merlynr.github.io/tags/machine-learning/"/>
-    
-    <category term="study" scheme="https://merlynr.github.io/tags/study/"/>
     
     <category term="deep learning" scheme="https://merlynr.github.io/tags/deep-learning/"/>
     
