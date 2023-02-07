@@ -424,13 +424,13 @@
             
             <tag> study </tag>
             
-            <tag> book </tag>
-            
             <tag> plan </tag>
             
             <tag> daily </tag>
             
             <tag> JavaScript </tag>
+            
+            <tag> book </tag>
             
             <tag> front-end </tag>
             
@@ -987,9 +987,9 @@
             
             <tag> study </tag>
             
-            <tag> algorithm </tag>
-            
             <tag> RPA </tag>
+            
+            <tag> algorithm </tag>
             
             <tag> machine learning </tag>
             
@@ -1080,9 +1080,9 @@
             
             <tag> study </tag>
             
-            <tag> RPA </tag>
-            
             <tag> code </tag>
+            
+            <tag> RPA </tag>
             
         </tags>
       
