@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>ARM硬件基础</title>
+      <link href="/2023/02/06/ARM%E7%A1%AC%E4%BB%B6%E5%9F%BA%E7%A1%80/"/>
+      <url>/2023/02/06/ARM%E7%A1%AC%E4%BB%B6%E5%9F%BA%E7%A1%80/</url>
+      
+        <content type="html"><![CDATA[<h1 id="CPU核心"><a href="#CPU核心" class="headerlink" title="CPU核心"></a>CPU核心</h1><p><img src="https://files.shanqianche.cn/20232/1675698820635.png" alt="CPU"></p><ol><li>SIMD：Single Instruction Multiple Data,单指令多数据流。单次处理多条数据。</li><li>NEON：加速多媒体和信号处理算法（如视频编码/解码、2D/3D图形、游戏、音频和语音处理图像处理技术、电话和声音合成），其性能至少为ARM5性能的3倍，为ARMv6SIMD性能的2倍。<strong>主要处理浮点数</strong></li></ol><h2 id="系统外围"><a href="#系统外围" class="headerlink" title="系统外围"></a>系统外围</h2><ol><li>RTC：real-time clock</li><li>PLL：Phase Locked Loop，为锁相回路或锁相环，用来统一整合时脉讯号，使内存能正确的存取资料。</li><li>PWM Timer：脉冲宽度调制（Pulse Width Modulation），脉宽调制</li><li>Watchdog Timer：</li><li>DMA：帮助存储器与外设进行交互，减轻CPU压力</li><li>Keypad：按钮</li><li>ADC：Analog to Digital Converter,模数转换器</li></ol><h2 id="SISD-amp-SIMD"><a href="#SISD-amp-SIMD" class="headerlink" title="SISD&amp;SIMD"></a>SISD&amp;SIMD</h2><p>SISD：单指令单数据<br>SIMD：单指令多数据</p><p><img src="https://files.shanqianche.cn/20232/1675699987677.png" alt="SISD与SOMD比较"></p><blockquote><p>NEON：对SIMD进行扩展，加入向量表提高数据集的压缩，进而提高浮点数运算效率。</p></blockquote><h2 id="Cache-高速缓存"><a href="#Cache-高速缓存" class="headerlink" title="Cache 高速缓存"></a>Cache 高速缓存</h2><blockquote><p>二级缓存的优化会大大影响程序运行速度。涉及到调优。</p></blockquote><p><strong>为何需要Cache？</strong> (我们现在采用的存储器结构成为多体交叉存储器体系)</p><ul><li>I/O向主存请求的级别高于CPU访存</li><li>主存速度跟不上CPU的发展</li><li>主存一般都是片外，频繁进出速度慢，能耗高</li></ul><p><strong>Cache工作原理：</strong></p><ul><li>程序访问的局部性原理，采用了SRAM，即<strong>程序连续的被CPU处理，可以找到运行规律，预测执行的下一部分，所以形成缓存</strong></li><li>命中率（读取指令的准确度）</li><li>大小比例，4：：1000,128K-32M（缓存大小与内存大小比例）</li></ul><p><img src="https://files.shanqianche.cn/20232/1675741016994.png" alt="一个存储器的层级结构"></p><blockquote><p>上级缓存一般都可以作为下级的缓存</p></blockquote><p><strong>缓存控制器Cache Controller：</strong>（控制缓存与内存的交互规则）</p><ul><li>直接映射缓存Direct Mapped Cache</li><li>联合缓存Set-association Cache</li></ul><p><img src="https://files.shanqianche.cn/20232/1675701473304.png" alt="直接映射，固定计算方式"></p><p><img src="https://files.shanqianche.cn/20232/1675701605833.png" alt="联合缓存，映射位置不确定，有controller确定"></p><p><img src="https://files.shanqianche.cn/20232/1675701720973.png" alt="缓存结构"></p><ul><li>line是缓存最小单元，指向主存的连续字单元</li><li>index是存储器地址的一部分，用来决定找到缓存的第几行</li><li>way是一个特定的索引线路</li></ul><h1 id="MMU（Memory-Manage-Unit）"><a href="#MMU（Memory-Manage-Unit）" class="headerlink" title="MMU（Memory Manage Unit）"></a>MMU（Memory Manage Unit）</h1><p>PM：物理内存</p><h2 id="虚拟存储器"><a href="#虚拟存储器" class="headerlink" title="虚拟存储器"></a>虚拟存储器</h2><p><strong>作用：</strong></p><ol><li>允许多道程序之间有效而安全的共享存储器</li><li>消除一个小而受限的主存容对程序设计造成的影响</li></ol><p><img src="https://files.shanqianche.cn/20232/1675741989673.png" alt="通过虚拟内存满足程序需要大容量的要求"><br>如果CPU在利用缓存的过程中没有<strong>命中</strong>，则称为<strong>缺页</strong></p><ul><li>如果不缺页直接读物理内存</li><li>如果缺页，则把控制权交给操作系统，操作系统一般是从磁盘地址去读</li></ul><blockquote><ol><li>虚拟地址空间非实体，只是逻辑上的</li><li>虚拟地址对物理地址的映射是由MMU控制的</li><li>MMU会控制一个物理地址只能对应一个虚拟地址的映射，保护内存。页保护与锁定</li><li>分段。对程序代码进行分类，例如变量放入堆栈的物理内存等</li></ol></blockquote><h2 id="TLB"><a href="#TLB" class="headerlink" title="TLB"></a>TLB</h2><blockquote><p>加快地址转换，对虚拟地址进行划分，加快查询<br>address-&gt;MMU-&gt;TLB-&gt;pageTable-&gt;PM</p></blockquote><h1 id="异常中断"><a href="#异常中断" class="headerlink" title="异常中断"></a>异常中断</h1><p>ARM体系结构中存在7种异常处理。异常发生时，处理器会把PC指向一个特殊地址，这个地址放在存储器中一个特定表中，称为向里表</p><p><img src="https://files.shanqianche.cn/20232/1675744367257.png" alt="中断向量表"></p><blockquote><p>一般向量表起始地址是0x0开始，又称<strong>低地址向量表</strong>。而微软是从0xffff0000开始，成为<strong>高地址向量表</strong>。</p></blockquote><p><strong>触发异常过程：</strong> 系统接收异常-&gt;CPU切换模式同时保存当前位置和状态-&gt;CPSR、SPSR-&gt;根据中断向量表查找处理程序-&gt;返回还原</p><p><img src="https://files.shanqianche.cn/20232/1675746695888.png" alt="FIQ发生的伪代码"></p><h3 id="复位异常"><a href="#复位异常" class="headerlink" title="复位异常"></a>复位异常</h3><p><img src="https://files.shanqianche.cn/20232/1675746519944.png" alt="复位异常"></p><p><img src="https://files.shanqianche.cn/20232/1675746737387.png" alt="复位异常的伪代码"></p><blockquote><p>内存出现问题为<strong>数据异常</strong></p></blockquote><h3 id="未定义异常"><a href="#未定义异常" class="headerlink" title="未定义异常"></a>未定义异常</h3><p><img src="https://files.shanqianche.cn/20232/1675746885612.png" alt="未定义异常伪代码"></p><h3 id="异常优先级"><a href="#异常优先级" class="headerlink" title="异常优先级"></a>异常优先级</h3><p><img src="https://files.shanqianche.cn/20232/1675746990091.png" alt="异常优先级"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p><img src="https://files.shanqianche.cn/20232/1675747392475.png" alt="总结"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> ARM </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> study, graduate student,ARM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ARM 体系架构粗了解</title>
+      <link href="/2023/02/05/ARM%20%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84/"/>
+      <url>/2023/02/05/ARM%20%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84/</url>
+      
+        <content type="html"><![CDATA[<h2 id="版本差异"><a href="#版本差异" class="headerlink" title="版本差异"></a>版本差异</h2><p><img src="https://files.shanqianche.cn/20232/1675595525009.png" alt="版本差异"></p><p><img src="https://files.shanqianche.cn/20232/1675602227092.png" alt="术语"><br><strong>副处理器可以省电70%</strong></p><p><img src="https://files.shanqianche.cn/20232/1675606315822.png" alt="A系列关键技术点"></p><p><img src="https://files.shanqianche.cn/20232/1675609865655.png" alt="交叉编译工具"></p><h2 id="CPU组成"><a href="#CPU组成" class="headerlink" title="CPU组成"></a>CPU组成</h2><blockquote><p>基本组成：ALU（计算单元，累加器）、控制器（切换）、寄存器、总线（连接）</p></blockquote><p><img src="https://files.shanqianche.cn/20232/1675610644529.png" alt="CPU基本结果"></p><h2 id="处理模式"><a href="#处理模式" class="headerlink" title="处理模式"></a>处理模式</h2><p>ARM7、ARM9：7中<br>Cortex-A：9种。8种特权模式，一种非特权模式即用户模式</p><p><img src="https://files.shanqianche.cn/20232/1675611499740.png" alt="处理器模式"></p><h2 id="寄存器"><a href="#寄存器" class="headerlink" title="寄存器"></a>寄存器</h2><ul><li>SP：堆栈寄存器</li><li>LR：链接寄存器</li><li>PC：程序寄存器</li><li>PSR：程序状态寄存器</li><li>APSR：应用程序状态寄存器</li><li>CPSR：当前程序状态寄存器</li><li>SPSR：已存储程序状态寄存器</li></ul><p><strong>只有在用户模式下才是ASPR，其它模式都是CSPR</strong></p><ol><li>R0-R12通用寄存器，放通用数据，<strong>32bit</strong></li><li>各个模式的R0-R12与USR模式是共享的(除了FIQ,R8-R12),PC,CPSR共享的</li><li>USRR模式没有SPSR</li></ol><p><img src="https://files.shanqianche.cn/20232/1675612963542.png" alt="寄存器模式"></p><p><img src="https://files.shanqianche.cn/20232/1675613628412.png" alt="Thumb精简指令集只能访问0-7位寄存器"></p><h2 id="CSPR指令格式"><a href="#CSPR指令格式" class="headerlink" title="CSPR指令格式"></a>CSPR指令格式</h2><p><img src="https://files.shanqianche.cn/20232/1675614193016.png" alt="CSPR指令格式"></p><ul><li>M：九种模式，五位表示</li><li>T：是否使用Thumb指令</li><li>F：是否<strong>禁用</strong>FIQ</li><li>I：是否<strong>禁用</strong>IRQ</li><li>A：是否<strong>禁用</strong>ABT</li><li>E：存储字节的顺序（大段还是小段，因为存储时以字为单位，所以需要选择存储顺序）</li><li>IT：Thumb2指令的if…then…条件执行</li><li>GE：SIMD</li><li>J：Jazelle（Java）</li><li>Q：累计饱和instructions</li><li>V：ALU操作溢出</li><li>C：ALU进位操作</li><li>Z：ALU零位</li><li>N：ALU负数</li></ul><h2 id="指令流水线"><a href="#指令流水线" class="headerlink" title="指令流水线"></a>指令流水线</h2><p><img src="https://files.shanqianche.cn/20232/1675614681987.png" alt="三级指令流水线Pipeline"><br><strong>F-&gt;D-&gt;E：取码-&gt;译码-&gt;执行</strong></p><ul><li>扩展到无极流水（<strong>分解指令过程</strong>）：<br>  -指令预读取（决定从内存哪儿取指令）。PerFetch<ul><li>指令读取（从内存系统中读取指令）。Fetch</li><li>指令译码（解读指令并且生成控制信号）</li><li>寄存器牍取（提供寄存器的值给操作单元）</li><li>分配（分配指令给执行单元）</li><li>执行(实际的ALU单元处理)</li><li>内存访问（数据的存取）</li><li>寄存器回写（更新运行结果到寄存器）</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> ARM </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> study, graduate student,ARM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux多进程之间的通信(二)</title>
       <link href="/2023/02/01/Linux%E5%A4%9A%E8%BF%9B%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1(%E4%BA%8C)/"/>
       <url>/2023/02/01/Linux%E5%A4%9A%E8%BF%9B%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1(%E4%BA%8C)/</url>
@@ -987,9 +1037,9 @@
             
             <tag> study </tag>
             
-            <tag> RPA </tag>
-            
             <tag> algorithm </tag>
+            
+            <tag> RPA </tag>
             
             <tag> machine learning </tag>
             
@@ -1080,9 +1130,9 @@
             
             <tag> study </tag>
             
-            <tag> code </tag>
-            
             <tag> RPA </tag>
+            
+            <tag> code </tag>
             
         </tags>
       
