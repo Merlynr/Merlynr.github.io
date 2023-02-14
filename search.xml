@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Linux内核移植</title>
+      <link href="/2023/02/14/Linux%E5%86%85%E6%A0%B8%E7%A7%BB%E6%A4%8D/"/>
+      <url>/2023/02/14/Linux%E5%86%85%E6%A0%B8%E7%A7%BB%E6%A4%8D/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Linux内核"><a href="#Linux内核" class="headerlink" title="Linux内核"></a>Linux内核</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="Linux内核特性"><a href="#Linux内核特性" class="headerlink" title="Linux内核特性"></a>Linux内核特性</h3><ol start="2"><li>可移植性，支持的硬件平台广泛</li><li>超强的网络功能</li><li>多任务多用户系统</li><li>模块化的设计</li></ol><h3 id="五大子系统"><a href="#五大子系统" class="headerlink" title="五大子系统"></a>五大子系统</h3><ol><li>进程管理子系统</li><li>内存管理子系统</li><li>文件系统子系统</li><li>网络协议子系统</li><li>设备管理子系统</li></ol><p><img src="https://files.shanqianche.cn/20232/1676358031975.png" alt="五大子系统"></p><h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><p>目录结构的描述：</p><p><img src="https://files.shanqianche.cn/20232/1676358789549.png" alt="目录结构的描述"></p><blockquote><p><strong><font color="#FF8C00">与平台相关的kernel会和与平台无关的kernel功能相辅相成，无关的会依赖相关代码</font></strong></p></blockquote><p><img src="https://files.shanqianche.cn/20232/1676359087019.png" alt="相辅相成"></p><h3 id="平台无关"><a href="#平台无关" class="headerlink" title="平台无关"></a>平台无关</h3><p>与平台无关的目录树：</p><p><img src="https://files.shanqianche.cn/20232/1676358964090.png" alt="与平台无关的目录树"></p><h3 id="平台有关–arch"><a href="#平台有关–arch" class="headerlink" title="平台有关–arch"></a>平台有关–arch</h3><p>arch中与平台相关代码：</p><p><img src="https://files.shanqianche.cn/20232/1676359060457.png" alt="arch中与平台相关"></p><h3 id="命名规律"><a href="#命名规律" class="headerlink" title="命名规律"></a>命名规律</h3><p><strong>当内核中头文件重名如何解决？</strong></p><p><img src="https://files.shanqianche.cn/20232/1676359708418.png" alt="问题"><br>头文件命名规范：</p><p><img src="https://files.shanqianche.cn/20232/1676359840359.png" alt="头文件命名规范"></p><h1 id="内核配置"><a href="#内核配置" class="headerlink" title="内核配置"></a>内核配置</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ul><li>配置哪些目录需要编译</li><li>配置哪些文件需要编译<br> 编译时到底文件是哪个目录？<br> <strong><font color="#FF8C00">Makefile</font></strong><h2 id="方法与思路"><a href="#方法与思路" class="headerlink" title="方法与思路"></a>方法与思路</h2></li></ul><p><strong>配置步骤：</strong></p><ol><li>配置仓库选取，即配置单的修改</li><li>交叉编译器的修改</li><li>体系结构体的选择</li><li>增删改查</li></ol><h3 id="体系结构选择的配置，交叉编译方式的选择"><a href="#体系结构选择的配置，交叉编译方式的选择" class="headerlink" title="体系结构选择的配置，交叉编译方式的选择"></a>体系结构选择的配置，交叉编译方式的选择</h3><p><strong><font color="#DC143C">修改Makefile</font></strong></p><blockquote><p>各个目录的编译有Makefile进行选择编译。</p></blockquote><p><strong>各个子目录Makefile</strong></p><ul><li>obj-y : 编译进内核</li><li>obj-   : 不编译进去</li><li>obj-m: 以模块形式编译<br>条件编译：</li></ul><p><img src="https://files.shanqianche.cn/20232/1676363951788.png" alt="条件编译"></p><p>**主目录Makefile的修改： **</p><p>修改连接的平台相关代码：【hdr-arch，SRCARCH变量表示平台】</p><p><img src="https://files.shanqianche.cn/20232/1676361796332.png" alt="修改连接的平台相关代码"></p><p><img src="https://files.shanqianche.cn/20232/1676361955637.png" alt="修改连接的平台相关代码"></p><ol><li>修改变量，其中SRCARCH等于ARCH</li></ol><p><img src="https://files.shanqianche.cn/20232/1676362046399.png" alt="修改ARCH变量"><br>SUBARCH默认就是X86的，内核默认配置按照X86。所以根据要求进行修好ARCH这个变量为ARM或其它。</p><ol start="2"><li>编译方式修改</li></ol><p><img src="https://files.shanqianche.cn/20232/1676362801063.png" alt="修改编译方式"></p><h3 id="确定哪些文件要编译—配置单"><a href="#确定哪些文件要编译—配置单" class="headerlink" title="确定哪些文件要编译—配置单"></a>确定哪些文件要编译—配置单</h3><p>文件命名规范：<strong>CONFIG_XXXXX</strong></p><blockquote><p>选择配置单并移动到主目录下，将其命名为xxxx.config（其中这个配置单并不满足，所以芯片公司会提供默认配置单defconfig） 。<br>修改defconfig使其使用开发板<br>找到系统对应的配置单：</p></blockquote><p><img src="https://files.shanqianche.cn/20232/1676363349776.png" alt="找到系统对应的配置单"></p><h3 id="make-menuconfig（增删改查）"><a href="#make-menuconfig（增删改查）" class="headerlink" title="make menuconfig（增删改查）"></a>make menuconfig（增删改查）</h3><p>menuconfig界面：</p><p><img src="https://files.shanqianche.cn/20232/1676363610169.png" alt="menuconfig"></p><p><strong>流程：</strong><br>    通过一个Kconfig构成menuconfig界面的组成，然后通过menuconfig生成.config文件。最后.config文件构成Makefile的链接，进行编译。</p><blockquote><p>Kconfig–&gt;make menuconfig–&gt;.config–&gt;Makefile</p></blockquote><h1 id="内核编译"><a href="#内核编译" class="headerlink" title="内核编译"></a>内核编译</h1><p>过程：</p><p><img src="https://files.shanqianche.cn/20232/1676365212990.png" alt="编译过程"></p><ol><li>编译生成vmlinux：OS elf file。（不可被执行的，操作系统可执行文件）</li><li>将vmlinux copy出来到Image</li><li>Image太大，将其压缩为zImage</li><li>为了满足uBoot规则，进行封装格式化为uImage</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 1. Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> study, graduate student,Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>IIC设备驱动及子系统开发</title>
+      <link href="/2023/02/13/IIC%E5%8D%8F%E8%AE%AE/"/>
+      <url>/2023/02/13/IIC%E5%8D%8F%E8%AE%AE/</url>
+      
+        <content type="html"><![CDATA[<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><ol><li>设备都有自己得设备地址，EEprom存储设备信息，包括设备地址</li></ol><p><img src="https://files.shanqianche.cn/20232/1676290667605.png" alt="设备地址"></p><p>一般为7位，前四位已经固化好了，其余三位可以通过设计图，上图，看出接地为000，P0，P1也在数据手册中进行描述，为未接，为0. 即AT24LC08（上图有误）地址为1010 000.</p><p><img src="https://files.shanqianche.cn/20232/1676290764830.png" alt="数据手册描述IIC设备地址"></p><ol start="2"><li><p>总线速度：标准速度100kbps,快速模式400kbps,高速模式3.4Mbps（一般为100，四百也多一点）</p></li><li><p>IIC特点： 半双工（串行方式），仅需要两根线(所以又被称为2-wixe总线)</p><h2 id="设备操作时序"><a href="#设备操作时序" class="headerlink" title="设备操作时序"></a>设备操作时序</h2><blockquote><p><font color="#FF8C00">IIC从机设备地址是由主机写进去的</font></p></blockquote></li><li><p>低电平写，高电平读</p></li></ol><p><img src="https://files.shanqianche.cn/20232/1676291488761.png" alt="高读低写"></p><ol><li>IIC开始条件和终止条件，基本时序图如下</li></ol><p><img src="https://files.shanqianche.cn/20232/1676291865962.png" alt="基本时序图"></p><h2 id="读写时序分析"><a href="#读写时序分析" class="headerlink" title="读写时序分析"></a>读写时序分析</h2><h3 id="按字节进行写操作"><a href="#按字节进行写操作" class="headerlink" title="按字节进行写操作"></a>按字节进行写操作</h3><p>主设备设备地址为1010 000，发送数据，写到地址0x3，写入0x5。</p><p><img src="https://files.shanqianche.cn/20232/1676292418897.png" alt="主设备设备地址为1010 000，发送数据，写到地址0x3，写入0x5"><br>写入逻辑图</p><p><img src="https://files.shanqianche.cn/20232/1676292629813.png" alt="写入"></p><h3 id="按页进行写操作"><a href="#按页进行写操作" class="headerlink" title="按页进行写操作"></a>按页进行写操作</h3><p>按页进行写操作如下图。</p><p><img src="https://files.shanqianche.cn/20232/1676292714459.png" alt="按页进行写操作"></p><h3 id="当前地址读操作"><a href="#当前地址读操作" class="headerlink" title="当前地址读操作"></a>当前地址读操作</h3><p>当前地址读操作如下图。</p><p><img src="https://files.shanqianche.cn/20232/1676292311650.png" alt="当前地址读操作"></p><h3 id="随机读操作"><a href="#随机读操作" class="headerlink" title="随机读操作"></a>随机读操作</h3><p>随机读操作如下图。</p><p><img src="https://files.shanqianche.cn/20232/1676293198697.png" alt="读操作"></p><h3 id="序列号读操作"><a href="#序列号读操作" class="headerlink" title="序列号读操作"></a>序列号读操作</h3><p>序列化读操作如下图。</p><p><img src="https://files.shanqianche.cn/20232/1676292161811.png" alt="序列化读操作"></p><h3 id="读写逻辑"><a href="#读写逻辑" class="headerlink" title="读写逻辑"></a>读写逻辑</h3><blockquote><p>结合上图随机读操作进行理解。</p></blockquote><p><strong>写数据</strong></p><ol><li><p>装载AT24C08设备地址：0xA0</p></li><li><p>设置IIC开始条件</p></li><li><p>使能ACK</p></li><li><p>检测状态</p></li><li><p>装载存储地址    //写数据</p></li><li><p>使能ACK</p></li><li><p>检测状态</p></li><li><p>写数据</p></li><li><p>使能ACK</p></li><li><p>设置IIC停止条件</p></li></ol><p><strong>读数据</strong></p><ol><li><p>装载AT24C08设备地址：0xA0</p></li><li><p>设置IIC开始条件</p></li><li><p>使能ACK</p></li><li><p>检测状态</p></li><li><p>装载存储地址    //读取数据</p></li><li><p>使能ACK</p></li><li><p>检测状态</p></li><li><p>装载设备地址：0xA0|0x1</p></li><li><p>设置IIC开始条件</p></li><li><p>使能ACK信号</p></li><li><p>检测状态</p></li><li><p>读取数据</p></li><li><p>关闭ACK信号</p></li><li><p>设置停止条件</p><h2 id="相关寄存器分析"><a href="#相关寄存器分析" class="headerlink" title="相关寄存器分析"></a>相关寄存器分析</h2><p>基本寄存器如下。</p></li></ol><p><img src="https://files.shanqianche.cn/20232/1676293657140.png" alt="基本寄存器"></p><ol><li>I2CCON:使能ACK,选择时钟源，使能Ix/Rx,检测状态</li><li>I2CSTAT:主机发送/接收，设置开始/停止条件，数据Tx/Rx使能，AcK能否被接收？</li><li>I2CDS0:装载设备地址，发送/接收数据</li></ol><h1 id="设备驱动框架功能分析"><a href="#设备驱动框架功能分析" class="headerlink" title="设备驱动框架功能分析"></a>设备驱动框架功能分析</h1><h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><p><strong>IIC基本特征</strong></p><ol><li>IIC是一种数据传输协议(sPI,USB,SDIo,UART.··.)</li><li>速度比较：IIC(100K,400K,3.4M)&lt;SPI&lt;SDI0&lt;网络&lt;‘USB’</li><li>IIC是一个半双工通信方式，两根总线（SCL，SDA），每个设备都有唯一设备地址</li><li>一次传输8bit,高位在前，低位在后；总线空闲状态：数据线SDA拉为高电平</li></ol><p>IIC设备驱动框架图如下。 </p><p><img src="https://files.shanqianche.cn/20232/1676294519137.png" alt="IIC设备驱动框架图"></p><blockquote><p>i2c设备驱动层组件(i2c-dev.c)</p></blockquote><ol><li>给用户提供调用接口</li><li>实现策略问题：它知道发什么数据，但不知道怎么发数据</li></ol><blockquote><p>i2c核心层组件(i2c-core.c)</p></blockquote><ol><li>注册一根i2c总线</li><li>给驱动编程人员提供编程接口</li></ol><blockquote><p>i2c总线驱动层组件(I2c-s3c2410.c)</p></blockquote><ol><li>初始化硬件(初始化12c控制器)：</li><li>实现操作方法(根据I2c操作时序进行控制I2c空制器买现数据接收/发送)：它知道怎么去发数据，但不知道发什么数据<h2 id="核心层分析"><a href="#核心层分析" class="headerlink" title="核心层分析"></a>核心层分析</h2>核心层作用如图下：</li></ol><p><img src="https://files.shanqianche.cn/20232/1676295790880.png" alt="核心层作用"><br><strong>读源码：</strong> </p><ol><li>注册一根总线</li></ol><p><img src="https://files.shanqianche.cn/20232/1676294699385.png" alt="注册一根总线"></p><ol start="2"><li>返回一个设备与驱动相对应的结构体，个人连接就是将设备与驱动相连接 </li></ol><p><img src="https://files.shanqianche.cn/20232/1676295086347.png" alt="结构体"></p><pre><code>- 通过匹配设备名称进行关联，设备匹配函数如下</code></pre><p><img src="https://files.shanqianche.cn/20232/1676295150899.png" alt="设备匹配函数"></p><ol start="3"><li>注册I2C驱动</li></ol><p><img src="https://files.shanqianche.cn/20232/1676295251175.png" alt="注册I2C驱动"></p><p><strong>linux设备驱动涉及重要结构体(linux/i2c.h)</strong></p><ol><li>表示I2C的驱动</li></ol><p><img src="https://files.shanqianche.cn/20232/1676295448709.png" alt="表示I2C的驱动"></p><ol start="2"><li>表示I2C的设备</li></ol><p><img src="https://files.shanqianche.cn/20232/1676295529801.png" alt="表示I2C的设备"></p><ol start="3"><li>表示I2C的适配器/控制器</li></ol><p><img src="https://files.shanqianche.cn/20232/1676295580196.png" alt="表示I2C的适配器/控制器"></p><ol start="4"><li>表示I2C数据包</li></ol><p><img src="https://files.shanqianche.cn/20232/1676295622485.png" alt="表示I2C数据包"></p><ol start="5"><li>表示I2C板卡信息</li></ol><p><img src="https://files.shanqianche.cn/20232/1676295715402.png" alt="表示I2C板卡信息"></p><h2 id="设备驱动层分析"><a href="#设备驱动层分析" class="headerlink" title="设备驱动层分析"></a>设备驱动层分析</h2><p>IIC主设备号，系统已经设置。 </p><p><img src="https://files.shanqianche.cn/20232/1676295878457.png" alt="IIC主设备号"></p><ol><li>注册主设备号，返回设备描述符</li></ol><p><img src="https://files.shanqianche.cn/20232/1676296498487.png" alt="注册主设备号，返回设备文件描述结构体"><br>2. 创建设备类</p><p><img src="https://files.shanqianche.cn/20232/1676296529780.png" alt="创建设备类"><br>3. 绑定适配器</p><p><img src="https://files.shanqianche.cn/20232/1676296559682.png" alt="绑定适配器"></p><h2 id="IIC设备驱动层移植"><a href="#IIC设备驱动层移植" class="headerlink" title="IIC设备驱动层移植"></a>IIC设备驱动层移植</h2><p>系统内核构成，如图下：</p><p><img src="https://files.shanqianche.cn/20232/1676297787708.png" alt="系统内核构成"></p><h2 id="系统流程分析"><a href="#系统流程分析" class="headerlink" title="系统流程分析"></a>系统流程分析</h2><p>整体流程如下：</p><p><img src="https://files.shanqianche.cn/20232/1676346004233.png" alt="整体流程如下"></p><p>open函数对应的操作流程（包括获取从机的信息）：</p><p><img src="https://files.shanqianche.cn/20232/1676298154641.png" alt="open对应的操作，获取从机的信息"></p><p>ioctl函数对应的操作流程（指定client设备地址）：</p><p><img src="https://files.shanqianche.cn/20232/1676344207322.png" alt="指定client设备地址"><br>write函数对应的操作流程：</p><p><img src="https://files.shanqianche.cn/20232/1676355320639.png" alt="平台资源构建"></p><h2 id="资源层分析"><a href="#资源层分析" class="headerlink" title="资源层分析"></a>资源层分析</h2><p>资源层分析图如下：</p><p><img src="https://files.shanqianche.cn/20232/1676355672692.png" alt="资源层分析图"></p><h3 id="平台资源构建"><a href="#平台资源构建" class="headerlink" title="平台资源构建"></a>平台资源构建</h3><p>平台资源构建如下：</p><p><img src="https://files.shanqianche.cn/20232/1676356225041.png" alt="enter description here"></p><p>平台数据构建如下：</p><p><img src="https://files.shanqianche.cn/20232/1676356321652.png" alt="平台数据"></p><h3 id="注册平台设备"><a href="#注册平台设备" class="headerlink" title="注册平台设备"></a>注册平台设备</h3><p>注册平台设备如下：</p><p><img src="https://files.shanqianche.cn/20232/1676356388303.png" alt="注册平台"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Embedded </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> study, graduate student,embedded </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/2023/02/13/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%20%E9%80%9F%E6%95%88%E6%95%91%E5%BF%83%E4%B8%B8/"/>
       <url>/2023/02/13/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%20%E9%80%9F%E6%95%88%E6%95%91%E5%BF%83%E4%B8%B8/</url>
@@ -917,11 +967,11 @@
             
             <tag> graduate student </tag>
             
+            <tag> study </tag>
+            
             <tag> RPA </tag>
             
             <tag> machine learning </tag>
-            
-            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -952,9 +1002,9 @@
             
             <tag> graduate student </tag>
             
-            <tag> machine learning </tag>
-            
             <tag> study </tag>
+            
+            <tag> machine learning </tag>
             
             <tag> deep learning </tag>
             
@@ -983,11 +1033,11 @@
             
             <tag> graduate student </tag>
             
-            <tag> machine learning </tag>
-            
             <tag> study </tag>
             
             <tag> algorithm </tag>
+            
+            <tag> machine learning </tag>
             
             <tag> data mining </tag>
             
@@ -1016,11 +1066,11 @@
             
             <tag> graduate student </tag>
             
-            <tag> machine learning </tag>
-            
             <tag> study </tag>
             
             <tag> algorithm </tag>
+            
+            <tag> machine learning </tag>
             
             <tag> data mining </tag>
             
@@ -1049,11 +1099,11 @@
             
             <tag> graduate student </tag>
             
-            <tag> machine learning </tag>
-            
             <tag> study </tag>
             
             <tag> algorithm </tag>
+            
+            <tag> machine learning </tag>
             
             <tag> data mining </tag>
             
@@ -1148,13 +1198,13 @@
             
             <tag> graduate student </tag>
             
-            <tag> RPA </tag>
-            
-            <tag> machine learning </tag>
-            
             <tag> study </tag>
             
             <tag> algorithm </tag>
+            
+            <tag> RPA </tag>
+            
+            <tag> machine learning </tag>
             
         </tags>
       
@@ -1179,11 +1229,11 @@
       
         <tags>
             
-            <tag> machine learning </tag>
-            
             <tag> study </tag>
             
             <tag> algorithm </tag>
+            
+            <tag> machine learning </tag>
             
             <tag> data mining </tag>
             
@@ -1241,11 +1291,11 @@
             
             <tag> graduate student </tag>
             
+            <tag> study </tag>
+            
             <tag> RPA </tag>
             
             <tag> code </tag>
-            
-            <tag> study </tag>
             
         </tags>
       
@@ -1272,9 +1322,9 @@
             
             <tag> graduate student </tag>
             
-            <tag> RPA </tag>
-            
             <tag> study </tag>
+            
+            <tag> RPA </tag>
             
         </tags>
       
@@ -1301,9 +1351,9 @@
             
             <tag> graduate student </tag>
             
-            <tag> RPA </tag>
-            
             <tag> study </tag>
+            
+            <tag> RPA </tag>
             
         </tags>
       
