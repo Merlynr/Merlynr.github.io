@@ -217,31 +217,6 @@
     
     
     <entry>
-      <title>信号通信fork函数</title>
-      <link href="/2023/01/31/%E4%BF%A1%E5%8F%B7%E9%80%9A%E4%BF%A1fork%E5%87%BD%E6%95%B0/"/>
-      <url>/2023/01/31/%E4%BF%A1%E5%8F%B7%E9%80%9A%E4%BF%A1fork%E5%87%BD%E6%95%B0/</url>
-      
-        <content type="html"><![CDATA[<h1 id="一、fork-后的父子进程"><a href="#一、fork-后的父子进程" class="headerlink" title="一、fork 后的父子进程"></a>一、fork 后的父子进程</h1><p>由 fork 创建的新进程被称为子进程（child process）。<strong>该函数被调用一次，但返回两次。两次返回的区别是子进程的返回值是 0</strong>，而<strong>父进程的返回值则是新进程（子进程）的进程 id。将子进程 id 返回给父进程的理由是：因为一个进程的子进程可以多于一个，没有一个函数使一个进程可以获得其所有子进程的进程 id</strong>。对子进程来说，之所以 fork 返回 0 给它，是因为它随时可以调用 <strong>getpid() 来获取自己的 pid；也可以调用 getppid() 来获取父进程的 id</strong>。(进程 id 0 总是由交换进程使用，所以一个子进程的进程 id 不可能为 0)。</p><p>fork 之后，**<a href="http://lib.csdn.net/base/operatingsystem" title="操作系统知识库">操作系统</a>会复制一个与父进程完全相同的子进程，虽说是父子关系，但是在操作系统看来，他们更像兄弟关系，这 2 个进程共享代码空间，但是数据空间是互相独立的，子进程数据空间中的内容是父进程的完整拷贝，指令指针也完全相同，子进程拥有父进程当前运行到的位置**（两进程的程序计数器 pc 值相同，也就是说，子进程是从 fork 返回处开始执行的），但有一点不同，如果 fork 成功，子进程中 fork 的返回值是 0，父进程中 fork 的返回值是子进程的进程号，如果 fork 不成功，父进程会返回错误。<br>可以这样想象，2 个进程一直同时运行，而且步调一致，在 fork 之后，他们分别作不同的工作，也就是分岔了。这也是 fork 为什么叫 fork 的原因</p><p>至于那一个最先运行，可能与操作系统（调度<a href="http://lib.csdn.net/base/datastructure" title="算法与数据结构知识库">算法</a>）有关，而且这个问题在实际应用中并不重要，如果需要父子进程协同，可以通过原语的办法解决。</p><p><strong>[cpp]</strong>  <a href="http://blog.csdn.net/koudaidai/article/details/8014782#" title="view plain">view plain</a> <a href="http://blog.csdn.net/koudaidai/article/details/8014782#" title="copy">copy</a> </p><ol><li><p> include &lt;stdio.h&gt;  </p></li><li><p> #include &lt;unistd.h&gt;  </p></li><li><p> #include &lt;stdlib.h&gt;  </p></li><li><p> #include &lt;errno.h&gt;  </p></li><li><p> int main(void)  </p></li><li><p> {  </p></li><li><p>         pid_t pid=fork();  </p></li><li><p>         if(pid==0)  </p></li><li><p>         {  </p></li><li><p>                 int j ;  </p></li><li><p>                 for(j=0;j&lt;10;j++)  </p></li><li><p>                 {  </p></li><li><p>                         printf(“child: %d\n”,j);  </p></li><li><p>                         sleep(1);  </p></li><li><p>                 }  </p></li><li><p>         }  </p></li><li><p>         else if (pid&gt;0)  </p></li><li><p>         {  </p></li><li><p>                 int i;  </p></li><li><p>                 for(i=0;i&lt;10;i++)  </p></li><li><p>                 {  </p></li><li><p>                         printf(“parent: %d\n”,i);  </p></li><li><p>                         sleep(1);  </p></li><li><p>                 }  </p></li><li><p>         }  </p></li><li><p>         else  </p></li><li><p>         {  </p></li><li><p>                 fprintf(stderr,”can’t fork ,error %d\n”,errno);  </p></li><li><p>                 exit(1);  </p></li><li><p>         }  </p></li><li><p>         printf(“This is the end !”);  </p></li><li><p> }  </p></li></ol><h1 id="二、fork-出的子进程和父进程的继承关系"><a href="#二、fork-出的子进程和父进程的继承关系" class="headerlink" title="二、fork 出的子进程和父进程的继承关系"></a>二、fork 出的子进程和父进程的继承关系</h1><p>fork 出来的子进程，基本上除了进程号之外父进程的所有东西都有一份拷贝，基本就意味着不是全部，下面我们要说的是子进程从父进程那里继承了什么东西，什么东西没有继承。还有一点需要注意，子进程得到的只是父进程的拷贝，而不是父进程资源的本身。  </p><p><strong>由子进程自父进程继承到：</strong>       </p><ol><li>进程的资格 (真实(real)/ 有效(effective)/ 已保存(saved) 用户号 (UIDs) 和组号(GIDs))  </li><li>环境 (environment)  </li><li>堆栈  </li><li>内存  </li><li>打开文件的描述符 (注意对应的文件的位置由父子进程共享，这会引起含糊情况)  </li><li>执行时关闭 (close-on-exec) 标志 (译者注：close-on-exec 标志可通过 fnctl() 对文件描述符设置，POSIX.1 要求所有目录流都必须在 exec 函数调用时关闭。更详细说明，参见《UNIX 环境高级编程》 W. R. Stevens, 1993, 尤晋元等译(以下简称《高级编程》), 3.13 节和 8.9 节)  </li><li>信号 (signal) 控制设定  </li><li>nice 值 (译者注：nice 值由 nice 函数设定，该值表示进程的优先级，数值越小，优先级越高)<br>进程调度类别 (scheduler class)(译者注：进程调度类别指进程在系统中被调度时所属的类别，不同类别有不同优先级，根据进程调度类别和 nice 值，进程调度程序可计算出每个进程的全局优先级 (Global process prority)，优先级高的进程优先执行)  </li><li>进程组号  </li><li>对话期 ID(Session ID) (译者注：译文取自《高级编程》，指：进程所属的对话期 (session)ID， 一个对话期包括一个或多个进程组， 更详细说明参见《高级编程》9.5 节)  </li><li>当前工作目录  </li><li>根目录 (译者注：根目录不一定是 “/”，它可由 chroot 函数改变)  </li><li>文件方式创建屏蔽字 (file mode creation mask (umask))(译者注：译文取自《高级编程》，指：创建新文件的缺省屏蔽字)  </li><li>资源限制  </li><li>控制终端  </li></ol><p><strong>子进程所独有：</strong>  </p><p>进程号  </p><ol><li>不同的父进程号 (译者注：即子进程的父进程号与父进程的父进程号不同， 父进程号可由 getppid 函数得到)  </li><li>自己的文件描述符和目录流的拷贝 (译者注：目录流由 opendir 函数创建，因其为顺序读取，顾称 “目录流”)  </li><li>子进程不继承父进程的进程，正文 (text)， 数据和其它锁定内存 (memory locks)(译者注：锁定内存指被锁定的虚拟内存页，锁定后，4. 不允许内核将其在必要时换出 (page out)，详细说明参见《The GNU C Library Reference Manual》 2.2 版， 1999, 3.4.2 节)  </li><li>在 tms 结构中的系统时间 (译者注：tms 结构可由 times 函数获得，它保存四个数据用于记录进程使用中央处理器 (CPU：Central Processing Unit) 的时间，包括：用户时间，系统时间， 用户各子进程合计时间，系统各子进程合计时间)  </li><li>资源使用 (resource utilizations) 设定为 0  </li><li>阻塞信号集初始化为空集 (译者注：原文此处不明确，译文根据 fork 函数手册页稍做修改)  </li><li>不继承由 timer_create 函数创建的计时器  </li><li>不继承异步输入和输出</li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> Linux </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> study,graduate student,Linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Linux多进程之间的通信(一)</title>
       <link href="/2023/01/31/Linux%E5%A4%9A%E8%BF%9B%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1(%E4%B8%80)/"/>
       <url>/2023/01/31/Linux%E5%A4%9A%E8%BF%9B%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1(%E4%B8%80)/</url>
@@ -259,6 +234,31 @@
         <tags>
             
             <tag> study, graduate student,Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>信号通信fork函数</title>
+      <link href="/2023/01/31/%E4%BF%A1%E5%8F%B7%E9%80%9A%E4%BF%A1fork%E5%87%BD%E6%95%B0/"/>
+      <url>/2023/01/31/%E4%BF%A1%E5%8F%B7%E9%80%9A%E4%BF%A1fork%E5%87%BD%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、fork-后的父子进程"><a href="#一、fork-后的父子进程" class="headerlink" title="一、fork 后的父子进程"></a>一、fork 后的父子进程</h1><p>由 fork 创建的新进程被称为子进程（child process）。<strong>该函数被调用一次，但返回两次。两次返回的区别是子进程的返回值是 0</strong>，而<strong>父进程的返回值则是新进程（子进程）的进程 id。将子进程 id 返回给父进程的理由是：因为一个进程的子进程可以多于一个，没有一个函数使一个进程可以获得其所有子进程的进程 id</strong>。对子进程来说，之所以 fork 返回 0 给它，是因为它随时可以调用 <strong>getpid() 来获取自己的 pid；也可以调用 getppid() 来获取父进程的 id</strong>。(进程 id 0 总是由交换进程使用，所以一个子进程的进程 id 不可能为 0)。</p><p>fork 之后，**<a href="http://lib.csdn.net/base/operatingsystem" title="操作系统知识库">操作系统</a>会复制一个与父进程完全相同的子进程，虽说是父子关系，但是在操作系统看来，他们更像兄弟关系，这 2 个进程共享代码空间，但是数据空间是互相独立的，子进程数据空间中的内容是父进程的完整拷贝，指令指针也完全相同，子进程拥有父进程当前运行到的位置**（两进程的程序计数器 pc 值相同，也就是说，子进程是从 fork 返回处开始执行的），但有一点不同，如果 fork 成功，子进程中 fork 的返回值是 0，父进程中 fork 的返回值是子进程的进程号，如果 fork 不成功，父进程会返回错误。<br>可以这样想象，2 个进程一直同时运行，而且步调一致，在 fork 之后，他们分别作不同的工作，也就是分岔了。这也是 fork 为什么叫 fork 的原因</p><p>至于那一个最先运行，可能与操作系统（调度<a href="http://lib.csdn.net/base/datastructure" title="算法与数据结构知识库">算法</a>）有关，而且这个问题在实际应用中并不重要，如果需要父子进程协同，可以通过原语的办法解决。</p><p><strong>[cpp]</strong>  <a href="http://blog.csdn.net/koudaidai/article/details/8014782#" title="view plain">view plain</a> <a href="http://blog.csdn.net/koudaidai/article/details/8014782#" title="copy">copy</a> </p><ol><li><p> include &lt;stdio.h&gt;  </p></li><li><p> #include &lt;unistd.h&gt;  </p></li><li><p> #include &lt;stdlib.h&gt;  </p></li><li><p> #include &lt;errno.h&gt;  </p></li><li><p> int main(void)  </p></li><li><p> {  </p></li><li><p>         pid_t pid=fork();  </p></li><li><p>         if(pid==0)  </p></li><li><p>         {  </p></li><li><p>                 int j ;  </p></li><li><p>                 for(j=0;j&lt;10;j++)  </p></li><li><p>                 {  </p></li><li><p>                         printf(“child: %d\n”,j);  </p></li><li><p>                         sleep(1);  </p></li><li><p>                 }  </p></li><li><p>         }  </p></li><li><p>         else if (pid&gt;0)  </p></li><li><p>         {  </p></li><li><p>                 int i;  </p></li><li><p>                 for(i=0;i&lt;10;i++)  </p></li><li><p>                 {  </p></li><li><p>                         printf(“parent: %d\n”,i);  </p></li><li><p>                         sleep(1);  </p></li><li><p>                 }  </p></li><li><p>         }  </p></li><li><p>         else  </p></li><li><p>         {  </p></li><li><p>                 fprintf(stderr,”can’t fork ,error %d\n”,errno);  </p></li><li><p>                 exit(1);  </p></li><li><p>         }  </p></li><li><p>         printf(“This is the end !”);  </p></li><li><p> }  </p></li></ol><h1 id="二、fork-出的子进程和父进程的继承关系"><a href="#二、fork-出的子进程和父进程的继承关系" class="headerlink" title="二、fork 出的子进程和父进程的继承关系"></a>二、fork 出的子进程和父进程的继承关系</h1><p>fork 出来的子进程，基本上除了进程号之外父进程的所有东西都有一份拷贝，基本就意味着不是全部，下面我们要说的是子进程从父进程那里继承了什么东西，什么东西没有继承。还有一点需要注意，子进程得到的只是父进程的拷贝，而不是父进程资源的本身。  </p><p><strong>由子进程自父进程继承到：</strong>       </p><ol><li>进程的资格 (真实(real)/ 有效(effective)/ 已保存(saved) 用户号 (UIDs) 和组号(GIDs))  </li><li>环境 (environment)  </li><li>堆栈  </li><li>内存  </li><li>打开文件的描述符 (注意对应的文件的位置由父子进程共享，这会引起含糊情况)  </li><li>执行时关闭 (close-on-exec) 标志 (译者注：close-on-exec 标志可通过 fnctl() 对文件描述符设置，POSIX.1 要求所有目录流都必须在 exec 函数调用时关闭。更详细说明，参见《UNIX 环境高级编程》 W. R. Stevens, 1993, 尤晋元等译(以下简称《高级编程》), 3.13 节和 8.9 节)  </li><li>信号 (signal) 控制设定  </li><li>nice 值 (译者注：nice 值由 nice 函数设定，该值表示进程的优先级，数值越小，优先级越高)<br>进程调度类别 (scheduler class)(译者注：进程调度类别指进程在系统中被调度时所属的类别，不同类别有不同优先级，根据进程调度类别和 nice 值，进程调度程序可计算出每个进程的全局优先级 (Global process prority)，优先级高的进程优先执行)  </li><li>进程组号  </li><li>对话期 ID(Session ID) (译者注：译文取自《高级编程》，指：进程所属的对话期 (session)ID， 一个对话期包括一个或多个进程组， 更详细说明参见《高级编程》9.5 节)  </li><li>当前工作目录  </li><li>根目录 (译者注：根目录不一定是 “/”，它可由 chroot 函数改变)  </li><li>文件方式创建屏蔽字 (file mode creation mask (umask))(译者注：译文取自《高级编程》，指：创建新文件的缺省屏蔽字)  </li><li>资源限制  </li><li>控制终端  </li></ol><p><strong>子进程所独有：</strong>  </p><p>进程号  </p><ol><li>不同的父进程号 (译者注：即子进程的父进程号与父进程的父进程号不同， 父进程号可由 getppid 函数得到)  </li><li>自己的文件描述符和目录流的拷贝 (译者注：目录流由 opendir 函数创建，因其为顺序读取，顾称 “目录流”)  </li><li>子进程不继承父进程的进程，正文 (text)， 数据和其它锁定内存 (memory locks)(译者注：锁定内存指被锁定的虚拟内存页，锁定后，4. 不允许内核将其在必要时换出 (page out)，详细说明参见《The GNU C Library Reference Manual》 2.2 版， 1999, 3.4.2 节)  </li><li>在 tms 结构中的系统时间 (译者注：tms 结构可由 times 函数获得，它保存四个数据用于记录进程使用中央处理器 (CPU：Central Processing Unit) 的时间，包括：用户时间，系统时间， 用户各子进程合计时间，系统各子进程合计时间)  </li><li>资源使用 (resource utilizations) 设定为 0  </li><li>阻塞信号集初始化为空集 (译者注：原文此处不明确，译文根据 fork 函数手册页稍做修改)  </li><li>不继承由 timer_create 函数创建的计时器  </li><li>不继承异步输入和输出</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> study,graduate student,Linux </tag>
             
         </tags>
       
@@ -633,11 +633,11 @@
       
         <tags>
             
+            <tag> graduate student </tag>
+            
             <tag> study </tag>
             
             <tag> plan </tag>
-            
-            <tag> graduate student </tag>
             
             <tag> daily </tag>
             
@@ -670,11 +670,11 @@
       
         <tags>
             
-            <tag> study </tag>
+            <tag> paper </tag>
             
             <tag> graduate student </tag>
             
-            <tag> paper </tag>
+            <tag> study </tag>
             
             <tag> process mining </tag>
             
@@ -705,9 +705,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -736,11 +736,11 @@
       
         <tags>
             
-            <tag> study </tag>
+            <tag> paper </tag>
             
             <tag> graduate student </tag>
             
-            <tag> paper </tag>
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -767,9 +767,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -798,11 +798,11 @@
       
         <tags>
             
-            <tag> study </tag>
+            <tag> paper </tag>
             
             <tag> graduate student </tag>
             
-            <tag> paper </tag>
+            <tag> study </tag>
             
             <tag> deep learning </tag>
             
@@ -829,9 +829,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -860,44 +860,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
             
-            <tag> algorithm </tag>
-            
-            <tag> deep learning </tag>
-            
-            <tag> machine leaning </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>KNN（K近邻法 K Nearest Neighbors）</title>
-      <link href="/2021/07/05/KNN%EF%BC%88K%E8%BF%91%E9%82%BB%E6%B3%95%20K%20Nearest%20Neighbors%EF%BC%89/"/>
-      <url>/2021/07/05/KNN%EF%BC%88K%E8%BF%91%E9%82%BB%E6%B3%95%20K%20Nearest%20Neighbors%EF%BC%89/</url>
-      
-        <content type="html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/25994179">一文搞懂k近邻（k-NN）算法（一） - 知乎</a></p><p><a href="https://blog.csdn.net/qq_20412595/article/details/82013677">机器学习算法（2）之K近邻算法_不曾走远的博客-CSDN博客</a></p><p><a href="https://blog.csdn.net/pxhdky/article/details/85080980">【机器学习】K近邻法（KNN）与kd树原理详解_齐在的专栏-CSDN博客</a></p><p>TODO 序列KNN</p><h2 id="KNN概述"><a href="#KNN概述" class="headerlink" title="KNN概述"></a>KNN概述</h2><ul><li>常用有监督学习方法</li><li>常用分类方法</li><li>同时也是回归方法</li><li>是懒惰学习</li></ul><blockquote><p><font color="#ff7500">扩展学习</font><br>懒惰学习是一种训练集处理方法，其会<font color="#012C54">在收到测试样本的同时进行训练</font>，与之相对的是急切学习，其会<font color="#8A2BE2">在训练阶段开始对样本进行学习</font>处理。</p></blockquote><p><font color="#FF8C00">基本思路：</font><br>如果一个待分类样本在特征空间中的k个最相似(即特征空间中K近邻)的样本中的大多数属于某一个类别，则该样本也属于这个类别，即近朱者赤，近墨者黑。</p><h2 id="KNN算法介绍"><a href="#KNN算法介绍" class="headerlink" title="KNN算法介绍"></a>KNN算法介绍</h2><h3 id="KNN模型"><a href="#KNN模型" class="headerlink" title="KNN模型"></a>KNN模型</h3><p><strong>kNN使用的模型实际上对应于对特征空间的划分。</strong></p><p><font color="#006400">由三个及基本要素组成：</font></p><ul><li>距离度量</li><li>k值的选择</li><li>决策规划</li></ul><ol><li>距离度量</li></ol><p>KNN中使用的距离度量可以是欧式距离、曼哈顿距离、切比雪夫距离或者一般的闵可夫斯基距离。</p><blockquote><p><font color="#9932CC">知识补充</font><br>设特征空间 $X$ 是 $n$ 维实数向量空间<math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mi>n</mi></msup></math>，<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><msub><mi>x</mi><mi>j</mi></msub></math>∈ $X$ ，<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mi>i</mi></msub><mo>=</mo><mo>(</mo><msubsup><mi>x</mi><mi>i</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>x</mi><mi>i</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></msubsup><mo>)</mo><mo>,</mo><mo>&#x22EF;</mo><mo>,</mo><msubsup><mi>x</mi><mi>i</mi><mrow><mo>(</mo><mi>n</mi><mo>)</mo></mrow></msubsup><msup><mo>)</mo><mi>T</mi></msup></math>，<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mi>j</mi></msub><mo>=</mo><mo>(</mo><msubsup><mi>x</mi><mi>j</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>x</mi><mi>j</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></msubsup><mo>)</mo><mo>,</mo><mo>&#x22EF;</mo><mo>,</mo><msubsup><mi>x</mi><mi>j</mi><mrow><mo>(</mo><mi>n</mi><mo>)</mo></mrow></msubsup><msup><mo>)</mo><mi>T</mi></msup></math></p><ol><li><p>闵可夫斯基距离（Minkowski distance,<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mi>p</mi></msub></math>距离）<br><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><msub><mi>x</mi><mi>j</mi></msub></math>的<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mi>p</mi></msub></math>距离定义为：<br><img src="http://files.shanqianche.cn/202175/1625491452207.png"><br>其中，p ≥ 1 。 </p></li><li><p>曼哈顿距离（Manhattan distance）<br>当p = 1 时，<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mi>p</mi></msub></math>距离就变成了曼哈顿距离：<br><img src="http://files.shanqianche.cn/202175/1625491491032.png"></p></li><li><p>欧式距离（Euclidean distance）<br>当p = 2时，<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mi>p</mi></msub></math>距离就变成了欧式距离：<br><img src="http://files.shanqianche.cn/202175/1625491674920.png"></p></li><li><p>切比雪夫距离（Chebyshev distance）<br>当<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>=</mo><mo>&#x221E;</mo><mo>,</mo><msub><mi>L</mi><mi>p</mi></msub></math>距离就变成了切比雪夫距离，它是各个坐标距离的最大值：<br><img src="http://files.shanqianche.cn/202175/1625491693716.png"></p></li></ol></blockquote><ol start="2"><li>k值选择（借鉴李航–统计学习方法）</li></ol><p>如果k值较小，则训练误差减少，只有与输入实例相似的训练实例才会对于预测结果起作用,“学习”<font color="#D2691E">近似误差会减小</font>，但泛化误差提高了，预测结果会对近邻实例点非常敏感。k值较小意味着模型变得复杂，容易发生<font color="#0000FF">过拟合</font>。</p><p>如果k值较大，可以减少泛化误差，其优点是可以<font color="#D2691E">减少学习的估计误差</font>，但训练误差会增加，这时与输入实例相差较远的训练实例也会对预测结果起作用。k值较大意味着模型变得简单，容易发生<font color="#0000FF">欠拟合</font>。</p><p>通常情况下，我们需要对 k 经过多种尝试，来决定到底使用多大的 k 来作为最终参数。k通常会在3～10直接取值，或者是k等于训练数据的<font color="#DC143C">平方根</font>。比如15个数据，可能会取k=4。<br>第二种方法，选择能使测试集达到最优的k kk，即能够使得如MAPE等衡量预测准确度的统计量达到最小；<br>第三种方法，同时训练多个函数不同参数k kk的模型，然后取所有模型的预测值的平均值作为最终的预测值。</p><p>当k = 1时，k近邻算法就是最近邻算法。k值一般<font color="#FF1493">采用交叉验证法选取最优值</font>。</p><ol start="3"><li>决策规划</li></ol><p>通常，在分类任务中使用投票法计算最终预测结果，在回归任务中使用平均法，还可基于距离远近进行加权平均或加权投票。</p><h3 id="KNN算法描述"><a href="#KNN算法描述" class="headerlink" title="KNN算法描述"></a>KNN算法描述</h3><p>下面以<font color="#008B8B">分类</font>任务为例，介绍KNN算法，回归任务与此类似，区别不大。</p><p>输入：训练数据集<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>D</mi><mo>=</mo><mo>{</mo><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><msub><mi>y</mi><mi>i</mi></msub><mo>)</mo><msubsup><mo>}</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>m</mi></msubsup></math>    ，其中，<img src="http://files.shanqianche.cn/202175/1625492364666.png"> 是实例的类别。<br>过程：</p><ul><li>根据给定的距离度量，在训练集D中找出与x最邻近的k个点，涵盖着k 个点的领域记为<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>N</mi><mi>k</mi></msub><mo>(</mo><mi>x</mi><mo>)</mo></math>；</li><li>在<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>N</mi><mi>k</mi></msub><mo>(</mo><mi>x</mi><mo>)</mo></math>中根据分类决策规则决定x的类别y： <img src="http://files.shanqianche.cn/202175/1625492543638.png" alt="所属类别"><br>输出：测试样本x xx所属的类别y yy。</li></ul><h2 id="KNN算法实现"><a href="#KNN算法实现" class="headerlink" title="KNN算法实现"></a>KNN算法实现</h2><h3 id="KNN算法蛮力实现"><a href="#KNN算法蛮力实现" class="headerlink" title="KNN算法蛮力实现"></a>KNN算法蛮力实现</h3><p> 首先我们看看最想当然的方式。</p><pre><code> 既然我们要找到k个最近的邻居来做预测，那么我们只需要计算预测样本和所有训练集中的样本的距离，然后计算出最小的k个距离即可，接着多数表决，很容易做出预测。这个方法的确简单直接，在样本量少，样本特征少的时候有效。但是在实际运用中很多时候用不上，为什么呢？因为我们经常碰到样本的特征数有上千以上，样本量有几十万以上，如果我们这要去预测少量的测试集样本，算法的时间效率很成问题。因此，这个方法我们一般称之为蛮力实现。&lt;font color=&quot;#1E90FF&quot;&gt;比较适合于少量样本的简单模型的时候用&lt;/font&gt;。</code></pre><h3 id="KD树实现原理"><a href="#KD树实现原理" class="headerlink" title="KD树实现原理"></a>KD树实现原理</h3><pre><code>KD树算法没有一开始就尝试对测试样本分类，而是先对训练集建模，建立的模型就是KD树，建好了模型再对测试集做预测。所谓的KD树就是K个特征维度的树，注意这里的K和KNN中的K的意思不同。KNN中的K代表特征输出类别，KD树中的K代表样本特征的维数。为了防止混淆，后面我们称特征维数为n。</code></pre><p>KD树算法包括三步，第一步是建树，第二部是搜索最近邻，最后一步是预测。</p><h4 id="KD树的建立"><a href="#KD树的建立" class="headerlink" title="KD树的建立"></a>KD树的建立</h4><p>我们首先来看建树的方法。KD树建树采用的是从m个样本的n维特征中，分别计算n个特征的取值的方差，用<font color="#DC143C">方差最大</font>的第k维特征<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>n</mi><mi>k</mi></msub></math>来作为<font color="#B22222">根节点</font>。对于这个特征，我们选择特征<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>n</mi><mi>k</mi></msub></math>的取值的中位数<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>n</mi><mi>kv</mi></msub></math>对应的样本作为划分点，对于所有第k维特征的取值小于<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>n</mi><mi>kv</mi></msub></math>的样本，我们划入左子树，对于第k维特征的取值大于等于<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>n</mi><mi>kv</mi></msub></math>的样本，我们划入右子树，对于左子树和右子树，我们采用和刚才同样的办法来找方差最大的特征来做<font color="#B22222">根节点，递归</font>的生成KD树。</p><p><img src="http://files.shanqianche.cn/202175/1625494718364.png" alt="构建KD树"></p><p>比如我们有二维样本6个，{(2,3)，(5,4)，(9,6)，(4,7)，(8,1)，(7,2)}，构建kd树的具体步骤为：</p><ol><li>找到划分的特征。6个数据点在x，y维度上的数据方差分别为6.97，5.37，所以在x轴上方差更大，用第1维特征建树。</li><li>确定划分点（7,2）。根据x维上的值将数据排序，6个数据的中值(所谓中值，即中间大小的值)为7，所以划分点的数据是（7,2）。这样，该节点的分割超平面就是通过（7,2）并垂直于：划分点维度的直线x=7；（很显然，中位数为6 ，这里选择（5,4）或者(7,2)都是可以的。这种情况任选一个即可）</li><li>确定左子空间和右子空间。 分割超平面x=7将整个空间分为两部分：x&lt;=7的部分为左子空间，包含3个节点={(2,3),(5,4),(4,7)}；另一部分为右子空间，包含2个节点={(9,6)，(8,1)}。</li><li>用同样的办法划分左子树的节点{(2,3),(5,4),(4,7)}和右子树的节点{(9,6)，(8,1)}。最终得到KD树。</li><li>后续步骤反复上面的，<font color="#8FBC8F">直到两个子区域没有实例存在时停止（这意味着最后所有训练实例都对应一个叶结点或内部结点），从而形成kd树的区域划分</font>。</li></ol><p><img src="http://files.shanqianche.cn/202175/1625495422262.png" alt="KD树"></p><p><font color="#DC143C">标准kNN算法的切分特征选择是按顺序的，后来对kd树的一个重大改进是选择方差最大的特征，方差越大，不同实例点区分越明显，更方便进行划分。</font></p><h4 id="KD树搜索最近邻"><a href="#KD树搜索最近邻" class="headerlink" title="KD树搜索最近邻"></a>KD树搜索最近邻</h4><p>当我们生成KD树以后，就可以去预测测试集里面的样本目标点了。对于一个目标点，我们<font color="#9932CC">首先在KD树里面找到包含目标点的叶子节点</font>。<font color="#0000FF">以目标点为圆心，以目标点到叶子节点样本实例的距离为半径，得到一个超球体</font>，<font color="#B22222">最近邻的点一定在这个超球体内部</font>。然后返回叶子节点的父节点，检查另一个子节点包含的超矩形体是否和超球体相交，如果相交就到这个子节点寻找是否有更加近的近邻,有的话就更新最近邻。如果不相交那就简单了，我们直接返回父节点的父节点，在另一个子树继续搜索最近邻。当回溯到根节点时，算法结束，此时保存的最近邻节点就是最终的最近邻。</p><p><img src="http://files.shanqianche.cn/202175/1625496230689.png" alt="目标点为（2，4.5）"></p><p>从上面的描述可以看出，KD树划分后可以大大减少无效的最近邻搜索，很多<font color="#8A2BE2">样本点由于所在的超矩形体和超球体不相交，根本不需要计算距离。大大节省了计算时间。</font></p><p>先进行二叉查找，先从（7,2）查找到（5,4）节点，在进行查找时是由y = 4为分割超平面的，由于查找点为y值为4.5，因此进入右子空间查找到（4,7），形成搜索路径&lt;(7,2)，(5,4)，(4,7)&gt;，但 （4,7）与目标查找点的距离为3.202，而（5,4）与查找点之间的距离为3.041，所以（5,4）为查询点的最近点； 以（2，4.5）为圆心，以3.041为半径作圆，如下图所示。可见该圆和y = 4超平面交割，所以需要进入（5,4）左子空间进行查找，也就是将（2,3）节点加入搜索路径中得&lt;(7,2)，(2,3)&gt;；于是接着搜索至（2,3）叶子节点，（2,3）距离（2,4.5）比（5,4）要近，所以最近邻点更新为（2，3），最近距离更新为1.5；回溯查找至（5,4），直到最后回溯到根结点（7,2）的时候，以（2,4.5）为圆心1.5为半径作圆，并不和x = 7分割超平面交割，如下图所示。至此，搜索路径回溯完，返回最近邻点（2,3），最近距离1.5。</p><h3 id="球树实现原理"><a href="#球树实现原理" class="headerlink" title="球树实现原理"></a>球树实现原理</h3><p>KD树算法虽然提高了KNN搜索的效率，但是在某些时候效率并不高，比如当处理不均匀分布的数据集时,不管是近似方形，还是矩形，甚至正方形，都不是最好的使用形状，因为他们都有角。一个例子如下图：<br><img src="http://files.shanqianche.cn/202175/1625496491462.png" alt="enter description here"></p><p>　　如果黑色的实例点离目标点星点再远一点，那么虚线圆会如红线所示那样扩大，导致与左上方矩形的右下角相交，既然相 交了，那么就要检查这个左上方矩形，而实际上，最近的点离星点的距离很近，检查左上方矩形区域已是多余。于此我们看见，KD树把二维平面划分成一个一个矩形，但矩形区域的角却是个难以处理的问题。</p><p>　　为了优化超矩形体导致的搜索效率的问题，有人引入了球树，这种结构可以优化上面的这种问题。</p><p><strong><font color="#7FFF00">球树的建立</font></strong></p><p><img src="http://files.shanqianche.cn/202175/1625496601030.png" alt="球树"></p><ol><li>先构建一个超球体，这个超球体是可以包含所有样本的最小球体。</li><li>从球中选择一个离球的中心最远的点，然后选择第二个点离第一个点最远，将球中所有的点分配到离这两个聚类中心最近的一个上，然后计算每个聚类的中心，以及聚类能够包含它所有数据点所需的最小半径。这样我们得到了两个子超球体，和KD树里面的左右子树对应。（PS:<font color="#B22222">这里选择两个点后，就以这两个点来聚类，所以先确定的是以这两个点为中心来计算其他点到该中心的距离。当所有点都确定自己的中心后，再重新计算一次该超球体的半径和球心</font>。）</li><li>对于这两个子超球体，递归执行步骤2，最终得到了一个球树。</li></ol><p>　　可以看出KD树和球树类似，主要区别在于球树得到的是节点样本组成的最小超球体，而KD得到的是节点样本组成的超矩形体，这个超球体要与对应的KD树的超矩形体小，这样在做最近邻搜索的时候，可以避免一些无谓的搜索。</p><h2 id="KNN优缺点"><a href="#KNN优缺点" class="headerlink" title="KNN优缺点"></a>KNN优缺点</h2><p>优点：</p><ol><li>结构简单；</li><li>无数据输入假定，准确度高，对异常点不敏感。</li><li> 训练时间复杂度比支持向量机之类的算法低，仅为O(n)</li><li> 由于KNN方法主要靠周围有限的邻近的样本，而不是靠判别类域的方法来确定所属类别的，因此对于类域的交叉或重叠较多的待分样本集来说，KNN方法较其他方法更为适合</li></ol><p>缺点：</p><ol><li>计算复杂度高、空间复杂度高；</li><li>样本不平衡时，对稀有类别预测准确度低；</li><li>使用懒惰学习，预测速度慢。</li><li>KD树，球树之类的模型建立需要大量的内存</li><li>相比决策树模型，KNN模型可解释性不强<h2 id="什么情况下选择KNN"><a href="#什么情况下选择KNN" class="headerlink" title="什么情况下选择KNN"></a>什么情况下选择KNN</h2></li></ol><p><img src="http://files.shanqianche.cn/202177/1625667539256.png" alt="choose"></p><h2 id="实战"><a href="#实战" class="headerlink" title="实战"></a>实战</h2><p><a href="https://www.cnblogs.com/ybjourney/p/4702562.html">机器学习（一）——K-近邻（KNN）算法 - Yabea - 博客园</a></p><h2 id="序列KNN"><a href="#序列KNN" class="headerlink" title="序列KNN"></a>序列KNN</h2><p><a href="https://antkillerfarm.github.io/ml/2017/10/19/Machine_Learning_28.html">机器学习（二十八）——KNN, AutoML, 数据不平衡问题</a></p><p><a href="https://blog.csdn.net/qq_41196612/article/details/107265167">R语言实战——基于KNN聚类的时间序列分析预测_三只佩奇不结义的博客-CSDN博客_r语言knn回归及预测</a></p><p><a href="https://www.coder.work/article/383913">python - 如何使用 KNN/K-means 对数据帧中的时间序列进行聚类 - IT工具网</a></p><p><a href="https://github.com/iwuqing/Time-Series-Classification-based-on-KNN">iwuqing/Time-Series-Classification-based-on-KNN: 基于KNN聚类算法结合Dynamic Time Warping（动态时间调整）的时间序列分类</a></p><p><a href="https://github.com/vvanggeng/TSC-KNN">vvanggeng/TSC-KNN: 基于KNN和DTW的时间序列分类</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> algorithm </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
             <tag> study </tag>
-            
-            <tag> graduate student </tag>
-            
-            <tag> paper </tag>
             
             <tag> algorithm </tag>
             
@@ -928,11 +893,46 @@
       
         <tags>
             
-            <tag> study </tag>
+            <tag> paper </tag>
             
             <tag> graduate student </tag>
             
+            <tag> study </tag>
+            
+            <tag> algorithm </tag>
+            
+            <tag> deep learning </tag>
+            
+            <tag> machine leaning </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>KNN（K近邻法 K Nearest Neighbors）</title>
+      <link href="/2021/07/05/KNN%EF%BC%88K%E8%BF%91%E9%82%BB%E6%B3%95%20K%20Nearest%20Neighbors%EF%BC%89/"/>
+      <url>/2021/07/05/KNN%EF%BC%88K%E8%BF%91%E9%82%BB%E6%B3%95%20K%20Nearest%20Neighbors%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/25994179">一文搞懂k近邻（k-NN）算法（一） - 知乎</a></p><p><a href="https://blog.csdn.net/qq_20412595/article/details/82013677">机器学习算法（2）之K近邻算法_不曾走远的博客-CSDN博客</a></p><p><a href="https://blog.csdn.net/pxhdky/article/details/85080980">【机器学习】K近邻法（KNN）与kd树原理详解_齐在的专栏-CSDN博客</a></p><p>TODO 序列KNN</p><h2 id="KNN概述"><a href="#KNN概述" class="headerlink" title="KNN概述"></a>KNN概述</h2><ul><li>常用有监督学习方法</li><li>常用分类方法</li><li>同时也是回归方法</li><li>是懒惰学习</li></ul><blockquote><p><font color="#ff7500">扩展学习</font><br>懒惰学习是一种训练集处理方法，其会<font color="#012C54">在收到测试样本的同时进行训练</font>，与之相对的是急切学习，其会<font color="#8A2BE2">在训练阶段开始对样本进行学习</font>处理。</p></blockquote><p><font color="#FF8C00">基本思路：</font><br>如果一个待分类样本在特征空间中的k个最相似(即特征空间中K近邻)的样本中的大多数属于某一个类别，则该样本也属于这个类别，即近朱者赤，近墨者黑。</p><h2 id="KNN算法介绍"><a href="#KNN算法介绍" class="headerlink" title="KNN算法介绍"></a>KNN算法介绍</h2><h3 id="KNN模型"><a href="#KNN模型" class="headerlink" title="KNN模型"></a>KNN模型</h3><p><strong>kNN使用的模型实际上对应于对特征空间的划分。</strong></p><p><font color="#006400">由三个及基本要素组成：</font></p><ul><li>距离度量</li><li>k值的选择</li><li>决策规划</li></ul><ol><li>距离度量</li></ol><p>KNN中使用的距离度量可以是欧式距离、曼哈顿距离、切比雪夫距离或者一般的闵可夫斯基距离。</p><blockquote><p><font color="#9932CC">知识补充</font><br>设特征空间 $X$ 是 $n$ 维实数向量空间<math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mi>n</mi></msup></math>，<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><msub><mi>x</mi><mi>j</mi></msub></math>∈ $X$ ，<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mi>i</mi></msub><mo>=</mo><mo>(</mo><msubsup><mi>x</mi><mi>i</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>x</mi><mi>i</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></msubsup><mo>)</mo><mo>,</mo><mo>&#x22EF;</mo><mo>,</mo><msubsup><mi>x</mi><mi>i</mi><mrow><mo>(</mo><mi>n</mi><mo>)</mo></mrow></msubsup><msup><mo>)</mo><mi>T</mi></msup></math>，<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mi>j</mi></msub><mo>=</mo><mo>(</mo><msubsup><mi>x</mi><mi>j</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>x</mi><mi>j</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></msubsup><mo>)</mo><mo>,</mo><mo>&#x22EF;</mo><mo>,</mo><msubsup><mi>x</mi><mi>j</mi><mrow><mo>(</mo><mi>n</mi><mo>)</mo></mrow></msubsup><msup><mo>)</mo><mi>T</mi></msup></math></p><ol><li><p>闵可夫斯基距离（Minkowski distance,<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mi>p</mi></msub></math>距离）<br><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><msub><mi>x</mi><mi>j</mi></msub></math>的<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mi>p</mi></msub></math>距离定义为：<br><img src="http://files.shanqianche.cn/202175/1625491452207.png"><br>其中，p ≥ 1 。 </p></li><li><p>曼哈顿距离（Manhattan distance）<br>当p = 1 时，<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mi>p</mi></msub></math>距离就变成了曼哈顿距离：<br><img src="http://files.shanqianche.cn/202175/1625491491032.png"></p></li><li><p>欧式距离（Euclidean distance）<br>当p = 2时，<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mi>p</mi></msub></math>距离就变成了欧式距离：<br><img src="http://files.shanqianche.cn/202175/1625491674920.png"></p></li><li><p>切比雪夫距离（Chebyshev distance）<br>当<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>=</mo><mo>&#x221E;</mo><mo>,</mo><msub><mi>L</mi><mi>p</mi></msub></math>距离就变成了切比雪夫距离，它是各个坐标距离的最大值：<br><img src="http://files.shanqianche.cn/202175/1625491693716.png"></p></li></ol></blockquote><ol start="2"><li>k值选择（借鉴李航–统计学习方法）</li></ol><p>如果k值较小，则训练误差减少，只有与输入实例相似的训练实例才会对于预测结果起作用,“学习”<font color="#D2691E">近似误差会减小</font>，但泛化误差提高了，预测结果会对近邻实例点非常敏感。k值较小意味着模型变得复杂，容易发生<font color="#0000FF">过拟合</font>。</p><p>如果k值较大，可以减少泛化误差，其优点是可以<font color="#D2691E">减少学习的估计误差</font>，但训练误差会增加，这时与输入实例相差较远的训练实例也会对预测结果起作用。k值较大意味着模型变得简单，容易发生<font color="#0000FF">欠拟合</font>。</p><p>通常情况下，我们需要对 k 经过多种尝试，来决定到底使用多大的 k 来作为最终参数。k通常会在3～10直接取值，或者是k等于训练数据的<font color="#DC143C">平方根</font>。比如15个数据，可能会取k=4。<br>第二种方法，选择能使测试集达到最优的k kk，即能够使得如MAPE等衡量预测准确度的统计量达到最小；<br>第三种方法，同时训练多个函数不同参数k kk的模型，然后取所有模型的预测值的平均值作为最终的预测值。</p><p>当k = 1时，k近邻算法就是最近邻算法。k值一般<font color="#FF1493">采用交叉验证法选取最优值</font>。</p><ol start="3"><li>决策规划</li></ol><p>通常，在分类任务中使用投票法计算最终预测结果，在回归任务中使用平均法，还可基于距离远近进行加权平均或加权投票。</p><h3 id="KNN算法描述"><a href="#KNN算法描述" class="headerlink" title="KNN算法描述"></a>KNN算法描述</h3><p>下面以<font color="#008B8B">分类</font>任务为例，介绍KNN算法，回归任务与此类似，区别不大。</p><p>输入：训练数据集<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>D</mi><mo>=</mo><mo>{</mo><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><msub><mi>y</mi><mi>i</mi></msub><mo>)</mo><msubsup><mo>}</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>m</mi></msubsup></math>    ，其中，<img src="http://files.shanqianche.cn/202175/1625492364666.png"> 是实例的类别。<br>过程：</p><ul><li>根据给定的距离度量，在训练集D中找出与x最邻近的k个点，涵盖着k 个点的领域记为<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>N</mi><mi>k</mi></msub><mo>(</mo><mi>x</mi><mo>)</mo></math>；</li><li>在<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>N</mi><mi>k</mi></msub><mo>(</mo><mi>x</mi><mo>)</mo></math>中根据分类决策规则决定x的类别y： <img src="http://files.shanqianche.cn/202175/1625492543638.png" alt="所属类别"><br>输出：测试样本x xx所属的类别y yy。</li></ul><h2 id="KNN算法实现"><a href="#KNN算法实现" class="headerlink" title="KNN算法实现"></a>KNN算法实现</h2><h3 id="KNN算法蛮力实现"><a href="#KNN算法蛮力实现" class="headerlink" title="KNN算法蛮力实现"></a>KNN算法蛮力实现</h3><p> 首先我们看看最想当然的方式。</p><pre><code> 既然我们要找到k个最近的邻居来做预测，那么我们只需要计算预测样本和所有训练集中的样本的距离，然后计算出最小的k个距离即可，接着多数表决，很容易做出预测。这个方法的确简单直接，在样本量少，样本特征少的时候有效。但是在实际运用中很多时候用不上，为什么呢？因为我们经常碰到样本的特征数有上千以上，样本量有几十万以上，如果我们这要去预测少量的测试集样本，算法的时间效率很成问题。因此，这个方法我们一般称之为蛮力实现。&lt;font color=&quot;#1E90FF&quot;&gt;比较适合于少量样本的简单模型的时候用&lt;/font&gt;。</code></pre><h3 id="KD树实现原理"><a href="#KD树实现原理" class="headerlink" title="KD树实现原理"></a>KD树实现原理</h3><pre><code>KD树算法没有一开始就尝试对测试样本分类，而是先对训练集建模，建立的模型就是KD树，建好了模型再对测试集做预测。所谓的KD树就是K个特征维度的树，注意这里的K和KNN中的K的意思不同。KNN中的K代表特征输出类别，KD树中的K代表样本特征的维数。为了防止混淆，后面我们称特征维数为n。</code></pre><p>KD树算法包括三步，第一步是建树，第二部是搜索最近邻，最后一步是预测。</p><h4 id="KD树的建立"><a href="#KD树的建立" class="headerlink" title="KD树的建立"></a>KD树的建立</h4><p>我们首先来看建树的方法。KD树建树采用的是从m个样本的n维特征中，分别计算n个特征的取值的方差，用<font color="#DC143C">方差最大</font>的第k维特征<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>n</mi><mi>k</mi></msub></math>来作为<font color="#B22222">根节点</font>。对于这个特征，我们选择特征<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>n</mi><mi>k</mi></msub></math>的取值的中位数<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>n</mi><mi>kv</mi></msub></math>对应的样本作为划分点，对于所有第k维特征的取值小于<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>n</mi><mi>kv</mi></msub></math>的样本，我们划入左子树，对于第k维特征的取值大于等于<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>n</mi><mi>kv</mi></msub></math>的样本，我们划入右子树，对于左子树和右子树，我们采用和刚才同样的办法来找方差最大的特征来做<font color="#B22222">根节点，递归</font>的生成KD树。</p><p><img src="http://files.shanqianche.cn/202175/1625494718364.png" alt="构建KD树"></p><p>比如我们有二维样本6个，{(2,3)，(5,4)，(9,6)，(4,7)，(8,1)，(7,2)}，构建kd树的具体步骤为：</p><ol><li>找到划分的特征。6个数据点在x，y维度上的数据方差分别为6.97，5.37，所以在x轴上方差更大，用第1维特征建树。</li><li>确定划分点（7,2）。根据x维上的值将数据排序，6个数据的中值(所谓中值，即中间大小的值)为7，所以划分点的数据是（7,2）。这样，该节点的分割超平面就是通过（7,2）并垂直于：划分点维度的直线x=7；（很显然，中位数为6 ，这里选择（5,4）或者(7,2)都是可以的。这种情况任选一个即可）</li><li>确定左子空间和右子空间。 分割超平面x=7将整个空间分为两部分：x&lt;=7的部分为左子空间，包含3个节点={(2,3),(5,4),(4,7)}；另一部分为右子空间，包含2个节点={(9,6)，(8,1)}。</li><li>用同样的办法划分左子树的节点{(2,3),(5,4),(4,7)}和右子树的节点{(9,6)，(8,1)}。最终得到KD树。</li><li>后续步骤反复上面的，<font color="#8FBC8F">直到两个子区域没有实例存在时停止（这意味着最后所有训练实例都对应一个叶结点或内部结点），从而形成kd树的区域划分</font>。</li></ol><p><img src="http://files.shanqianche.cn/202175/1625495422262.png" alt="KD树"></p><p><font color="#DC143C">标准kNN算法的切分特征选择是按顺序的，后来对kd树的一个重大改进是选择方差最大的特征，方差越大，不同实例点区分越明显，更方便进行划分。</font></p><h4 id="KD树搜索最近邻"><a href="#KD树搜索最近邻" class="headerlink" title="KD树搜索最近邻"></a>KD树搜索最近邻</h4><p>当我们生成KD树以后，就可以去预测测试集里面的样本目标点了。对于一个目标点，我们<font color="#9932CC">首先在KD树里面找到包含目标点的叶子节点</font>。<font color="#0000FF">以目标点为圆心，以目标点到叶子节点样本实例的距离为半径，得到一个超球体</font>，<font color="#B22222">最近邻的点一定在这个超球体内部</font>。然后返回叶子节点的父节点，检查另一个子节点包含的超矩形体是否和超球体相交，如果相交就到这个子节点寻找是否有更加近的近邻,有的话就更新最近邻。如果不相交那就简单了，我们直接返回父节点的父节点，在另一个子树继续搜索最近邻。当回溯到根节点时，算法结束，此时保存的最近邻节点就是最终的最近邻。</p><p><img src="http://files.shanqianche.cn/202175/1625496230689.png" alt="目标点为（2，4.5）"></p><p>从上面的描述可以看出，KD树划分后可以大大减少无效的最近邻搜索，很多<font color="#8A2BE2">样本点由于所在的超矩形体和超球体不相交，根本不需要计算距离。大大节省了计算时间。</font></p><p>先进行二叉查找，先从（7,2）查找到（5,4）节点，在进行查找时是由y = 4为分割超平面的，由于查找点为y值为4.5，因此进入右子空间查找到（4,7），形成搜索路径&lt;(7,2)，(5,4)，(4,7)&gt;，但 （4,7）与目标查找点的距离为3.202，而（5,4）与查找点之间的距离为3.041，所以（5,4）为查询点的最近点； 以（2，4.5）为圆心，以3.041为半径作圆，如下图所示。可见该圆和y = 4超平面交割，所以需要进入（5,4）左子空间进行查找，也就是将（2,3）节点加入搜索路径中得&lt;(7,2)，(2,3)&gt;；于是接着搜索至（2,3）叶子节点，（2,3）距离（2,4.5）比（5,4）要近，所以最近邻点更新为（2，3），最近距离更新为1.5；回溯查找至（5,4），直到最后回溯到根结点（7,2）的时候，以（2,4.5）为圆心1.5为半径作圆，并不和x = 7分割超平面交割，如下图所示。至此，搜索路径回溯完，返回最近邻点（2,3），最近距离1.5。</p><h3 id="球树实现原理"><a href="#球树实现原理" class="headerlink" title="球树实现原理"></a>球树实现原理</h3><p>KD树算法虽然提高了KNN搜索的效率，但是在某些时候效率并不高，比如当处理不均匀分布的数据集时,不管是近似方形，还是矩形，甚至正方形，都不是最好的使用形状，因为他们都有角。一个例子如下图：<br><img src="http://files.shanqianche.cn/202175/1625496491462.png" alt="enter description here"></p><p>　　如果黑色的实例点离目标点星点再远一点，那么虚线圆会如红线所示那样扩大，导致与左上方矩形的右下角相交，既然相 交了，那么就要检查这个左上方矩形，而实际上，最近的点离星点的距离很近，检查左上方矩形区域已是多余。于此我们看见，KD树把二维平面划分成一个一个矩形，但矩形区域的角却是个难以处理的问题。</p><p>　　为了优化超矩形体导致的搜索效率的问题，有人引入了球树，这种结构可以优化上面的这种问题。</p><p><strong><font color="#7FFF00">球树的建立</font></strong></p><p><img src="http://files.shanqianche.cn/202175/1625496601030.png" alt="球树"></p><ol><li>先构建一个超球体，这个超球体是可以包含所有样本的最小球体。</li><li>从球中选择一个离球的中心最远的点，然后选择第二个点离第一个点最远，将球中所有的点分配到离这两个聚类中心最近的一个上，然后计算每个聚类的中心，以及聚类能够包含它所有数据点所需的最小半径。这样我们得到了两个子超球体，和KD树里面的左右子树对应。（PS:<font color="#B22222">这里选择两个点后，就以这两个点来聚类，所以先确定的是以这两个点为中心来计算其他点到该中心的距离。当所有点都确定自己的中心后，再重新计算一次该超球体的半径和球心</font>。）</li><li>对于这两个子超球体，递归执行步骤2，最终得到了一个球树。</li></ol><p>　　可以看出KD树和球树类似，主要区别在于球树得到的是节点样本组成的最小超球体，而KD得到的是节点样本组成的超矩形体，这个超球体要与对应的KD树的超矩形体小，这样在做最近邻搜索的时候，可以避免一些无谓的搜索。</p><h2 id="KNN优缺点"><a href="#KNN优缺点" class="headerlink" title="KNN优缺点"></a>KNN优缺点</h2><p>优点：</p><ol><li>结构简单；</li><li>无数据输入假定，准确度高，对异常点不敏感。</li><li> 训练时间复杂度比支持向量机之类的算法低，仅为O(n)</li><li> 由于KNN方法主要靠周围有限的邻近的样本，而不是靠判别类域的方法来确定所属类别的，因此对于类域的交叉或重叠较多的待分样本集来说，KNN方法较其他方法更为适合</li></ol><p>缺点：</p><ol><li>计算复杂度高、空间复杂度高；</li><li>样本不平衡时，对稀有类别预测准确度低；</li><li>使用懒惰学习，预测速度慢。</li><li>KD树，球树之类的模型建立需要大量的内存</li><li>相比决策树模型，KNN模型可解释性不强<h2 id="什么情况下选择KNN"><a href="#什么情况下选择KNN" class="headerlink" title="什么情况下选择KNN"></a>什么情况下选择KNN</h2></li></ol><p><img src="http://files.shanqianche.cn/202177/1625667539256.png" alt="choose"></p><h2 id="实战"><a href="#实战" class="headerlink" title="实战"></a>实战</h2><p><a href="https://www.cnblogs.com/ybjourney/p/4702562.html">机器学习（一）——K-近邻（KNN）算法 - Yabea - 博客园</a></p><h2 id="序列KNN"><a href="#序列KNN" class="headerlink" title="序列KNN"></a>序列KNN</h2><p><a href="https://antkillerfarm.github.io/ml/2017/10/19/Machine_Learning_28.html">机器学习（二十八）——KNN, AutoML, 数据不平衡问题</a></p><p><a href="https://blog.csdn.net/qq_41196612/article/details/107265167">R语言实战——基于KNN聚类的时间序列分析预测_三只佩奇不结义的博客-CSDN博客_r语言knn回归及预测</a></p><p><a href="https://www.coder.work/article/383913">python - 如何使用 KNN/K-means 对数据帧中的时间序列进行聚类 - IT工具网</a></p><p><a href="https://github.com/iwuqing/Time-Series-Classification-based-on-KNN">iwuqing/Time-Series-Classification-based-on-KNN: 基于KNN聚类算法结合Dynamic Time Warping（动态时间调整）的时间序列分类</a></p><p><a href="https://github.com/vvanggeng/TSC-KNN">vvanggeng/TSC-KNN: 基于KNN和DTW的时间序列分类</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> algorithm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
             <tag> paper </tag>
+            
+            <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -963,11 +963,11 @@
       
         <tags>
             
-            <tag> study </tag>
+            <tag> paper </tag>
             
             <tag> graduate student </tag>
             
-            <tag> paper </tag>
+            <tag> study </tag>
             
             <tag> RPA </tag>
             
@@ -998,11 +998,11 @@
       
         <tags>
             
-            <tag> study </tag>
+            <tag> paper </tag>
             
             <tag> graduate student </tag>
             
-            <tag> paper </tag>
+            <tag> study </tag>
             
             <tag> machine learning </tag>
             
@@ -1031,9 +1031,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -1064,9 +1064,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -1097,9 +1097,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -1165,9 +1165,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -1194,11 +1194,11 @@
       
         <tags>
             
-            <tag> study </tag>
+            <tag> paper </tag>
             
             <tag> graduate student </tag>
             
-            <tag> paper </tag>
+            <tag> study </tag>
             
             <tag> algorithm </tag>
             
@@ -1289,9 +1289,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> RPA </tag>
             
@@ -1320,9 +1320,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> RPA </tag>
             
@@ -1349,9 +1349,9 @@
       
         <tags>
             
-            <tag> study </tag>
-            
             <tag> graduate student </tag>
+            
+            <tag> study </tag>
             
             <tag> RPA </tag>
             
@@ -1378,9 +1378,9 @@
       
         <tags>
             
-            <tag> graduate student </tag>
-            
             <tag> paper </tag>
+            
+            <tag> graduate student </tag>
             
             <tag> block chain </tag>
             
