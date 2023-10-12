@@ -637,15 +637,15 @@
             
             <tag> study </tag>
             
-            <tag> plan </tag>
+            <tag> book </tag>
             
             <tag> daily </tag>
             
-            <tag> JavaScript </tag>
-            
-            <tag> book </tag>
-            
             <tag> front-end </tag>
+            
+            <tag> plan </tag>
+            
+            <tag> JavaScript </tag>
             
         </tags>
       
@@ -1436,11 +1436,11 @@
             
             <tag> daily </tag>
             
-            <tag> front-end </tag>
-            
             <tag> summarize </tag>
             
             <tag> Java </tag>
+            
+            <tag> front-end </tag>
             
             <tag> security </tag>
             
