@@ -217,31 +217,6 @@
     
     
     <entry>
-      <title>信号通信fork函数</title>
-      <link href="/2023/01/31/%E4%BF%A1%E5%8F%B7%E9%80%9A%E4%BF%A1fork%E5%87%BD%E6%95%B0/"/>
-      <url>/2023/01/31/%E4%BF%A1%E5%8F%B7%E9%80%9A%E4%BF%A1fork%E5%87%BD%E6%95%B0/</url>
-      
-        <content type="html"><![CDATA[<h1 id="一、fork-后的父子进程"><a href="#一、fork-后的父子进程" class="headerlink" title="一、fork 后的父子进程"></a>一、fork 后的父子进程</h1><p>由 fork 创建的新进程被称为子进程（child process）。<strong>该函数被调用一次，但返回两次。两次返回的区别是子进程的返回值是 0</strong>，而<strong>父进程的返回值则是新进程（子进程）的进程 id。将子进程 id 返回给父进程的理由是：因为一个进程的子进程可以多于一个，没有一个函数使一个进程可以获得其所有子进程的进程 id</strong>。对子进程来说，之所以 fork 返回 0 给它，是因为它随时可以调用 <strong>getpid() 来获取自己的 pid；也可以调用 getppid() 来获取父进程的 id</strong>。(进程 id 0 总是由交换进程使用，所以一个子进程的进程 id 不可能为 0)。</p><p>fork 之后，**<a href="http://lib.csdn.net/base/operatingsystem" title="操作系统知识库">操作系统</a>会复制一个与父进程完全相同的子进程，虽说是父子关系，但是在操作系统看来，他们更像兄弟关系，这 2 个进程共享代码空间，但是数据空间是互相独立的，子进程数据空间中的内容是父进程的完整拷贝，指令指针也完全相同，子进程拥有父进程当前运行到的位置**（两进程的程序计数器 pc 值相同，也就是说，子进程是从 fork 返回处开始执行的），但有一点不同，如果 fork 成功，子进程中 fork 的返回值是 0，父进程中 fork 的返回值是子进程的进程号，如果 fork 不成功，父进程会返回错误。<br>可以这样想象，2 个进程一直同时运行，而且步调一致，在 fork 之后，他们分别作不同的工作，也就是分岔了。这也是 fork 为什么叫 fork 的原因</p><p>至于那一个最先运行，可能与操作系统（调度<a href="http://lib.csdn.net/base/datastructure" title="算法与数据结构知识库">算法</a>）有关，而且这个问题在实际应用中并不重要，如果需要父子进程协同，可以通过原语的办法解决。</p><p><strong>[cpp]</strong>  <a href="http://blog.csdn.net/koudaidai/article/details/8014782#" title="view plain">view plain</a> <a href="http://blog.csdn.net/koudaidai/article/details/8014782#" title="copy">copy</a> </p><ol><li><p> include &lt;stdio.h&gt;  </p></li><li><p> #include &lt;unistd.h&gt;  </p></li><li><p> #include &lt;stdlib.h&gt;  </p></li><li><p> #include &lt;errno.h&gt;  </p></li><li><p> int main(void)  </p></li><li><p> {  </p></li><li><p>         pid_t pid=fork();  </p></li><li><p>         if(pid==0)  </p></li><li><p>         {  </p></li><li><p>                 int j ;  </p></li><li><p>                 for(j=0;j&lt;10;j++)  </p></li><li><p>                 {  </p></li><li><p>                         printf(“child: %d\n”,j);  </p></li><li><p>                         sleep(1);  </p></li><li><p>                 }  </p></li><li><p>         }  </p></li><li><p>         else if (pid&gt;0)  </p></li><li><p>         {  </p></li><li><p>                 int i;  </p></li><li><p>                 for(i=0;i&lt;10;i++)  </p></li><li><p>                 {  </p></li><li><p>                         printf(“parent: %d\n”,i);  </p></li><li><p>                         sleep(1);  </p></li><li><p>                 }  </p></li><li><p>         }  </p></li><li><p>         else  </p></li><li><p>         {  </p></li><li><p>                 fprintf(stderr,”can’t fork ,error %d\n”,errno);  </p></li><li><p>                 exit(1);  </p></li><li><p>         }  </p></li><li><p>         printf(“This is the end !”);  </p></li><li><p> }  </p></li></ol><h1 id="二、fork-出的子进程和父进程的继承关系"><a href="#二、fork-出的子进程和父进程的继承关系" class="headerlink" title="二、fork 出的子进程和父进程的继承关系"></a>二、fork 出的子进程和父进程的继承关系</h1><p>fork 出来的子进程，基本上除了进程号之外父进程的所有东西都有一份拷贝，基本就意味着不是全部，下面我们要说的是子进程从父进程那里继承了什么东西，什么东西没有继承。还有一点需要注意，子进程得到的只是父进程的拷贝，而不是父进程资源的本身。  </p><p><strong>由子进程自父进程继承到：</strong>       </p><ol><li>进程的资格 (真实(real)/ 有效(effective)/ 已保存(saved) 用户号 (UIDs) 和组号(GIDs))  </li><li>环境 (environment)  </li><li>堆栈  </li><li>内存  </li><li>打开文件的描述符 (注意对应的文件的位置由父子进程共享，这会引起含糊情况)  </li><li>执行时关闭 (close-on-exec) 标志 (译者注：close-on-exec 标志可通过 fnctl() 对文件描述符设置，POSIX.1 要求所有目录流都必须在 exec 函数调用时关闭。更详细说明，参见《UNIX 环境高级编程》 W. R. Stevens, 1993, 尤晋元等译(以下简称《高级编程》), 3.13 节和 8.9 节)  </li><li>信号 (signal) 控制设定  </li><li>nice 值 (译者注：nice 值由 nice 函数设定，该值表示进程的优先级，数值越小，优先级越高)<br>进程调度类别 (scheduler class)(译者注：进程调度类别指进程在系统中被调度时所属的类别，不同类别有不同优先级，根据进程调度类别和 nice 值，进程调度程序可计算出每个进程的全局优先级 (Global process prority)，优先级高的进程优先执行)  </li><li>进程组号  </li><li>对话期 ID(Session ID) (译者注：译文取自《高级编程》，指：进程所属的对话期 (session)ID， 一个对话期包括一个或多个进程组， 更详细说明参见《高级编程》9.5 节)  </li><li>当前工作目录  </li><li>根目录 (译者注：根目录不一定是 “/”，它可由 chroot 函数改变)  </li><li>文件方式创建屏蔽字 (file mode creation mask (umask))(译者注：译文取自《高级编程》，指：创建新文件的缺省屏蔽字)  </li><li>资源限制  </li><li>控制终端  </li></ol><p><strong>子进程所独有：</strong>  </p><p>进程号  </p><ol><li>不同的父进程号 (译者注：即子进程的父进程号与父进程的父进程号不同， 父进程号可由 getppid 函数得到)  </li><li>自己的文件描述符和目录流的拷贝 (译者注：目录流由 opendir 函数创建，因其为顺序读取，顾称 “目录流”)  </li><li>子进程不继承父进程的进程，正文 (text)， 数据和其它锁定内存 (memory locks)(译者注：锁定内存指被锁定的虚拟内存页，锁定后，4. 不允许内核将其在必要时换出 (page out)，详细说明参见《The GNU C Library Reference Manual》 2.2 版， 1999, 3.4.2 节)  </li><li>在 tms 结构中的系统时间 (译者注：tms 结构可由 times 函数获得，它保存四个数据用于记录进程使用中央处理器 (CPU：Central Processing Unit) 的时间，包括：用户时间，系统时间， 用户各子进程合计时间，系统各子进程合计时间)  </li><li>资源使用 (resource utilizations) 设定为 0  </li><li>阻塞信号集初始化为空集 (译者注：原文此处不明确，译文根据 fork 函数手册页稍做修改)  </li><li>不继承由 timer_create 函数创建的计时器  </li><li>不继承异步输入和输出</li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> Linux </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> study,graduate student,Linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Linux多进程之间的通信(一)</title>
       <link href="/2023/01/31/Linux%E5%A4%9A%E8%BF%9B%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1(%E4%B8%80)/"/>
       <url>/2023/01/31/Linux%E5%A4%9A%E8%BF%9B%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1(%E4%B8%80)/</url>
@@ -259,6 +234,31 @@
         <tags>
             
             <tag> study, graduate student,Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>信号通信fork函数</title>
+      <link href="/2023/01/31/%E4%BF%A1%E5%8F%B7%E9%80%9A%E4%BF%A1fork%E5%87%BD%E6%95%B0/"/>
+      <url>/2023/01/31/%E4%BF%A1%E5%8F%B7%E9%80%9A%E4%BF%A1fork%E5%87%BD%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、fork-后的父子进程"><a href="#一、fork-后的父子进程" class="headerlink" title="一、fork 后的父子进程"></a>一、fork 后的父子进程</h1><p>由 fork 创建的新进程被称为子进程（child process）。<strong>该函数被调用一次，但返回两次。两次返回的区别是子进程的返回值是 0</strong>，而<strong>父进程的返回值则是新进程（子进程）的进程 id。将子进程 id 返回给父进程的理由是：因为一个进程的子进程可以多于一个，没有一个函数使一个进程可以获得其所有子进程的进程 id</strong>。对子进程来说，之所以 fork 返回 0 给它，是因为它随时可以调用 <strong>getpid() 来获取自己的 pid；也可以调用 getppid() 来获取父进程的 id</strong>。(进程 id 0 总是由交换进程使用，所以一个子进程的进程 id 不可能为 0)。</p><p>fork 之后，**<a href="http://lib.csdn.net/base/operatingsystem" title="操作系统知识库">操作系统</a>会复制一个与父进程完全相同的子进程，虽说是父子关系，但是在操作系统看来，他们更像兄弟关系，这 2 个进程共享代码空间，但是数据空间是互相独立的，子进程数据空间中的内容是父进程的完整拷贝，指令指针也完全相同，子进程拥有父进程当前运行到的位置**（两进程的程序计数器 pc 值相同，也就是说，子进程是从 fork 返回处开始执行的），但有一点不同，如果 fork 成功，子进程中 fork 的返回值是 0，父进程中 fork 的返回值是子进程的进程号，如果 fork 不成功，父进程会返回错误。<br>可以这样想象，2 个进程一直同时运行，而且步调一致，在 fork 之后，他们分别作不同的工作，也就是分岔了。这也是 fork 为什么叫 fork 的原因</p><p>至于那一个最先运行，可能与操作系统（调度<a href="http://lib.csdn.net/base/datastructure" title="算法与数据结构知识库">算法</a>）有关，而且这个问题在实际应用中并不重要，如果需要父子进程协同，可以通过原语的办法解决。</p><p><strong>[cpp]</strong>  <a href="http://blog.csdn.net/koudaidai/article/details/8014782#" title="view plain">view plain</a> <a href="http://blog.csdn.net/koudaidai/article/details/8014782#" title="copy">copy</a> </p><ol><li><p> include &lt;stdio.h&gt;  </p></li><li><p> #include &lt;unistd.h&gt;  </p></li><li><p> #include &lt;stdlib.h&gt;  </p></li><li><p> #include &lt;errno.h&gt;  </p></li><li><p> int main(void)  </p></li><li><p> {  </p></li><li><p>         pid_t pid=fork();  </p></li><li><p>         if(pid==0)  </p></li><li><p>         {  </p></li><li><p>                 int j ;  </p></li><li><p>                 for(j=0;j&lt;10;j++)  </p></li><li><p>                 {  </p></li><li><p>                         printf(“child: %d\n”,j);  </p></li><li><p>                         sleep(1);  </p></li><li><p>                 }  </p></li><li><p>         }  </p></li><li><p>         else if (pid&gt;0)  </p></li><li><p>         {  </p></li><li><p>                 int i;  </p></li><li><p>                 for(i=0;i&lt;10;i++)  </p></li><li><p>                 {  </p></li><li><p>                         printf(“parent: %d\n”,i);  </p></li><li><p>                         sleep(1);  </p></li><li><p>                 }  </p></li><li><p>         }  </p></li><li><p>         else  </p></li><li><p>         {  </p></li><li><p>                 fprintf(stderr,”can’t fork ,error %d\n”,errno);  </p></li><li><p>                 exit(1);  </p></li><li><p>         }  </p></li><li><p>         printf(“This is the end !”);  </p></li><li><p> }  </p></li></ol><h1 id="二、fork-出的子进程和父进程的继承关系"><a href="#二、fork-出的子进程和父进程的继承关系" class="headerlink" title="二、fork 出的子进程和父进程的继承关系"></a>二、fork 出的子进程和父进程的继承关系</h1><p>fork 出来的子进程，基本上除了进程号之外父进程的所有东西都有一份拷贝，基本就意味着不是全部，下面我们要说的是子进程从父进程那里继承了什么东西，什么东西没有继承。还有一点需要注意，子进程得到的只是父进程的拷贝，而不是父进程资源的本身。  </p><p><strong>由子进程自父进程继承到：</strong>       </p><ol><li>进程的资格 (真实(real)/ 有效(effective)/ 已保存(saved) 用户号 (UIDs) 和组号(GIDs))  </li><li>环境 (environment)  </li><li>堆栈  </li><li>内存  </li><li>打开文件的描述符 (注意对应的文件的位置由父子进程共享，这会引起含糊情况)  </li><li>执行时关闭 (close-on-exec) 标志 (译者注：close-on-exec 标志可通过 fnctl() 对文件描述符设置，POSIX.1 要求所有目录流都必须在 exec 函数调用时关闭。更详细说明，参见《UNIX 环境高级编程》 W. R. Stevens, 1993, 尤晋元等译(以下简称《高级编程》), 3.13 节和 8.9 节)  </li><li>信号 (signal) 控制设定  </li><li>nice 值 (译者注：nice 值由 nice 函数设定，该值表示进程的优先级，数值越小，优先级越高)<br>进程调度类别 (scheduler class)(译者注：进程调度类别指进程在系统中被调度时所属的类别，不同类别有不同优先级，根据进程调度类别和 nice 值，进程调度程序可计算出每个进程的全局优先级 (Global process prority)，优先级高的进程优先执行)  </li><li>进程组号  </li><li>对话期 ID(Session ID) (译者注：译文取自《高级编程》，指：进程所属的对话期 (session)ID， 一个对话期包括一个或多个进程组， 更详细说明参见《高级编程》9.5 节)  </li><li>当前工作目录  </li><li>根目录 (译者注：根目录不一定是 “/”，它可由 chroot 函数改变)  </li><li>文件方式创建屏蔽字 (file mode creation mask (umask))(译者注：译文取自《高级编程》，指：创建新文件的缺省屏蔽字)  </li><li>资源限制  </li><li>控制终端  </li></ol><p><strong>子进程所独有：</strong>  </p><p>进程号  </p><ol><li>不同的父进程号 (译者注：即子进程的父进程号与父进程的父进程号不同， 父进程号可由 getppid 函数得到)  </li><li>自己的文件描述符和目录流的拷贝 (译者注：目录流由 opendir 函数创建，因其为顺序读取，顾称 “目录流”)  </li><li>子进程不继承父进程的进程，正文 (text)， 数据和其它锁定内存 (memory locks)(译者注：锁定内存指被锁定的虚拟内存页，锁定后，4. 不允许内核将其在必要时换出 (page out)，详细说明参见《The GNU C Library Reference Manual》 2.2 版， 1999, 3.4.2 节)  </li><li>在 tms 结构中的系统时间 (译者注：tms 结构可由 times 函数获得，它保存四个数据用于记录进程使用中央处理器 (CPU：Central Processing Unit) 的时间，包括：用户时间，系统时间， 用户各子进程合计时间，系统各子进程合计时间)  </li><li>资源使用 (resource utilizations) 设定为 0  </li><li>阻塞信号集初始化为空集 (译者注：原文此处不明确，译文根据 fork 函数手册页稍做修改)  </li><li>不继承由 timer_create 函数创建的计时器  </li><li>不继承异步输入和输出</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> study,graduate student,Linux </tag>
             
         </tags>
       
